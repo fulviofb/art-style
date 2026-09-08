@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2085683625161539584/img/Qv
 poster_source: x_video_thumb
 style:
   name: Black-and-white ink illustration + Tim Burton-inspired proportions
+  name_status: published
   prompt_published: null
 logline: A mysterious cowboy... What is he doing here? What town is this?
 creator_notes: >-
@@ -27,5 +28,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: burton-ink
+  display_name: "Black-and-white ink illustration + Tim Burton-inspired proportions"
+  naming_basis: source_name
+  confidence: high
+  style_family: comics-graphic-novel
+  tags:
+    - comics
+    - ink-drawing
   notes: null

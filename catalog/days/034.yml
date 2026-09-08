@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2080250358878924800/img/2f
 poster_source: x_video_thumb
 style:
   name: Mixed
+  name_status: published_generic
   prompt_published: null
 logline: Paint Boy vs. the Paper Kingdom
 creator_notes: Felt like a classic childhood game where you rescue the princess.
@@ -24,5 +25,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: mixed-paint
+  display_name: "Painterly 3D and Papercraft Fantasy"
+  naming_basis: curator_inference
+  confidence: medium
+  style_family: hybrid-experimental
+  tags:
+    - hybrid
+    - paper-craft
+    - painterly
+    - fantasy
   notes: null

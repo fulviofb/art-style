@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2086773315734233088/img/dk
 poster_source: x_video_thumb
 style:
   name: Chinese Mythical Fantasy Animation
+  name_status: published
   prompt_published: null
 logline: A mysterious masked stranger rescues a princess from a tower high above.
 creator_notes: >-
@@ -32,5 +33,13 @@ thread:
     source_review: discovered_needs_original_review
     note: Reply de prompt existe no fio; URL não capturada nesta leva.
 curator:
-  style_family: chinese-mythic
+  display_name: "Chinese Mythical Fantasy Animation"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - cultural-tradition
+    - fantasy
+    - mythology
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2080615075338227712/img/Jc
 poster_source: x_video_thumb
 style:
   name: 1990s American superhero cartoon
+  name_status: published
   prompt_published: null
 logline: Is this really just a playful game between an astronaut and a robot dog?
 creator_notes: What is the glowing sphere they're chasing?
@@ -29,5 +30,11 @@ thread:
     source_review: reviewed
     note: Midjourney images --profile dzk1sty
 curator:
-  style_family: 90s-cartoon
+  display_name: "1990s American superhero cartoon"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - retro
   notes: null

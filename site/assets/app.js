@@ -1,3 +1,12 @@
+import {
+  filterStyleItems,
+  groupStyleItems,
+  namingLabel,
+  parseStyleState,
+  serializeStyleState,
+  sourceDescription,
+} from "./style-index.mjs?v=14";
+
 const ROLE_LABEL = {
   hero: "Vídeo no X",
   midjourney_sheets: "Pranchas Midjourney",
@@ -6,7 +15,7 @@ const ROLE_LABEL = {
 };
 
 async function loadCatalog() {
-  const res = await fetch("data/catalog.public.json?v=12", { cache: "no-store" });
+  const res = await fetch("data/catalog.public.json?v=14", { cache: "no-store" });
   if (!res.ok) throw new Error("Falha ao carregar o catálogo");
   return res.json();
 }
@@ -63,8 +72,18 @@ function copyButton(text, shortLabel) {
 }
 
 function still(url, alt) {
-  if (!url) return `<div class="hero-still"></div>`;
-  return `<img src="${escapeAttr(url)}" alt="${escapeAttr(alt || "")}" referrerpolicy="no-referrer" loading="lazy">`;
+  if (!url) return `<div class="hero-still media-fallback"><span>Mídia externa indisponível</span></div>`;
+  return `<img src="${escapeAttr(url)}" alt="${escapeAttr(alt || "")}" referrerpolicy="no-referrer" loading="lazy" decoding="async" width="1600" height="900">`;
+}
+
+function installImageFallback() {
+  document.addEventListener("error", (event) => {
+    if (!(event.target instanceof HTMLImageElement)) return;
+    const container = event.target.closest(".style-card__image, .hero-still, .still");
+    if (!container) return;
+    container.classList.add("media-fallback");
+    container.innerHTML = "<span>Mídia externa indisponível</span>";
+  }, true);
 }
 
 function renderGallery(catalog) {
@@ -118,22 +137,124 @@ function renderTicks(catalog) {
   root.appendChild(frag);
 }
 
+function familyLookup(catalog) {
+  return new Map((catalog.style_taxonomy?.families || []).map((item) => [item.id, item]));
+}
+
+function sourceEvidence(d) {
+  const label = namingLabel(d.curator_naming_basis);
+  const source = sourceDescription(d);
+  const canonical = d.curator_canonical_style_id
+    ? `Mesma linguagem visual do dia ${escapeHtml(d.curator_canonical_style_id)}.`
+    : "";
+  if (!label && !source && !canonical) return "";
+  return `<div class="style-card__provenance">
+    ${label ? `<span>${escapeHtml(label)}</span>` : ""}
+    ${source ? `<small>${escapeHtml(source)}</small>` : ""}
+    ${canonical ? `<small>${canonical}</small>` : ""}
+  </div>`;
+}
+
+function styleCard(d, families) {
+  const family = families.get(d.curator_style_family);
+  const tags = (d.curator_tag_labels || []).slice(0, 4);
+  return `<a class="style-card" href="dia.html?id=${encodeURIComponent(d.id)}">
+    <div class="style-card__image">${still(d.poster_url, d.curator_display_name || d.style_name)}</div>
+    <div class="style-card__body">
+      <div class="style-card__eyebrow"><span>Dia ${escapeHtml(String(d.id))}</span><span>${escapeHtml(family?.label_pt || "")}</span></div>
+      <h3>${escapeHtml(d.curator_display_name || d.style_name || "Estilo sem nome")}</h3>
+      ${sourceEvidence(d)}
+      ${tags.length ? `<div class="style-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+    </div>
+  </a>`;
+}
+
+function renderStyleIndex(catalog) {
+  const root = document.getElementById("styles");
+  if (!root) return;
+  const input = document.getElementById("style-search");
+  const clear = document.getElementById("style-search-clear");
+  const filters = document.getElementById("style-filters");
+  const status = document.getElementById("style-result-status");
+  const items = filledDays(catalog);
+  const familyList = catalog.style_taxonomy?.families || [];
+  const families = familyLookup(catalog);
+  const initial = parseStyleState(new URLSearchParams(location.search));
+  let activeFamily = familyList.some((family) => family.id === initial.family) ? initial.family : "all";
+  if (input) input.value = initial.query;
+
+  function updateUrl(query) {
+    const params = serializeStyleState({ query, family: activeFamily });
+    const next = `${location.pathname}${params.toString() ? `?${params}` : ""}${location.hash}`;
+    history.replaceState(null, "", next);
+  }
+
+  if (filters) {
+    const counts = new Map(familyList.map((family) => [family.id, items.filter((d) => d.curator_style_family === family.id).length]));
+    filters.innerHTML = [
+      `<button type="button" class="${activeFamily === "all" ? "active" : ""}" aria-pressed="${activeFamily === "all"}" data-family="all">Todos <span>${items.length}</span></button>`,
+      ...familyList
+        .filter((family) => counts.get(family.id))
+        .map((family) => `<button type="button" class="${activeFamily === family.id ? "active" : ""}" aria-pressed="${activeFamily === family.id}" data-family="${escapeAttr(family.id)}">${escapeHtml(family.label_pt)} <span>${counts.get(family.id)}</span></button>`),
+    ].join("");
+    filters.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-family]");
+      if (!button) return;
+      activeFamily = button.dataset.family;
+      filters.querySelectorAll("button").forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      render();
+    });
+  }
+
+  function render() {
+    const query = input?.value || "";
+    const filtered = filterStyleItems(items, { query, family: activeFamily });
+    const groups = groupStyleItems(filtered, familyList);
+    updateUrl(query);
+    if (clear) clear.hidden = !query;
+    if (status) {
+      status.textContent = `${filtered.length} de ${items.length} ${items.length === 1 ? "estilo" : "estilos"}`;
+    }
+    if (!filtered.length) {
+      root.innerHTML = `<div class="style-empty"><strong>Nenhum estilo encontrado.</strong><span>Tente outro termo ou selecione “Todos”.</span></div>`;
+      return;
+    }
+    root.innerHTML = groups.map((group) => `
+      <section class="style-group" aria-labelledby="family-${escapeAttr(group.id)}">
+        <header class="style-group__header">
+          <div><p>${group.items.length} ${group.items.length === 1 ? "estilo" : "estilos"}</p><h2 id="family-${escapeAttr(group.id)}">${escapeHtml(group.label)}</h2></div>
+          <p>${escapeHtml(group.description)}</p>
+        </header>
+        <div class="style-grid">${group.items.map((d) => styleCard(d, families)).join("")}</div>
+      </section>
+    `).join("");
+  }
+
+  input?.addEventListener("input", render);
+  input?.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && input.value) {
+      input.value = "";
+      render();
+    }
+  });
+  clear?.addEventListener("click", () => {
+    if (input) {
+      input.value = "";
+      input.focus();
+    }
+    render();
+  });
+  render();
+}
+
 function renderIndexes(catalog) {
-  const styles = document.getElementById("styles");
   const tools = document.getElementById("tools");
   const items = filledDays(catalog);
-  if (styles) {
-    styles.innerHTML = items
-      .slice()
-      .sort((a, b) => (a.style_name || "").localeCompare(b.style_name || ""))
-      .map(
-        (d) => `<a href="dia.html?id=${encodeURIComponent(d.id)}">
-          ${d.poster_url ? still(d.poster_url, d.style_name) : "<span></span>"}
-          <span><strong>${escapeHtml(d.style_name || "sem nome")}</strong><small>dia ${escapeHtml(String(d.id))}</small></span>
-        </a>`
-      )
-      .join("");
-  }
+  renderStyleIndex(catalog);
   if (tools) {
     const bag = new Map();
     for (const d of items) {
@@ -175,9 +296,27 @@ function renderFicha(catalog) {
     root.innerHTML = `<p>Ficha ainda não preenchida.</p><p><a href="index.html">Voltar</a></p>`;
     return;
   }
-  document.title = `Dia ${d.id} — ${d.style_name || "sem nome"}`;
+  document.title = `Dia ${d.id} — ${d.curator_display_name || d.style_name || "sem nome"}`;
   const extra = d.style_name_extra ? ` ${escapeHtml(d.style_name_extra)}` : "";
   const tools = (d.tools || []).filter((t) => t.name).map((t) => t.name).join(" · ");
+  const family = familyLookup(catalog).get(d.curator_style_family);
+  const naming = namingLabel(d.curator_naming_basis);
+  const source = sourceDescription(d);
+  const confidence = { high: "alta", medium: "média", low: "baixa" }[d.curator_confidence] || "";
+  const canonical = d.curator_canonical_style_id
+    ? `<p>Esta ficha usa a mesma linguagem visual catalogada no <a href="dia.html?id=${encodeURIComponent(d.curator_canonical_style_id)}">dia ${escapeHtml(d.curator_canonical_style_id)}</a>.</p>`
+    : "";
+  const classification = `
+    <section class="style-classification" aria-labelledby="classification-title">
+      <div class="style-classification__top">
+        <h3 id="classification-title">Classificação da curadoria</h3>
+        ${family ? `<span class="style-classification__family">${escapeHtml(family.label_pt)}</span>` : ""}
+        ${naming ? `<span class="style-classification__badge">${escapeHtml(naming)}${confidence ? ` · confiança ${escapeHtml(confidence)}` : ""}</span>` : ""}
+      </div>
+      ${(d.curator_tag_labels || []).length ? `<div class="style-tags">${d.curator_tag_labels.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      ${source ? `<p>${escapeHtml(source)}</p>` : `<p>Nome publicado pelo autor: “${escapeHtml(d.source_style_name || d.style_name || "") }”.</p>`}
+      ${canonical}
+    </section>`;
   const insp = (d.inspiration || [])
     .map((item) => {
       if (item.quote) {
@@ -197,15 +336,16 @@ function renderFicha(catalog) {
   root.innerHTML = `
     <p><a href="index.html">← galeria</a></p>
     <div class="kicker">Dia ${escapeHtml(String(d.id))} ${tools ? " · " + escapeHtml(tools) : ""}</div>
-    <h2>${escapeHtml(d.style_name || "sem nome")}${extra}</h2>
+    <h2>${escapeHtml(d.curator_display_name || d.style_name || "sem nome")}${extra}</h2>
     ${d.logline ? `<p class="logline">${escapeHtml(d.logline)}</p>` : ""}
-    <div class="hero-still">${still(d.poster_url, d.style_name)}</div>
+    <div class="hero-still">${still(d.poster_url, d.curator_display_name || d.style_name)}</div>
     <div class="prompt-box" id="prompt-box">
       <header>
         <h3>Bloco de estilo — copiar</h3>
       </header>
       <p class="prompt-text">${escapeHtml(d.prompt_published || "O autor não publicou bloco de estilo neste dia.")}</p>
     </div>
+    ${classification}
     ${d.creator_notes ? `<div class="block"><h3>Notas do autor</h3><p>${escapeHtml(d.creator_notes)}</p></div>` : ""}
     ${insp ? `<div class="block"><h3>Inspiração</h3>${insp}</div>` : ""}
     ${(d.thread || []).map(embedBlock).join("")}
@@ -229,6 +369,7 @@ function escapeAttr(s) {
 }
 
 async function boot() {
+  installImageFallback();
   try {
     const catalog = await loadCatalog();
     const n = filledDays(catalog).length;

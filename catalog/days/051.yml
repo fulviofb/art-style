@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2086390531941445632/img/BX
 poster_source: x_video_thumb
 style:
   name: "..."
+  name_status: unnamed
   prompt_published: null
 logline: Back to the kids' drawing style.
 creator_notes: >-
@@ -26,5 +27,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: kids-drawing
+  display_name: "Kids’ Drawing Style"
+  naming_basis: source_context
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - ink-drawing
+    - children
   notes: Estilo não nomeado no post.

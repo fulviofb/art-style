@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2084598927421235200/img/v6
 poster_source: x_video_thumb
 style:
   name: Pen-and-ink sketch
+  name_status: published
   prompt_published: null
 logline: Still the Boy Commander… but this time, he's fighting an impossible battle to protect the last stronghold.
 creator_notes: null
@@ -23,5 +24,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: pen-ink
+  display_name: "Pen-and-ink sketch"
+  naming_basis: source_name
+  confidence: high
+  style_family: comics-graphic-novel
+  tags:
+    - comics
+    - ink-drawing
+    - action
   notes: null

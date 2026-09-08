@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2083159044165140480/img/k2
 poster_source: x_video_thumb
 style:
   name: "..."
+  name_status: unnamed
   prompt_published: null
 logline: Another mysterious letter must be delivered safely into the princess's hands. But what secret does it hold?
 creator_notes: Testing Seedance 2.5 with a fast-paced medieval chase sequence.
@@ -24,5 +25,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: medieval-chase
+  display_name: "Cinematic 3D Medieval Fantasy"
+  naming_basis: curator_inference
+  confidence: medium
+  style_family: concept-art-painting
+  tags:
+    - concept-art
+    - cinematic
+    - fantasy
+    - action
   notes: Estilo não nomeado.

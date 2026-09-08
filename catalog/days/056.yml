@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2088225308868857856/img/6o
 poster_source: x_video_thumb
 style:
   name: Stylized 2D hand-painted storybook animation
+  name_status: published
   prompt_published: >-
     modern Western animation character design, painterly gouache texture,
     bold graphic shapes, minimal linework, warm cinematic colors, expressive
@@ -29,5 +30,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: storybook-2d
+  display_name: "Stylized 2D hand-painted storybook animation"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - painterly
+    - storybook
   notes: Prompt chinês mencionado; texto do prompt de vídeo não capturado.

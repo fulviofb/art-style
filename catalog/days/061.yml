@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2090037675566997504/img/T3
 poster_source: x_video_thumb
 style:
   name: Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk
+  name_status: published
   prompt_published: null
 logline: The characters are already there. The worlds are already built. Now you bring the imagination.
 creator_notes: >-
@@ -25,5 +26,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: scifi-graphic-novel
+  display_name: "Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk"
+  naming_basis: source_name
+  confidence: high
+  style_family: comics-graphic-novel
+  tags:
+    - comics
+    - anime-manga
+    - sci-fi
   notes: Post é anúncio/remix no Showrunner, não nomeia ferramenta de vídeo.

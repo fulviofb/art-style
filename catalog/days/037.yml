@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2081319820499546112/img/yC
 poster_source: x_video_thumb
 style:
   name: Modern Ukiyo-e Illustration ++
+  name_status: published
   prompt_published: null
 logline: Is the old artist really the one painting these masterpieces... or does someone quietly finish them every night after he falls asleep?
 creator_notes: null
@@ -27,5 +28,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: ukiyo-e
+  display_name: "Modern Ukiyo-e Illustration"
+  naming_basis: curator_normalization
+  confidence: high
+  style_family: folk-traditional
+  tags:
+    - folk-art
+    - painterly
+    - cultural-tradition
   notes: null

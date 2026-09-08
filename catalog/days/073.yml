@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2094007690154622976/img/Xb
 poster_source: x_video_thumb
 style:
   name: Vintage Folk Editorial Illustration
+  name_status: published
   prompt_published: >-
     Mid-century European storybook art, whimsical caricature, hand-painted
     gouache, dry brush texture, rough ink lines, elongated proportions, flat
@@ -33,5 +34,13 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: editorial-storybook
+  display_name: "Vintage Folk Editorial Illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: editorial-poster
+  tags:
+    - editorial
+    - folk-art
+    - retro
+    - action
   notes: Post não nomeia ferramenta.

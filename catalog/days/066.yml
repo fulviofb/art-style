@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2091845910800261121/img/XS
 poster_source: x_video_thumb
 style:
   name: Painterly Retro Mecha
+  name_status: published
   prompt_published: >-
     Inspired by 1980s–90s Japanese sci-fi concept art, with crisp mechanical
     linework, rough hand-painted textures, angular armor and a muted retro palette
@@ -29,5 +30,14 @@ thread:
     source_review: discovered_needs_original_review
     note: Prompt 1 e 2 no fio; URLs nao capturadas.
 curator:
-  style_family: retro-mecha
+  display_name: "Painterly Retro Mecha"
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - concept-art
+    - painterly
+    - sci-fi
+    - retro
+    - action
   notes: null

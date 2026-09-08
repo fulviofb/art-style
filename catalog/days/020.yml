@@ -8,6 +8,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2075176172544307200/img/xp
 poster_source: x_video_thumb
 style:
   name: "Stylized 3D Animated Feature Film"
+  name_status: published
   prompt_published: null
 logline: "My first time creating a fast-paced action sequence like this."
 creator_notes: null
@@ -23,5 +24,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Stylized 3D Animated Feature Film"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-3d
+  tags:
+    - animation-3d
+    - cinematic
   notes: null

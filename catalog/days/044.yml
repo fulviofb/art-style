@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2083834070900105216/img/7F
 poster_source: x_video_thumb
 style:
   name: Whimsical storybook illustration
+  name_status: published
   prompt_published: null
 logline: Dance belongs to everyone.
 creator_notes: Testing Seedance 2.5 (Round 2). --sref 1731732691
@@ -29,5 +30,10 @@ thread:
     source_review: reviewed
     note: MJ v8 images
 curator:
-  style_family: whimsical-storybook
+  display_name: "Whimsical storybook illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2079165586882646016/img/Ve
 poster_source: x_video_thumb
 style:
   name: Architectural Expressionism (Modern German Expressionism-inspired)
+  name_status: published
   prompt_published: null
 logline: The boy keeps climbing, parkouring his way toward higher and higher levels.
 creator_notes: Yet the higher he goes, the more enormous the city becomes. What could possibly be waiting at the very top?
@@ -29,5 +30,11 @@ thread:
     source_review: reviewed
     note: Midjourney images --profile dzk1sty
 curator:
-  style_family: expressionism
+  display_name: "Architectural Expressionism (Modern German Expressionism-inspired)"
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - concept-art
+    - architecture
   notes: null

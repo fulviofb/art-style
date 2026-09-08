@@ -8,6 +8,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2074455843626684416/img/24
 poster_source: x_video_thumb
 style:
   name: "Paper-Craft Illustration"
+  name_status: published
   prompt_published: null
 logline: "The world doesn't need more gentle-looking heroes. It needs more people who look tough... but choose to protect something fragile."
 creator_notes: null
@@ -22,5 +23,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Paper-Craft Illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: craft-stop-motion
+  tags:
+    - handcrafted
+    - paper-craft
   notes: null

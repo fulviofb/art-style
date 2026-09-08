@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2072275086409912320/img/aH
 poster_source: x_video_thumb
 style:
   name: Whimsical Watercolor Storybook
+  name_status: published
   prompt_published: null
 logline: What if your entire world was nothing more than a painting inside a book?
 creator_notes: null
@@ -29,5 +30,12 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "Whimsical Watercolor Storybook"
+  naming_basis: source_name
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - watercolor
+    - painterly
   notes: null

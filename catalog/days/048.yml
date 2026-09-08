@@ -9,6 +9,8 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2085321824913825793/img/tL
 poster_source: x_video_thumb
 style:
   name: Same as day 28
+  name_status: reference
+  reference_day: 28
   prompt_published: null
 logline: The battle between justice and the invaders. Villagers vs. pirates. The Full Episode.
 creator_notes: Generated images with Midjourney v7 on @Flovaai_Japan.
@@ -26,5 +28,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: tartakovsky
+  display_name: "Genndy Tartakovsky–Inspired 2D Animation"
+  naming_basis: source_reference
+  confidence: high
+  canonical_style_id: "028"
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - action
   notes: Estilo declarado como o do dia 28 (Genndy Tartakovsky, cf. dia 32).

@@ -4,9 +4,11 @@ slug: "010"
 source_review: reviewed
 copy_policy: link_only
 date_utc: "2026-06-29"
-poster_url: null
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2071547669764534272/img/Bq5KZkQKmPFKJi1Q.jpg
+poster_source: x_video_thumb
 style:
   name: "Stylized Military Concept Art"
+  name_status: published
   prompt_published: null
 logline: "I don't like war, but I'm deeply fascinated by history."
 creator_notes: >-
@@ -28,5 +30,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Stylized Military Concept Art"
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - concept-art
+    - action
   notes: null

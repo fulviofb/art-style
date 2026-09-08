@@ -9,6 +9,8 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2080961833293541377/img/g8
 poster_source: x_video_thumb
 style:
   name: Same as day 14
+  name_status: reference
+  reference_day: 14
   prompt_published: null
 logline: A mysterious room. A haunted mirror. And a few more plot twists.
 creator_notes: Huge thanks to @Artedeingenio. Created with @dreamina_ai and edited on CapCut.
@@ -30,5 +32,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: fairy-tale
+  display_name: "Classic European Fairy-Tale Illustration"
+  naming_basis: source_reference
+  confidence: high
+  canonical_style_id: "014"
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - fantasy
   notes: Estilo = dia 14.

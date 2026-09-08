@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2095469005956059136/img/Bd
 poster_source: x_video_thumb
 style:
   name: Indian Mythic Folk Art
+  name_status: published
   prompt_published: >-
     Indian mythological art + folk illustration + flat geometric shapes +
     vintage editorial/storybook
@@ -37,5 +38,13 @@ thread:
     source_review: discovered_needs_original_review
     note: Reply de prompt do autor não capturado nesta leva.
 curator:
-  style_family: folk-mythic
+  display_name: "Indian Mythic Folk Art"
+  naming_basis: source_name
+  confidence: high
+  style_family: folk-traditional
+  tags:
+    - folk-art
+    - cultural-tradition
+    - fantasy
+    - mythology
   notes: null

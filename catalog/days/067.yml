@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2092210645974560768/img/N_
 poster_source: x_video_thumb
 style:
   name: Stylized Chinese Folklore Animation
+  name_status: published
   prompt_published: null
 logline: Have you ever watched a Jiangshi movie?
 creator_notes: Thanks @jimmythesaul for inspiring me to explore this genre.
@@ -25,5 +26,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: chinese-folklore
+  display_name: "Stylized Chinese Folklore Animation"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - folk-art
+    - cultural-tradition
+    - mythology
   notes: null

@@ -14,6 +14,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 DAYS = ROOT / "catalog" / "days"
 SERIES = ROOT / "catalog" / "series.yml"
+TAXONOMY = ROOT / "catalog" / "style_taxonomy.yml"
 ALLOWED_REVIEW = {
     "empty",
     "discovered_needs_original_review",
@@ -28,8 +29,60 @@ def err(msg: str) -> None:
     errors.append(msg)
 
 
+PLACEHOLDER_TITLES = {
+    "...",
+    "....",
+    "mixed",
+    "(i don't know)",
+    "same as day 14",
+    "same as day 28",
+}
+ALLOWED_NAME_STATUS = {"published", "published_generic", "unnamed", "reference"}
+ALLOWED_NAMING_BASIS = {
+    "source_name",
+    "source_context",
+    "source_reference",
+    "published_prompt",
+    "curator_normalization",
+    "curator_inference",
+}
+ALLOWED_CONFIDENCE = {"high", "medium", "low"}
+
+
+def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> list[str]:
+    found: list[str] = []
+    style = data.get("style") or {}
+    curator = data.get("curator") or {}
+    display_name = str(curator.get("display_name") or "").strip()
+    if not display_name or display_name.lower() in PLACEHOLDER_TITLES:
+        found.append("curator.display_name is missing or a placeholder")
+    if style.get("name_status") not in ALLOWED_NAME_STATUS:
+        found.append("style.name_status is missing or invalid")
+    if style.get("name_status") == "reference" and not style.get("reference_day"):
+        found.append("style.reference_day is required for references")
+    if curator.get("naming_basis") not in ALLOWED_NAMING_BASIS:
+        found.append("curator.naming_basis is missing or invalid")
+    if curator.get("confidence") not in ALLOWED_CONFIDENCE:
+        found.append("curator.confidence is missing or invalid")
+    if curator.get("style_family") not in families:
+        found.append("curator.style_family is missing or unregistered")
+    item_tags = curator.get("tags") or []
+    if not item_tags:
+        found.append("curator.tags must not be empty")
+    elif any(tag not in tags for tag in item_tags):
+        found.append("curator.tags contains an unregistered tag")
+    return found
+
+
 def main() -> int:
     series = yaml.safe_load(SERIES.read_text(encoding="utf-8"))
+    taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8")) or {}
+    families = {item.get("id") for item in taxonomy.get("families") or [] if item.get("id")}
+    tags = {item.get("id") for item in taxonomy.get("tags") or [] if item.get("id")}
+    if not families:
+        err("style taxonomy needs families")
+    if not tags:
+        err("style taxonomy needs tags")
     if series.get("copy_policy") != "link_only":
         err("series.copy_policy must be link_only")
     if series.get("affiliation") != "unofficial":
@@ -60,6 +113,8 @@ def main() -> int:
             style = (data.get("style") or {}).get("name")
             if not style:
                 err(f"{path.name}: reviewed day needs style.name")
+            for message in validate_style_curation(data, families, tags):
+                err(f"{path.name}: {message}")
             thread = data.get("thread") or []
             hero = next((t for t in thread if t.get("role") == "hero"), None)
             if not hero or not hero.get("post_url"):

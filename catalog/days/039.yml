@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2082068207700246528/img/1H
 poster_source: x_video_thumb
 style:
   name: "(I don't know)"
+  name_status: unnamed
   prompt_published: null
 logline: Practice makes perfect. But perfection creates either a legend... or a monster.
 creator_notes: Stay tuned for something exciting.
@@ -29,5 +30,12 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "Stylized 3D Martial-Arts Animation"
+  naming_basis: curator_inference
+  confidence: medium
+  style_family: animation-3d
+  tags:
+    - animation-3d
+    - painterly
+    - fantasy
   notes: null

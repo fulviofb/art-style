@@ -8,6 +8,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2073695385009430529/img/t2
 poster_source: x_video_thumb
 style:
   name: "Claymation Art"
+  name_status: published
   prompt_published: null
 logline: "A fearless little knight. A tiny dragon with zero firepower."
 creator_notes: >-
@@ -23,5 +24,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Claymation Art"
+  naming_basis: source_name
+  confidence: high
+  style_family: craft-stop-motion
+  tags:
+    - handcrafted
+    - claymation
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2079889178243002368/img/1g
 poster_source: x_video_thumb
 style:
   name: 90s anime style
+  name_status: published
   prompt_published: null
 logline: TENET isn't about playing a video backward. It's about making reverse motion feel like the natural law of the world.
 creator_notes: That's the challenge I'm trying to recreate with AI.
@@ -23,5 +24,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: 90s-anime
+  display_name: "90s anime style"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - anime-manga
+    - retro
   notes: null

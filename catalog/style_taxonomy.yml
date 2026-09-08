@@ -1,0 +1,63 @@
+families:
+  - id: animation-2d
+    label_pt: Animação 2D
+    description_pt: Anime, desenho animado e linguagens gráficas em movimento.
+  - id: animation-3d
+    label_pt: Animação 3D
+    description_pt: Personagens e mundos tridimensionais, do longa animado ao low-poly.
+  - id: craft-stop-motion
+    label_pt: Artesanato e stop motion
+    description_pt: Massinha, feltro, papel e materiais com presença tátil.
+  - id: storybook-illustration
+    label_pt: Livro ilustrado e narrativa
+    description_pt: Ilustração narrativa, contos de fadas e universos infantis.
+  - id: comics-graphic-novel
+    label_pt: Quadrinhos e graphic novel
+    description_pt: HQ, ligne claire, mangá, tinta e narrativa sequencial.
+  - id: editorial-poster
+    label_pt: Editorial e pôster
+    description_pt: Cartaz, ilustração editorial e composição gráfica.
+  - id: concept-art-painting
+    label_pt: Concept art e pintura
+    description_pt: Pintura digital, estudos visuais e construção cinematográfica de mundos.
+  - id: folk-traditional
+    label_pt: Arte popular e tradições
+    description_pt: Releituras de tradições visuais, folclore e patrimônios culturais.
+  - id: cinematic-live-action
+    label_pt: Cinema e live action
+    description_pt: Linguagens próximas de filme, ação e encenação realista.
+  - id: hybrid-experimental
+    label_pt: Híbridos e experimental
+    description_pt: Misturas deliberadas de mídias, estilos e técnicas.
+
+tags:
+  - { id: animation-2d, label_pt: Animação 2D }
+  - { id: animation-3d, label_pt: Animação 3D }
+  - { id: anime-manga, label_pt: Anime e mangá }
+  - { id: handcrafted, label_pt: Feito à mão }
+  - { id: claymation, label_pt: Massinha }
+  - { id: textile, label_pt: Têxtil e feltro }
+  - { id: paper-craft, label_pt: Papel }
+  - { id: watercolor, label_pt: Aquarela }
+  - { id: ink-drawing, label_pt: Tinta e desenho }
+  - { id: painterly, label_pt: Pictórico }
+  - { id: storybook, label_pt: Livro ilustrado }
+  - { id: comics, label_pt: Quadrinhos }
+  - { id: editorial, label_pt: Editorial }
+  - { id: poster, label_pt: Pôster }
+  - { id: geometric, label_pt: Geométrico }
+  - { id: low-poly, label_pt: Low-poly }
+  - { id: folk-art, label_pt: Arte popular }
+  - { id: cultural-tradition, label_pt: Tradição cultural }
+  - { id: fantasy, label_pt: Fantasia }
+  - { id: dark-fantasy, label_pt: Fantasia sombria }
+  - { id: sci-fi, label_pt: Ficção científica }
+  - { id: retro, label_pt: Retrô }
+  - { id: cinematic, label_pt: Cinematográfico }
+  - { id: action, label_pt: Ação }
+  - { id: children, label_pt: Infantil }
+  - { id: mythology, label_pt: Mitologia }
+  - { id: hybrid, label_pt: Híbrido }
+  - { id: caricature, label_pt: Caricatura }
+  - { id: concept-art, label_pt: Concept art }
+  - { id: architecture, label_pt: Arquitetura }

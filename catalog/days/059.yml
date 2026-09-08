@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2089322357156638721/img/uK
 poster_source: x_video_thumb
 style:
   name: Retro Editorial Cartoon / Mid-Century Storybook Illustration
+  name_status: published
   prompt_published: null
 logline: Escaping from a maximum-security prison is never easy. And surviving after the escape? That might be even harder.
 creator_notes: >-
@@ -29,5 +30,12 @@ thread:
     source_review: discovered_needs_original_review
     note: Autor disse no fio que não tem um prompt exato por causa da edição.
 curator:
-  style_family: editorial-cartoon
+  display_name: "Retro Editorial Cartoon / Mid-Century Storybook Illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: editorial-poster
+  tags:
+    - editorial
+    - storybook
+    - retro
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2088947258935177216/img/Xl
 poster_source: x_video_thumb
 style:
   name: Stylized Claymation + 3D animated caricature
+  name_status: published
   prompt_published: null
 logline: This style combined with the music makes everything feel a lot funnier, even though the battle itself is pretty intense.
 creator_notes: And the warrior's journey of revenge has only just begun.
@@ -25,5 +26,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: claymation
+  display_name: "Stylized Claymation + 3D animated caricature"
+  naming_basis: source_name
+  confidence: high
+  style_family: craft-stop-motion
+  tags:
+    - handcrafted
+    - claymation
+    - action
+    - caricature
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2091092179133558784/img/PB
 poster_source: x_video_thumb
 style:
   name: 5 Styles Converge
+  name_status: published
   prompt_published: null
 logline: Today, some of the representative characters and styles from my journey finally come together.
 creator_notes: >-
@@ -33,5 +34,10 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: mashup
+  display_name: "Five-Style Visual Mashup"
+  naming_basis: curator_normalization
+  confidence: high
+  style_family: hybrid-experimental
+  tags:
+    - hybrid
   notes: null

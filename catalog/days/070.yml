@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2092931703329468416/img/nu
 poster_source: x_video_thumb
 style:
   name: Stylized Mediterranean Mythic Storybook illustration
+  name_status: published
   prompt_published: >-
     clean simplified shapes, expressive hand-drawn linework, painterly
     gouache texture, warm ivory and terracotta against deep navy and pale
@@ -40,5 +41,13 @@ thread:
     source_review: discovered_needs_original_review
     note: Versão live-action prometida nos comentários — não capturada nesta leva.
 curator:
-  style_family: mediterranean-mythic
+  display_name: "Stylized Mediterranean Mythic Storybook illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - cultural-tradition
+    - fantasy
+    - mythology
   notes: null

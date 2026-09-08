@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2090811991367852032/img/b1
 poster_source: x_video_thumb
 style:
   name: Rough Blue-Pencil Animation Concept Art
+  name_status: published
   prompt_published: null
 logline: What if your paper friends could take you anywhere?
 creator_notes: >-
@@ -31,5 +32,11 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: blue-pencil
+  display_name: "Rough Blue-Pencil Animation Concept Art"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - paper-craft
   notes: Sem bloco de estilo entre parênteses neste post.

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2092579038581923840/img/wi
 poster_source: x_video_thumb
 style:
   name: Rustic Dark Folklore Storybook Illustration
+  name_status: published
   prompt_published: null
 logline: The fiercest battles sometimes begin for the simplest reasons.
 creator_notes: "Warrior vs. Red Demon. Here's a short glimpse of my new film. Enjoy the chaos!"
@@ -29,5 +30,14 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: dark-folklore
+  display_name: "Rustic Dark Folklore Storybook Illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - folk-art
+    - dark-fantasy
+    - action
+    - mythology
   notes: null

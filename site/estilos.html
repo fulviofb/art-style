@@ -3,22 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore estilos de arte para IA por família visual, técnica e referência." />
   <title>Estilos — Técnicas de Art Style</title>
-  <link rel="stylesheet" href="assets/style.css?v=9" />
+  <link rel="stylesheet" href="assets/style.css?v=14" />
 </head>
 <body>
+  <a class="skip-link" href="#style-results">Pular para os estilos</a>
   <div class="wrap">
     <header class="site">
-      <h1>Técnicas de Art Style<span>por nome</span></h1>
-      <nav>
+      <h1>Técnicas de Art Style<span>biblioteca visual</span></h1>
+      <nav aria-label="Navegação principal">
         <a href="index.html">Galeria</a>
         <a href="estilos.html" aria-current="page">Estilos</a>
         <a href="ferramentas.html">Ferramentas</a>
         <a href="sobre.html">Sobre</a>
       </nav>
     </header>
-    <div id="styles" class="list"></div>
+
+    <main id="style-results">
+      <section class="style-index-hero" aria-labelledby="style-index-title">
+        <div class="style-index-hero__copy">
+          <p class="section-kicker">Índice curatorial</p>
+          <h2 id="style-index-title">Explore por linguagem visual</h2>
+          <p>Os nomes em inglês ajudam na pesquisa e no uso com ferramentas de IA. Famílias e características em português organizam as relações entre técnicas.</p>
+        </div>
+        <div class="style-search" role="search">
+          <label for="style-search">Buscar estilo, técnica ou referência</label>
+          <div class="style-search__field">
+            <input id="style-search" type="search" placeholder="Ex.: aquarela, anime, low-poly…" autocomplete="off" />
+            <button id="style-search-clear" type="button" hidden>Limpar</button>
+          </div>
+        </div>
+      </section>
+
+      <div id="style-filters" class="style-filters" aria-label="Filtrar por família"></div>
+      <p id="style-result-status" class="style-result-status" role="status" aria-live="polite"></p>
+      <div id="styles" class="style-groups"></div>
+    </main>
+
+    <footer>Classificação editorial em português; nomes de estilo em inglês. A fonte original permanece identificada em cada ficha.</footer>
   </div>
-  <script src="assets/app.js?v=9"></script>
+  <script type="module" src="assets/app.js?v=14"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2094647350786756608/img/6e
 poster_source: x_video_thumb
 style:
   name: Chibi Style
+  name_status: published
   prompt_published: null
   name_extra: (Day 2)
 logline: >-
@@ -47,7 +48,14 @@ thread:
     source_review: discovered_needs_original_review
     note: Reply de prompt do autor não capturado nesta leva.
 curator:
-  style_family: chibi
+  display_name: "Chibi Style"
+  naming_basis: source_name
+  confidence: high
+  canonical_style_id: "074"
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - children
   notes: >-
     Variante a do dia 75. O autor declara que neste post não discute o
     estilo; o foco é o teaser e o treino de equilíbrio.

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2087860895619878912/img/5s
 poster_source: x_video_thumb
 style:
   name: "..."
+  name_status: unnamed
   prompt_published: null
 logline: Training with the boy before he takes on a much tougher real challenge.
 creator_notes: >-
@@ -32,5 +33,10 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "Stylized 3D Martial-Arts Animation"
+  naming_basis: curator_inference
+  confidence: medium
+  style_family: animation-3d
+  tags:
+    - animation-3d
   notes: O autor não nomeou o estilo neste dia.

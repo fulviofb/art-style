@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2091475715015487488/img/pC
 poster_source: x_video_thumb
 style:
   name: Art Nouveau Manga Fusion
+  name_status: published
   prompt_published: null
 logline: A deserted island. No help. No way out. Just survive.
 creator_notes: From building her first shelter to hunting deep in the jungle, every day becomes a new fight for survival.
@@ -24,5 +25,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: art-nouveau-manga
+  display_name: "Art Nouveau Manga Fusion"
+  naming_basis: source_name
+  confidence: high
+  style_family: comics-graphic-novel
+  tags:
+    - comics
+    - anime-manga
+    - hybrid
   notes: null

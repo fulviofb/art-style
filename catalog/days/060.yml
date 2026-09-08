@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2089674574506110976/img/SU
 poster_source: x_video_thumb
 style:
   name: Whimsical hand-painted storybook illustration
+  name_status: published
   prompt_published: >-
     stylized animation concept art, exaggerated caricature proportions,
     angular imperfect shapes, loose expressive brushwork, gouache texture,
@@ -26,5 +27,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: whimsical-storybook
+  display_name: "Whimsical hand-painted storybook illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - painterly
   notes: null

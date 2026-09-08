@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2083389835218460672/img/8C
 poster_source: x_video_thumb
 style:
   name: Claymation (video 1) and Stylized 3D animated feature film style (video 2)
+  name_status: published
   prompt_published: null
 logline: Thank you for bringing us this amazing experience!
 creator_notes: Two videos no mesmo post — claymation e 3D feature.
@@ -23,5 +24,12 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: claymation-3d
+  display_name: "Claymation and Stylized 3D Animation"
+  naming_basis: curator_normalization
+  confidence: high
+  style_family: hybrid-experimental
+  tags:
+    - hybrid
+    - claymation
+    - cinematic
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2082432342304673792/img/oL
 poster_source: x_video_thumb
 style:
   name: Stylized Digital Painting
+  name_status: published
   prompt_published: null
 logline: Fantasy battles and epic action sequences set against grand, breathtaking backdrops always give us a sense of excitement.
 creator_notes: null
@@ -23,5 +24,14 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: digital-painting
+  display_name: "Stylized Digital Painting"
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - concept-art
+    - painterly
+    - fantasy
+    - cinematic
+    - action
   notes: null

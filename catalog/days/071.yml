@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2093229171208249344/img/cZ
 poster_source: x_video_thumb
 style:
   name: Dark Deco x Ancient Mexica
+  name_status: published
   prompt_published: null
 logline: The Fall of the Aztecs. Ancient empires. Alien civilizations.
 creator_notes: Inspired by @byaiden_vu. Here's a short glimpse into my new show.
@@ -26,5 +27,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: dark-deco
+  display_name: "Dark Deco x Ancient Mexica"
+  naming_basis: source_name
+  confidence: high
+  style_family: editorial-poster
+  tags:
+    - editorial
+    - geometric
+    - cultural-tradition
+    - dark-fantasy
   notes: null

@@ -9,6 +9,182 @@
   },
   "title": "100 AI Styles in 100 Days",
   "planned_days": 100,
+  "style_taxonomy": {
+    "families": [
+      {
+        "id": "animation-2d",
+        "label_pt": "Animação 2D",
+        "description_pt": "Anime, desenho animado e linguagens gráficas em movimento."
+      },
+      {
+        "id": "animation-3d",
+        "label_pt": "Animação 3D",
+        "description_pt": "Personagens e mundos tridimensionais, do longa animado ao low-poly."
+      },
+      {
+        "id": "craft-stop-motion",
+        "label_pt": "Artesanato e stop motion",
+        "description_pt": "Massinha, feltro, papel e materiais com presença tátil."
+      },
+      {
+        "id": "storybook-illustration",
+        "label_pt": "Livro ilustrado e narrativa",
+        "description_pt": "Ilustração narrativa, contos de fadas e universos infantis."
+      },
+      {
+        "id": "comics-graphic-novel",
+        "label_pt": "Quadrinhos e graphic novel",
+        "description_pt": "HQ, ligne claire, mangá, tinta e narrativa sequencial."
+      },
+      {
+        "id": "editorial-poster",
+        "label_pt": "Editorial e pôster",
+        "description_pt": "Cartaz, ilustração editorial e composição gráfica."
+      },
+      {
+        "id": "concept-art-painting",
+        "label_pt": "Concept art e pintura",
+        "description_pt": "Pintura digital, estudos visuais e construção cinematográfica de mundos."
+      },
+      {
+        "id": "folk-traditional",
+        "label_pt": "Arte popular e tradições",
+        "description_pt": "Releituras de tradições visuais, folclore e patrimônios culturais."
+      },
+      {
+        "id": "cinematic-live-action",
+        "label_pt": "Cinema e live action",
+        "description_pt": "Linguagens próximas de filme, ação e encenação realista."
+      },
+      {
+        "id": "hybrid-experimental",
+        "label_pt": "Híbridos e experimental",
+        "description_pt": "Misturas deliberadas de mídias, estilos e técnicas."
+      }
+    ],
+    "tags": [
+      {
+        "id": "animation-2d",
+        "label_pt": "Animação 2D"
+      },
+      {
+        "id": "animation-3d",
+        "label_pt": "Animação 3D"
+      },
+      {
+        "id": "anime-manga",
+        "label_pt": "Anime e mangá"
+      },
+      {
+        "id": "handcrafted",
+        "label_pt": "Feito à mão"
+      },
+      {
+        "id": "claymation",
+        "label_pt": "Massinha"
+      },
+      {
+        "id": "textile",
+        "label_pt": "Têxtil e feltro"
+      },
+      {
+        "id": "paper-craft",
+        "label_pt": "Papel"
+      },
+      {
+        "id": "watercolor",
+        "label_pt": "Aquarela"
+      },
+      {
+        "id": "ink-drawing",
+        "label_pt": "Tinta e desenho"
+      },
+      {
+        "id": "painterly",
+        "label_pt": "Pictórico"
+      },
+      {
+        "id": "storybook",
+        "label_pt": "Livro ilustrado"
+      },
+      {
+        "id": "comics",
+        "label_pt": "Quadrinhos"
+      },
+      {
+        "id": "editorial",
+        "label_pt": "Editorial"
+      },
+      {
+        "id": "poster",
+        "label_pt": "Pôster"
+      },
+      {
+        "id": "geometric",
+        "label_pt": "Geométrico"
+      },
+      {
+        "id": "low-poly",
+        "label_pt": "Low-poly"
+      },
+      {
+        "id": "folk-art",
+        "label_pt": "Arte popular"
+      },
+      {
+        "id": "cultural-tradition",
+        "label_pt": "Tradição cultural"
+      },
+      {
+        "id": "fantasy",
+        "label_pt": "Fantasia"
+      },
+      {
+        "id": "dark-fantasy",
+        "label_pt": "Fantasia sombria"
+      },
+      {
+        "id": "sci-fi",
+        "label_pt": "Ficção científica"
+      },
+      {
+        "id": "retro",
+        "label_pt": "Retrô"
+      },
+      {
+        "id": "cinematic",
+        "label_pt": "Cinematográfico"
+      },
+      {
+        "id": "action",
+        "label_pt": "Ação"
+      },
+      {
+        "id": "children",
+        "label_pt": "Infantil"
+      },
+      {
+        "id": "mythology",
+        "label_pt": "Mitologia"
+      },
+      {
+        "id": "hybrid",
+        "label_pt": "Híbrido"
+      },
+      {
+        "id": "caricature",
+        "label_pt": "Caricatura"
+      },
+      {
+        "id": "concept-art",
+        "label_pt": "Concept art"
+      },
+      {
+        "id": "architecture",
+        "label_pt": "Arquitetura"
+      }
+    ]
+  },
   "days": [
     {
       "id": "001",
@@ -19,6 +195,10 @@
       "date_utc": "2026-06-20",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2068261728794935296/img/vKLi7u5221a44Cnk.jpg",
       "style_name": "Anime",
+      "curator_display_name": "Anime",
+      "source_style_name": "Anime",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Starting with Anime.",
@@ -47,7 +227,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "anime-manga"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Anime e mangá"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2068262545564344698"
     },
@@ -60,6 +251,10 @@
       "date_utc": "2026-06-21",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2068619858846285824/img/MenZafmSg40-lhSw.jpg",
       "style_name": "Vietnamese folk-art inspired style",
+      "curator_display_name": "Vietnamese folk-art inspired style",
+      "source_style_name": "Vietnamese folk-art inspired style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The Adventure of Cricket Men. One careless joke. One life-changing mistake.",
@@ -90,7 +285,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "folk-traditional",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "folk-art",
+        "cultural-tradition"
+      ],
+      "curator_tag_labels": [
+        "Arte popular",
+        "Tradição cultural"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2068622663384457599"
     },
@@ -102,7 +308,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-06-22",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2069006404866998272/img/Y8740qBbEdUEvuyY.jpg",
-      "style_name": "LEGO",
+      "style_name": "LEGO Brick Animation",
+      "curator_display_name": "LEGO Brick Animation",
+      "source_style_name": "LEGO",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Brazil vs France. The FIFA World Cup Final at Trong Dong Stadium, Vietnam.",
@@ -129,7 +339,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2069007247691350330"
     },
@@ -142,6 +361,10 @@
       "date_utc": "2026-06-24",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2069749021720096768/img/8KUt0U1q8pRK4q9x.jpg",
       "style_name": "Minimalist Cozy Slice-of-Life Illustration",
+      "curator_display_name": "Minimalist Cozy Slice-of-Life Illustration",
+      "source_style_name": "Minimalist Cozy Slice-of-Life Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "I traveled far. Only to realize... Home was always waiting for me.",
@@ -172,7 +395,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2069751039037939914"
     },
@@ -185,6 +417,10 @@
       "date_utc": "2026-06-23",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2069377608245194753/img/UOkpJ3WTw1fgKlQN.jpg",
       "style_name": "Warm Scandinavian Folk Illustration",
+      "curator_display_name": "Warm Scandinavian Folk Illustration",
+      "source_style_name": "Warm Scandinavian Folk Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "She is autumn in the shape of a little girl.",
@@ -211,7 +447,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "folk-art"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Arte popular"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2069380643616866346"
     },
@@ -224,6 +471,10 @@
       "date_utc": "2026-06-25",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2070106777920888832/img/0A2vhP02XVG6KUVM.jpg",
       "style_name": "Dark Medieval Fantasy",
+      "curator_display_name": "Dark Medieval Fantasy",
+      "source_style_name": "Dark Medieval Fantasy",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Leave before sunset.",
@@ -261,7 +512,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "fantasy",
+        "dark-fantasy"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Fantasia",
+        "Fantasia sombria"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2070107081894764809"
     },
@@ -274,6 +538,10 @@
       "date_utc": "2026-06-26",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2070475664030117888/img/Xf0LDuHdOze5iY3A.jpg",
       "style_name": "Digital Oil Painting",
+      "curator_display_name": "Digital Oil Painting",
+      "source_style_name": "Digital Oil Painting",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Dance with me through endless worlds.",
@@ -311,7 +579,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "painterly"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Pictórico"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2070476898225066239"
     },
@@ -324,6 +603,10 @@
       "date_utc": "2026-06-28",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2071187160431300608/img/0cxnV4C3G0io9oXu.jpg",
       "style_name": "Stylized 3D Storybook",
+      "curator_display_name": "Stylized 3D Storybook",
+      "source_style_name": "Stylized 3D Storybook",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The greatest race isn't against others. It's against the person you were yesterday.",
@@ -361,7 +644,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d",
+        "storybook"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D",
+        "Livro ilustrado"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2071189976952545567"
     },
@@ -373,7 +667,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-06-27",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2070818056520294400/img/xSBjjugEPXgutcDF.jpg",
-      "style_name": "Pixar style",
+      "style_name": "Pixar-Inspired 3D Animation",
+      "curator_display_name": "Pixar-Inspired 3D Animation",
+      "source_style_name": "Pixar style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Children will always be children. Family will always be home.",
@@ -411,7 +709,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d",
+        "children"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D",
+        "Infantil"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": "Post diz Day 8; URL veio como segundo 8. Fichado como 9.",
       "open_on_x": "https://x.com/NVTDanh/status/2070818415351300199"
     },
@@ -422,8 +731,12 @@
       "slug": "010",
       "source_review": "reviewed",
       "date_utc": "2026-06-29",
-      "poster_url": null,
+      "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2071547669764534272/img/Bq5KZkQKmPFKJi1Q.jpg",
       "style_name": "Stylized Military Concept Art",
+      "curator_display_name": "Stylized Military Concept Art",
+      "source_style_name": "Stylized Military Concept Art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "I don't like war, but I'm deeply fascinated by history.",
@@ -461,7 +774,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2071548325153960347"
     },
@@ -474,6 +798,10 @@
       "date_utc": "2026-06-30",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2071915231794561024/img/viD9dfZCLFRDydND.jpg",
       "style_name": "Handmade Needle-Felt Fantasy",
+      "curator_display_name": "Handmade Needle-Felt Fantasy",
+      "source_style_name": "Handmade Needle-Felt Fantasy",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Let the child within us come alive!!!!!",
@@ -511,7 +839,22 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "craft-stop-motion",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "handcrafted",
+        "textile",
+        "fantasy",
+        "children"
+      ],
+      "curator_tag_labels": [
+        "Feito à mão",
+        "Têxtil e feltro",
+        "Fantasia",
+        "Infantil"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2071915398946255022"
     },
@@ -524,6 +867,10 @@
       "date_utc": "2026-07-01",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2072275086409912320/img/aHTh5xH5AaL4_5Dx.jpg",
       "style_name": "Whimsical Watercolor Storybook",
+      "curator_display_name": "Whimsical Watercolor Storybook",
+      "source_style_name": "Whimsical Watercolor Storybook",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "What if your entire world was nothing more than a painting inside a book?",
@@ -561,7 +908,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "watercolor",
+        "painterly"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Aquarela",
+        "Pictórico"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2072275666767323390"
     },
@@ -574,6 +934,10 @@
       "date_utc": "2026-07-02",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2072636849303252992/img/qjbta_CUcxwcrlNW.jpg",
       "style_name": "Hand-drawn sketch",
+      "curator_display_name": "Hand-drawn sketch",
+      "source_style_name": "Hand-drawn sketch",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The strange things that seem possible only in a child's imagination often become the most fascinating experiences for adults.",
@@ -611,7 +975,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "ink-drawing",
+        "children"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Tinta e desenho",
+        "Infantil"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2072637077133631608"
     },
@@ -624,6 +1001,10 @@
       "date_utc": "2026-07-03",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2073000233966161920/img/Oped7dwiszw2rBVZ.jpg",
       "style_name": "Classic European fairy tale illustration",
+      "curator_display_name": "Classic European fairy tale illustration",
+      "source_style_name": "Classic European fairy tale illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A forgotten room. An ancient mirror. A ballet no one should ever finish.",
@@ -661,7 +1042,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2073001383599730900"
     },
@@ -674,6 +1066,10 @@
       "date_utc": "2026-07-04",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2073263400403283968/img/LXy7XigGvbHnP4DG.jpg",
       "style_name": "Stylized Graphic Editorial Illustration",
+      "curator_display_name": "Stylized Graphic Editorial Illustration",
+      "source_style_name": "Stylized Graphic Editorial Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Green light doesn't always mean \"go\". Even a Formula 1 car waits for an elderly man to cross the road.",
@@ -703,7 +1099,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "editorial-poster",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "editorial"
+      ],
+      "curator_tag_labels": [
+        "Editorial"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2073362686117912579"
     },
@@ -714,8 +1119,12 @@
       "slug": "016",
       "source_review": "reviewed",
       "date_utc": "2026-07-05",
-      "poster_url": null,
-      "style_name": "Mixed",
+      "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2073698144219709440/img/DW75QDFrcsXnjHRH.jpg",
+      "style_name": "Showrunner Multi-Style Experiment",
+      "curator_display_name": "Showrunner Multi-Style Experiment",
+      "source_style_name": "Mixed",
+      "source_style_name_status": "published_generic",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Created with Showrunner IOS app.",
@@ -737,7 +1146,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "hybrid-experimental",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "hybrid"
+      ],
+      "curator_tag_labels": [
+        "Híbrido"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "low",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2073725325767299131"
     },
@@ -750,6 +1168,10 @@
       "date_utc": "2026-07-06",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2073695385009430529/img/t2GqQ3esU2YPdPAH.jpg",
       "style_name": "Claymation Art",
+      "curator_display_name": "Claymation Art",
+      "source_style_name": "Claymation Art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A fearless little knight. A tiny dragon with zero firepower.",
@@ -773,7 +1195,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "craft-stop-motion",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "handcrafted",
+        "claymation"
+      ],
+      "curator_tag_labels": [
+        "Feito à mão",
+        "Massinha"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2074087210580852843"
     },
@@ -786,6 +1219,10 @@
       "date_utc": "2026-07-07",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2074455843626684416/img/24ABVFh-Ui1aqA13.jpg",
       "style_name": "Paper-Craft Illustration",
+      "curator_display_name": "Paper-Craft Illustration",
+      "source_style_name": "Paper-Craft Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The world doesn't need more gentle-looking heroes. It needs more people who look tough... but choose to protect something fragile.",
@@ -809,7 +1246,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "craft-stop-motion",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "handcrafted",
+        "paper-craft"
+      ],
+      "curator_tag_labels": [
+        "Feito à mão",
+        "Papel"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2074456007326191654"
     },
@@ -820,8 +1268,12 @@
       "slug": "019",
       "source_review": "reviewed",
       "date_utc": "2026-07-08",
-      "poster_url": null,
+      "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2074809957124554752/img/6UfmMlS_RMAFO8g8.jpg",
       "style_name": "Gothic Monolith",
+      "curator_display_name": "Gothic Monolith",
+      "source_style_name": "Gothic Monolith",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "What if an unknown entity could control the entire world... through the thoughts of just one person?",
@@ -845,7 +1297,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "dark-fantasy"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Fantasia sombria"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2074814503259079113"
     },
@@ -858,6 +1321,10 @@
       "date_utc": "2026-07-09",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2075176172544307200/img/xpq1fC3U_R6rDkN2.jpg",
       "style_name": "Stylized 3D Animated Feature Film",
+      "curator_display_name": "Stylized 3D Animated Feature Film",
+      "source_style_name": "Stylized 3D Animated Feature Film",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "My first time creating a fast-paced action sequence like this.",
@@ -882,7 +1349,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d",
+        "cinematic"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D",
+        "Cinematográfico"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2075176433119560114"
     },
@@ -893,8 +1371,12 @@
       "slug": "021",
       "source_review": "reviewed",
       "date_utc": "2026-07-10",
-      "poster_url": null,
+      "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2075534577087725568/img/iTP3XsRLcfUbm4qb.jpg",
       "style_name": "Painterly Cinematic Concept Art",
+      "curator_display_name": "Painterly Cinematic Concept Art",
+      "source_style_name": "Painterly Cinematic Concept Art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Inspired by Vietnamese traditional dance.",
@@ -918,7 +1400,22 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "painterly",
+        "cultural-tradition",
+        "cinematic"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Pictórico",
+        "Tradição cultural",
+        "Cinematográfico"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2075537247026463152"
     },
@@ -931,6 +1428,10 @@
       "date_utc": "2026-07-11",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2075900555508207616/img/HyggorT74Ay-Zbzj.jpg",
       "style_name": "Anime Cinematic Style",
+      "curator_display_name": "Anime Cinematic Style",
+      "source_style_name": "Anime Cinematic Style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Who do you think is the real monster in this room?",
@@ -954,7 +1455,22 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "anime-manga",
+        "ink-drawing",
+        "cinematic"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Anime e mangá",
+        "Tinta e desenho",
+        "Cinematográfico"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2075901626766991747"
     },
@@ -966,7 +1482,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-12",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2076260538506723328/img/EKwAbcquTfUBEmTj.jpg",
-      "style_name": "Mixed",
+      "style_name": "Post-Apocalyptic Cinematic Concept Art",
+      "curator_display_name": "Post-Apocalyptic Cinematic Concept Art",
+      "source_style_name": "Mixed",
+      "source_style_name_status": "published_generic",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The apocalypse has always been one of humanity's greatest obsessions.",
@@ -997,7 +1517,22 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "dark-fantasy",
+        "cinematic",
+        "hybrid"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Fantasia sombria",
+        "Cinematográfico",
+        "Híbrido"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2076261491846926510"
     },
@@ -1008,8 +1543,12 @@
       "slug": "024",
       "source_review": "reviewed",
       "date_utc": "2026-07-13",
-      "poster_url": null,
-      "style_name": "Mixed",
+      "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2076623664158838784/img/fAyn3iABC2VdUOqH.jpg",
+      "style_name": "Multi-Style Scene Blend",
+      "curator_display_name": "Multi-Style Scene Blend",
+      "source_style_name": "Mixed",
+      "source_style_name_status": "published_generic",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Would you watch a film that blends different artistic styles in a single scene?",
@@ -1033,7 +1572,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "hybrid-experimental",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "hybrid"
+      ],
+      "curator_tag_labels": [
+        "Híbrido"
+      ],
+      "curator_naming_basis": "source_context",
+      "curator_confidence": "medium",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2076623891771032006"
     },
@@ -1046,6 +1594,10 @@
       "date_utc": "2026-07-14",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2076982704919470080/img/T8-B6LCL8YjWA0MS.jpg",
       "style_name": "Mid-Century Modern Editorial Illustration, Geometric Character Design",
+      "curator_display_name": "Mid-Century Modern Editorial Illustration, Geometric Character Design",
+      "source_style_name": "Mid-Century Modern Editorial Illustration, Geometric Character Design",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Fatman vs. Supersis!",
@@ -1069,7 +1621,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "editorial-poster",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "editorial",
+        "geometric",
+        "retro"
+      ],
+      "curator_tag_labels": [
+        "Editorial",
+        "Geométrico",
+        "Retrô"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2076988829806875099"
     },
@@ -1082,6 +1647,10 @@
       "date_utc": "2026-07-15",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2077355952257593344/img/MQBtAYjl56OPoEvy.jpg",
       "style_name": "Stylized Japanese anime concept art",
+      "curator_display_name": "Stylized Japanese anime concept art",
+      "source_style_name": "Stylized Japanese anime concept art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A world without color... Maybe it was never an accident.",
@@ -1105,7 +1674,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "anime-manga"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Anime e mangá"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2077356073598468562"
     },
@@ -1117,7 +1697,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-16",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2077711811114356736/img/nmnxLyI_Atc1ocSH.jpg",
-      "style_name": "Cartoon Saloon",
+      "style_name": "Cartoon Saloon–Inspired 2D Animation",
+      "curator_display_name": "Cartoon Saloon–Inspired 2D Animation",
+      "source_style_name": "Cartoon Saloon",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Today, let's explore the enchanting European storybook art style with a red-haired fairy-tale girl.",
@@ -1141,7 +1725,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "storybook",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Livro ilustrado",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2077712470714769914"
     },
@@ -1153,7 +1750,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-17",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2078075832267124736/img/FNG6rcMnrLyVivHL.jpg",
-      "style_name": "Genndy Tartakovsky's style",
+      "style_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "curator_display_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "source_style_name": "Genndy Tartakovsky's style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The clash between pirates and tribal warriors has always been a timeless theme.",
@@ -1177,7 +1778,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2078075956711784474"
     },
@@ -1189,7 +1799,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-18",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2078414814880415744/img/SLGfFB2MHYHrfvNi.jpg",
-      "style_name": "ligne claire art style",
+      "style_name": "Ligne Claire Comic Art",
+      "curator_display_name": "Ligne Claire Comic Art",
+      "source_style_name": "ligne claire art style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A young detective's TOP SECRET file is stolen by a pigeon... What could be inside, and why would a pigeon steal it?",
@@ -1228,7 +1842,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2078435865043353602"
     },
@@ -1241,6 +1864,10 @@
       "date_utc": "2026-07-19",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2078794562550865920/img/Q6UDjUJgbRdagsjv.jpg",
       "style_name": "Franco-Belgian comics",
+      "curator_display_name": "Franco-Belgian comics",
+      "source_style_name": "Franco-Belgian comics",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A mysterious chase along the railway.",
@@ -1279,7 +1906,18 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2078799510868824464"
     },
@@ -1292,6 +1930,10 @@
       "date_utc": "2026-07-20",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2079165586882646016/img/Ve2F07DiydvEmCSs.jpg",
       "style_name": "Architectural Expressionism (Modern German Expressionism-inspired)",
+      "curator_display_name": "Architectural Expressionism (Modern German Expressionism-inspired)",
+      "source_style_name": "Architectural Expressionism (Modern German Expressionism-inspired)",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The boy keeps climbing, parkouring his way toward higher and higher levels.",
@@ -1323,7 +1965,18 @@
           "note": "Midjourney images --profile dzk1sty"
         }
       ],
-      "curator_style_family": "expressionism",
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "architecture"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Arquitetura"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2079165785780691356"
     },
@@ -1335,7 +1988,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-21",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2079524905243303936/img/Q-jCA7KRImnpFmQR.jpg",
-      "style_name": "Genndy Tartakovsky's style",
+      "style_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "curator_display_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "source_style_name": "Genndy Tartakovsky's style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Before every landing, there always has to be an epic one-shot camera sequence aboard the pirate ship.",
@@ -1366,7 +2023,16 @@
           "note": null
         }
       ],
-      "curator_style_family": "tartakovsky",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": "028",
+      "curator_tags": [
+        "animation-2d"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2079525235771244972"
     },
@@ -1379,6 +2045,10 @@
       "date_utc": "2026-07-22",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2079889178243002368/img/1gHV6Qz-8QzESQeD.jpg",
       "style_name": "90s anime style",
+      "curator_display_name": "90s anime style",
+      "source_style_name": "90s anime style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "TENET isn't about playing a video backward. It's about making reverse motion feel like the natural law of the world.",
@@ -1402,7 +2072,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "90s-anime",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "anime-manga",
+        "retro"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Anime e mangá",
+        "Retrô"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2079889868319330489"
     },
@@ -1414,7 +2097,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-23",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2080250358878924800/img/2fuE-lHz_IrnlWbt.jpg",
-      "style_name": "Mixed",
+      "style_name": "Painterly 3D and Papercraft Fantasy",
+      "curator_display_name": "Painterly 3D and Papercraft Fantasy",
+      "source_style_name": "Mixed",
+      "source_style_name_status": "published_generic",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Paint Boy vs. the Paper Kingdom",
@@ -1439,7 +2126,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "mixed-paint",
+      "curator_style_family": "hybrid-experimental",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "hybrid",
+        "paper-craft",
+        "painterly",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Híbrido",
+        "Papel",
+        "Pictórico",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2080250614181970430"
     },
@@ -1452,6 +2154,10 @@
       "date_utc": "2026-07-24",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2080615075338227712/img/JcWtz3Q9Lo_Brgd9.jpg",
       "style_name": "1990s American superhero cartoon",
+      "curator_display_name": "1990s American superhero cartoon",
+      "source_style_name": "1990s American superhero cartoon",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Is this really just a playful game between an astronaut and a robot dog?",
@@ -1483,7 +2189,18 @@
           "note": "Midjourney images --profile dzk1sty"
         }
       ],
-      "curator_style_family": "90s-cartoon",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "retro"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Retrô"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2080615217222889873"
     },
@@ -1495,7 +2212,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-25",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2080961833293541377/img/g8p9niY9bsDKLuVd.jpg",
-      "style_name": "Same as day 14",
+      "style_name": "Classic European Fairy-Tale Illustration",
+      "curator_display_name": "Classic European Fairy-Tale Illustration",
+      "source_style_name": "Same as day 14",
+      "source_style_name_status": "reference",
+      "source_style_reference_day": 14,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A mysterious room. A haunted mirror. And a few more plot twists.",
@@ -1539,7 +2260,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "fairy-tale",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": "014",
+      "curator_tags": [
+        "storybook",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "source_reference",
+      "curator_confidence": "high",
       "curator_notes": "Estilo = dia 14.",
       "open_on_x": "https://x.com/NVTDanh/status/2080973838289092871"
     },
@@ -1551,7 +2283,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-26",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2081319820499546112/img/yCOhJvmqATq737dg.jpg",
-      "style_name": "Modern Ukiyo-e Illustration ++",
+      "style_name": "Modern Ukiyo-e Illustration",
+      "curator_display_name": "Modern Ukiyo-e Illustration",
+      "source_style_name": "Modern Ukiyo-e Illustration ++",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Is the old artist really the one painting these masterpieces... or does someone quietly finish them every night after he falls asleep?",
@@ -1583,7 +2319,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "ukiyo-e",
+      "curator_style_family": "folk-traditional",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "folk-art",
+        "painterly",
+        "cultural-tradition"
+      ],
+      "curator_tag_labels": [
+        "Arte popular",
+        "Pictórico",
+        "Tradição cultural"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2081336225802441005"
     },
@@ -1596,6 +2345,10 @@
       "date_utc": "2026-07-27",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2081668642601877504/img/XpxJLFOi0flFuSfp.jpg",
       "style_name": "A stylized low-poly illustration blended with multiple artistic styles",
+      "curator_display_name": "A stylized low-poly illustration blended with multiple artistic styles",
+      "source_style_name": "A stylized low-poly illustration blended with multiple artistic styles",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Episode 1 — Two muscular fishermen battle over a giant great white shark.",
@@ -1620,7 +2373,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "low-poly",
+      "curator_style_family": "hybrid-experimental",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "hybrid",
+        "low-poly",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Híbrido",
+        "Low-poly",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2081698613638676484"
     },
@@ -1632,7 +2398,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-28",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2082068207700246528/img/1HIhuwQ8PozWjX0A.jpg",
-      "style_name": "(I don't know)",
+      "style_name": "Stylized 3D Martial-Arts Animation",
+      "curator_display_name": "Stylized 3D Martial-Arts Animation",
+      "source_style_name": "(I don't know)",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Practice makes perfect. But perfection creates either a legend... or a monster.",
@@ -1670,7 +2440,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d",
+        "painterly",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D",
+        "Pictórico",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2082069155277398400"
     },
@@ -1683,6 +2466,10 @@
       "date_utc": "2026-07-29",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2082432342304673792/img/oLaRo3pi0ihf4x-T.jpg",
       "style_name": "Stylized Digital Painting",
+      "curator_display_name": "Stylized Digital Painting",
+      "source_style_name": "Stylized Digital Painting",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Fantasy battles and epic action sequences set against grand, breathtaking backdrops always give us a sense of excitement.",
@@ -1706,7 +2493,24 @@
           "note": null
         }
       ],
-      "curator_style_family": "digital-painting",
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "painterly",
+        "fantasy",
+        "cinematic",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Pictórico",
+        "Fantasia",
+        "Cinematográfico",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2082433708574064891"
     },
@@ -1718,7 +2522,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-30",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2082786962109526016/img/9-Z1bCnti-DByQrM.jpg",
-      "style_name": "...",
+      "style_name": "Ghibli-Inspired Hand-Painted Animation",
+      "curator_display_name": "Ghibli-Inspired Hand-Painted Animation",
+      "source_style_name": "...",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "Ghibli-inspired hand-painted animation, soft watercolor textures, warm golden-hour lighting, whimsical adventure, cinematic composition, lush natural environments, expressive animation, smooth camera movement, feature animation quality",
       "logline": "MiniMaxH3 feels like a kite soaring high in the sky. You can't help but reach for it.",
@@ -1756,7 +2564,20 @@
           "note": "MJ v7 images on HailuoAI"
         }
       ],
-      "curator_style_family": "ghibli-handpainted",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "painterly",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Pictórico",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "published_prompt",
+      "curator_confidence": "high",
       "curator_notes": "O post-heroi nao nomeia o estilo; o reply publica o bloco Ghibli.",
       "open_on_x": "https://x.com/NVTDanh/status/2082787311818010979"
     },
@@ -1769,6 +2590,10 @@
       "date_utc": "2026-07-30",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2083008829181341697/img/TGQzc16wP4JjyCK_.jpg",
       "style_name": "Needle-felt art style",
+      "curator_display_name": "Needle-felt art style",
+      "source_style_name": "Needle-felt art style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "No storyboard. No keyframes. Just one reference image and an endless underwater journey.",
@@ -1792,7 +2617,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "needle-felt",
+      "curator_style_family": "craft-stop-motion",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "handcrafted",
+        "textile"
+      ],
+      "curator_tag_labels": [
+        "Feito à mão",
+        "Têxtil e feltro"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Day 41.5",
       "open_on_x": "https://x.com/NVTDanh/status/2083011011519627554"
     },
@@ -1804,7 +2640,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-07-31",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2083159044165140480/img/k2Har_7gh5xlNZ5m.jpg",
-      "style_name": "...",
+      "style_name": "Cinematic 3D Medieval Fantasy",
+      "curator_display_name": "Cinematic 3D Medieval Fantasy",
+      "source_style_name": "...",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Another mysterious letter must be delivered safely into the princess's hands. But what secret does it hold?",
@@ -1829,7 +2669,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "medieval-chase",
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "cinematic",
+        "fantasy",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Cinematográfico",
+        "Fantasia",
+        "Ação"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": "Estilo não nomeado.",
       "open_on_x": "https://x.com/NVTDanh/status/2083159160284467472"
     },
@@ -1841,7 +2696,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-01",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2083389835218460672/img/8C-NSeFpHY7ZMjL2.jpg",
-      "style_name": "Claymation (video 1) and Stylized 3D animated feature film style (video 2)",
+      "style_name": "Claymation and Stylized 3D Animation",
+      "curator_display_name": "Claymation and Stylized 3D Animation",
+      "source_style_name": "Claymation (video 1) and Stylized 3D animated feature film style (video 2)",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Thank you for bringing us this amazing experience!",
@@ -1865,7 +2724,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "claymation-3d",
+      "curator_style_family": "hybrid-experimental",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "hybrid",
+        "claymation",
+        "cinematic"
+      ],
+      "curator_tag_labels": [
+        "Híbrido",
+        "Massinha",
+        "Cinematográfico"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2083496208430137353"
     },
@@ -1878,6 +2750,10 @@
       "date_utc": "2026-08-02",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2083834070900105216/img/7FTqqTyhTNc1hK1V.jpg",
       "style_name": "Whimsical storybook illustration",
+      "curator_display_name": "Whimsical storybook illustration",
+      "source_style_name": "Whimsical storybook illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Dance belongs to everyone.",
@@ -1909,7 +2785,16 @@
           "note": "MJ v8 images"
         }
       ],
-      "curator_style_family": "whimsical-storybook",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2083874199198965922"
     },
@@ -1922,6 +2807,10 @@
       "date_utc": "2026-08-03",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084239115898531840/img/S4ymS3SBaMJE8HWQ.jpg",
       "style_name": "Painterly Storybook Fantasy",
+      "curator_display_name": "Painterly Storybook Fantasy",
+      "source_style_name": "Painterly Storybook Fantasy",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A boy rides an old dragon straight into the demon citadel... But his true objective is far greater than defeating the demons.",
@@ -1959,7 +2848,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "painterly",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Pictórico",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2084240775794352372"
     },
@@ -1972,6 +2874,10 @@
       "date_utc": "2026-08-04",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084598927421235200/img/v6gxvQlW7wXYkKnv.jpg",
       "style_name": "Pen-and-ink sketch",
+      "curator_display_name": "Pen-and-ink sketch",
+      "source_style_name": "Pen-and-ink sketch",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Still the Boy Commander… but this time, he's fighting an impossible battle to protect the last stronghold.",
@@ -1995,7 +2901,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "pen-ink",
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "ink-drawing",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Tinta e desenho",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2084599801740714452"
     },
@@ -2007,7 +2926,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-05",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2084962720940699648/img/L73vhWwEGm_B8Zvg.jpg",
-      "style_name": "...",
+      "style_name": "Cinematic Police-Action Realism",
+      "curator_display_name": "Cinematic Police-Action Realism",
+      "source_style_name": "...",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Tactical formations. Coordinated takedowns. Iconic action-movie moments.",
@@ -2037,7 +2960,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "action-movie",
+      "curator_style_family": "cinematic-live-action",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "cinematic",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Cinematográfico",
+        "Ação"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": "Estilo não nomeado.",
       "open_on_x": "https://x.com/NVTDanh/status/2084963116723654713"
     },
@@ -2049,7 +2983,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-06",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2085321824913825793/img/tLEUvutsaBAnKudK.jpg",
-      "style_name": "Same as day 28",
+      "style_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "curator_display_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "source_style_name": "Same as day 28",
+      "source_style_name_status": "reference",
+      "source_style_reference_day": 28,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The battle between justice and the invaders. Villagers vs. pirates. The Full Episode.",
@@ -2080,7 +3018,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "tartakovsky",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": "028",
+      "curator_tags": [
+        "animation-2d",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_reference",
+      "curator_confidence": "high",
       "curator_notes": "Estilo declarado como o do dia 28 (Genndy Tartakovsky, cf. dia 32).",
       "open_on_x": "https://x.com/NVTDanh/status/2085322156150604267"
     },
@@ -2093,6 +3042,10 @@
       "date_utc": "2026-08-07",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2085683625161539584/img/Qv4y6Tp-Yxt0X2c4.jpg",
       "style_name": "Black-and-white ink illustration + Tim Burton-inspired proportions",
+      "curator_display_name": "Black-and-white ink illustration + Tim Burton-inspired proportions",
+      "source_style_name": "Black-and-white ink illustration + Tim Burton-inspired proportions",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A mysterious cowboy... What is he doing here? What town is this?",
@@ -2117,7 +3070,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "burton-ink",
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "ink-drawing"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Tinta e desenho"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2085685132640583950"
     },
@@ -2130,6 +3094,10 @@
       "date_utc": "2026-08-08",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2086033824488837121/img/h7ZdvCHPxsH254_k.jpg",
       "style_name": "Whimsical hand-drawn fantasy concept art, ink and watercolor illustration",
+      "curator_display_name": "Whimsical hand-drawn fantasy concept art, ink and watercolor illustration",
+      "source_style_name": "Whimsical hand-drawn fantasy concept art, ink and watercolor illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "There's a fun little survival story ahead with a few twists along the way.",
@@ -2153,7 +3121,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "ink-watercolor",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "watercolor",
+        "ink-drawing",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Aquarela",
+        "Tinta e desenho",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Nome do estilo veio truncado com reticências no post.",
       "open_on_x": "https://x.com/NVTDanh/status/2086034685302554822"
     },
@@ -2165,7 +3148,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-09",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2086390531941445632/img/BXqDGY0YpvTUxO6e.jpg",
-      "style_name": "...",
+      "style_name": "Kids’ Drawing Style",
+      "curator_display_name": "Kids’ Drawing Style",
+      "source_style_name": "...",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Back to the kids' drawing style.",
@@ -2189,7 +3176,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "kids-drawing",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "ink-drawing",
+        "children"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Tinta e desenho",
+        "Infantil"
+      ],
+      "curator_naming_basis": "source_context",
+      "curator_confidence": "high",
       "curator_notes": "Estilo não nomeado no post.",
       "open_on_x": "https://x.com/NVTDanh/status/2086399591386390809"
     },
@@ -2202,6 +3202,10 @@
       "date_utc": "2026-08-10",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2086773315734233088/img/dkTZyFhuKgpnBMkq.jpg",
       "style_name": "Chinese Mythical Fantasy Animation",
+      "curator_display_name": "Chinese Mythical Fantasy Animation",
+      "source_style_name": "Chinese Mythical Fantasy Animation",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A mysterious masked stranger rescues a princess from a tower high above.",
@@ -2244,7 +3248,22 @@
           "note": "Reply de prompt existe no fio; URL não capturada nesta leva."
         }
       ],
-      "curator_style_family": "chinese-mythic",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "cultural-tradition",
+        "fantasy",
+        "mythology"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Tradição cultural",
+        "Fantasia",
+        "Mitologia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2086774974921200055"
     },
@@ -2257,6 +3276,10 @@
       "date_utc": "2026-08-11",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2087135063117070336/img/NOb0z_G4_UeYrGg2.jpg",
       "style_name": "Claymation art style",
+      "curator_display_name": "Claymation art style",
+      "source_style_name": "Claymation art style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Saving the world one mouse click at a time, why not?",
@@ -2293,7 +3316,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "claymation",
+      "curator_style_family": "craft-stop-motion",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "handcrafted",
+        "claymation"
+      ],
+      "curator_tag_labels": [
+        "Feito à mão",
+        "Massinha"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2087136406334484716"
     },
@@ -2306,6 +3340,10 @@
       "date_utc": "2026-08-12",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2087506891874426880/img/ht_I3--u8piPj-zg.jpg",
       "style_name": "Painterly Low-Poly Comic Art",
+      "curator_display_name": "Painterly Low-Poly Comic Art",
+      "source_style_name": "Painterly Low-Poly Comic Art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The city is falling into chaos. Police close in. The crowd fights back.",
@@ -2335,7 +3373,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "low-poly-comic",
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "painterly",
+        "low-poly",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Pictórico",
+        "Low-poly",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2087507979969220810"
     },
@@ -2347,7 +3400,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-13",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2087860895619878912/img/5sUZPKU3FmAAyC_-.jpg",
-      "style_name": "...",
+      "style_name": "Stylized 3D Martial-Arts Animation",
+      "curator_display_name": "Stylized 3D Martial-Arts Animation",
+      "source_style_name": "...",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Training with the boy before he takes on a much tougher real challenge.",
@@ -2386,7 +3443,16 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": "O autor não nomeou o estilo neste dia.",
       "open_on_x": "https://x.com/NVTDanh/status/2087861876541833396"
     },
@@ -2399,6 +3465,10 @@
       "date_utc": "2026-08-14",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2088225308868857856/img/6o1_HeUprNbUlp2l.jpg",
       "style_name": "Stylized 2D hand-painted storybook animation",
+      "curator_display_name": "Stylized 2D hand-painted storybook animation",
+      "source_style_name": "Stylized 2D hand-painted storybook animation",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "modern Western animation character design, painterly gouache texture, bold graphic shapes, minimal linework, warm cinematic colors, expressive proportions, handcrafted illustration feel (for Midjourney)",
       "logline": "A young Greek man saves a princess on the streets of ancient China… but what are they doing here?",
@@ -2434,7 +3504,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "storybook-2d",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "painterly",
+        "storybook"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Pictórico",
+        "Livro ilustrado"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Prompt chinês mencionado; texto do prompt de vídeo não capturado.",
       "open_on_x": "https://x.com/NVTDanh/status/2088226323651244171"
     },
@@ -2446,7 +3529,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-15",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2088580955292471296/img/7RFTVoSNW515nMEM.jpg",
-      "style_name": "....",
+      "style_name": "Stylized Low-Poly Fantasy Animation",
+      "curator_display_name": "Stylized Low-Poly Fantasy Animation",
+      "source_style_name": "....",
+      "source_style_name_status": "unnamed",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A little mage, hundreds of wandering spirits, and one goal — keep climbing. Higher. Higher. Higher. Something is waiting at the top.",
@@ -2484,7 +3571,20 @@
           "note": null
         }
       ],
-      "curator_style_family": null,
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d",
+        "fantasy",
+        "dark-fantasy"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D",
+        "Fantasia",
+        "Fantasia sombria"
+      ],
+      "curator_naming_basis": "curator_inference",
+      "curator_confidence": "medium",
       "curator_notes": "O autor não nomeou o estilo neste dia.",
       "open_on_x": "https://x.com/NVTDanh/status/2088583983168725003"
     },
@@ -2497,6 +3597,10 @@
       "date_utc": "2026-08-16",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2088947258935177216/img/XlxRdzURarhtXa5Q.jpg",
       "style_name": "Stylized Claymation + 3D animated caricature",
+      "curator_display_name": "Stylized Claymation + 3D animated caricature",
+      "source_style_name": "Stylized Claymation + 3D animated caricature",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "This style combined with the music makes everything feel a lot funnier, even though the battle itself is pretty intense.",
@@ -2526,7 +3630,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "claymation",
+      "curator_style_family": "craft-stop-motion",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "handcrafted",
+        "claymation",
+        "action",
+        "caricature"
+      ],
+      "curator_tag_labels": [
+        "Feito à mão",
+        "Massinha",
+        "Ação",
+        "Caricatura"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2088948534532018249"
     },
@@ -2539,6 +3658,10 @@
       "date_utc": "2026-08-17",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2089322357156638721/img/uK5YviB2xS4w0jUC.jpg",
       "style_name": "Retro Editorial Cartoon / Mid-Century Storybook Illustration",
+      "curator_display_name": "Retro Editorial Cartoon / Mid-Century Storybook Illustration",
+      "source_style_name": "Retro Editorial Cartoon / Mid-Century Storybook Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Escaping from a maximum-security prison is never easy. And surviving after the escape? That might be even harder.",
@@ -2569,7 +3692,20 @@
           "note": "Autor disse no fio que não tem um prompt exato por causa da edição."
         }
       ],
-      "curator_style_family": "editorial-cartoon",
+      "curator_style_family": "editorial-poster",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "editorial",
+        "storybook",
+        "retro"
+      ],
+      "curator_tag_labels": [
+        "Editorial",
+        "Livro ilustrado",
+        "Retrô"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2089322509263073784"
     },
@@ -2582,6 +3718,10 @@
       "date_utc": "2026-08-18",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2089674574506110976/img/SUxvWrZdd5KexlG4.jpg",
       "style_name": "Whimsical hand-painted storybook illustration",
+      "curator_display_name": "Whimsical hand-painted storybook illustration",
+      "source_style_name": "Whimsical hand-painted storybook illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "stylized animation concept art, exaggerated caricature proportions, angular imperfect shapes, loose expressive brushwork, gouache texture, vibrant Mediterranean colors, quirky handcrafted aesthetic (for Midjourney prompt)",
       "logline": "Day 60 and today I decided to take it easy and have some fun with a few weird and quirky movements.",
@@ -2605,7 +3745,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "whimsical-storybook",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "painterly"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Pictórico"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2089675418878329009"
     },
@@ -2618,6 +3769,10 @@
       "date_utc": "2026-08-19",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2090037675566997504/img/T3XQpHa9TujhyYBO.jpg",
       "style_name": "Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk",
+      "curator_display_name": "Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk",
+      "source_style_name": "Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The characters are already there. The worlds are already built. Now you bring the imagination.",
@@ -2645,7 +3800,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "scifi-graphic-novel",
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "anime-manga",
+        "sci-fi"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Anime e mangá",
+        "Ficção científica"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Post é anúncio/remix no Showrunner, não nomeia ferramenta de vídeo.",
       "open_on_x": "https://x.com/NVTDanh/status/2090039532016296314"
     },
@@ -2658,6 +3826,10 @@
       "date_utc": "2026-08-20",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2090400705131708416/img/u7T2sohpAEc0GtH1.jpg",
       "style_name": "Stylized Arabian Folk Art / Modernist Storybook Illustration",
+      "curator_display_name": "Stylized Arabian Folk Art / Modernist Storybook Illustration",
+      "source_style_name": "Stylized Arabian Folk Art / Modernist Storybook Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A mysterious courier rides a magic carpet through the city, carrying countless letters—and countless secrets.",
@@ -2689,7 +3861,20 @@
           "note": "Reply de prompt existe no fio; URL não capturada nesta leva."
         }
       ],
-      "curator_style_family": "arabian-folk",
+      "curator_style_family": "folk-traditional",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "folk-art",
+        "storybook",
+        "cultural-tradition"
+      ],
+      "curator_tag_labels": [
+        "Arte popular",
+        "Livro ilustrado",
+        "Tradição cultural"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2090400991002952027"
     },
@@ -2702,6 +3887,10 @@
       "date_utc": "2026-08-21",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2090811991367852032/img/b14hqU7XwQMXQFrY.jpg",
       "style_name": "Rough Blue-Pencil Animation Concept Art",
+      "curator_display_name": "Rough Blue-Pencil Animation Concept Art",
+      "source_style_name": "Rough Blue-Pencil Animation Concept Art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "What if your paper friends could take you anywhere?",
@@ -2739,7 +3928,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "blue-pencil",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "paper-craft"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Papel"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Sem bloco de estilo entre parênteses neste post.",
       "open_on_x": "https://x.com/NVTDanh/status/2090813051377217553"
     },
@@ -2751,7 +3951,11 @@
       "source_review": "reviewed",
       "date_utc": "2026-08-22",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2091092179133558784/img/PBHc0ZpgzLQGkHMQ.jpg",
-      "style_name": "5 Styles Converge",
+      "style_name": "Five-Style Visual Mashup",
+      "curator_display_name": "Five-Style Visual Mashup",
+      "source_style_name": "5 Styles Converge",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Today, some of the representative characters and styles from my journey finally come together.",
@@ -2789,7 +3993,16 @@
           "note": null
         }
       ],
-      "curator_style_family": "mashup",
+      "curator_style_family": "hybrid-experimental",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "hybrid"
+      ],
+      "curator_tag_labels": [
+        "Híbrido"
+      ],
+      "curator_naming_basis": "curator_normalization",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2091114406839251020"
     },
@@ -2802,6 +4015,10 @@
       "date_utc": "2026-08-23",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2091475715015487488/img/pCoWNmHeH9LVK676.jpg",
       "style_name": "Art Nouveau Manga Fusion",
+      "curator_display_name": "Art Nouveau Manga Fusion",
+      "source_style_name": "Art Nouveau Manga Fusion",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A deserted island. No help. No way out. Just survive.",
@@ -2826,7 +4043,20 @@
           "note": null
         }
       ],
-      "curator_style_family": "art-nouveau-manga",
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "anime-manga",
+        "hybrid"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Anime e mangá",
+        "Híbrido"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2091480574758388129"
     },
@@ -2839,6 +4069,10 @@
       "date_utc": "2026-08-24",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2091845910800261121/img/XS15puRiGdlbT_gp.jpg",
       "style_name": "Painterly Retro Mecha",
+      "curator_display_name": "Painterly Retro Mecha",
+      "source_style_name": "Painterly Retro Mecha",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "Inspired by 1980s–90s Japanese sci-fi concept art, with crisp mechanical linework, rough hand-painted textures, angular armor and a muted retro palette",
       "logline": "World War IV. Cities have become battlefields, the skies belong to drone armies, and giant war machines are humanity's last weapons.",
@@ -2869,7 +4103,24 @@
           "note": "Prompt 1 e 2 no fio; URLs nao capturadas."
         }
       ],
-      "curator_style_family": "retro-mecha",
+      "curator_style_family": "concept-art-painting",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "concept-art",
+        "painterly",
+        "sci-fi",
+        "retro",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Concept art",
+        "Pictórico",
+        "Ficção científica",
+        "Retrô",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2091846853751181717"
     },
@@ -2882,6 +4133,10 @@
       "date_utc": "2026-08-25",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2092210645974560768/img/N_lWZHS0psY1yIqF.jpg",
       "style_name": "Stylized Chinese Folklore Animation",
+      "curator_display_name": "Stylized Chinese Folklore Animation",
+      "source_style_name": "Stylized Chinese Folklore Animation",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Have you ever watched a Jiangshi movie?",
@@ -2917,7 +4172,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "chinese-folklore",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "folk-art",
+        "cultural-tradition",
+        "mythology"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Arte popular",
+        "Tradição cultural",
+        "Mitologia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2092211509451485239"
     },
@@ -2930,6 +4200,10 @@
       "date_utc": "2026-08-26",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2092579038581923840/img/wijpD4QJmThLlgNP.jpg",
       "style_name": "Rustic Dark Folklore Storybook Illustration",
+      "curator_display_name": "Rustic Dark Folklore Storybook Illustration",
+      "source_style_name": "Rustic Dark Folklore Storybook Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The fiercest battles sometimes begin for the simplest reasons.",
@@ -2967,7 +4241,24 @@
           "note": null
         }
       ],
-      "curator_style_family": "dark-folklore",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "folk-art",
+        "dark-fantasy",
+        "action",
+        "mythology"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Arte popular",
+        "Fantasia sombria",
+        "Ação",
+        "Mitologia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2092580264476319791"
     },
@@ -2980,6 +4271,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -2988,6 +4283,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": "Nenhum post Day 69/100 encontrado na serie.",
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3000,6 +4300,10 @@
       "date_utc": "2026-08-27",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2092931703329468416/img/nuNnBPc2YPPzMxpU.jpg",
       "style_name": "Stylized Mediterranean Mythic Storybook illustration",
+      "curator_display_name": "Stylized Mediterranean Mythic Storybook illustration",
+      "source_style_name": "Stylized Mediterranean Mythic Storybook illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "clean simplified shapes, expressive hand-drawn linework, painterly gouache texture, warm ivory and terracotta against deep navy and pale blue, strong Mediterranean sunlight, elegant 2D animation concept-art aesthetic",
       "logline": "Today, he's learning to fly with his wax-and-feather wings alongside his father, Daedalus.",
@@ -3049,7 +4353,22 @@
           "note": "Versão live-action prometida nos comentários — não capturada nesta leva."
         }
       ],
-      "curator_style_family": "mediterranean-mythic",
+      "curator_style_family": "storybook-illustration",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "storybook",
+        "cultural-tradition",
+        "fantasy",
+        "mythology"
+      ],
+      "curator_tag_labels": [
+        "Livro ilustrado",
+        "Tradição cultural",
+        "Fantasia",
+        "Mitologia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2092933336679502290"
     },
@@ -3062,6 +4381,10 @@
       "date_utc": "2026-08-28",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2093229171208249344/img/cZ0zJjsLLG1vntjo.jpg",
       "style_name": "Dark Deco x Ancient Mexica",
+      "curator_display_name": "Dark Deco x Ancient Mexica",
+      "source_style_name": "Dark Deco x Ancient Mexica",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "The Fall of the Aztecs. Ancient empires. Alien civilizations.",
@@ -3098,7 +4421,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "dark-deco",
+      "curator_style_family": "editorial-poster",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "editorial",
+        "geometric",
+        "cultural-tradition",
+        "dark-fantasy"
+      ],
+      "curator_tag_labels": [
+        "Editorial",
+        "Geométrico",
+        "Tradição cultural",
+        "Fantasia sombria"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2093278164726206888"
     },
@@ -3111,6 +4449,10 @@
       "date_utc": "2026-08-29",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2093641749612945408/img/TCVkN1YxyqpbAm2O.jpg",
       "style_name": "Stylized Low-Poly Painterly Fantasy",
+      "curator_display_name": "Stylized Low-Poly Painterly Fantasy",
+      "source_style_name": "Stylized Low-Poly Painterly Fantasy",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "faceted geometric shapes, painterly textures, stylized fantasy animation, simplified angular forms, cinematic warm-cool lighting, whimsical dark fantasy game concept art",
       "logline": "THE FATEKEEPER is now available on the Showrunner iOS app.",
@@ -3134,7 +4476,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "low-poly-painterly",
+      "curator_style_family": "animation-3d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-3d",
+        "painterly",
+        "low-poly",
+        "fantasy"
+      ],
+      "curator_tag_labels": [
+        "Animação 3D",
+        "Pictórico",
+        "Low-poly",
+        "Fantasia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2093652380311269552"
     },
@@ -3147,6 +4504,10 @@
       "date_utc": "2026-08-30",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2094007690154622976/img/XblJkW-czQfLJbxC.jpg",
       "style_name": "Vintage Folk Editorial Illustration",
+      "curator_display_name": "Vintage Folk Editorial Illustration",
+      "source_style_name": "Vintage Folk Editorial Illustration",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "Mid-century European storybook art, whimsical caricature, hand-painted gouache, dry brush texture, rough ink lines, elongated proportions, flat bold colors, imperfect handmade shapes, retro children's book illustration.",
       "logline": "Don Quixote rides Sancho Panza's donkey into battle against a monster.",
@@ -3188,7 +4549,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "editorial-storybook",
+      "curator_style_family": "editorial-poster",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "editorial",
+        "folk-art",
+        "retro",
+        "action"
+      ],
+      "curator_tag_labels": [
+        "Editorial",
+        "Arte popular",
+        "Retrô",
+        "Ação"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Post não nomeia ferramenta.",
       "open_on_x": "https://x.com/NVTDanh/status/2094016026316800198"
     },
@@ -3201,6 +4577,10 @@
       "date_utc": "2026-08-31",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2094355631297986560/img/-tSV0veUZLc6VEMl.jpg",
       "style_name": "Chibi Style",
+      "curator_display_name": "Chibi Style",
+      "source_style_name": "Chibi Style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "First lesson for our young samurai: stay focused!",
@@ -3250,7 +4630,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "chibi",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "animation-2d",
+        "children"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Infantil"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Day 1 do Chibi; o dia 75a continua o treino.",
       "open_on_x": "https://x.com/NVTDanh/status/2094372125985407229"
     },
@@ -3263,6 +4654,10 @@
       "date_utc": "2026-09-01",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2094647350786756608/img/6esCf1cH69dDNtPU.jpg",
       "style_name": "Chibi Style",
+      "curator_display_name": "Chibi Style",
+      "source_style_name": "Chibi Style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": "(Day 2)",
       "prompt_published": null,
       "logline": "Our young warrior's training continues — this time, it's all about balance, focus, and staying calm under pressure.",
@@ -3319,7 +4714,18 @@
           "note": "Reply de prompt do autor não capturado nesta leva."
         }
       ],
-      "curator_style_family": "chibi",
+      "curator_style_family": "animation-2d",
+      "curator_canonical_style_id": "074",
+      "curator_tags": [
+        "animation-2d",
+        "children"
+      ],
+      "curator_tag_labels": [
+        "Animação 2D",
+        "Infantil"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": "Variante a do dia 75. O autor declara que neste post não discute o estilo; o foco é o teaser e o treino de equilíbrio.",
       "open_on_x": "https://x.com/NVTDanh/status/2094726971607687347"
     },
@@ -3332,6 +4738,10 @@
       "date_utc": "2026-09-02",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2095108363034218496/img/JlXO58pGi0qN6w4L.jpg",
       "style_name": "Vietnamese Lacquer Storybook",
+      "curator_display_name": "Vietnamese Lacquer Storybook",
+      "source_style_name": "Vietnamese Lacquer Storybook",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "A little journey through Vietnam, painted in colors of home.",
@@ -3369,7 +4779,22 @@
           "note": null
         }
       ],
-      "curator_style_family": "lacquer-storybook",
+      "curator_style_family": "folk-traditional",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "folk-art",
+        "painterly",
+        "storybook",
+        "cultural-tradition"
+      ],
+      "curator_tag_labels": [
+        "Arte popular",
+        "Pictórico",
+        "Livro ilustrado",
+        "Tradição cultural"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2095108534879092801"
     },
@@ -3382,6 +4807,10 @@
       "date_utc": "2026-09-03",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2095469005956059136/img/BdfY5jQ5_iVOME2Q.jpg",
       "style_name": "Indian Mythic Folk Art",
+      "curator_display_name": "Indian Mythic Folk Art",
+      "source_style_name": "Indian Mythic Folk Art",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "Indian mythological art + folk illustration + flat geometric shapes + vintage editorial/storybook",
       "logline": "They set his tail on fire. He set the whole city on fire.",
@@ -3432,7 +4861,22 @@
           "note": "Reply de prompt do autor não capturado nesta leva."
         }
       ],
-      "curator_style_family": "folk-mythic",
+      "curator_style_family": "folk-traditional",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "folk-art",
+        "cultural-tradition",
+        "fantasy",
+        "mythology"
+      ],
+      "curator_tag_labels": [
+        "Arte popular",
+        "Tradição cultural",
+        "Fantasia",
+        "Mitologia"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2095469943508586957"
     },
@@ -3445,6 +4889,10 @@
       "date_utc": "2026-09-04",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2095835772305989632/img/k2T7nllmEY4TP7oj.jpg",
       "style_name": "Soviet Constructivist Poster Style",
+      "curator_display_name": "Soviet Constructivist Poster Style",
+      "source_style_name": "Soviet Constructivist Poster Style",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": "Strange buildings. Impossible roads. And an even stranger way to deliver mail — sometimes straight into thin air.",
@@ -3483,7 +4931,18 @@
           "note": null
         }
       ],
-      "curator_style_family": "constructivist",
+      "curator_style_family": "editorial-poster",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "editorial",
+        "poster"
+      ],
+      "curator_tag_labels": [
+        "Editorial",
+        "Pôster"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2095836788531368207"
     },
@@ -3496,6 +4955,10 @@
       "date_utc": "2026-09-05",
       "poster_url": "https://pbs.twimg.com/amplify_video_thumb/2096183270929285121/img/Z188lUIoeQDJimUy.jpg",
       "style_name": "Post-Apocalyptic Graphic Novel",
+      "curator_display_name": "Post-Apocalyptic Graphic Novel",
+      "source_style_name": "Post-Apocalyptic Graphic Novel",
+      "source_style_name_status": "published",
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": "Illustration stylized post-apocalyptic graphic novel illustration, angular elongated character design, sharp expressive silhouettes, hand-drawn ink linework, loose sketchy outlines, simplified geometric shapes, flat painterly color blocks, subtle rough brush texture, muted desaturated blue-gray and earthy palette, deep navy shadows, sparse warm amber highlights, restrained facial details, atmospheric retro sci-fi concept art, slightly weathered printed texture, cinematic composition",
       "logline": "A man, a dog, and a bunker they were never meant to find.",
@@ -3574,7 +5037,18 @@
           "note": "Reply de prompt do autor não capturado nesta leva."
         }
       ],
-      "curator_style_family": "graphic-novel",
+      "curator_style_family": "comics-graphic-novel",
+      "curator_canonical_style_id": null,
+      "curator_tags": [
+        "comics",
+        "dark-fantasy"
+      ],
+      "curator_tag_labels": [
+        "Quadrinhos",
+        "Fantasia sombria"
+      ],
+      "curator_naming_basis": "source_name",
+      "curator_confidence": "high",
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh/status/2096192870755819891"
     },
@@ -3587,6 +5061,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3595,6 +5073,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3607,6 +5090,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3615,6 +5102,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3627,6 +5119,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3635,6 +5131,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3647,6 +5148,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3655,6 +5160,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3667,6 +5177,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3675,6 +5189,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3687,6 +5206,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3695,6 +5218,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3707,6 +5235,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3715,6 +5247,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3727,6 +5264,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3735,6 +5276,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3747,6 +5293,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3755,6 +5305,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3767,6 +5322,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3775,6 +5334,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3787,6 +5351,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3795,6 +5363,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3807,6 +5380,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3815,6 +5392,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3827,6 +5409,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3835,6 +5421,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3847,6 +5438,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3855,6 +5450,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3867,6 +5467,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3875,6 +5479,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3887,6 +5496,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3895,6 +5508,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3907,6 +5525,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3915,6 +5537,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3927,6 +5554,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3935,6 +5566,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3947,6 +5583,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3955,6 +5595,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3967,6 +5612,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3975,6 +5624,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     },
@@ -3987,6 +5641,10 @@
       "date_utc": null,
       "poster_url": null,
       "style_name": null,
+      "curator_display_name": null,
+      "source_style_name": null,
+      "source_style_name_status": null,
+      "source_style_reference_day": null,
       "style_name_extra": null,
       "prompt_published": null,
       "logline": null,
@@ -3995,6 +5653,11 @@
       "inspiration": [],
       "thread": [],
       "curator_style_family": null,
+      "curator_canonical_style_id": null,
+      "curator_tags": [],
+      "curator_tag_labels": [],
+      "curator_naming_basis": null,
+      "curator_confidence": null,
       "curator_notes": null,
       "open_on_x": "https://x.com/NVTDanh"
     }

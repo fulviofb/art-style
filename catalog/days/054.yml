@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2087506891874426880/img/ht
 poster_source: x_video_thumb
 style:
   name: Painterly Low-Poly Comic Art
+  name_status: published
   prompt_published: null
 logline: The city is falling into chaos. Police close in. The crowd fights back.
 creator_notes: But what caused this uprising in the first place? Could AI somehow be involved?
@@ -25,5 +26,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: low-poly-comic
+  display_name: "Painterly Low-Poly Comic Art"
+  naming_basis: source_name
+  confidence: high
+  style_family: comics-graphic-novel
+  tags:
+    - comics
+    - painterly
+    - low-poly
+    - action
   notes: null

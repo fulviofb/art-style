@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2086033824488837121/img/h7
 poster_source: x_video_thumb
 style:
   name: Whimsical hand-drawn fantasy concept art, ink and watercolor illustration
+  name_status: published
   prompt_published: null
 logline: There's a fun little survival story ahead with a few twists along the way.
 creator_notes: >-
@@ -27,5 +28,13 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: ink-watercolor
+  display_name: "Whimsical hand-drawn fantasy concept art, ink and watercolor illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: storybook-illustration
+  tags:
+    - storybook
+    - watercolor
+    - ink-drawing
+    - fantasy
   notes: Nome do estilo veio truncado com reticências no post.

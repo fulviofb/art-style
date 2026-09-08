@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2079524905243303936/img/Q-
 poster_source: x_video_thumb
 style:
   name: Genndy Tartakovsky's style
+  name_status: published
   prompt_published: null
 logline: Before every landing, there always has to be an epic one-shot camera sequence aboard the pirate ship.
 creator_notes: Stay tuned for the full version. Images with Midjourney v7 on Flova.
@@ -26,5 +27,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: tartakovsky
+  display_name: "Genndy Tartakovsky–Inspired 2D Animation"
+  naming_basis: curator_normalization
+  confidence: high
+  canonical_style_id: "028"
+  style_family: animation-2d
+  tags:
+    - animation-2d
   notes: null

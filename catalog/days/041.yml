@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2082786962109526016/img/9-
 poster_source: x_video_thumb
 style:
   name: "..."
+  name_status: unnamed
   prompt_published: >-
     Ghibli-inspired hand-painted animation, soft watercolor textures, warm
     golden-hour lighting, whimsical adventure, cinematic composition, lush
@@ -37,5 +38,12 @@ thread:
     source_review: reviewed
     note: MJ v7 images on HailuoAI
 curator:
-  style_family: ghibli-handpainted
+  display_name: "Ghibli-Inspired Hand-Painted Animation"
+  naming_basis: published_prompt
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - painterly
+    - fantasy
   notes: O post-heroi nao nomeia o estilo; o reply publica o bloco Ghibli.

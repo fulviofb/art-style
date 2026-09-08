@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2094355631297986560/img/-t
 poster_source: x_video_thumb
 style:
   name: Chibi Style
+  name_status: published
   prompt_published: null
 logline: "First lesson for our young samurai: stay focused!"
 creator_notes: >-
@@ -35,5 +36,11 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: chibi
+  display_name: "Chibi Style"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - children
   notes: Day 1 do Chibi; o dia 75a continua o treino.

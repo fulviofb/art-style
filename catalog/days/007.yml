@@ -8,6 +8,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2070475664030117888/img/Xf
 poster_source: x_video_thumb
 style:
   name: "Digital Oil Painting"
+  name_status: published
   prompt_published: null
 logline: "Dance with me through endless worlds."
 creator_notes: null
@@ -28,5 +29,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Digital Oil Painting"
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - concept-art
+    - painterly
   notes: null

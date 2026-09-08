@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2087135063117070336/img/NO
 poster_source: x_video_thumb
 style:
   name: Claymation art style
+  name_status: published
   prompt_published: null
 logline: Saving the world one mouse click at a time, why not?
 creator_notes: >-
@@ -29,5 +30,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: claymation
+  display_name: "Claymation art style"
+  naming_basis: source_name
+  confidence: high
+  style_family: craft-stop-motion
+  tags:
+    - handcrafted
+    - claymation
   notes: null

@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2084962720940699648/img/L7
 poster_source: x_video_thumb
 style:
   name: "..."
+  name_status: unnamed
   prompt_published: null
 logline: Tactical formations. Coordinated takedowns. Iconic action-movie moments.
 creator_notes: Recreating classic police pursuit and arrest scenes with AI.
@@ -25,5 +26,11 @@ thread:
     embed: true
     source_review: reviewed
 curator:
-  style_family: action-movie
+  display_name: "Cinematic Police-Action Realism"
+  naming_basis: curator_inference
+  confidence: medium
+  style_family: cinematic-live-action
+  tags:
+    - cinematic
+    - action
   notes: Estilo não nomeado.

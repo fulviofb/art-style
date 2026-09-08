@@ -9,6 +9,7 @@ poster_url: https://pbs.twimg.com/amplify_video_thumb/2078414814880415744/img/SL
 poster_source: x_video_thumb
 style:
   name: ligne claire art style
+  name_status: published
   prompt_published: null
 logline: >-
   A young detective's TOP SECRET file is stolen by a pigeon... What could
@@ -32,5 +33,10 @@ thread:
     post_url: null
     source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "Ligne Claire Comic Art"
+  naming_basis: curator_normalization
+  confidence: high
+  style_family: comics-graphic-novel
+  tags:
+    - comics
   notes: null
