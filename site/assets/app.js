@@ -1,201 +1,99 @@
 import {
   filterStyleItems,
   groupStyleItems,
-  namingLabel,
   parseStyleState,
   serializeStyleState,
-  sourceDescription,
-} from "./style-index.mjs?v=14";
-
-const ROLE_LABEL = {
-  hero: "Vídeo no X",
-  midjourney_sheets: "Pranchas Midjourney",
-  prompt: "Prompt no X",
-  quote: "Inspiração citada",
-};
+} from "./style-index.mjs?v=15";
 
 async function loadCatalog() {
-  const res = await fetch("data/catalog.public.json?v=14", { cache: "no-store" });
-  if (!res.ok) throw new Error("Falha ao carregar o catálogo");
-  return res.json();
+  const response = await fetch("data/catalog.public.json?v=15", { cache: "no-store" });
+  if (!response.ok) throw new Error("Falha ao carregar a biblioteca");
+  return response.json();
 }
 
-function filledDays(catalog) {
-  return catalog.days
-    .filter((d) => d.source_review === "reviewed")
-    .sort((a, b) => Number(b.day) - Number(a.day) || String(b.variant || "").localeCompare(String(a.variant || "")));
+function escapeHtml(value) {
+  return String(value || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
-function toast(msg) {
-  let el = document.getElementById("toast");
-  if (!el) {
-    el = document.createElement("div");
-    el.id = "toast";
-    el.className = "toast";
-    document.body.appendChild(el);
-  }
-  el.textContent = msg;
-  el.classList.add("show");
-  clearTimeout(toast._t);
-  toast._t = setTimeout(() => el.classList.remove("show"), 1600);
-}
-
-async function copyText(text, label) {
-  if (!text) {
-    toast("Este dia ainda não tem prompt publicado");
-    return;
-  }
-  try {
-    await navigator.clipboard.writeText(text);
-    toast(label || "Copiado");
-  } catch {
-    toast("Não deu para copiar — selecione o texto");
-  }
-}
-
-function copyButton(text, shortLabel) {
-  const btn = document.createElement("button");
-  btn.type = "button";
-  btn.className = "copy";
-  btn.textContent = shortLabel || "Copiar prompt";
-  btn.disabled = !text;
-  if (!text) {
-    btn.classList.add("ghost");
-    btn.textContent = "Sem prompt";
-  }
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    copyText(text, "Prompt copiado");
-  });
-  return btn;
-}
-
-function still(url, alt) {
-  if (!url) return `<div class="hero-still media-fallback"><span>Mídia externa indisponível</span></div>`;
-  return `<img src="${escapeAttr(url)}" alt="${escapeAttr(alt || "")}" referrerpolicy="no-referrer" loading="lazy" decoding="async" width="1600" height="900">`;
+function still(url, alt, eager = false) {
+  if (!url) return '<div class="media-fallback"><span>Mídia externa indisponível</span></div>';
+  return `<img src="${escapeHtml(url)}" alt="${escapeHtml(alt)}" referrerpolicy="no-referrer" loading="${eager ? "eager" : "lazy"}" decoding="async" width="1600" height="900">`;
 }
 
 function installImageFallback() {
   document.addEventListener("error", (event) => {
     if (!(event.target instanceof HTMLImageElement)) return;
-    const container = event.target.closest(".style-card__image, .hero-still, .still");
-    if (!container) return;
-    container.classList.add("media-fallback");
-    container.innerHTML = "<span>Mídia externa indisponível</span>";
+    const frame = event.target.closest(".style-card__image, .style-hero__media, .example-card__media");
+    if (frame) frame.innerHTML = '<div class="media-fallback"><span>Mídia externa indisponível</span></div>';
   }, true);
 }
 
-function renderGallery(catalog) {
-  const root = document.getElementById("gallery");
-  if (!root) return;
-  const items = filledDays(catalog);
-  root.innerHTML = "";
-  for (const d of items) {
-    const a = document.createElement("a");
-    a.className = "card";
-    a.href = `dia.html?id=${encodeURIComponent(d.id)}`;
-    a.innerHTML = `
-      <div class="still">${still(d.poster_url, d.style_name)}</div>
-      <div class="body">
-        <div class="n">Dia ${escapeHtml(String(d.id))}</div>
-        <h2>${escapeHtml(d.style_name || "sem nome")}</h2>
-        <p>${escapeHtml(d.logline || "")}</p>
-      </div>
-    `;
-    const actions = document.createElement("div");
-    actions.className = "actions";
-    actions.appendChild(copyButton(d.prompt_published));
-    a.querySelector(".body").appendChild(actions);
-    root.appendChild(a);
+function toast(message) {
+  let element = document.getElementById("toast");
+  if (!element) {
+    element = document.createElement("div");
+    element.id = "toast";
+    element.className = "toast";
+    document.body.appendChild(element);
+  }
+  element.textContent = message;
+  element.classList.add("show");
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => element.classList.remove("show"), 1600);
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("Prompt copiado");
+  } catch {
+    toast("Não foi possível copiar — selecione o texto");
   }
 }
 
-function renderTicks(catalog) {
-  const root = document.getElementById("ticks");
-  if (!root) return;
-  const map = new Map();
-  for (const d of filledDays(catalog)) {
-    if (!map.has(Number(d.day))) map.set(Number(d.day), d);
-  }
-  const planned = catalog.planned_days || 100;
-  const frag = document.createDocumentFragment();
-  for (let n = 1; n <= planned; n++) {
-    const d = map.get(n);
-    if (d) {
-      const a = document.createElement("a");
-      a.href = `dia.html?id=${encodeURIComponent(d.id)}`;
-      a.title = `${n} — ${d.style_name || ""}`;
-      frag.appendChild(a);
-    } else {
-      const s = document.createElement("span");
-      s.title = String(n);
-      frag.appendChild(s);
-    }
-  }
-  root.innerHTML = "";
-  root.appendChild(frag);
+function metricText(style) {
+  const references = `${style.example_count} ${style.example_count === 1 ? "referência" : "referências"}`;
+  if (!style.recipe_count) return references;
+  return `${references} · ${style.recipe_count} ${style.recipe_count === 1 ? "receita" : "receitas"}`;
 }
 
-function familyLookup(catalog) {
-  return new Map((catalog.style_taxonomy?.families || []).map((item) => [item.id, item]));
-}
-
-function sourceEvidence(d) {
-  const label = namingLabel(d.curator_naming_basis);
-  const source = sourceDescription(d);
-  const canonical = d.curator_canonical_style_id
-    ? `Mesma linguagem visual do dia ${escapeHtml(d.curator_canonical_style_id)}.`
-    : "";
-  if (!label && !source && !canonical) return "";
-  return `<div class="style-card__provenance">
-    ${label ? `<span>${escapeHtml(label)}</span>` : ""}
-    ${source ? `<small>${escapeHtml(source)}</small>` : ""}
-    ${canonical ? `<small>${canonical}</small>` : ""}
-  </div>`;
-}
-
-function styleCard(d, families) {
-  const family = families.get(d.curator_style_family);
-  const tags = (d.curator_tag_labels || []).slice(0, 4);
-  return `<a class="style-card" href="dia.html?id=${encodeURIComponent(d.id)}">
-    <div class="style-card__image">${still(d.poster_url, d.curator_display_name || d.style_name)}</div>
+function styleCard(style) {
+  const tags = (style.tag_labels || []).slice(0, 4);
+  return `<a class="style-card" href="estilo.html?id=${encodeURIComponent(style.slug)}">
+    <div class="style-card__image">${still(style.poster_url, style.display_name)}</div>
     <div class="style-card__body">
-      <div class="style-card__eyebrow"><span>Dia ${escapeHtml(String(d.id))}</span><span>${escapeHtml(family?.label_pt || "")}</span></div>
-      <h3>${escapeHtml(d.curator_display_name || d.style_name || "Estilo sem nome")}</h3>
-      ${sourceEvidence(d)}
+      <div class="style-card__eyebrow"><span>${escapeHtml(style.family_label)}</span><span>${escapeHtml(metricText(style))}</span></div>
+      <h3>${escapeHtml(style.display_name)}</h3>
       ${tags.length ? `<div class="style-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
     </div>
   </a>`;
 }
 
-function renderStyleIndex(catalog) {
+function renderExplore(catalog) {
   const root = document.getElementById("styles");
   if (!root) return;
   const input = document.getElementById("style-search");
   const clear = document.getElementById("style-search-clear");
   const filters = document.getElementById("style-filters");
   const status = document.getElementById("style-result-status");
-  const items = filledDays(catalog);
-  const familyList = catalog.style_taxonomy?.families || [];
-  const families = familyLookup(catalog);
+  const items = catalog.styles || [];
+  const families = catalog.style_taxonomy?.families || [];
   const initial = parseStyleState(new URLSearchParams(location.search));
-  let activeFamily = familyList.some((family) => family.id === initial.family) ? initial.family : "all";
+  let activeFamily = families.some((family) => family.id === initial.family) ? initial.family : "all";
   if (input) input.value = initial.query;
 
-  function updateUrl(query) {
-    const params = serializeStyleState({ query, family: activeFamily });
-    const next = `${location.pathname}${params.toString() ? `?${params}` : ""}${location.hash}`;
-    history.replaceState(null, "", next);
-  }
-
+  const counts = new Map(families.map((family) => [family.id, items.filter((style) => style.family === family.id).length]));
   if (filters) {
-    const counts = new Map(familyList.map((family) => [family.id, items.filter((d) => d.curator_style_family === family.id).length]));
     filters.innerHTML = [
-      `<button type="button" class="${activeFamily === "all" ? "active" : ""}" aria-pressed="${activeFamily === "all"}" data-family="all">Todos <span>${items.length}</span></button>`,
-      ...familyList
-        .filter((family) => counts.get(family.id))
-        .map((family) => `<button type="button" class="${activeFamily === family.id ? "active" : ""}" aria-pressed="${activeFamily === family.id}" data-family="${escapeAttr(family.id)}">${escapeHtml(family.label_pt)} <span>${counts.get(family.id)}</span></button>`),
+      `<button type="button" data-family="all" aria-pressed="${activeFamily === "all"}" class="${activeFamily === "all" ? "active" : ""}">Todos <span>${items.length}</span></button>`,
+      ...families.filter((family) => counts.get(family.id)).map((family) =>
+        `<button type="button" data-family="${escapeHtml(family.id)}" aria-pressed="${activeFamily === family.id}" class="${activeFamily === family.id ? "active" : ""}">${escapeHtml(family.label_pt)} <span>${counts.get(family.id)}</span></button>`
+      ),
     ].join("");
     filters.addEventListener("click", (event) => {
       const button = event.target.closest("button[data-family]");
@@ -213,25 +111,22 @@ function renderStyleIndex(catalog) {
   function render() {
     const query = input?.value || "";
     const filtered = filterStyleItems(items, { query, family: activeFamily });
-    const groups = groupStyleItems(filtered, familyList);
-    updateUrl(query);
+    const groups = groupStyleItems(filtered, families);
+    const params = serializeStyleState({ query, family: activeFamily });
+    history.replaceState(null, "", `${location.pathname}${params.toString() ? `?${params}` : ""}`);
     if (clear) clear.hidden = !query;
-    if (status) {
-      status.textContent = `${filtered.length} de ${items.length} ${items.length === 1 ? "estilo" : "estilos"}`;
-    }
+    if (status) status.textContent = `${filtered.length} de ${items.length} estilos`;
     if (!filtered.length) {
-      root.innerHTML = `<div class="style-empty"><strong>Nenhum estilo encontrado.</strong><span>Tente outro termo ou selecione “Todos”.</span></div>`;
+      root.innerHTML = '<div class="style-empty"><strong>Nenhum estilo encontrado.</strong><span>Tente outro termo ou selecione “Todos”.</span></div>';
       return;
     }
-    root.innerHTML = groups.map((group) => `
-      <section class="style-group" aria-labelledby="family-${escapeAttr(group.id)}">
-        <header class="style-group__header">
-          <div><p>${group.items.length} ${group.items.length === 1 ? "estilo" : "estilos"}</p><h2 id="family-${escapeAttr(group.id)}">${escapeHtml(group.label)}</h2></div>
-          <p>${escapeHtml(group.description)}</p>
-        </header>
-        <div class="style-grid">${group.items.map((d) => styleCard(d, families)).join("")}</div>
-      </section>
-    `).join("");
+    root.innerHTML = groups.map((group) => `<section class="style-group" aria-labelledby="family-${escapeHtml(group.id)}">
+      <header class="style-group__header">
+        <div><p>${group.items.length} ${group.items.length === 1 ? "estilo" : "estilos"}</p><h2 id="family-${escapeHtml(group.id)}">${escapeHtml(group.label)}</h2></div>
+        <p>${escapeHtml(group.description)}</p>
+      </header>
+      <div class="style-grid">${group.items.map(styleCard).join("")}</div>
+    </section>`).join("");
   }
 
   input?.addEventListener("input", render);
@@ -242,150 +137,89 @@ function renderStyleIndex(catalog) {
     }
   });
   clear?.addEventListener("click", () => {
-    if (input) {
-      input.value = "";
-      input.focus();
-    }
+    input.value = "";
+    input.focus();
     render();
   });
   render();
 }
 
-function renderIndexes(catalog) {
-  const tools = document.getElementById("tools");
-  const items = filledDays(catalog);
-  renderStyleIndex(catalog);
-  if (tools) {
-    const bag = new Map();
-    for (const d of items) {
-      for (const t of d.tools || []) {
-        if (!t.name) continue;
-        if (!bag.has(t.name)) bag.set(t.name, []);
-        bag.get(t.name).push(d);
-      }
-    }
-    tools.innerHTML = [...bag.entries()]
-      .sort((a, b) => a[0].localeCompare(b[0]))
-      .map(
-        ([name, ds]) =>
-          `<a href="#"><span></span><span><strong>${escapeHtml(name)}</strong><small>${ds.map((d) => d.id).join(", ")}</small></span></a>`
-      )
-      .join("");
-  }
-}
-
-function embedBlock(part) {
-  const label = ROLE_LABEL[part.role] || part.role;
-  const url = part.post_url;
-  const note = part.note ? `<p style="color:var(--muted)">${escapeHtml(part.note)}</p>` : "";
-  const body = url
-    ? `<div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
-        <a class="btn" href="${escapeAttr(url)}" rel="noopener noreferrer">Abrir no X</a>
-        ${part.embed ? `<blockquote class="twitter-tweet"><a href="${escapeAttr(url)}"></a></blockquote>` : ""}
-      </div>`
-    : `<p style="color:var(--muted)">URL ainda não verificada.</p>`;
-  return `<div class="block"><h3>${escapeHtml(label)}</h3>${note}${body}</div>`;
-}
-
-function renderFicha(catalog) {
-  const root = document.getElementById("ficha");
+function renderStyleDetail(catalog) {
+  const root = document.getElementById("style-detail");
   if (!root) return;
   const id = new URLSearchParams(location.search).get("id");
-  const d = catalog.days.find((x) => String(x.id) === String(id));
-  if (!d || d.source_review === "empty") {
-    root.innerHTML = `<p>Ficha ainda não preenchida.</p><p><a href="index.html">Voltar</a></p>`;
+  const style = (catalog.styles || []).find((item) => item.slug === id || item.id === id);
+  if (!style) {
+    root.innerHTML = '<div class="style-empty"><strong>Estilo não encontrado.</strong><a href="index.html">Voltar para Explorar</a></div>';
     return;
   }
-  document.title = `Dia ${d.id} — ${d.curator_display_name || d.style_name || "sem nome"}`;
-  const extra = d.style_name_extra ? ` ${escapeHtml(d.style_name_extra)}` : "";
-  const tools = (d.tools || []).filter((t) => t.name).map((t) => t.name).join(" · ");
-  const family = familyLookup(catalog).get(d.curator_style_family);
-  const naming = namingLabel(d.curator_naming_basis);
-  const source = sourceDescription(d);
-  const confidence = { high: "alta", medium: "média", low: "baixa" }[d.curator_confidence] || "";
-  const canonical = d.curator_canonical_style_id
-    ? `<p>Esta ficha usa a mesma linguagem visual catalogada no <a href="dia.html?id=${encodeURIComponent(d.curator_canonical_style_id)}">dia ${escapeHtml(d.curator_canonical_style_id)}</a>.</p>`
-    : "";
-  const classification = `
-    <section class="style-classification" aria-labelledby="classification-title">
-      <div class="style-classification__top">
-        <h3 id="classification-title">Classificação da curadoria</h3>
-        ${family ? `<span class="style-classification__family">${escapeHtml(family.label_pt)}</span>` : ""}
-        ${naming ? `<span class="style-classification__badge">${escapeHtml(naming)}${confidence ? ` · confiança ${escapeHtml(confidence)}` : ""}</span>` : ""}
-      </div>
-      ${(d.curator_tag_labels || []).length ? `<div class="style-tags">${d.curator_tag_labels.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
-      ${source ? `<p>${escapeHtml(source)}</p>` : `<p>Nome publicado pelo autor: “${escapeHtml(d.source_style_name || d.style_name || "") }”.</p>`}
-      ${canonical}
-    </section>`;
-  const insp = (d.inspiration || [])
-    .map((item) => {
-      if (item.quote) {
-        const href = item.post_url
-          ? `<p><a href="${escapeAttr(item.post_url)}" rel="noopener noreferrer">@${escapeHtml(item.handle || "")} — ${escapeHtml(item.work || "post")}</a></p>`
-          : "";
-        return `${href}<blockquote class="quote">${escapeHtml(item.quote)}</blockquote>`;
-      }
-      const bits = [item.work, item.text, item.note].filter(Boolean).join(" — ");
-      const link = item.post_url
-        ? `<a href="${escapeAttr(item.post_url)}" rel="noopener noreferrer">${escapeHtml(bits || item.post_url)}</a>`
-        : escapeHtml(bits);
-      return `<p>${link}</p>`;
-    })
-    .join("");
-
-  root.innerHTML = `
-    <p><a href="index.html">← galeria</a></p>
-    <div class="kicker">Dia ${escapeHtml(String(d.id))} ${tools ? " · " + escapeHtml(tools) : ""}</div>
-    <h2>${escapeHtml(d.curator_display_name || d.style_name || "sem nome")}${extra}</h2>
-    ${d.logline ? `<p class="logline">${escapeHtml(d.logline)}</p>` : ""}
-    <div class="hero-still">${still(d.poster_url, d.curator_display_name || d.style_name)}</div>
-    <div class="prompt-box" id="prompt-box">
-      <header>
-        <h3>Bloco de estilo — copiar</h3>
-      </header>
-      <p class="prompt-text">${escapeHtml(d.prompt_published || "O autor não publicou bloco de estilo neste dia.")}</p>
+  document.title = `${style.display_name} — Técnicas de Art Style`;
+  const examples = (style.examples || []).map((example, index) => `<article class="example-card">
+    <div class="example-card__media">${still(example.poster_url, `${style.display_name} — exemplo ${index + 1}`)}</div>
+    <div class="example-card__body">
+      <p class="eyebrow">Referência selecionada · ${escapeHtml(example.source_label)}</p>
+      ${example.caption ? `<p>${escapeHtml(example.caption)}</p>` : ""}
+      ${(example.tools || []).length ? `<p class="example-tools">${example.tools.map(escapeHtml).join(" · ")}</p>` : ""}
+      ${example.source_url ? `<a href="${escapeHtml(example.source_url)}" rel="noopener noreferrer">Abrir fonte original ↗</a>` : ""}
     </div>
-    ${classification}
-    ${d.creator_notes ? `<div class="block"><h3>Notas do autor</h3><p>${escapeHtml(d.creator_notes)}</p></div>` : ""}
-    ${insp ? `<div class="block"><h3>Inspiração</h3>${insp}</div>` : ""}
-    ${(d.thread || []).map(embedBlock).join("")}
-    ${d.curator_notes ? `<div class="block"><h3>Nota do curador</h3><p>${escapeHtml(d.curator_notes)}</p></div>` : ""}
-    <p><a class="btn" href="${escapeAttr(d.open_on_x)}" rel="noopener noreferrer">Ver o dia no X</a></p>
-  `;
-  const box = document.getElementById("prompt-box");
-  if (box) box.querySelector("header").appendChild(copyButton(d.prompt_published, "Copiar"));
-  if (window.twttr && window.twttr.widgets) window.twttr.widgets.load();
+  </article>`).join("");
+  const recipes = (style.recipes || []).map((recipe, index) => {
+    const copyable = Boolean(recipe.text);
+    return `<article class="recipe-card">
+    <header><div><p class="eyebrow">Receita ${index + 1}${recipe.license ? ` · ${escapeHtml(recipe.license)}` : ""}</p><h3>${copyable ? `Prompt publicado por ${escapeHtml(recipe.source_label)}` : `Pacote de execução · ${escapeHtml(recipe.source_label)}`}</h3></div>${copyable ? `<button type="button" class="copy" data-recipe="${index}">Copiar prompt</button>` : ""}</header>
+    ${copyable ? `<pre>${escapeHtml(recipe.text)}</pre>` : `<p class="empty-note">Esta receita exige âncora visual e um fluxo em três estágios. Copiar só o texto quebraria o contrato da fonte.</p>`}
+    ${recipe.source_url ? `<a href="${escapeHtml(recipe.source_url)}" rel="noopener noreferrer">Conferir na fonte ↗</a>` : ""}
+  </article>`;
+  }).join("");
+  root.innerHTML = `<a class="back-link" href="index.html">← Explorar estilos</a>
+    <section class="style-hero">
+      <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div><p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
+      <div class="style-hero__media">${still(style.poster_url, style.display_name, true)}</div>
+    </section>
+    <section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>
+    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : "Receita ainda não catalogada"}</h2></header>${recipes || '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>'}</section>`;
+  root.querySelectorAll("button[data-recipe]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const recipe = style.recipes[Number(button.dataset.recipe)];
+      if (recipe?.text) copyText(recipe.text);
+    });
+  });
 }
 
-function escapeHtml(s) {
-  return String(s ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+function renderTools(catalog) {
+  const root = document.getElementById("tools");
+  if (!root) return;
+  const tools = new Map();
+  for (const style of catalog.styles || []) {
+    for (const example of style.examples || []) {
+      for (const tool of example.tools || []) {
+        if (!tools.has(tool)) tools.set(tool, new Set());
+        tools.get(tool).add(style.slug);
+      }
+    }
+  }
+  root.innerHTML = [...tools.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([tool, slugs]) =>
+    `<a href="index.html?q=${encodeURIComponent(tool)}"><span class="tool-count">${slugs.size}</span><span><strong>${escapeHtml(tool)}</strong><small>${slugs.size} ${slugs.size === 1 ? "estilo relacionado" : "estilos relacionados"}</small></span></a>`
+  ).join("");
 }
-function escapeAttr(s) {
-  return escapeHtml(s).replace(/'/g, "&#39;");
+
+function updateCounts(catalog) {
+  document.querySelectorAll("[data-style-count]").forEach((element) => { element.textContent = catalog.counts?.styles || 0; });
+  document.querySelectorAll("[data-reference-count]").forEach((element) => { element.textContent = catalog.counts?.references || 0; });
 }
 
 async function boot() {
   installImageFallback();
   try {
     const catalog = await loadCatalog();
-    const n = filledDays(catalog).length;
-    const tag = document.getElementById("tagline");
-    if (tag) {
-      const rest = catalog.tagline || "art styles para copiar — ilustração, animação, folk, HQ";
-      tag.textContent = `${n} ${rest}`;
-    }
-    renderGallery(catalog);
-    renderTicks(catalog);
-    renderIndexes(catalog);
-    renderFicha(catalog);
-  } catch (e) {
-    const box = document.getElementById("gallery") || document.getElementById("ficha") || document.getElementById("styles");
-    if (box) box.innerHTML = `<p>Sirva a pasta <code>site/</code> via HTTP para carregar o catálogo.</p>`;
-    console.error(e);
+    updateCounts(catalog);
+    renderExplore(catalog);
+    renderStyleDetail(catalog);
+    renderTools(catalog);
+  } catch (error) {
+    const root = document.getElementById("styles") || document.getElementById("style-detail") || document.getElementById("tools");
+    if (root) root.innerHTML = '<div class="style-empty"><strong>Não foi possível carregar a biblioteca.</strong><span>Tente novamente em instantes.</span></div>';
+    console.error(error);
   }
 }
 

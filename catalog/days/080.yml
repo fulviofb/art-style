@@ -2,17 +2,48 @@ id: "080"
 day: 80
 variant: null
 slug: "080"
-source_review: empty
+source_review: reviewed
 copy_policy: link_only
-date_utc: null
+date_utc: "2026-09-06"
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2096555633109815296/img/Dqn_lJawR9T0sO-T.jpg
+poster_source: x_video_thumb
 style:
-  name: null
+  name: "Indonesian Folklore (Wayang Kulit)"
+  name_status: published
   prompt_published: null
-logline: null
-creator_notes: null
-tools: []
+logline: >-
+  The demon entered the village… and chaos followed wherever it went. But the real battle hasn’t even begun.
+creator_notes: >-
+  Inspired by traditional Indonesian Wayang Kulit art and folklore.
+tools:
+  - name: Seedance 2.0
+    handles: []
+  - name: CapCut
+    handles:
+      - capcut_vn
+      - capcutapp
 inspiration: []
-thread: []
+thread:
+  - role: hero
+    post_url: https://x.com/NVTDanh/status/2096556162887901660
+    embed: true
+    source_review: reviewed
+  - role: midjourney_sheets
+    post_url: null
+    source_review: discovered_needs_original_review
+  - role: prompt
+    post_url: null
+    source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "Wayang Kulit–Inspired Shadow-Puppet Animation"
+  naming_basis: curator_normalization
+  confidence: high
+  style_family: folk-traditional
+  tags:
+    - animation-2d
+    - folk-art
+    - cultural-tradition
+    - mythology
+    - silhouette
+    - shadow-puppetry
   notes: null

@@ -12,64 +12,57 @@ export function serializeStyleState({ query = "", family = "all" } = {}) {
   return params;
 }
 
-function normalized(value) {
-  return String(value ?? "")
+function normalize(value) {
+  return String(value || "")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .toLocaleLowerCase("pt-BR")
-    .trim();
+    .toLocaleLowerCase("pt-BR");
+}
+
+function searchText(style) {
+  const exampleText = (style.examples || [])
+    .flatMap((example) => [
+      example.source_style_name,
+      example.caption,
+      example.source_label,
+      ...(example.tools || []),
+    ]);
+  const recipeText = (style.recipes || []).flatMap((recipe) => [
+    recipe.source_label,
+    recipe.kind,
+    recipe.license,
+  ]);
+  return normalize([
+    style.display_name,
+    style.family,
+    style.family_label,
+    ...(style.tags || []),
+    ...(style.tag_labels || []),
+    ...exampleText,
+    ...recipeText,
+  ].join(" "));
 }
 
 export function filterStyleItems(items, { query = "", family = "all" } = {}) {
-  const needle = normalized(query);
-  return items.filter((item) => {
-    if (family !== "all" && item.curator_style_family !== family) return false;
-    if (!needle) return true;
-    const haystack = normalized([
-      item.curator_display_name,
-      item.source_style_name,
-      ...(item.curator_tag_labels || []),
-      ...(item.curator_tags || []),
-      item.logline,
-    ].join(" "));
-    return haystack.includes(needle);
-  });
+  const needle = normalize(query.trim());
+  return [...items]
+    .filter((style) => family === "all" || style.family === family)
+    .filter((style) => !needle || searchText(style).includes(needle))
+    .sort((a, b) => String(a.display_name || "").localeCompare(String(b.display_name || ""), "en"));
 }
 
 export function groupStyleItems(items, families) {
+  const grouped = new Map();
+  for (const style of items) {
+    if (!grouped.has(style.family)) grouped.set(style.family, []);
+    grouped.get(style.family).push(style);
+  }
   return (families || [])
+    .filter((family) => grouped.has(family.id))
     .map((family) => ({
       id: family.id,
       label: family.label_pt,
       description: family.description_pt || "",
-      items: items.filter((item) => item.curator_style_family === family.id),
-    }))
-    .filter((group) => group.items.length > 0);
-}
-
-export function namingLabel(basis) {
-  return {
-    curator_inference: "nome curatorial",
-    source_context: "nome curatorial a partir do contexto",
-    source_reference: "nome recuperado de outro dia",
-    published_prompt: "extraído do prompt publicado",
-    curator_normalization: "nome normalizado pela curadoria",
-    source_name: "",
-  }[basis] || "";
-}
-
-export function sourceDescription(item) {
-  const status = item.source_style_name_status;
-  const source = String(item.source_style_name || "").trim();
-  if (status === "unnamed") {
-    return "O autor não publicou um nome de estilo neste post.";
-  }
-  if (status === "reference" && source) {
-    const suffix = item.source_style_reference_day ? ` — referência ao dia ${item.source_style_reference_day}` : "";
-    return `Nome no post: “${source}”${suffix}.`;
-  }
-  if (status === "published_generic" && source) {
-    return `Nome no post: “${source}”.`;
-  }
-  return "";
+      items: grouped.get(family.id),
+    }));
 }

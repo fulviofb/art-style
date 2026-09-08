@@ -37,6 +37,8 @@ curator:
   display_name: "Stylized Low-Poly Fantasy Animation"
   naming_basis: curator_inference
   confidence: medium
+  canonical_style_id: "072"
+  canonical_relation: same_work
   style_family: animation-3d
   tags:
     - animation-3d

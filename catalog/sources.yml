@@ -1,0 +1,18 @@
+sources:
+  - id: nvtdanh
+    label: ToaiDanh
+    creator: ToaiDanh
+    handle: NVTDanh
+    url: https://x.com/NVTDanh
+    kind: creator_series
+    copy_policy: link_only
+    notes: Primeira fonte da biblioteca; posts e mídia permanecem em seus endereços originais.
+  - id: hand-drawn-styles
+    label: hand-drawn-styles
+    creator: liulei
+    url: https://github.com/threerocks/hand-drawn-styles
+    kind: recipe_library
+    license: MIT
+    copy_policy: can_adapt_with_attribution
+    pinned_commit: 7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d
+    notes: Receitas MIT testadas no commit fixado; atribuição obrigatória. A variante 3.1 não é copiada como prompt isolado.

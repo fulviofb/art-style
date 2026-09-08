@@ -115,10 +115,28 @@ def test_public_export_separates_source_and_curatorial_style_names():
 
 
 def test_repeated_styles_point_to_canonical_records():
-    expected = {"032": "028", "036": "014", "048": "028", "075a": "074"}
+    expected = {
+        "032": "028",
+        "036": "014",
+        "048": "028",
+        "055": "039",
+        "057": "072",
+        "075a": "074",
+    }
     found = {}
+    relation_types = {}
     for path, data in reviewed_days():
-        canonical = (data.get("curator") or {}).get("canonical_style_id")
+        curator = data.get("curator") or {}
+        canonical = curator.get("canonical_style_id")
         if canonical:
             found[path.stem] = str(canonical)
+            relation_types[path.stem] = curator.get("canonical_relation")
     assert found == expected
+    assert relation_types == {
+        "032": "same_style",
+        "036": "same_style",
+        "048": "same_style",
+        "055": "same_style",
+        "057": "same_work",
+        "075a": "same_style",
+    }

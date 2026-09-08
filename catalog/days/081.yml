@@ -2,17 +2,53 @@ id: "081"
 day: 81
 variant: null
 slug: "081"
-source_review: empty
+source_review: reviewed
 copy_policy: link_only
-date_utc: null
+date_utc: "2026-09-07"
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2096917496557379584/img/X1TLxOtBEKK42FzC.jpg
+poster_source: x_video_thumb
 style:
-  name: null
+  name: "Brazilian Urban Graffiti Illustration"
+  name_status: published
   prompt_published: null
-logline: null
-creator_notes: null
-tools: []
+logline: >-
+  Inspired by Saci, an iconic character from Brazilian folklore, and by the favela where football is more than just a game, but a living part of Brazilian culture.
+creator_notes: >-
+  A little alternate story about Saci’s red cap :)))
+tools:
+  - name: Seedance 2.5
+    handles: []
+  - name: Seedance 2.0
+    handles: []
+  - name: Flova
+    handles:
+      - Flovaai
+      - Flovaai_Japan
 inspiration: []
-thread: []
+thread:
+  - role: hero
+    post_url: https://x.com/NVTDanh/status/2096919057610273099
+    embed: true
+    source_review: reviewed
+  - role: midjourney_sheets
+    post_url: null
+    source_review: discovered_needs_original_review
+  - role: music_prompt
+    post_url: null
+    source_review: discovered_needs_original_review
+  - role: prompt
+    post_url: null
+    source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "Brazilian Urban Graffiti Illustration"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - folk-art
+    - cultural-tradition
+    - mythology
+    - graffiti
+    - brazilian-folklore
   notes: null

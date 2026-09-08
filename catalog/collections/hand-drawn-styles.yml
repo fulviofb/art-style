@@ -1,0 +1,49 @@
+source_id: hand-drawn-styles
+source_commit: 7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d
+license: MIT
+copy_policy: can_adapt_with_attribution
+attribution: Copyright (c) 2026 liulei — MIT License
+pilot:
+  status: approved_for_controlled_pilot
+  tested_on: windows
+  unit_tests:
+    passed: 18
+    failed_platform_assertion: 1
+  smoke_cases:
+    passed: 3
+entries:
+  - id: hand-drawn-ghibli
+    canonical_style_id: "041"
+    source_style_id: "3"
+    source_style_name: 吉卜力风
+    recipe:
+      tested: true
+      source_url: https://github.com/threerocks/hand-drawn-styles/blob/7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d/STYLES.md#L99-L112
+      template: |-
+        Studio Ghibli style hand-drawn anime illustration of 【主体】.
+        Clean, uncluttered composition with ONE clear focal subject; simplified background, generous calm negative space — avoid busy, fragmented, over-detailed or scattered compositions.
+        Render any large areas (sky, water, fields, walls) as smooth, even watercolor gradients — no patchy, mottled, speckled or grainy texture. Any clouds should be a few large, simple, soft, cohesive shapes — not many small scattered puffs or broken fragments.
+        Soft hand-painted watercolor look with smooth gentle gradients and soft cel-shading; warm cinematic light diffusing softly from above with a tender glow.
+        Bright yet harmonious, lightly saturated palette; dreamy, nostalgic, heartwarming mood.
+        Clean delicate linework, painterly hand-drawn feel — not 3D, not photoreal, not a digital vector, not cluttered, not fragmented.
+  - id: family-crayon-card
+    source_style_id: "3.1"
+    source_style_name: 蜡笔童涂-潦草自画版
+    display_name: Family Crayon Card
+    family: storybook-illustration
+    tags:
+      - handcrafted
+      - children
+    example:
+      poster_url: https://raw.githubusercontent.com/threerocks/hand-drawn-styles/7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d/assets/style-3.1/anchor-family.png
+      source_url: https://github.com/threerocks/hand-drawn-styles/blob/7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d/assets/style-3.1/anchor-family.png
+      caption: Referência visual oficial da variante 3.1 no commit homologado.
+    recipe:
+      tested: true
+      availability: workflow_bundle_only
+      source_url: https://github.com/threerocks/hand-drawn-styles/blob/7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d/STYLES.md#L7-L47
+      renderer: scripts/render_prompt.py
+      style_id: "3.1"
+      required_asset: assets/style-3.1/anchor-family.png
+      required_contract: family-crayon-card-v3
+      final_stage: scribble-chaos-correction

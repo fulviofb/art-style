@@ -36,6 +36,7 @@ curator:
   naming_basis: source_reference
   confidence: high
   canonical_style_id: "014"
+  canonical_relation: same_style
   style_family: storybook-illustration
   tags:
     - storybook

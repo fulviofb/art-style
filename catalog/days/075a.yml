@@ -52,6 +52,7 @@ curator:
   naming_basis: source_name
   confidence: high
   canonical_style_id: "074"
+  canonical_relation: same_style
   style_family: animation-2d
   tags:
     - animation-2d

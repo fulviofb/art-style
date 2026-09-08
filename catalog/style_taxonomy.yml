@@ -61,3 +61,9 @@ tags:
   - { id: caricature, label_pt: Caricatura }
   - { id: concept-art, label_pt: Concept art }
   - { id: architecture, label_pt: Arquitetura }
+  - { id: silhouette, label_pt: Silhueta }
+  - { id: shadow-puppetry, label_pt: Teatro de sombras }
+  - { id: graffiti, label_pt: Grafite urbano }
+  - { id: brazilian-folklore, label_pt: Folclore brasileiro }
+  - { id: cel-animation, label_pt: Animação em células }
+  - { id: comedy, label_pt: Comédia }

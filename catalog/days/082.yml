@@ -2,17 +2,49 @@ id: "082"
 day: 82
 variant: null
 slug: "082"
-source_review: empty
+source_review: reviewed
 copy_policy: link_only
-date_utc: null
+date_utc: "2026-09-08"
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2097284728244281344/img/NHI3RZjXIEu3rQz0.jpg
+poster_source: x_video_thumb
 style:
-  name: null
+  name: "1980s Saturday Morning Cartoon"
+  name_status: published
   prompt_published: null
-logline: null
+logline: >-
+  Today, a little bit of chaos and comedy from American football. Just a normal game… until the football decides it has other plans.
 creator_notes: null
-tools: []
+tools:
+  - name: Seedance 2.5
+    handles: []
+  - name: Pollo AI
+    handles:
+      - itsPolloAI
+      - polloai_creator
 inspiration: []
-thread: []
+thread:
+  - role: hero
+    post_url: https://x.com/NVTDanh/status/2097285279078060295
+    embed: true
+    source_review: reviewed
+  - role: midjourney_sheets
+    post_url: null
+    source_review: discovered_needs_original_review
+  - role: music_prompt
+    post_url: null
+    source_review: discovered_needs_original_review
+  - role: prompt
+    post_url: null
+    source_review: discovered_needs_original_review
 curator:
-  style_family: null
+  display_name: "1980s Saturday Morning Cartoon"
+  naming_basis: source_name
+  confidence: high
+  style_family: animation-2d
+  tags:
+    - animation-2d
+    - retro
+    - action
+    - cel-animation
+    - comedy
   notes: null

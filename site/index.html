@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Técnicas de Art Style</title>
-  <link rel="stylesheet" href="assets/style.css?v=14" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biblioteca atemporal e multifuente de técnicas, referências e receitas de art style para criação com IA.">
+  <title>Técnicas de Art Style — Explorar</title>
+  <link rel="stylesheet" href="assets/style.css?v=15">
 </head>
 <body>
+  <a class="skip-link" href="#styles">Ir para os estilos</a>
+  <div class="banner">Curadoria independente · mídia nas fontes originais</div>
   <div class="wrap">
     <header class="site">
-      <h1>Técnicas de Art Style<span id="tagline">art styles para copiar — ilustração, animação, folk, HQ</span></h1>
-      <nav>
-        <a href="index.html" aria-current="page">Galeria</a>
-        <a href="estilos.html">Estilos</a>
+      <h1>Técnicas de Art Style<span><span data-style-count>—</span> estilos em expansão</span></h1>
+      <nav aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Explorar</a>
         <a href="ferramentas.html">Ferramentas</a>
         <a href="sobre.html">Sobre</a>
       </nav>
     </header>
-    <p class="lede">Um clique copia o bloco de estilo. Coleção em expansão.</p>
-    <div id="gallery" class="gallery"></div>
-    <div id="ticks" class="ticks" aria-label="Progresso da primeira coleção"></div>
-    <footer>Curadoria pessoal. Primeira coleção a partir de posts públicos — ainda sem rehospedar mídia.</footer>
+    <main>
+      <section class="explore-intro" aria-labelledby="explore-title">
+        <div>
+          <p class="section-kicker">Biblioteca visual</p>
+          <h2 id="explore-title">Encontre uma linguagem, não uma data.</h2>
+        </div>
+        <div class="explore-intro__tools">
+          <p><span data-reference-count>—</span> referências selecionadas, organizadas por linguagem visual e origem.</p>
+          <label class="style-search" for="style-search">Buscar estilo, técnica, ferramenta ou tema
+            <span class="style-search__field">
+              <input id="style-search" type="search" autocomplete="off" placeholder="Ex.: aquarela, retrô, Seedance">
+              <button id="style-search-clear" type="button" hidden>Limpar</button>
+            </span>
+          </label>
+        </div>
+      </section>
+      <div id="style-filters" class="style-filters" aria-label="Filtrar por família"></div>
+      <p id="style-result-status" class="style-result-status" aria-live="polite"></p>
+      <div id="styles" class="style-groups"></div>
+    </main>
+    <footer>Curadoria multifuente com atribuição e links para as publicações originais.</footer>
   </div>
-  <script type="module" src="assets/app.js?v=14"></script>
+  <script type="module" src="assets/app.js?v=15"></script>
 </body>
 </html>
