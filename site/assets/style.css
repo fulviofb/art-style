@@ -577,7 +577,7 @@ footer {
   line-height: .98;
   letter-spacing: -.025em;
 }
-.explore-intro h2 { max-width: 14ch; font-size: clamp(2.4rem, 6vw, 5rem); }
+.explore-intro h2 { max-width: 11em; font-size: clamp(2.4rem, 6vw, 4.6rem); }
 .explore-intro__tools { display: grid; gap: 1.15rem; }
 .explore-intro__tools > p { margin: 0; max-width: 34rem; color: var(--muted); }
 .style-result-status { margin-bottom: 1.5rem; }
