@@ -31,6 +31,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Whimsical Watercolor Storybook"
+  summary_pt: "Aquarela de livro ilustrado: transparência, borda molhada e cor que sangra no papel. Bom para delicadeza e infância."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

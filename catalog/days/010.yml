@@ -31,6 +31,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Military Concept Art"
+  summary_pt: "Concept art militar: equipamento detalhado e paleta sóbria. Bom para tema histórico; sensível para comunicação institucional."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

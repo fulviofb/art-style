@@ -31,6 +31,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Stylized 3D Martial-Arts Animation"
+  summary_pt: "Artes marciais em 3D estilizado: pose limpa, rastro de movimento e cenário pintado. Bom para treino, disciplina e superação."
   naming_basis: curator_inference
   confidence: medium
   style_family: animation-3d

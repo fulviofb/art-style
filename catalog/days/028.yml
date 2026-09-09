@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Genndy Tartakovsky–Inspired 2D Animation"
+  summary_pt: "Traço de Genndy Tartakovsky, de Samurai Jack: silhueta forte, pouco detalhe e silêncio na composição. Bom para ação estilizada."
   naming_basis: curator_normalization
   confidence: high
   style_family: animation-2d

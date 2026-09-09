@@ -26,6 +26,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Cinematic 3D Medieval Fantasy"
+  summary_pt: "Fantasia medieval em 3D com luz de cinema: armadura, castelo e névoa volumétrica. Bom para aventura de espada."
   naming_basis: curator_inference
   confidence: medium
   style_family: concept-art-painting

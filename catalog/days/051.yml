@@ -28,6 +28,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Kids’ Drawing Style"
+  summary_pt: "Desenho de criança de verdade: proporção torta, traço trêmulo, cor fora da linha. Bom para autenticidade; ruim quando o material precisa de autoridade."
   naming_basis: source_context
   confidence: high
   style_family: storybook-illustration

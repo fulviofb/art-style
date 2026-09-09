@@ -28,6 +28,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Minimalist Cozy Slice-of-Life Illustration"
+  summary_pt: "Cena cotidiana minimalista e aconchegante: pouca linha, muito espaço e luz morna. Bom para tema de casa, rotina e acolhimento."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

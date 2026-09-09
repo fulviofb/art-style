@@ -33,6 +33,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Painterly Storybook Fantasy"
+  summary_pt: "Fantasia pintada com acabamento de livro ilustrado: criatura, castelo e luz dourada. Bom para narrativa longa."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

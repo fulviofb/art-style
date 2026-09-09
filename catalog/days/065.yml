@@ -26,6 +26,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Art Nouveau Manga Fusion"
+  summary_pt: "Mangá com ornamento art nouveau: linha sinuosa, moldura floral e dourado. Bom para capa, cartaz e personagem em pose solene."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

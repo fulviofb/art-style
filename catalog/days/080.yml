@@ -36,6 +36,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Wayang Kulit–Inspired Shadow-Puppet Animation"
+  summary_pt: "Teatro de sombras javanês: silhueta recortada contra a luz e movimento lateral. Bom para narrar mito com pouco recurso visual."
   naming_basis: curator_normalization
   confidence: high
   style_family: folk-traditional

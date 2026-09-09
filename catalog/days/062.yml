@@ -34,6 +34,7 @@ thread:
     note: Reply de prompt existe no fio; URL não capturada nesta leva.
 curator:
   display_name: "Stylized Arabian Folk Art / Modernist Storybook Illustration"
+  summary_pt: "Arte popular árabe em chave modernista: arabesco, cor quente e cidade em camadas. Bom para conto de viagem."
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

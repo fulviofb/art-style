@@ -31,6 +31,7 @@ thread:
     note: MJ v8 images
 curator:
   display_name: "Whimsical storybook illustration"
+  summary_pt: "Livro ilustrado lúdico, sem técnica marcada. É a opção genérica quando nenhuma das outras do grupo encaixa."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

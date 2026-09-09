@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Pen-and-ink sketch"
+  summary_pt: "Bico de pena: hachura densa, preto e branco e energia de rascunho. Bom para dramaticidade barata e boa leitura em impressão."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

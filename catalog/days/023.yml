@@ -29,6 +29,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Post-Apocalyptic Cinematic Concept Art"
+  summary_pt: "Ruína pós-apocalíptica com luz de cinema: poeira, concreto e silhueta solitária. Bom para alerta e reflexão; evite em convite."
   naming_basis: curator_inference
   confidence: medium
   style_family: concept-art-painting

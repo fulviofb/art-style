@@ -27,6 +27,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Chinese Folklore Animation"
+  summary_pt: "Folclore chinês animado: máscara, lanterna e criatura de lenda. Bom para história tradicional."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

@@ -28,6 +28,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Low-Poly Painterly Fantasy"
+  summary_pt: "Fantasia low-poly com acabamento pintado: facetas suavizadas e cor de aquarela. Bom para mundo de jogo."
   naming_basis: source_name
   confidence: high
   style_family: animation-3d

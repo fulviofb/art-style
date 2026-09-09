@@ -233,6 +233,7 @@
       "id": "1980s-saturday-morning-cartoon",
       "slug": "1980s-saturday-morning-cartoon",
       "display_name": "1980s Saturday Morning Cartoon",
+      "summary_pt": "Desenho de sábado de manhã dos anos 80: cor chapada, contorno grosso e ação exagerada. Bom para humor nostálgico e paródia.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -277,6 +278,7 @@
       "id": "1990s-american-superhero-cartoon",
       "slug": "1990s-american-superhero-cartoon",
       "display_name": "1990s American superhero cartoon",
+      "summary_pt": "Herói de desenho americano dos anos 90: sombra angulosa, pose heroica e paleta saturada. Bom para aventura com ar de série antiga.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -314,6 +316,7 @@
       "id": "90s-anime-style",
       "slug": "90s-anime-style",
       "display_name": "90s anime style",
+      "summary_pt": "Anime dos anos 90: traço de cel, granulado de filme e luz de fim de tarde. Bom para nostalgia e drama contido.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -353,6 +356,7 @@
       "id": "a-stylized-low-poly-illustration-blended-with-multiple-artistic-styles",
       "slug": "a-stylized-low-poly-illustration-blended-with-multiple-artistic-styles",
       "display_name": "A stylized low-poly illustration blended with multiple artistic styles",
+      "summary_pt": "Low-poly facetado misturado a outras linguagens na mesma cena. Bom para experimentar, não para manter consistência ao longo de um projeto.",
       "family": "hybrid-experimental",
       "family_label": "Híbridos e experimental",
       "tags": [
@@ -392,6 +396,7 @@
       "id": "anime",
       "slug": "anime",
       "display_name": "Anime",
+      "summary_pt": "Anime contemporâneo, sem subgênero marcado: traço limpo, olhos expressivos, cor viva. É o ponto de partida mais seguro quando você só quer algo que pareça anime.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -430,6 +435,7 @@
       "id": "anime-cinematic-style",
       "slug": "anime-cinematic-style",
       "display_name": "Anime Cinematic Style",
+      "summary_pt": "Anime com enquadramento de cinema: luz dramática, profundidade e composição fechada. Bom para momentos de tensão e virada.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -471,6 +477,7 @@
       "id": "architectural-expressionism-modern-german-expressionism-inspired",
       "slug": "architectural-expressionism-modern-german-expressionism-inspired",
       "display_name": "Architectural Expressionism (Modern German Expressionism-inspired)",
+      "summary_pt": "Arquitetura distorcida e monumental, herdeira do expressionismo alemão: ângulos impossíveis e escala esmagadora. Bom para opressão e vertigem.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -508,6 +515,7 @@
       "id": "art-nouveau-manga-fusion",
       "slug": "art-nouveau-manga-fusion",
       "display_name": "Art Nouveau Manga Fusion",
+      "summary_pt": "Mangá com ornamento art nouveau: linha sinuosa, moldura floral e dourado. Bom para capa, cartaz e personagem em pose solene.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -547,6 +555,7 @@
       "id": "black-and-white-ink-illustration-tim-burton-inspired-proportions",
       "slug": "black-and-white-ink-illustration-tim-burton-inspired-proportions",
       "display_name": "Black-and-white ink illustration + Tim Burton-inspired proportions",
+      "summary_pt": "Nanquim preto e branco com corpos alongados e cabeças grandes, à la Tim Burton. Bom para o estranho e o melancólico com humor.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -584,6 +593,7 @@
       "id": "brazilian-urban-graffiti-illustration",
       "slug": "brazilian-urban-graffiti-illustration",
       "display_name": "Brazilian Urban Graffiti Illustration",
+      "summary_pt": "Grafite brasileiro com folclore: spray, cor forte e muro de periferia. Bom para falar de identidade e cultura local sem exotizar.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -631,6 +641,7 @@
       "id": "cartoon-salooninspired-2d-animation",
       "slug": "cartoon-salooninspired-2d-animation",
       "display_name": "Cartoon Saloon–Inspired 2D Animation",
+      "summary_pt": "Traço do estúdio irlandês Cartoon Saloon: formas planas, padrões decorativos e cor de vitral. Bom para conto e lenda.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -670,6 +681,7 @@
       "id": "chibi-style",
       "slug": "chibi-style",
       "display_name": "Chibi Style",
+      "summary_pt": "Personagem chibi: cabeça grande, corpo pequeno, expressão exagerada. Bom para mascote, adesivo e conteúdo leve para crianças.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -721,6 +733,7 @@
       "id": "chinese-mythical-fantasy-animation",
       "slug": "chinese-mythical-fantasy-animation",
       "display_name": "Chinese Mythical Fantasy Animation",
+      "summary_pt": "Fantasia mítica chinesa: véus ao vento, montanha de névoa e criatura ancestral. Bom para lenda e épico.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -762,6 +775,7 @@
       "id": "cinematic-3d-medieval-fantasy",
       "slug": "cinematic-3d-medieval-fantasy",
       "display_name": "Cinematic 3D Medieval Fantasy",
+      "summary_pt": "Fantasia medieval em 3D com luz de cinema: armadura, castelo e névoa volumétrica. Bom para aventura de espada.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -803,6 +817,7 @@
       "id": "cinematic-police-action-realism",
       "slug": "cinematic-police-action-realism",
       "display_name": "Cinematic Police-Action Realism",
+      "summary_pt": "Ação policial realista: câmera na mão, luz dura e paleta dessaturada. Bom para tensão; evite em conteúdo para crianças.",
       "family": "cinematic-live-action",
       "family_label": "Cinema e live action",
       "tags": [
@@ -841,6 +856,7 @@
       "id": "classic-european-fairy-tale-illustration",
       "slug": "classic-european-fairy-tale-illustration",
       "display_name": "Classic European fairy tale illustration",
+      "summary_pt": "Ilustração clássica de conto de fadas europeu: aquarela, floresta densa e traço de livro antigo. Bom para história infantil com ar atemporal.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -893,6 +909,7 @@
       "id": "claymation-and-stylized-3d-animation",
       "slug": "claymation-and-stylized-3d-animation",
       "display_name": "Claymation and Stylized 3D Animation",
+      "summary_pt": "Massinha misturada a 3D estilizado: textura de dedo com movimento fluido. Bom quando você quer o charme artesanal sem a limitação do stop motion.",
       "family": "hybrid-experimental",
       "family_label": "Híbridos e experimental",
       "tags": [
@@ -932,6 +949,7 @@
       "id": "claymation-art",
       "slug": "claymation-art",
       "display_name": "Claymation Art",
+      "summary_pt": "Massinha de modelar com marca de dedo e luz de estúdio. Bom para humor afetuoso e para conteúdo que precisa parecer feito à mão.",
       "family": "craft-stop-motion",
       "family_label": "Artesanato e stop motion",
       "tags": [
@@ -969,6 +987,7 @@
       "id": "claymation-art-style",
       "slug": "claymation-art-style",
       "display_name": "Claymation art style",
+      "summary_pt": "Outra leitura da massinha, mais lisa e brilhante que a do dia 17. Compare as duas fichas antes de escolher.",
       "family": "craft-stop-motion",
       "family_label": "Artesanato e stop motion",
       "tags": [
@@ -1006,6 +1025,7 @@
       "id": "dark-deco-x-ancient-mexica",
       "slug": "dark-deco-x-ancient-mexica",
       "display_name": "Dark Deco x Ancient Mexica",
+      "summary_pt": "Art déco sombrio cruzado com iconografia mexica: geometria dura, ouro e obsidiana. Bom para cartaz de forte impacto.",
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
@@ -1047,6 +1067,7 @@
       "id": "dark-medieval-fantasy",
       "slug": "dark-medieval-fantasy",
       "display_name": "Dark Medieval Fantasy",
+      "summary_pt": "Medievo sombrio: pouca luz, cor terrosa e ameaça fora de quadro. Bom para suspense; pesado demais para material acolhedor.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -1088,6 +1109,7 @@
       "id": "digital-oil-painting",
       "slug": "digital-oil-painting",
       "display_name": "Digital Oil Painting",
+      "summary_pt": "Pintura a óleo digital: pincelada visível, empasto e luz quente. Bom para retrato e cena com peso de quadro.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -1127,6 +1149,7 @@
       "id": "family-crayon-card",
       "slug": "family-crayon-card",
       "display_name": "Family Crayon Card",
+      "summary_pt": "Giz de cera sobre papel, como desenho de criança em cartão de família. Bom para convite afetivo e data comemorativa.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -1178,6 +1201,7 @@
       "id": "five-style-visual-mashup",
       "slug": "five-style-visual-mashup",
       "display_name": "Five-Style Visual Mashup",
+      "summary_pt": "Cinco linguagens diferentes na mesma peça. É demonstração de repertório, não escolha de estilo para um projeto.",
       "family": "hybrid-experimental",
       "family_label": "Híbridos e experimental",
       "tags": [
@@ -1213,6 +1237,7 @@
       "id": "franco-belgian-comics",
       "slug": "franco-belgian-comics",
       "display_name": "Franco-Belgian comics",
+      "summary_pt": "Quadrinho franco-belga: linha limpa, cor chapada e página arejada, na tradição de Tintim e Astérix. Bom para aventura clara.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -1250,6 +1275,7 @@
       "id": "genndy-tartakovskyinspired-2d-animation",
       "slug": "genndy-tartakovskyinspired-2d-animation",
       "display_name": "Genndy Tartakovsky–Inspired 2D Animation",
+      "summary_pt": "Traço de Genndy Tartakovsky, de Samurai Jack: silhueta forte, pouco detalhe e silêncio na composição. Bom para ação estilizada.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -1315,6 +1341,7 @@
       "id": "ghibli-inspired-hand-painted-animation",
       "slug": "ghibli-inspired-hand-painted-animation",
       "display_name": "Ghibli-Inspired Hand-Painted Animation",
+      "summary_pt": "Aquarela à moda Ghibli: céu amplo, verde vivo e luz suave. Bom para nostalgia, natureza e memória de infância.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -1374,6 +1401,7 @@
       "id": "gothic-monolith",
       "slug": "gothic-monolith",
       "display_name": "Gothic Monolith",
+      "summary_pt": "Estrutura gótica monumental contra céu vazio: escala esmagadora e silêncio. Bom para mistério e para o sublime.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -1411,6 +1439,7 @@
       "id": "hand-drawn-sketch",
       "slug": "hand-drawn-sketch",
       "display_name": "Hand-drawn sketch",
+      "summary_pt": "Rascunho à mão com linha solta e correção à vista. Bom para ideia em processo e para conteúdo que ganha ao parecer inacabado.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -1450,6 +1479,7 @@
       "id": "handmade-needle-felt-fantasy",
       "slug": "handmade-needle-felt-fantasy",
       "display_name": "Handmade Needle-Felt Fantasy",
+      "summary_pt": "Feltragem com agulha: lã fofa, contorno macio e cor de brinquedo. Bom para ternura e público infantil.",
       "family": "craft-stop-motion",
       "family_label": "Artesanato e stop motion",
       "tags": [
@@ -1491,6 +1521,7 @@
       "id": "indian-mythic-folk-art",
       "slug": "indian-mythic-folk-art",
       "display_name": "Indian Mythic Folk Art",
+      "summary_pt": "Arte popular indiana: padrão denso, cor saturada e narrativa mítica em painel. Bom para lenda; cuidado ao usar fora do contexto de origem.",
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -1541,6 +1572,7 @@
       "id": "kids-drawing-style",
       "slug": "kids-drawing-style",
       "display_name": "Kids’ Drawing Style",
+      "summary_pt": "Desenho de criança de verdade: proporção torta, traço trêmulo, cor fora da linha. Bom para autenticidade; ruim quando o material precisa de autoridade.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -1580,6 +1612,7 @@
       "id": "lego-brick-animation",
       "slug": "lego-brick-animation",
       "display_name": "LEGO Brick Animation",
+      "summary_pt": "Mundo montado em peças LEGO: plástico brilhante e encaixe visível. Bom para humor e para público infantil.",
       "family": "animation-3d",
       "family_label": "Animação 3D",
       "tags": [
@@ -1616,6 +1649,7 @@
       "id": "ligne-claire-comic-art",
       "slug": "ligne-claire-comic-art",
       "display_name": "Ligne Claire Comic Art",
+      "summary_pt": "Ligne claire: contorno uniforme, sem hachura, cor chapada e leitura instantânea. Bom para explicar algo com clareza em quadrinho.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -1651,6 +1685,7 @@
       "id": "mid-century-modern-editorial-illustration-geometric-character-design",
       "slug": "mid-century-modern-editorial-illustration-geometric-character-design",
       "display_name": "Mid-Century Modern Editorial Illustration, Geometric Character Design",
+      "summary_pt": "Ilustração editorial dos anos 50 e 60: figura geométrica, textura de impressão e paleta reduzida. Bom para cartaz e capa com ar sofisticado.",
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
@@ -1690,6 +1725,7 @@
       "id": "minimalist-cozy-slice-of-life-illustration",
       "slug": "minimalist-cozy-slice-of-life-illustration",
       "display_name": "Minimalist Cozy Slice-of-Life Illustration",
+      "summary_pt": "Cena cotidiana minimalista e aconchegante: pouca linha, muito espaço e luz morna. Bom para tema de casa, rotina e acolhimento.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -1726,6 +1762,7 @@
       "id": "modern-ukiyo-e-illustration",
       "slug": "modern-ukiyo-e-illustration",
       "display_name": "Modern Ukiyo-e Illustration",
+      "summary_pt": "Ukiyo-e atualizado: contorno de xilogravura, onda estilizada e cor plana. Bom para tradição japonesa com leitura contemporânea.",
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -1766,6 +1803,7 @@
       "id": "multi-style-scene-blend",
       "slug": "multi-style-scene-blend",
       "display_name": "Multi-Style Scene Blend",
+      "summary_pt": "Estilos diferentes convivendo em uma cena só, com a costura à mostra. Serve a experimento e demonstração.",
       "family": "hybrid-experimental",
       "family_label": "Híbridos e experimental",
       "tags": [
@@ -1801,6 +1839,7 @@
       "id": "needle-felt-art-style",
       "slug": "needle-felt-art-style",
       "display_name": "Needle-felt art style",
+      "summary_pt": "Feltro agulhado sem tema de fantasia: textura de lã e fundo simples. Bom para objeto e personagem com cara de artesanato.",
       "family": "craft-stop-motion",
       "family_label": "Artesanato e stop motion",
       "tags": [
@@ -1838,6 +1877,7 @@
       "id": "painterly-3d-and-papercraft-fantasy",
       "slug": "painterly-3d-and-papercraft-fantasy",
       "display_name": "Painterly 3D and Papercraft Fantasy",
+      "summary_pt": "3D pintado misturado a recorte de papel: camada, dobra e sombra projetada. Bom para fantasia com aparência de diorama.",
       "family": "hybrid-experimental",
       "family_label": "Híbridos e experimental",
       "tags": [
@@ -1879,6 +1919,7 @@
       "id": "painterly-cinematic-concept-art",
       "slug": "painterly-cinematic-concept-art",
       "display_name": "Painterly Cinematic Concept Art",
+      "summary_pt": "Concept art pintado com luz de cinema, aqui aplicado a dança tradicional. Bom para cena solene e de grande escala.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -1920,6 +1961,7 @@
       "id": "painterly-low-poly-comic-art",
       "slug": "painterly-low-poly-comic-art",
       "display_name": "Painterly Low-Poly Comic Art",
+      "summary_pt": "Facetas de low-poly com acabamento de pintura, em página de quadrinho. Bom para ação com textura incomum.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -1962,6 +2004,7 @@
       "id": "painterly-retro-mecha",
       "slug": "painterly-retro-mecha",
       "display_name": "Painterly Retro Mecha",
+      "summary_pt": "Mecha retrô pintado à mão: metal gasto, céu de guerra e escala industrial. Bom para ficção científica com ar de capa de revista antiga.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -2014,6 +2057,7 @@
       "id": "painterly-storybook-fantasy",
       "slug": "painterly-storybook-fantasy",
       "display_name": "Painterly Storybook Fantasy",
+      "summary_pt": "Fantasia pintada com acabamento de livro ilustrado: criatura, castelo e luz dourada. Bom para narrativa longa.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -2053,6 +2097,7 @@
       "id": "paper-craft-illustration",
       "slug": "paper-craft-illustration",
       "display_name": "Paper-Craft Illustration",
+      "summary_pt": "Papel recortado em camadas, com sombra e dobra visíveis. Bom para explicação passo a passo e para peça que precisa parecer construída.",
       "family": "craft-stop-motion",
       "family_label": "Artesanato e stop motion",
       "tags": [
@@ -2090,6 +2135,7 @@
       "id": "pen-and-ink-sketch",
       "slug": "pen-and-ink-sketch",
       "display_name": "Pen-and-ink sketch",
+      "summary_pt": "Bico de pena: hachura densa, preto e branco e energia de rascunho. Bom para dramaticidade barata e boa leitura em impressão.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -2129,6 +2175,7 @@
       "id": "pixar-inspired-3d-animation",
       "slug": "pixar-inspired-3d-animation",
       "display_name": "Pixar-Inspired 3D Animation",
+      "summary_pt": "3D de longa de animação: personagem redondo, olho grande e luz suave. Bom para família e emoção direta.",
       "family": "animation-3d",
       "family_label": "Animação 3D",
       "tags": [
@@ -2168,6 +2215,7 @@
       "id": "post-apocalyptic-cinematic-concept-art",
       "slug": "post-apocalyptic-cinematic-concept-art",
       "display_name": "Post-Apocalyptic Cinematic Concept Art",
+      "summary_pt": "Ruína pós-apocalíptica com luz de cinema: poeira, concreto e silhueta solitária. Bom para alerta e reflexão; evite em convite.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -2209,6 +2257,7 @@
       "id": "post-apocalyptic-graphic-novel",
       "slug": "post-apocalyptic-graphic-novel",
       "display_name": "Post-Apocalyptic Graphic Novel",
+      "summary_pt": "Graphic novel pós-apocalíptica: traço sujo, sombra pesada e paleta reduzida. Bom para narrativa adulta.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -2257,6 +2306,7 @@
       "id": "retro-editorial-cartoon-mid-century-storybook-illustration",
       "slug": "retro-editorial-cartoon-mid-century-storybook-illustration",
       "display_name": "Retro Editorial Cartoon / Mid-Century Storybook Illustration",
+      "summary_pt": "Cartum editorial retrô: figura achatada, textura de offset e humor seco. Bom para crônica e história leve.",
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
@@ -2296,6 +2346,7 @@
       "id": "rough-blue-pencil-animation-concept-art",
       "slug": "rough-blue-pencil-animation-concept-art",
       "display_name": "Rough Blue-Pencil Animation Concept Art",
+      "summary_pt": "Lápis azul de animação, antes da arte final: linha de construção à vista. Bom para mostrar processo e bastidor.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -2333,6 +2384,7 @@
       "id": "rustic-dark-folklore-storybook-illustration",
       "slug": "rustic-dark-folklore-storybook-illustration",
       "display_name": "Rustic Dark Folklore Storybook Illustration",
+      "summary_pt": "Folclore sombrio em livro ilustrado: textura rústica, floresta fechada e criatura antiga. Bom para conto com clima de mistério.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -2376,6 +2428,7 @@
       "id": "showrunner-multi-style-experiment",
       "slug": "showrunner-multi-style-experiment",
       "display_name": "Showrunner Multi-Style Experiment",
+      "summary_pt": "Experimento feito no aplicativo Showrunner, misturando estilos. Vale como registro de teste, não como referência de linguagem.",
       "family": "hybrid-experimental",
       "family_label": "Híbridos e experimental",
       "tags": [
@@ -2411,6 +2464,7 @@
       "id": "soviet-constructivist-poster-style",
       "slug": "soviet-constructivist-poster-style",
       "display_name": "Soviet Constructivist Poster Style",
+      "summary_pt": "Cartaz construtivista: diagonal forte, vermelho e preto, tipografia como estrutura. Bom para convocação; carrega carga política, use com consciência.",
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
@@ -2448,6 +2502,7 @@
       "id": "stylized-2d-hand-painted-storybook-animation",
       "slug": "stylized-2d-hand-painted-storybook-animation",
       "display_name": "Stylized 2D hand-painted storybook animation",
+      "summary_pt": "Animação 2D pintada à mão com cara de livro ilustrado. Bom para narrar história com calma.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -2496,6 +2551,7 @@
       "id": "stylized-3d-animated-feature-film",
       "slug": "stylized-3d-animated-feature-film",
       "display_name": "Stylized 3D Animated Feature Film",
+      "summary_pt": "3D de longa com câmera dinâmica e acabamento de estúdio. Bom para sequência de ação.",
       "family": "animation-3d",
       "family_label": "Animação 3D",
       "tags": [
@@ -2533,6 +2589,7 @@
       "id": "stylized-3d-martial-arts-animation",
       "slug": "stylized-3d-martial-arts-animation",
       "display_name": "Stylized 3D Martial-Arts Animation",
+      "summary_pt": "Artes marciais em 3D estilizado: pose limpa, rastro de movimento e cenário pintado. Bom para treino, disciplina e superação.",
       "family": "animation-3d",
       "family_label": "Animação 3D",
       "tags": [
@@ -2586,6 +2643,7 @@
       "id": "stylized-3d-storybook",
       "slug": "stylized-3d-storybook",
       "display_name": "Stylized 3D Storybook",
+      "summary_pt": "Livro ilustrado em 3D: forma simples, cor suave e cenário de brinquedo. Bom para fábula infantil.",
       "family": "animation-3d",
       "family_label": "Animação 3D",
       "tags": [
@@ -2625,6 +2683,7 @@
       "id": "stylized-arabian-folk-art-modernist-storybook-illustration",
       "slug": "stylized-arabian-folk-art-modernist-storybook-illustration",
       "display_name": "Stylized Arabian Folk Art / Modernist Storybook Illustration",
+      "summary_pt": "Arte popular árabe em chave modernista: arabesco, cor quente e cidade em camadas. Bom para conto de viagem.",
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -2664,6 +2723,7 @@
       "id": "stylized-chinese-folklore-animation",
       "slug": "stylized-chinese-folklore-animation",
       "display_name": "Stylized Chinese Folklore Animation",
+      "summary_pt": "Folclore chinês animado: máscara, lanterna e criatura de lenda. Bom para história tradicional.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -2705,6 +2765,7 @@
       "id": "stylized-claymation-3d-animated-caricature",
       "slug": "stylized-claymation-3d-animated-caricature",
       "display_name": "Stylized Claymation + 3D animated caricature",
+      "summary_pt": "Massinha com caricatura exagerada: proporção deformada e humor físico. Bom para piada e paródia.",
       "family": "craft-stop-motion",
       "family_label": "Artesanato e stop motion",
       "tags": [
@@ -2747,6 +2808,7 @@
       "id": "stylized-digital-painting",
       "slug": "stylized-digital-painting",
       "display_name": "Stylized Digital Painting",
+      "summary_pt": "Pintura digital estilizada para cena épica: escala grande, luz forte e pincelada visível. Bom para batalha e clímax.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -2790,6 +2852,7 @@
       "id": "stylized-graphic-editorial-illustration",
       "slug": "stylized-graphic-editorial-illustration",
       "display_name": "Stylized Graphic Editorial Illustration",
+      "summary_pt": "Ilustração editorial gráfica: forma reduzida, cor plana e uma ideia por imagem. Bom para post que precisa comunicar rápido.",
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
@@ -2823,6 +2886,7 @@
       "id": "stylized-japanese-anime-concept-art",
       "slug": "stylized-japanese-anime-concept-art",
       "display_name": "Stylized Japanese anime concept art",
+      "summary_pt": "Concept art de anime: estudo de personagem e cenário antes da animação. Bom para desenvolver um visual antes de produzir.",
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -2860,6 +2924,7 @@
       "id": "stylized-low-poly-painterly-fantasy",
       "slug": "stylized-low-poly-painterly-fantasy",
       "display_name": "Stylized Low-Poly Painterly Fantasy",
+      "summary_pt": "Fantasia low-poly com acabamento pintado: facetas suavizadas e cor de aquarela. Bom para mundo de jogo.",
       "family": "animation-3d",
       "family_label": "Animação 3D",
       "tags": [
@@ -2924,6 +2989,7 @@
       "id": "stylized-mediterranean-mythic-storybook-illustration",
       "slug": "stylized-mediterranean-mythic-storybook-illustration",
       "display_name": "Stylized Mediterranean Mythic Storybook illustration",
+      "summary_pt": "Mito mediterrâneo em livro ilustrado: ocre, mar e figura de vaso grego. Bom para releitura de mito clássico.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -2974,6 +3040,7 @@
       "id": "stylized-military-concept-art",
       "slug": "stylized-military-concept-art",
       "display_name": "Stylized Military Concept Art",
+      "summary_pt": "Concept art militar: equipamento detalhado e paleta sóbria. Bom para tema histórico; sensível para comunicação institucional.",
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -3013,6 +3080,7 @@
       "id": "stylized-sci-fi-concept-art-graphic-novel-character-design-anime-western-comic-dieselpunk-cyberpunk",
       "slug": "stylized-sci-fi-concept-art-graphic-novel-character-design-anime-western-comic-dieselpunk-cyberpunk",
       "display_name": "Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk",
+      "summary_pt": "Ficção científica que soma anime, quadrinho ocidental e dieselpunk num personagem só. Bom para design de personagem denso.",
       "family": "comics-graphic-novel",
       "family_label": "Quadrinhos e graphic novel",
       "tags": [
@@ -3050,6 +3118,7 @@
       "id": "vietnamese-folk-art-inspired-style",
       "slug": "vietnamese-folk-art-inspired-style",
       "display_name": "Vietnamese folk-art inspired style",
+      "summary_pt": "Arte popular vietnamita: gravura Dong Ho, cor de papel e figura achatada. Bom para conto tradicional.",
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -3088,6 +3157,7 @@
       "id": "vietnamese-lacquer-storybook",
       "slug": "vietnamese-lacquer-storybook",
       "display_name": "Vietnamese Lacquer Storybook",
+      "summary_pt": "Laca vietnamita: fundo escuro, ouro e vermelho profundo, com brilho de verniz. Bom para memória e peça solene.",
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -3129,6 +3199,7 @@
       "id": "vintage-folk-editorial-illustration",
       "slug": "vintage-folk-editorial-illustration",
       "display_name": "Vintage Folk Editorial Illustration",
+      "summary_pt": "Ilustração editorial vintage com raiz popular: registro fora do lugar e cor gasta. Bom para humor literário.",
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
@@ -3177,6 +3248,7 @@
       "id": "warm-scandinavian-folk-illustration",
       "slug": "warm-scandinavian-folk-illustration",
       "display_name": "Warm Scandinavian Folk Illustration",
+      "summary_pt": "Folk escandinavo: cor quente e terrosa, figura simples e clima de outono. Bom para acolhimento e conteúdo de estação.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -3215,6 +3287,7 @@
       "id": "wayang-kulitinspired-shadow-puppet-animation",
       "slug": "wayang-kulitinspired-shadow-puppet-animation",
       "display_name": "Wayang Kulit–Inspired Shadow-Puppet Animation",
+      "summary_pt": "Teatro de sombras javanês: silhueta recortada contra a luz e movimento lateral. Bom para narrar mito com pouco recurso visual.",
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -3261,6 +3334,7 @@
       "id": "whimsical-hand-drawn-fantasy-concept-art-ink-and-watercolor-illustration",
       "slug": "whimsical-hand-drawn-fantasy-concept-art-ink-and-watercolor-illustration",
       "display_name": "Whimsical hand-drawn fantasy concept art, ink and watercolor illustration",
+      "summary_pt": "Nanquim com aquarela por cima: linha solta e mancha de cor que escapa. Bom para fantasia leve e bem-humorada.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -3302,6 +3376,7 @@
       "id": "whimsical-hand-painted-storybook-illustration",
       "slug": "whimsical-hand-painted-storybook-illustration",
       "display_name": "Whimsical hand-painted storybook illustration",
+      "summary_pt": "Livro ilustrado pintado à mão com criaturas estranhas e bem-humoradas. Bom para conteúdo lúdico sem infantilizar.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -3348,6 +3423,7 @@
       "id": "whimsical-storybook-illustration",
       "slug": "whimsical-storybook-illustration",
       "display_name": "Whimsical storybook illustration",
+      "summary_pt": "Livro ilustrado lúdico, sem técnica marcada. É a opção genérica quando nenhuma das outras do grupo encaixa.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -3383,6 +3459,7 @@
       "id": "whimsical-watercolor-storybook",
       "slug": "whimsical-watercolor-storybook",
       "display_name": "Whimsical Watercolor Storybook",
+      "summary_pt": "Aquarela de livro ilustrado: transparência, borda molhada e cor que sangra no papel. Bom para delicadeza e infância.",
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [

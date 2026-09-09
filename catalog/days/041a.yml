@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Needle-felt art style"
+  summary_pt: "Feltro agulhado sem tema de fantasia: textura de lã e fundo simples. Bom para objeto e personagem com cara de artesanato."
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

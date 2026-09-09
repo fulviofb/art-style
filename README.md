@@ -20,6 +20,8 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
 
 - `style.name`: texto publicado pelo autor, preservado mesmo quando é placeholder.
 - `curator.display_name`: nome público da linguagem visual.
+- `curator.summary_pt`: uma frase em português dizendo como o estilo se parece e para que serve.
+  O nome do estilo permanece no idioma da fonte porque é ele que vai no prompt; a descrição é a camada do curador.
 - `curator.style_family` e `curator.tags`: taxonomia em português.
 - `curator.canonical_style_id` + `canonical_relation`: agrupa continuações, o mesmo estilo ou a mesma obra.
 - Prompts ausentes nunca são inventados.

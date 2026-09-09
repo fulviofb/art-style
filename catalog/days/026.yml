@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Japanese anime concept art"
+  summary_pt: "Concept art de anime: estudo de personagem e cenário antes da animação. Bom para desenvolver um visual antes de produzir."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

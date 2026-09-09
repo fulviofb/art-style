@@ -28,6 +28,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Whimsical hand-painted storybook illustration"
+  summary_pt: "Livro ilustrado pintado à mão com criaturas estranhas e bem-humoradas. Bom para conteúdo lúdico sem infantilizar."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

@@ -30,6 +30,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Stylized Graphic Editorial Illustration"
+  summary_pt: "Ilustração editorial gráfica: forma reduzida, cor plana e uma ideia por imagem. Bom para post que precisa comunicar rápido."
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

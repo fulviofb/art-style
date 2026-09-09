@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized 3D Animated Feature Film"
+  summary_pt: "3D de longa com câmera dinâmica e acabamento de estúdio. Bom para sequência de ação."
   naming_basis: source_name
   confidence: high
   style_family: animation-3d

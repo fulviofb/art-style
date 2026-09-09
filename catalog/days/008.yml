@@ -31,6 +31,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized 3D Storybook"
+  summary_pt: "Livro ilustrado em 3D: forma simples, cor suave e cenário de brinquedo. Bom para fábula infantil."
   naming_basis: source_name
   confidence: high
   style_family: animation-3d

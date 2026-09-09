@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Anime Cinematic Style"
+  summary_pt: "Anime com enquadramento de cinema: luz dramática, profundidade e composição fechada. Bom para momentos de tensão e virada."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

@@ -66,6 +66,7 @@ thread:
     note: Reply de prompt do autor não capturado nesta leva.
 curator:
   display_name: "Post-Apocalyptic Graphic Novel"
+  summary_pt: "Graphic novel pós-apocalíptica: traço sujo, sombra pesada e paleta reduzida. Bom para narrativa adulta."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

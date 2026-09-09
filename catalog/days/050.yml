@@ -29,6 +29,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Whimsical hand-drawn fantasy concept art, ink and watercolor illustration"
+  summary_pt: "Nanquim com aquarela por cima: linha solta e mancha de cor que escapa. Bom para fantasia leve e bem-humorada."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

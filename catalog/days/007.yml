@@ -30,6 +30,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Digital Oil Painting"
+  summary_pt: "Pintura a óleo digital: pincelada visível, empasto e luz quente. Bom para retrato e cena com peso de quadro."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

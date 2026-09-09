@@ -28,6 +28,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Vietnamese folk-art inspired style"
+  summary_pt: "Arte popular vietnamita: gravura Dong Ho, cor de papel e figura achatada. Bom para conto tradicional."
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

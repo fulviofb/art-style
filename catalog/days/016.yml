@@ -23,6 +23,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Showrunner Multi-Style Experiment"
+  summary_pt: "Experimento feito no aplicativo Showrunner, misturando estilos. Vale como registro de teste, não como referência de linguagem."
   naming_basis: curator_inference
   confidence: low
   style_family: hybrid-experimental

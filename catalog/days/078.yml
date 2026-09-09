@@ -36,6 +36,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Soviet Constructivist Poster Style"
+  summary_pt: "Cartaz construtivista: diagonal forte, vermelho e preto, tipografia como estrutura. Bom para convocação; carrega carga política, use com consciência."
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

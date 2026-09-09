@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Claymation and Stylized 3D Animation"
+  summary_pt: "Massinha misturada a 3D estilizado: textura de dedo com movimento fluido. Bom quando você quer o charme artesanal sem a limitação do stop motion."
   naming_basis: curator_normalization
   confidence: high
   style_family: hybrid-experimental

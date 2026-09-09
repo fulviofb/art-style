@@ -24,6 +24,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "LEGO Brick Animation"
+  summary_pt: "Mundo montado em peças LEGO: plástico brilhante e encaixe visível. Bom para humor e para público infantil."
   naming_basis: curator_normalization
   confidence: high
   style_family: animation-3d

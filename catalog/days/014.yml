@@ -31,6 +31,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Classic European fairy tale illustration"
+  summary_pt: "Ilustração clássica de conto de fadas europeu: aquarela, floresta densa e traço de livro antigo. Bom para história infantil com ar atemporal."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

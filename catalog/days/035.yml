@@ -31,6 +31,7 @@ thread:
     note: Midjourney images --profile dzk1sty
 curator:
   display_name: "1990s American superhero cartoon"
+  summary_pt: "Herói de desenho americano dos anos 90: sombra angulosa, pose heroica e paleta saturada. Bom para aventura com ar de série antiga."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

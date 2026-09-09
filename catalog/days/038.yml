@@ -26,6 +26,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "A stylized low-poly illustration blended with multiple artistic styles"
+  summary_pt: "Low-poly facetado misturado a outras linguagens na mesma cena. Bom para experimentar, não para manter consistência ao longo de um projeto."
   naming_basis: source_name
   confidence: high
   style_family: hybrid-experimental

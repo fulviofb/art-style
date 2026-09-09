@@ -34,6 +34,7 @@ function searchText(style) {
   ]);
   return normalize([
     style.display_name,
+    style.summary_pt,
     style.family,
     style.family_label,
     ...(style.tags || []),

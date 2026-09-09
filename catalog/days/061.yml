@@ -27,6 +27,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Sci-Fi Concept Art / Graphic-Novel Character Design + Anime + Western Comic + Dieselpunk/Cyberpunk"
+  summary_pt: "Ficção científica que soma anime, quadrinho ocidental e dieselpunk num personagem só. Bom para design de personagem denso."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

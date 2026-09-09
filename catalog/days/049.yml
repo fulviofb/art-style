@@ -29,6 +29,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Black-and-white ink illustration + Tim Burton-inspired proportions"
+  summary_pt: "Nanquim preto e branco com corpos alongados e cabeças grandes, à la Tim Burton. Bom para o estranho e o melancólico com humor."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

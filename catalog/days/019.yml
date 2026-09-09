@@ -24,6 +24,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Gothic Monolith"
+  summary_pt: "Estrutura gótica monumental contra céu vazio: escala esmagadora e silêncio. Bom para mistério e para o sublime."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

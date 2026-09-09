@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Painterly Cinematic Concept Art"
+  summary_pt: "Concept art pintado com luz de cinema, aqui aplicado a dança tradicional. Bom para cena solene e de grande escala."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

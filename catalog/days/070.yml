@@ -42,6 +42,7 @@ thread:
     note: Versão live-action prometida nos comentários — não capturada nesta leva.
 curator:
   display_name: "Stylized Mediterranean Mythic Storybook illustration"
+  summary_pt: "Mito mediterrâneo em livro ilustrado: ocre, mar e figura de vaso grego. Bom para releitura de mito clássico."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

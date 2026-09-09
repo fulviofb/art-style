@@ -31,6 +31,7 @@ thread:
     note: Midjourney images --profile dzk1sty
 curator:
   display_name: "Architectural Expressionism (Modern German Expressionism-inspired)"
+  summary_pt: "Arquitetura distorcida e monumental, herdeira do expressionismo alemão: ângulos impossíveis e escala esmagadora. Bom para opressão e vertigem."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

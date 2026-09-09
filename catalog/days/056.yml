@@ -31,6 +31,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized 2D hand-painted storybook animation"
+  summary_pt: "Animação 2D pintada à mão com cara de livro ilustrado. Bom para narrar história com calma."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

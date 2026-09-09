@@ -27,6 +27,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Painterly Low-Poly Comic Art"
+  summary_pt: "Facetas de low-poly com acabamento de pintura, em página de quadrinho. Bom para ação com textura incomum."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

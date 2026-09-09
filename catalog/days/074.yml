@@ -37,6 +37,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Chibi Style"
+  summary_pt: "Personagem chibi: cabeça grande, corpo pequeno, expressão exagerada. Bom para mascote, adesivo e conteúdo leve para crianças."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

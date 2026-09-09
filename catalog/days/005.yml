@@ -24,6 +24,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Warm Scandinavian Folk Illustration"
+  summary_pt: "Folk escandinavo: cor quente e terrosa, figura simples e clima de outono. Bom para acolhimento e conteúdo de estação."
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

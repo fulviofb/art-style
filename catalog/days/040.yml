@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Digital Painting"
+  summary_pt: "Pintura digital estilizada para cena épica: escala grande, luz forte e pincelada visível. Bom para batalha e clímax."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

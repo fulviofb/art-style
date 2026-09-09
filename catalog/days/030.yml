@@ -32,6 +32,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Franco-Belgian comics"
+  summary_pt: "Quadrinho franco-belga: linha limpa, cor chapada e página arejada, na tradição de Tintim e Astérix. Bom para aventura clara."
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

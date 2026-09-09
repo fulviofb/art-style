@@ -36,6 +36,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Vietnamese Lacquer Storybook"
+  summary_pt: "Laca vietnamita: fundo escuro, ouro e vermelho profundo, com brilho de verniz. Bom para memória e peça solene."
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

@@ -35,6 +35,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Vintage Folk Editorial Illustration"
+  summary_pt: "Ilustração editorial vintage com raiz popular: registro fora do lugar e cor gasta. Bom para humor literário."
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

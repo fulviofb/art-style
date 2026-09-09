@@ -114,6 +114,7 @@ def build_public_library(
             "id": slug,
             "slug": slug,
             "display_name": display_name,
+            "summary_pt": curator.get("summary_pt"),
             "family": family,
             "family_label": family_labels.get(family, family),
             "tags": tags,
@@ -151,6 +152,7 @@ def build_public_library(
                     "id": slug,
                     "slug": slug,
                     "display_name": display_name,
+                    "summary_pt": entry.get("summary_pt"),
                     "family": family,
                     "family_label": family_labels.get(family, family),
                     "tags": tags,
@@ -288,6 +290,7 @@ def public_day(d: dict, tag_labels: dict[str, str] | None = None) -> dict:
         "curator_naming_basis": curator.get("naming_basis"),
         "curator_confidence": curator.get("confidence"),
         "curator_notes": curator.get("notes"),
+        "curator_summary_pt": curator.get("summary_pt"),
         "open_on_x": next(
             (p.get("post_url") for p in (d.get("thread") or []) if p.get("role") == "hero" and p.get("post_url")),
             "https://x.com/NVTDanh",

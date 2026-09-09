@@ -31,6 +31,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Dark Medieval Fantasy"
+  summary_pt: "Medievo sombrio: pouca luz, cor terrosa e ameaça fora de quadro. Bom para suspense; pesado demais para material acolhedor."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

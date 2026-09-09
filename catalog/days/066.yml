@@ -31,6 +31,7 @@ thread:
     note: Prompt 1 e 2 no fio; URLs nao capturadas.
 curator:
   display_name: "Painterly Retro Mecha"
+  summary_pt: "Mecha retrô pintado à mão: metal gasto, céu de guerra e escala industrial. Bom para ficção científica com ar de capa de revista antiga."
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

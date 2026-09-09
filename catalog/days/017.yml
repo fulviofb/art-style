@@ -25,6 +25,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Claymation Art"
+  summary_pt: "Massinha de modelar com marca de dedo e luz de estúdio. Bom para humor afetuoso e para conteúdo que precisa parecer feito à mão."
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

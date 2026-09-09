@@ -28,6 +28,7 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Dark Deco x Ancient Mexica"
+  summary_pt: "Art déco sombrio cruzado com iconografia mexica: geometria dura, ouro e obsidiana. Bom para cartaz de forte impacto."
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

@@ -38,6 +38,7 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "1980s Saturday Morning Cartoon"
+  summary_pt: "Desenho de sábado de manhã dos anos 80: cor chapada, contorno grosso e ação exagerada. Bom para humor nostálgico e paródia."
   naming_basis: source_name
   confidence: high
   style_family: animation-2d
