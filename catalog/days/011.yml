@@ -34,23 +34,20 @@ curator:
   summary_pt: "Feltragem com agulha: lã fofa, contorno macio e cor de brinquedo. Bom para ternura e público infantil."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "needle felting"
-      - "wool felt characters"
-      - "handmade textile diorama"
-      - "embroidered details"
-      - "cozy storybook craft"
-      - "warm tabletop lighting"
-    observations_pt: "Personagens e cenário parecem feitos de lã feltrada: o peixe tem pelos e escamas de fibra, as ondas são rolos de lã com espuma branca e o livro tem acabamento de ponto caseado. O fundo imita tecido, com o título bordado. A luz é quente, de mesa, e tudo tem aquela penugem que dá vontade de tocar."
-    prompt: "Needle-felted wool diorama, fuzzy felt characters with visible fibers, a big-eyed fish monster and an old fisherman, rolled wool waves with white foam, felt storybook with blanket-stitched pages, embroidered fabric backdrop, warm tabletop lighting, cozy handmade storybook atmosphere."
-    prompt_suffix: "soft wool texture, tiny loose fibers, stitched seams, handmade imperfections, shallow macro depth of field"
+    defines_pt: "Tudo é feito de lã feltrada: fibras aparentes, contornos macios e costuras à vista, como um diorama de tecido. A luz é quente, de mesa, e as cores são de brinquedo artesanal."
+    prompt: "[seu tema], needle-felted wool style, fuzzy felt characters with visible fibers, soft rounded shapes, stitched seams and embroidered details, handmade textile diorama, warm tabletop lighting, cozy handcrafted colors, shallow macro depth of field"
     avoid:
       - "plastic"
       - "smooth 3D render"
-      - "photorealistic animals"
       - "clay"
       - "glossy"
-    avoid_why_pt: "Sem esses termos a IA mantém a textura de fibra; com eles, troca a lã por plástico, massinha ou bicho de verdade."
+    avoid_why_pt: "Sem esses termos a IA mantém a textura de fibra; com eles, troca a lã por plástico ou massinha."
+    descriptors:
+      - "needle felting"
+      - "wool felt characters"
+      - "textile diorama"
+      - "embroidered details"
+    alt_pt: "Peixe de lã de dentes grandes e um velho pescador saem de ondas de feltro ao lado de um livro aberto."
     tested: false
     status: draft
   naming_basis: source_name

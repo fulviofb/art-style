@@ -41,23 +41,20 @@ curator:
   summary_pt: "Desenho de sábado de manhã dos anos 80: cor chapada, contorno grosso e ação exagerada. Bom para humor nostálgico e paródia."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "1980s Saturday morning cartoon"
-      - "thick black outlines"
-      - "flat cel colors"
-      - "speed lines"
-      - "retro TV animation"
-      - "bold simple shapes"
-    observations_pt: "Contorno preto grosso e cor chapada, sem degradê nenhum: a bola ocupa o centro com linhas de velocidade saindo do chão, como num quadro de desenho de TV dos anos 80. A torcida ao fundo é resolvida com manchas de cor e pouco detalhe. É uma imagem feita para ser lida em um segundo."
-    prompt: "1980s Saturday morning cartoon style, thick black outlines, flat cel-painted colors, bold simple shapes, a football standing in the center of a stadium field with dramatic speed lines, crowd in the stands drawn as simple color blobs, retro TV animation look, high-energy comedic framing."
-    prompt_suffix: "limited palette, slight VHS color bleed, hand-inked line wobble, exaggerated perspective"
+    defines_pt: "Contorno preto grosso e cor chapada, sem degradê: formas simples e exageradas, feitas para ler em um segundo. Linhas de velocidade e perspectiva forçada dão a energia de desenho de TV dos anos 80."
+    prompt: "[seu tema], 1980s Saturday morning cartoon style, thick black outlines, flat cel-painted colors, bold simple shapes, speed lines, exaggerated perspective, hand-inked line wobble, slight VHS color bleed, retro TV animation"
     avoid:
       - "3D render"
       - "realistic shading"
       - "gradients"
-      - "photorealistic"
       - "anime"
     avoid_why_pt: "Degradê e sombreado realista acabam com a cor chapada, que é a marca do desenho de TV dessa época."
+    descriptors:
+      - "1980s cartoon"
+      - "Saturday morning cartoon"
+      - "thick black outlines"
+      - "flat cel colors"
+    alt_pt: "Bola de futebol americano em pé no meio do campo, com linhas de velocidade e a torcida ao fundo."
     tested: false
     status: draft
   naming_basis: source_name

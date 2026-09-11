@@ -27,23 +27,20 @@ curator:
   summary_pt: "Ilustração editorial de meados do século: figuras geométricas, textura de impressão e céu de pôr do sol. Bom para cartaz e capa com ar sofisticado."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "mid-century modern editorial illustration"
-      - "geometric character design"
-      - "grainy risograph print texture"
-      - "limited warm palette"
-      - "retro superhero"
-      - "flat shapes with rough edges"
-    observations_pt: "Os personagens são construídos com formas geométricas: a heroína é fina e angulosa, o herói é um bloco quadrado com cabeça em triângulo. Tudo tem textura granulada de impressão, como papel gasto, e a paleta é curta: vermelho, cinza-azulado e o laranja do pôr do sol. As antenas e caixas no telhado dão o ar de cidade dos anos 50 e 60."
-    prompt: "Mid-century modern editorial illustration, geometric character design, a slim angular heroine in a red cape facing a huge boxy armored hero on a city rooftop at sunset, rooftop antennas and water tanks, grainy risograph print texture, limited palette of red, slate blue and warm orange, flat shapes with slightly rough edges."
-    prompt_suffix: "1950s–1960s magazine illustration, screen-print grain, simplified forms, strong silhouettes, subtle paper wear"
+    defines_pt: "Personagens construídos com formas geométricas simples e silhueta forte, com textura granulada de impressão. A paleta é curta, de duas ou três cores, como ilustração de revista dos anos 50 e 60."
+    prompt: "[seu tema], mid-century modern editorial illustration, geometric character design, simplified forms and strong silhouettes, grainy risograph screen-print texture, limited palette of two or three colors, flat shapes with slightly rough edges, subtle paper wear, 1950s–1960s magazine illustration"
     avoid:
       - "3D render"
       - "photorealistic"
-      - "anime"
       - "glossy"
       - "detailed anatomy"
     avoid_why_pt: "Anatomia detalhada e brilho puxam para o realismo, e o estilo depende da forma simplificada e da textura de impressão."
+    descriptors:
+      - "mid-century editorial illustration"
+      - "geometric character design"
+      - "risograph texture"
+      - "limited palette"
+    alt_pt: "Heroína de capa vermelha encara um herói grandalhão de armadura num telhado, ao pôr do sol."
     tested: false
     status: draft
   naming_basis: source_name

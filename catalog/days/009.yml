@@ -34,23 +34,20 @@ curator:
   summary_pt: "3D de longa de animação: personagem redondo, olho grande e luz suave. Bom para família e emoção direta."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "Pixar-style 3D animated feature"
-      - "stylized 3D character design"
-      - "expressive oversized eyes"
-      - "golden-hour volumetric light"
-      - "soft subsurface skin"
-      - "shallow depth of field"
-    observations_pt: "É 3D de longa-metragem: o menino tem cabeça e olhos grandes, nariz e mãos exagerados, e pele com aquele brilho de luz atravessando por dentro. A luz dourada entra pelas janelas e deixa o fundo desfocado, com partículas no ar. A expressão é o centro da imagem: surpresa pura, com a borboleta no nariz e a mão avançando para a câmera."
-    prompt: "Pixar-style 3D animated film still, stylized child character with oversized expressive eyes, exaggerated nose and hands, soft subsurface skin, warm golden-hour light streaming through windows, dust particles in the air, shallow depth of field, dynamic wide-angle composition with a hand reaching toward the camera, playful cinematic moment."
-    prompt_suffix: "feature animation quality, appealing character shapes, rich warm color grading, soft volumetric light rays, gentle film grain"
+    defines_pt: "Exagero simpático em 3D: cabeça e olhos grandes, nariz e mãos maiores que o real, pele com luz atravessando por dentro. A luz é quente e cinematográfica, com fundo desfocado, e a expressão do personagem é sempre o centro."
+    prompt: "[seu tema], Pixar-style 3D animated feature, stylized characters with oversized expressive eyes and exaggerated appealing proportions, soft subsurface skin, warm cinematic lighting with volumetric light rays, shallow depth of field, rich warm color grading, feature animation quality"
     avoid:
       - "photorealistic"
       - "realistic human proportions"
-      - "anime"
       - "flat 2D"
       - "horror lighting"
     avoid_why_pt: "Eles puxam para gente de verdade ou para o traço plano, e o que define o estilo é justamente o exagero simpático em 3D."
+    descriptors:
+      - "Pixar-style 3D animation"
+      - "stylized 3D characters"
+      - "expressive oversized eyes"
+      - "cinematic warm light"
+    alt_pt: "Menino de cabelo cacheado, com uma borboleta no nariz, estende a mão num corredor de escola cheio de pássaros e luz dourada."
     tested: false
     status: draft
   naming_basis: curator_normalization

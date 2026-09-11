@@ -33,23 +33,20 @@ curator:
   summary_pt: "Pintura a óleo digital: pincelada visível, reflexos na água e luz quente de fim de tarde. Bom para romance e cena com peso de quadro."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "digital oil painting"
-      - "thick impasto brushstrokes"
-      - "textured painted sunset sky"
-      - "romantic evening scene"
-      - "reflective wet promenade"
-      - "landmark collage"
-    observations_pt: "A pincelada é grossa e visível em tudo, principalmente no céu, feito de toques curtos de laranja e azul, e no reflexo das luzes na água. O casal dançando é o centro, com o vestido virando mancha de cor em movimento. Ao fundo, monumentos de países diferentes dividem a mesma orla: Torre Eiffel, Taj Mahal, uma ponte de Hoi An e a Golden Gate."
-    prompt: "Digital oil painting, thick impasto brushstrokes, textured sunset sky of short orange and blue dabs, a couple dancing tango on a wet reflective waterfront promenade, glowing street lamps and reflections, dreamy collage of world landmarks on the horizon, warm romantic palette, dramatic painterly light."
-    prompt_suffix: "palette knife texture, visible canvas, expressive color strokes, Van Gogh-like rhythm, rich glazing"
+    defines_pt: "Pincelada grossa e visível em tudo, como empasto de tinta a óleo: o céu vira toques curtos de cor e os reflexos se quebram em manchas. A luz é quente e dramática, e a superfície da pintura conta tanto quanto a cena."
+    prompt: "[seu tema], digital oil painting, thick impasto brushstrokes, short expressive color dabs, palette knife texture, visible canvas, warm dramatic light, rich glazing, painterly reflections"
     avoid:
       - "photorealistic"
       - "smooth airbrush"
       - "flat vector"
-      - "3D render"
       - "clean digital shading"
     avoid_why_pt: "Esses termos alisam a superfície, e o que faz o estilo é a pincelada grossa aparecendo."
+    descriptors:
+      - "digital oil painting"
+      - "impasto brushstrokes"
+      - "palette knife texture"
+      - "painterly light"
+    alt_pt: "Casal dançando tango numa orla molhada ao pôr do sol, com a Torre Eiffel, o Taj Mahal e a Golden Gate ao fundo."
     tested: false
     status: draft
   naming_basis: source_name

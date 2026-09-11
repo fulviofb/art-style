@@ -42,23 +42,20 @@ curator:
   summary_pt: "Aquarela à moda Ghibli: céu amplo, verde vivo e luz suave. Bom para nostalgia, natureza e memória de infância."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "Studio Ghibli-inspired hand-painted animation"
-      - "watercolor background painting"
-      - "soft cel-shaded characters"
-      - "pastoral countryside landscape"
-      - "warm afternoon light"
-      - "nostalgic Japanese feature animation"
-    observations_pt: "O fundo é pintado como aquarela, com árvores em massas arredondadas e nuvens grandes e macias, enquanto o personagem tem contorno fino e cor chapada, como uma célula de animação sobre o cenário pintado. A luz é de fim de tarde, quente e difusa, sem sombras duras. O menino é pequeno diante da paisagem: quem conta a história é o lugar, não só a ação."
-    prompt: "Studio Ghibli-inspired hand-painted animation still, lush watercolor background with soft rounded trees and large billowing cumulus clouds, cel-shaded character with clean thin outlines and flat colors, warm golden afternoon light, gentle pastoral countryside, winding dirt path and wooden fence, nostalgic calm mood, wide composition with a small figure in a big landscape."
-    prompt_suffix: "hand-painted poster-color backgrounds, subtle paper texture, soft color bleeding at edges, muted natural greens, 1980s–1990s Japanese feature animation"
+    defines_pt: "Cenário pintado como aquarela, de formas arredondadas e verdes suaves, com o personagem de contorno fino e cor chapada por cima. A luz é quente e difusa, sem sombras duras, e a paisagem costuma ser maior que o personagem."
+    prompt: "[seu tema], Studio Ghibli-inspired hand-painted animation, soft watercolor background painting with rounded natural shapes, cel-shaded characters with thin clean outlines and flat colors, warm diffuse light without harsh shadows, muted natural greens and soft skies, calm nostalgic mood, 1980s–1990s Japanese feature animation"
     avoid:
-      - "3D render"
       - "photorealistic"
+      - "3D render"
       - "glossy lighting"
-      - "hyper-detailed"
       - "sharp digital gradients"
     avoid_why_pt: "Esses termos trocam a pintura suave do fundo por acabamento digital brilhante, e o ar de filme antigo se perde."
+    descriptors:
+      - "Ghibli-inspired animation"
+      - "watercolor background painting"
+      - "cel-shaded characters"
+      - "pastoral nostalgia"
+    alt_pt: "Menino com uma pipa vermelha num campo verde com cerca de madeira, árvores e nuvens de fim de tarde."
     tested: false
     status: draft
   naming_basis: published_prompt

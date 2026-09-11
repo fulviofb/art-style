@@ -39,23 +39,20 @@ curator:
   summary_pt: "Teatro de sombras javanês: silhueta recortada contra a luz e movimento lateral. Bom para narrar mito com pouco recurso visual."
   summary_review: poster_checked
   reading:
-    descriptors:
-      - "wayang kulit shadow puppetry"
-      - "Javanese shadow puppet silhouettes"
-      - "intricate cut-leather ornament"
-      - "warm backlit screen"
-      - "gamelan orchestra"
-      - "Indonesian cultural tradition"
-    observations_pt: "Tudo é silhueta preta contra uma tela iluminada por trás, em laranja e dourado, como no teatro de sombras javanês. O detalhe está nos recortes: telhados, árvores e painéis têm ornamento vazado, como couro perfurado. A cena é plana e frontal, como um palco, com lanternas nos cantos e os gongos do gamelan ao centro."
-    prompt: "Wayang kulit inspired shadow puppet scene, black silhouettes against a warm backlit screen glowing orange and gold, intricate perforated cut-leather ornament on trees, roofs and panels, Javanese pavilion with a gamelan orchestra and hanging gongs, lanterns at the edges, flat frontal stage composition, textured paper screen."
-    prompt_suffix: "delicate filigree cutouts, subtle screen texture, glowing backlight falloff, theatrical framing"
+    defines_pt: "Silhuetas pretas contra uma tela iluminada por trás, em laranja e dourado. O detalhe está nos recortes vazados, como couro perfurado, e a cena é plana e frontal, como um palco."
+    prompt: "[seu tema], wayang kulit inspired shadow puppet style, black silhouettes against a warm backlit screen glowing orange and gold, intricate perforated cut-leather ornament, flat frontal stage composition, textured screen, theatrical framing"
     avoid:
       - "3D render"
       - "detailed faces"
       - "colorful characters"
-      - "photorealistic"
       - "perspective depth"
     avoid_why_pt: "O teatro de sombras vive do contraste entre silhueta e luz; rosto detalhado, cor nos personagens e profundidade apagam isso."
+    descriptors:
+      - "wayang kulit"
+      - "shadow puppetry"
+      - "backlit silhouettes"
+      - "cut-leather ornament"
+    alt_pt: "Silhuetas de músicos de gamelan sob um pavilhão com gongos, contra uma tela laranja iluminada por trás."
     tested: false
     status: draft
   naming_basis: curator_normalization
