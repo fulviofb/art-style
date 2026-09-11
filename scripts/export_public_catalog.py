@@ -27,17 +27,17 @@ OUTS = [
 
 
 def public_reading(reading):
-    """Leitura da curadoria, publicada à parte das receitas: é autoria do curador, não do autor dos vídeos."""
+    """Leitura da curadoria. Só a aprovada vai ao público; é autoria do curador, não do autor dos vídeos."""
     if not isinstance(reading, dict) or reading.get("status") != "approved":
         return None
     return {
         "source_label": "Curadoria",
-        "descriptors": list(reading.get("descriptors") or []),
-        "observations_pt": reading.get("observations_pt"),
+        "defines_pt": reading.get("defines_pt"),
         "prompt": reading.get("prompt"),
-        "prompt_suffix": reading.get("prompt_suffix"),
         "avoid": list(reading.get("avoid") or []),
         "avoid_why_pt": reading.get("avoid_why_pt"),
+        "descriptors": list(reading.get("descriptors") or []),
+        "alt_pt": reading.get("alt_pt"),
         "tested": bool(reading.get("tested")),
     }
 
