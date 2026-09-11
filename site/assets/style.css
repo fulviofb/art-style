@@ -685,3 +685,4 @@ footer {
 .reading-observations { margin: 0; max-width: 42rem; color: #e5ded2; font-family: Newsreader, Georgia, serif; font-size: 1.15rem; line-height: 1.5; }
 .reading-block pre { margin: 0; overflow-x: auto; white-space: pre-wrap; color: #e5ded2; font-family: Newsreader, Georgia, serif; font-size: 1.02rem; line-height: 1.55; }
 .reading-why { margin: 0; color: var(--muted); font-size: .82rem; }
+.reading-block mark.slot { padding: 0 .2rem; border-radius: 3px; background: rgb(212 168 83 / .22); color: var(--accent); }

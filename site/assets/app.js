@@ -185,18 +185,16 @@ function imageActions(url, source) {
 }
 
 const READING_TOAST = {
-  terms: "Termos copiados",
-  prompt: "Prompt copiado",
-  full: "Prompt e acréscimo copiados",
+  prompt: "Prompt copiado — troque [seu tema] pelo seu assunto",
   avoid: "Lista do que evitar copiada",
+  terms: "Termos copiados",
 };
 
 function readingText(reading, kind) {
   if (!reading) return "";
-  if (kind === "terms") return (reading.descriptors || []).join(", ");
   if (kind === "prompt") return reading.prompt || "";
-  if (kind === "full") return [reading.prompt, reading.prompt_suffix].filter(Boolean).join(", ");
   if (kind === "avoid") return (reading.avoid || []).join(", ");
+  if (kind === "terms") return (reading.descriptors || []).join(", ");
   return "";
 }
 
@@ -207,16 +205,16 @@ function readingSection(reading) {
       <header><h3>${title}</h3>${kind ? `<button type="button" class="copy${ghost ? " ghost" : ""}" data-copy-reading="${kind}">${label}</button>` : ""}</header>
       ${content}
     </div>`;
+  const prompt = escapeHtml(reading.prompt || "").split("[seu tema]").join('<mark class="slot">[seu tema]</mark>');
   const status = reading.tested ? "Prompt testado" : "Prompt ainda não testado";
   return `<section class="detail-section reading">
     <header><p class="section-kicker">Leitura da curadoria</p><h2>Como reconhecer e reproduzir</h2></header>
     <div class="reading-body">
-      <p class="reading-note"><span class="reading-badge${reading.tested ? " is-tested" : ""}">${status}</span>Esta leitura e estes prompts são da curadoria, não do autor dos vídeos.${reading.tested ? "" : " Teste antes de confiar no resultado."}</p>
-      ${reading.observations_pt ? block("O que se vê", null, "", `<p class="reading-observations">${escapeHtml(reading.observations_pt)}</p>`) : ""}
-      ${reading.descriptors?.length ? block("Termos que definem o estilo", "terms", "Copiar termos", chips(reading.descriptors), true) : ""}
-      ${reading.prompt ? block("Prompt", "prompt", "Copiar prompt", `<pre>${escapeHtml(reading.prompt)}</pre>`) : ""}
-      ${reading.prompt_suffix ? block("Acréscimo para chegar mais perto", "full", "Copiar prompt + acréscimo", `<pre>${escapeHtml(reading.prompt_suffix)}</pre>`) : ""}
+      <p class="reading-note"><span class="reading-badge${reading.tested ? " is-tested" : ""}">${status}</span>Esta leitura e este prompt são da curadoria, não do autor dos vídeos.${reading.tested ? "" : " Teste antes de confiar no resultado."}</p>
+      ${reading.defines_pt ? block("O que define o estilo", null, "", `<p class="reading-observations">${escapeHtml(reading.defines_pt)}</p>`) : ""}
+      ${reading.prompt ? block("Prompt de estilo", "prompt", "Copiar prompt", `<pre>${prompt}</pre><p class="reading-why">Troque [seu tema] pelo que você quer mostrar. O prompt traz só o estilo; para a cena, cole a imagem como referência.</p>`) : ""}
       ${reading.avoid?.length ? block("Evite estes termos", "avoid", "Copiar lista", `${chips(reading.avoid)}${reading.avoid_why_pt ? `<p class="reading-why">${escapeHtml(reading.avoid_why_pt)}</p>` : ""}`, true) : ""}
+      ${reading.descriptors?.length ? block("Termos para busca", "terms", "Copiar termos", chips(reading.descriptors), true) : ""}
     </div>
   </section>`;
 }
@@ -253,7 +251,7 @@ function renderStyleDetail(catalog) {
   root.innerHTML = `<a class="back-link" href="index.html">← Explorar estilos</a>
     <section class="style-hero">
       <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>${style.summary_pt ? `<p class="style-summary style-summary--pt">${escapeHtml(style.summary_pt)}</p>` : ""}<p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
-      <div class="style-hero__visual"><div class="style-hero__media">${still(style.poster_url, style.display_name, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
+      <div class="style-hero__visual"><div class="style-hero__media">${still(style.poster_url, style.reading?.alt_pt || style.display_name, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
     </section>
     ${readingSection(style.reading)}
     <section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>

@@ -142,19 +142,40 @@ def test_repeated_styles_point_to_canonical_records():
     }
 
 
+def _good_reading(**changes):
+    reading = {
+        "defines_pt": "Personagem simples sobre fundo pintado.",
+        "prompt": "[seu tema], hand-painted anime, painted animation backgrounds",
+        "descriptors": ["hand-painted anime", "cel-shaded characters", "painted backgrounds"],
+        "avoid": ["3D render"],
+        "tested": False,
+        "status": "approved",
+    }
+    reading.update(changes)
+    return reading
+
+
 def test_curator_reading_shape_is_validated():
-    good = {"descriptors": ["vintage pulp illustration"], "prompt": "Stylized retro poster", "tested": False, "avoid": ["3D render"], "status": "approved"}
-    assert validate_reading(good) == []
-    assert "curator.reading.tested must be true or false" in validate_reading({**good, "tested": "no"})
-    assert "curator.reading.descriptors must be a non-empty list of terms" in validate_reading({**good, "descriptors": []})
-    assert "curator.reading.prompt is required" in validate_reading({**good, "prompt": " "})
-    assert "curator.reading.status must be draft or approved" in validate_reading({**good, "status": "rascunho"})
+    assert validate_reading(_good_reading()) == []
+    assert "curator.reading.tested must be true or false" in validate_reading(_good_reading(tested="no"))
+    assert "curator.reading.descriptors must list 3 to 6 search terms" in validate_reading(_good_reading(descriptors=["um só"]))
+    assert "curator.reading.defines_pt is required" in validate_reading(_good_reading(defines_pt=" "))
+    assert "curator.reading.status must be draft or approved" in validate_reading(_good_reading(status="rascunho"))
+
+
+def test_reading_prompt_describes_the_style_not_the_scene():
+    errors = validate_reading(_good_reading(prompt="a blond child running downhill, hand-painted anime"))
+    assert any("[seu tema]" in error for error in errors)
+
+
+def test_old_reading_fields_are_rejected():
+    assert "curator.reading.prompt_suffix was merged into prompt" in validate_reading(_good_reading(prompt_suffix="x"))
+    assert "curator.reading.observations_pt was renamed to defines_pt" in validate_reading(_good_reading(observations_pt="x"))
 
 
 def test_draft_reading_never_reaches_the_site():
-    reading = {"descriptors": ["gouache"], "prompt": "Painted poster", "tested": False}
-    assert public_reading({**reading, "status": "draft"}) is None
-    assert public_reading({**reading, "status": "approved"})["prompt"] == "Painted poster"
+    assert public_reading(_good_reading(status="draft")) is None
+    assert public_reading(_good_reading())["prompt"].startswith("[seu tema]")
 
 
 def test_curator_reading_never_poses_as_the_author_prompt():

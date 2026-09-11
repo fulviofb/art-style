@@ -362,19 +362,8 @@
       "summary_pt": "Cartaz de aventura pintado dos anos 50: guache e óleo, proporções exageradas e perspectiva a serviço da história, com leve influência low-poly. Bom para aventura bem-humorada com ar de época.",
       "reading": {
         "source_label": "Curadoria",
-        "descriptors": [
-          "Retro cinematic illustrated poster",
-          "1950s adventure movie poster",
-          "vintage pulp illustration",
-          "mid-century painted movie poster",
-          "gouache and oil illustration",
-          "stylized realism",
-          "Mediterranean adventure poster",
-          "aged print texture"
-        ],
-        "observations_pt": "O tubarão tem uma espécie de “realismo fantástico”: é reconhecível como tubarão, mas suas proporções foram deliberadamente exageradas. Os homens também parecem mais personagens pintados do que pessoas fotografadas. E a perspectiva não é totalmente realista — tudo foi organizado para contar a história rapidamente, como nos cartazes antigos.",
-        "prompt": "Stylized retro adventure movie poster, hand-painted mid-century aesthetic, simplified geometric forms, subtle low-poly influence, painterly gouache and oil textures, exaggerated proportions, vintage print grain, warm faded colors, cinematic composition, 1950s–1960s illustrated film poster style.",
-        "prompt_suffix": "hand-painted theatrical poster, slightly naive anatomy, exaggerated scale, simple cinematic storytelling, vintage commercial illustration, warm faded pigments, matte painted surface, subtle canvas texture, imperfect hand-painted edges, 1950s European coastal adventure film aesthetic",
+        "defines_pt": "Realismo fantástico de cartaz antigo: tudo é reconhecível, mas com proporções exageradas de propósito. As pessoas parecem personagens pintados, não fotografadas, e a perspectiva não é realista: é organizada para contar a história rapidamente.",
+        "prompt": "[seu tema], stylized retro adventure movie poster, hand-painted mid-century aesthetic, simplified geometric forms, subtle low-poly influence, painterly gouache and oil textures, exaggerated proportions and scale, slightly naive anatomy, simple cinematic storytelling, vintage commercial illustration, warm faded pigments, vintage print grain, matte painted surface, subtle canvas texture, imperfect hand-painted edges, 1950s–1960s illustrated film poster style",
         "avoid": [
           "photorealistic",
           "hyperrealistic",
@@ -383,6 +372,15 @@
           "digital art"
         ],
         "avoid_why_pt": "Eles provavelmente fariam a IA se afastar justamente dessa aparência artesanal.",
+        "descriptors": [
+          "1950s adventure movie poster",
+          "vintage pulp illustration",
+          "mid-century painted movie poster",
+          "gouache and oil illustration",
+          "stylized realism",
+          "aged print texture"
+        ],
+        "alt_pt": "Dois homens musculosos puxam um tubarão gigante por uma corda numa praia de pedras, com uma vila no alto da falésia.",
         "tested": false
       },
       "family": "hybrid-experimental",
@@ -424,8 +422,27 @@
       "id": "anime",
       "slug": "anime",
       "display_name": "Anime",
-      "summary_pt": "Anime de paisagem: céu de nuvens volumosas, colinas verdes e um personagem pequeno correndo. É o ponto de partida mais seguro quando você só quer algo que pareça anime.",
-      "reading": null,
+      "summary_pt": "Anime de fundo pintado: personagem de traço simples sobre um cenário muito mais detalhado, com céu de nuvens altas e profundidade. É o ponto de partida mais seguro quando você quer algo que pareça anime.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "Dois tratamentos ao mesmo tempo: o personagem em traço de anime simples, com linhas finas e cel shading, e o cenário muito mais detalhado, pintado como guache ou aquarela de fundo de animação. O céu pintado e as camadas de distância, que vão ficando azuladas, dão escala e aquele ar de filme de animação japonês.",
+        "prompt": "[seu tema], cinematic hand-painted Japanese anime style, cel-shaded characters with clean thin linework and simple shapes, set against highly detailed painted animation backgrounds, gouache and watercolor textures, painterly skies and atmospheric depth, rich natural colors, nostalgic mood, traditional 2D animation aesthetic",
+        "avoid": [
+          "photorealistic",
+          "3D render",
+          "CGI look"
+        ],
+        "avoid_why_pt": "Eles puxam o cenário para acabamento digital e apagam a diferença entre personagem simples e fundo pintado, que é o que define o estilo.",
+        "descriptors": [
+          "hand-painted anime",
+          "cel-shaded characters",
+          "painted animation backgrounds",
+          "atmospheric perspective",
+          "Japanese animation film"
+        ],
+        "alt_pt": "Criança loira, de costas, corre por uma encosta florida em direção a um vale montanhoso, sob céu azul de nuvens altas.",
+        "tested": false
+      },
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
