@@ -26,8 +26,27 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Art Nouveau Manga Fusion"
-  summary_pt: "Mangá de traço fino e cor suave, em plano fechado e íntimo; o ornamento art nouveau do nome não aparece no pôster. Bom para cena de emoção contida."
+  summary_pt: "Anime cinematográfico em close: linhas finas, cel shading suave e acabamento pictórico. Bom para cenas íntimas e contemplativas; o ornamento art nouveau do nome não aparece no pôster."
   summary_review: poster_checked
+  reading:
+    defines_pt: "O essencial é o equilíbrio entre desenho anime limpo e acabamento pictórico suave, sem transformar o rosto ou os materiais em realismo fotográfico. Linhas finas, sombras discretas, reflexos simplificados e uma paleta quente e dessaturada criam uma aparência delicada e cinematográfica. A composição costuma valorizar enquadramentos próximos, profundidade rasa e detalhes atmosféricos."
+    prompt: "[seu tema], cinematic Japanese anime illustration, clean thin linework, soft cel shading, delicate details, painterly surface details, subtle reflections and highlights, warm muted color palette, shallow depth of field, intimate cinematic framing, soft atmospheric lighting, refined traditional 2D animation aesthetic"
+    avoid:
+      - "photorealistic"
+      - "hard cel shading"
+      - "3D render"
+      - "glossy CGI"
+      - "thick outlines"
+    avoid_why_pt: "Esses elementos deixam o acabamento duro ou excessivamente digital e eliminam a delicadeza pictórica e cinematográfica do estilo."
+    descriptors:
+      - "cinematic anime close-up"
+      - "soft cel shading"
+      - "Japanese anime illustration"
+      - "painterly anime"
+      - "intimate anime scene"
+    alt_pt: "Pessoa de cabelos escuros aparece em close com o rosto parcialmente encostado na superfície da água, olhos fechados e uma das mãos submersa."
+    tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel
