@@ -31,7 +31,8 @@ thread:
     note: Autor disse no fio que não tem um prompt exato por causa da edição.
 curator:
   display_name: "Retro Editorial Cartoon / Mid-Century Storybook Illustration"
-  summary_pt: "Cartum editorial retrô: figura achatada, textura de offset e humor seco. Bom para crônica e história leve."
+  summary_pt: "Cartum retrô de silhueta chapada e contraste forte, num clima de fuga noturna. Bom para crônica e suspense leve."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

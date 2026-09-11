@@ -25,7 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized 3D Animated Feature Film"
-  summary_pt: "3D de longa com câmera dinâmica e acabamento de estúdio. Bom para sequência de ação."
+  summary_pt: "3D de longa: menino armado sobre um carro blindado em perseguição no deserto. Bom para sequência de ação."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-3d

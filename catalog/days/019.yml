@@ -24,7 +24,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Gothic Monolith"
-  summary_pt: "Estrutura gótica monumental contra céu vazio: escala esmagadora e silêncio. Bom para mistério e para o sublime."
+  summary_pt: "Cidade em sépia vista do alto e uma figura de manto que controla as pessoas por fios. Bom para mistério e para falar de manipulação."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

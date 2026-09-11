@@ -37,11 +37,12 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Chibi Style"
-  summary_pt: "Personagem chibi: cabeça grande, corpo pequeno, expressão exagerada. Bom para mascote, adesivo e conteúdo leve para crianças."
+  summary_pt: "Personagem chibi em 3D: cabeça grande, corpo pequeno e pose de equilíbrio. Bom para mascote, adesivo e conteúdo leve para crianças."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
-  style_family: animation-2d
+  style_family: animation-3d
   tags:
-    - animation-2d
+    - animation-3d
     - children
   notes: Day 1 do Chibi; o dia 75a continua o treino.

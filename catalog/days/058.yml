@@ -27,7 +27,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Claymation + 3D animated caricature"
-  summary_pt: "Massinha com caricatura exagerada: proporção deformada e humor físico. Bom para piada e paródia."
+  summary_pt: "Massinha com caricatura exagerada: guerreiros gregos de proporção deformada e humor físico. Bom para piada e paródia."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

@@ -41,7 +41,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Brazilian Urban Graffiti Illustration"
-  summary_pt: "Grafite brasileiro com folclore: spray, cor forte e muro de periferia. Bom para falar de identidade e cultura local sem exotizar."
+  summary_pt: "Animação 2D de rua de favela: meninos jogando bola, traço limpo e cor terrosa, com o Saci como inspiração. Bom para falar de identidade e cultura local sem exotizar."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

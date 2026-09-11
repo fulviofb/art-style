@@ -25,7 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Anime Cinematic Style"
-  summary_pt: "Anime com enquadramento de cinema: luz dramática, profundidade e composição fechada. Bom para momentos de tensão e virada."
+  summary_pt: "Anime com luz de cinema: sala escura, tela acesa e uma figura parada na porta. Bom para suspense e virada."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

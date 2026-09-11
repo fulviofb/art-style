@@ -34,6 +34,7 @@ thread:
 curator:
   display_name: "Rough Blue-Pencil Animation Concept Art"
   summary_pt: "Lápis azul de animação, antes da arte final: linha de construção à vista. Bom para mostrar processo e bastidor."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

@@ -31,7 +31,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Rustic Dark Folklore Storybook Illustration"
-  summary_pt: "Folclore sombrio em livro ilustrado: textura rústica, floresta fechada e criatura antiga. Bom para conto com clima de mistério."
+  summary_pt: "Folclore sombrio em livro ilustrado: demônio de punhos em chamas numa floresta de neve. Bom para conto com clima de mistério."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

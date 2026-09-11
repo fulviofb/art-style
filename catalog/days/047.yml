@@ -27,7 +27,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Cinematic Police-Action Realism"
-  summary_pt: "Ação policial realista: câmera na mão, luz dura e paleta dessaturada. Bom para tensão; evite em conteúdo para crianças."
+  summary_pt: "Ação policial realista: noite azul, viaturas e arquitetura urbana com cara de filme. Bom para tensão; evite em conteúdo para crianças."
+  summary_review: poster_checked
   naming_basis: curator_inference
   confidence: medium
   style_family: cinematic-live-action

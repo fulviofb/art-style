@@ -36,7 +36,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Vietnamese Lacquer Storybook"
-  summary_pt: "Laca vietnamita: fundo escuro, ouro e vermelho profundo, com brilho de verniz. Bom para memória e peça solene."
+  summary_pt: "Rua vietnamita pintada em ouro e ocre: casas antigas, árvores e uma moto passando. Bom para memória e afeto de lugar."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

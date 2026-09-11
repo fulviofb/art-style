@@ -29,7 +29,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Modern Ukiyo-e Illustration"
-  summary_pt: "Ukiyo-e atualizado: contorno de xilogravura, onda estilizada e cor plana. Bom para tradição japonesa com leitura contemporânea."
+  summary_pt: "Ateliê noturno cheio de gravuras ukiyo-e, com pagode e lua cheia na janela. Bom para tradição japonesa com leitura contemporânea."
+  summary_review: poster_checked
   naming_basis: curator_normalization
   confidence: high
   style_family: folk-traditional

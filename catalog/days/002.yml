@@ -28,7 +28,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Vietnamese folk-art inspired style"
-  summary_pt: "Arte popular vietnamita: gravura Dong Ho, cor de papel e figura achatada. Bom para conto tradicional."
+  summary_pt: "Fábula vietnamita de insetos em ilustração dourada e detalhada: grilos, pássaro e campo ao pôr do sol. Bom para conto tradicional."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

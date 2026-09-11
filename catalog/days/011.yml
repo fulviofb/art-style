@@ -32,6 +32,7 @@ thread:
 curator:
   display_name: "Handmade Needle-Felt Fantasy"
   summary_pt: "Feltragem com agulha: lã fofa, contorno macio e cor de brinquedo. Bom para ternura e público infantil."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

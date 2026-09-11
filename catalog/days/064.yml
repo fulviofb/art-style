@@ -35,7 +35,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Five-Style Visual Mashup"
-  summary_pt: "Cinco linguagens diferentes na mesma peça. É demonstração de repertório, não escolha de estilo para um projeto."
+  summary_pt: "Cinco linguagens na mesma peça; o pôster mostra só a de massinha. É demonstração de repertório, não escolha de estilo para um projeto."
+  summary_review: poster_checked
   naming_basis: curator_normalization
   confidence: high
   style_family: hybrid-experimental

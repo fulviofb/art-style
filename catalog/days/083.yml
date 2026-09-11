@@ -2,17 +2,35 @@ id: "083"
 day: 83
 variant: null
 slug: "083"
-source_review: empty
+source_review: reviewed
 copy_policy: link_only
-date_utc: null
+date_utc: "2026-09-09"
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2097644621258280960/img/T4D-_VIjsDh4GJXE.jpg
+poster_source: x_video_thumb
 style:
-  name: null
+  name: "Stylized Italian Renaissance Fresco"
+  name_status: published
   prompt_published: null
-logline: null
+logline: "Painting is an art. But painting while dancing and playing with a cat? What would you call that? :))) Do you know the name of the painting he just finished?"
 creator_notes: null
-tools: []
+tools:
+  - name: Seedance 2.5
+    handles: []
 inspiration: []
-thread: []
+thread:
+  - role: hero
+    post_url: https://x.com/NVTDanh/status/2097645764793033137
+    embed: true
+    source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Stylized Italian Renaissance Fresco"
+  summary_pt: "Afresco renascentista estilizado: abóbadas de igreja, andaime e luz clara, em pintura de formas simples. Bom para falar de ofício, criação e história da arte."
+  summary_review: poster_checked
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - painterly
+    - architecture
+    - cultural-tradition
   notes: null

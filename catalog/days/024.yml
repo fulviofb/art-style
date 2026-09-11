@@ -26,6 +26,7 @@ thread:
 curator:
   display_name: "Multi-Style Scene Blend"
   summary_pt: "Estilos diferentes convivendo em uma cena só, com a costura à mostra. Serve a experimento e demonstração."
+  summary_review: poster_checked
   naming_basis: source_context
   confidence: medium
   style_family: hybrid-experimental

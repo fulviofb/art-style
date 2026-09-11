@@ -2,17 +2,41 @@ id: "085"
 day: 85
 variant: null
 slug: "085"
-source_review: empty
+source_review: reviewed
 copy_policy: link_only
-date_utc: null
+date_utc: "2026-09-11"
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2098366538114052096/img/cOcTFU4fDquTl85M.jpg
+poster_source: x_video_thumb
 style:
-  name: null
-  prompt_published: null
-logline: null
-creator_notes: null
-tools: []
+  name: "Anime sci-fi concept art"
+  name_status: published
+  prompt_published: >-
+    Futuristic anime sci-fi concept art, near-future mecha design, hard-surface mechanical detailing, sleek white-black-orange technology palette, intricate armor paneling, exposed joints and machinery, sharp clean linework, semi-realistic anime proportions, high-detail industrial design, cinematic production art, clean technical illustration aesthetic
+logline: "Inspired by a true story, reimagined in another universe, where superheroes exist and peace still has a chance to prevail."
+creator_notes: "I wanted to imagine a different ending. Not to erase history, but to reflect on loss, courage, and the hope of peace. I also made another 15s continuation, but I think this first 15s already says enough."
+tools:
+  - name: Seedance 2.0
+    handles: []
+  - name: Pollo
+    handles:
+      - itsPolloAI
+      - polloai_creator
 inspiration: []
-thread: []
+thread:
+  - role: hero
+    post_url: https://x.com/NVTDanh/status/2098369249173782695
+    embed: true
+    source_review: reviewed
+    note: "Prompt de estilo publicado no próprio post principal."
 curator:
-  style_family: null
-  notes: null
+  display_name: "Anime sci-fi concept art"
+  summary_pt: "Concept art de anime de ficção científica: tecnologia em branco, preto e laranja, arranha-céus e aeronaves de linha dura. O exemplo publicado evoca uma tragédia real; escolha a referência com cuidado."
+  summary_review: poster_checked
+  naming_basis: source_name
+  confidence: high
+  style_family: concept-art-painting
+  tags:
+    - anime-manga
+    - sci-fi
+    - concept-art
+  notes: "Publicado em 11/09. O pôster mostra duas torres e um avião, e o autor diz ser inspirado em história real: aparente referência ao 11 de setembro. Tema sensível."

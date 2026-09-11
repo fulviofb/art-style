@@ -25,7 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Painterly Cinematic Concept Art"
-  summary_pt: "Concept art pintado com luz de cinema, aqui aplicado a dança tradicional. Bom para cena solene e de grande escala."
+  summary_pt: "Concept art pintado com luz de cinema: dançarina de vestido branco entre espelhos, em alto contraste. Bom para cena solene e de grande escala."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

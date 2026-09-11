@@ -22,6 +22,9 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
 - `curator.display_name`: nome público da linguagem visual.
 - `curator.summary_pt`: uma frase em português dizendo como o estilo se parece e para que serve.
   O nome do estilo permanece no idioma da fonte porque é ele que vai no prompt; a descrição é a camada do curador.
+  A frase descreve o que o pôster mostra, não o que o nome promete: quando o nome afirma algo que a imagem
+  não tem, a frase diz isso. `curator.summary_review: poster_checked` registra que ela foi conferida contra o
+  pôster, que é um quadro do vídeo e não o vídeo inteiro. O validador exige os dois campos nos estilos canônicos.
 - `curator.style_family` e `curator.tags`: taxonomia em português.
 - `curator.canonical_style_id` + `canonical_relation`: agrupa continuações, o mesmo estilo ou a mesma obra.
 - Prompts ausentes nunca são inventados.

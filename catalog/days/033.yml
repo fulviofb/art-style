@@ -25,7 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "90s anime style"
-  summary_pt: "Anime dos anos 90: traço de cel, granulado de filme e luz de fim de tarde. Bom para nostalgia e drama contido."
+  summary_pt: "Anime dos anos 90: pintura de cel, estrada de litoral e luz de fim de tarde. Bom para nostalgia e drama contido."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

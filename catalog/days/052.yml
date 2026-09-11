@@ -34,7 +34,8 @@ thread:
     note: Reply de prompt existe no fio; URL não capturada nesta leva.
 curator:
   display_name: "Chinese Mythical Fantasy Animation"
-  summary_pt: "Fantasia mítica chinesa: véus ao vento, montanha de névoa e criatura ancestral. Bom para lenda e épico."
+  summary_pt: "Animação 2D gráfica e plana: silhueta forte, torre de pagode e noite azul de lua cheia. Bom para lenda e ação."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

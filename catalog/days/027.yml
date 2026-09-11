@@ -24,7 +24,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Cartoon Saloon–Inspired 2D Animation"
-  summary_pt: "Traço do estúdio irlandês Cartoon Saloon: formas planas, padrões decorativos e cor de vitral. Bom para conto e lenda."
+  summary_pt: "Livro ilustrado em aquarela suave: menina ruiva num prado de dentes-de-leão, cercada de bichos da floresta. Bom para conto e ternura."
+  summary_review: poster_checked
   naming_basis: curator_normalization
   confidence: high
   style_family: animation-2d

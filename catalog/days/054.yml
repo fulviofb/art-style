@@ -27,7 +27,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Painterly Low-Poly Comic Art"
-  summary_pt: "Facetas de low-poly com acabamento de pintura, em página de quadrinho. Bom para ação com textura incomum."
+  summary_pt: "Cidade em facetas de low-poly com acabamento de pintura e luz amarela. Bom para ação com textura incomum."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: comics-graphic-novel

@@ -35,7 +35,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Hand-drawn sketch"
-  summary_pt: "Rascunho à mão com linha solta e correção à vista. Bom para ideia em processo e para conteúdo que ganha ao parecer inacabado."
+  summary_pt: "Ilustração de traço rabiscado e textura de lápis, em cor quente de entardecer: monstro, menino e gato. Bom para aventura infantil com um pouco de susto."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration
