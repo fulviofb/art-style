@@ -26,12 +26,25 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
   não tem, a frase diz isso. `curator.summary_review: poster_checked` registra que ela foi conferida contra o
   pôster, que é um quadro do vídeo e não o vídeo inteiro. O validador exige os dois campos nos estilos canônicos.
 - `curator.reading`: leitura da curadoria, opcional. Termos que definem o estilo, o que se vê, prompt,
-  acréscimo e termos a evitar, com `tested: true|false`. É autoria do curador: nunca vai para
+  acréscimo e termos a evitar, com `tested: true|false` e `status: draft|approved`; só leituras aprovadas
+  pelo curador vão para o site. É autoria do curador: nunca vai para
   `style.prompt_published`, que é do autor dos vídeos. O site mostra a leitura rotulada à parte e avisa
   que o prompt não foi testado enquanto `tested` for falso.
 - `curator.style_family` e `curator.tags`: taxonomia em português.
 - `curator.canonical_style_id` + `canonical_relation`: agrupa continuações, o mesmo estilo ou a mesma obra.
 - Prompts ausentes nunca são inventados.
+
+
+## Regra de idioma
+
+- **Inglês, para o que vai ao gerador:** `curator.reading.prompt`, `prompt_suffix`, `descriptors` e `avoid`.
+  Os modelos de imagem e vídeo respondem melhor em inglês. O nome do estilo (`style.name` e
+  `curator.display_name`) também fica no idioma da fonte, porque já é material de prompt.
+- **Português, para o que a pessoa lê para entender e decidir:** `curator.summary_pt`,
+  `curator.reading.observations_pt`, `curator.reading.avoid_why_pt`, famílias, tags e toda a interface do site.
+  Os campos em português levam o sufixo `_pt`.
+- **Idioma original, para o que é do autor:** `logline`, `creator_notes` e `style.prompt_published` ficam como
+  foram publicados.
 
 ## Fontes atuais
 

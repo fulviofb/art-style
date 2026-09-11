@@ -49,6 +49,7 @@ curator:
       - "digital art"
     avoid_why_pt: "Eles provavelmente fariam a IA se afastar justamente dessa aparência artesanal."
     tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: hybrid-experimental

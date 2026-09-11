@@ -63,6 +63,8 @@ def validate_reading(reading) -> list[str]:
         found.append("curator.reading.prompt is required")
     if not isinstance(reading.get("tested"), bool):
         found.append("curator.reading.tested must be true or false")
+    if reading.get("status") not in {"draft", "approved"}:
+        found.append("curator.reading.status must be draft or approved")
     avoid = reading.get("avoid")
     if avoid is not None and (not isinstance(avoid, list) or not all(isinstance(a, str) and a.strip() for a in avoid)):
         found.append("curator.reading.avoid must be a list of terms")

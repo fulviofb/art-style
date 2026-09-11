@@ -6,7 +6,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.validate_catalog import validate_reading, validate_style_curation
-from scripts.export_public_catalog import public_day
+from scripts.export_public_catalog import public_day, public_reading
 
 
 DAYS = ROOT / "catalog" / "days"
@@ -143,11 +143,18 @@ def test_repeated_styles_point_to_canonical_records():
 
 
 def test_curator_reading_shape_is_validated():
-    good = {"descriptors": ["vintage pulp illustration"], "prompt": "Stylized retro poster", "tested": False, "avoid": ["3D render"]}
+    good = {"descriptors": ["vintage pulp illustration"], "prompt": "Stylized retro poster", "tested": False, "avoid": ["3D render"], "status": "approved"}
     assert validate_reading(good) == []
     assert "curator.reading.tested must be true or false" in validate_reading({**good, "tested": "no"})
     assert "curator.reading.descriptors must be a non-empty list of terms" in validate_reading({**good, "descriptors": []})
     assert "curator.reading.prompt is required" in validate_reading({**good, "prompt": " "})
+    assert "curator.reading.status must be draft or approved" in validate_reading({**good, "status": "rascunho"})
+
+
+def test_draft_reading_never_reaches_the_site():
+    reading = {"descriptors": ["gouache"], "prompt": "Painted poster", "tested": False}
+    assert public_reading({**reading, "status": "draft"}) is None
+    assert public_reading({**reading, "status": "approved"})["prompt"] == "Painted poster"
 
 
 def test_curator_reading_never_poses_as_the_author_prompt():

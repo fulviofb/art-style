@@ -28,7 +28,7 @@ OUTS = [
 
 def public_reading(reading):
     """Leitura da curadoria, publicada à parte das receitas: é autoria do curador, não do autor dos vídeos."""
-    if not isinstance(reading, dict):
+    if not isinstance(reading, dict) or reading.get("status") != "approved":
         return None
     return {
         "source_label": "Curadoria",
