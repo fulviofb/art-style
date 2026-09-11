@@ -27,6 +27,26 @@ curator:
   display_name: "90s anime style"
   summary_pt: "Anime dos anos 90: pintura de cel, estrada de litoral e luz de fim de tarde. Bom para nostalgia e drama contido."
   summary_review: poster_checked
+  reading:
+    descriptors:
+      - "1990s anime"
+      - "cel animation"
+      - "hand-painted background art"
+      - "dusk coastal highway"
+      - "retro Japanese animation film"
+      - "soft film grain"
+    observations_pt: "O personagem e a moto são de célula, com contorno e sombra em dois tons, enquanto o fundo é pintado à mão: rochas iluminadas pelo pôr do sol, pinheiros escuros e um céu que vai do rosa ao azul. Os postes já acesos e o ônibus ao longe dão o clima de fim de dia. A câmera baixa, atrás da moto, é enquadramento típico dos filmes de anime dessa época."
+    prompt: "1990s anime film still, cel-shaded rider on a red and white motorcycle on a coastal highway at dusk, hand-painted background of sunlit rocky cliffs and dark pine trees, pink-to-blue twilight sky, street lamps turning on, a bus in the distance, low camera angle from behind, retro Japanese animation."
+    prompt_suffix: "two-tone cel shading, painted background art, soft film grain, slight color fade, classic feature film look"
+    avoid:
+      - "3D render"
+      - "modern anime gloss"
+      - "digital bloom"
+      - "photorealistic"
+      - "chibi"
+    avoid_why_pt: "O brilho e a luz digital do anime atual apagam a pintura de célula e o granulado, que dão o ar de anos 90."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

@@ -33,6 +33,26 @@ curator:
   display_name: "Handmade Needle-Felt Fantasy"
   summary_pt: "Feltragem com agulha: lã fofa, contorno macio e cor de brinquedo. Bom para ternura e público infantil."
   summary_review: poster_checked
+  reading:
+    descriptors:
+      - "needle felting"
+      - "wool felt characters"
+      - "handmade textile diorama"
+      - "embroidered details"
+      - "cozy storybook craft"
+      - "warm tabletop lighting"
+    observations_pt: "Personagens e cenário parecem feitos de lã feltrada: o peixe tem pelos e escamas de fibra, as ondas são rolos de lã com espuma branca e o livro tem acabamento de ponto caseado. O fundo imita tecido, com o título bordado. A luz é quente, de mesa, e tudo tem aquela penugem que dá vontade de tocar."
+    prompt: "Needle-felted wool diorama, fuzzy felt characters with visible fibers, a big-eyed fish monster and an old fisherman, rolled wool waves with white foam, felt storybook with blanket-stitched pages, embroidered fabric backdrop, warm tabletop lighting, cozy handmade storybook atmosphere."
+    prompt_suffix: "soft wool texture, tiny loose fibers, stitched seams, handmade imperfections, shallow macro depth of field"
+    avoid:
+      - "plastic"
+      - "smooth 3D render"
+      - "photorealistic animals"
+      - "clay"
+      - "glossy"
+    avoid_why_pt: "Sem esses termos a IA mantém a textura de fibra; com eles, troca a lã por plástico, massinha ou bicho de verdade."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

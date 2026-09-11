@@ -36,6 +36,26 @@ curator:
   display_name: "Ligne Claire Comic Art"
   summary_pt: "Ligne claire: contorno uniforme, sem hachura, cor chapada e leitura instantânea. Bom para explicar algo com clareza em quadrinho."
   summary_review: poster_checked
+  reading:
+    descriptors:
+      - "ligne claire"
+      - "Franco-Belgian comic art"
+      - "clean uniform ink outlines"
+      - "Hergé-inspired"
+      - "mid-century European street"
+      - "flat color with warm light"
+    observations_pt: "O traço é de ligne claire: contorno preto uniforme em tudo, personagens simples sobre cenários detalhados, na tradição de Tintim. A rua europeia tem fachadas, fonte, calçada de pedra e um carro antigo, tudo desenhado com a mesma linha. A diferença para a ligne claire clássica é a luz: aqui o céu e o sol de entardecer são mais pintados, com degradê, e não em cor chapada."
+    prompt: "Ligne claire comic art, Franco-Belgian style, clean uniform black ink outlines, simple expressive characters over richly detailed backgrounds, a young detective in a trench coat reaching for a pigeon carrying a top secret envelope, mid-century European town square with fountain and cobblestones, vintage car, warm late-afternoon light."
+    prompt_suffix: "Hergé-inspired clarity, flat color fills, minimal hatching, readable staging, classic album cover composition"
+    avoid:
+      - "cross-hatching"
+      - "manga"
+      - "photorealistic"
+      - "gritty"
+      - "heavy shadows"
+    avoid_why_pt: "Hachura, sombra pesada e mangá quebram a clareza da linha uniforme, que é a regra da ligne claire."
+    tested: false
+    status: draft
   naming_basis: curator_normalization
   confidence: high
   style_family: comics-graphic-novel

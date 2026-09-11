@@ -26,6 +26,26 @@ curator:
   display_name: "Warm Scandinavian Folk Illustration"
   summary_pt: "Folk escandinavo: cor quente e terrosa, colagem de cenas cotidianas e plantas. Bom para acolhimento e conteúdo de estação."
   summary_review: poster_checked
+  reading:
+    descriptors:
+      - "warm Scandinavian folk illustration"
+      - "cozy hygge lifestyle collage"
+      - "mustard and olive palette"
+      - "hand-drawn gouache texture"
+      - "decorative folk florals"
+      - "flat naive figures"
+    observations_pt: "É uma colagem de pequenas cenas do dia a dia: regar plantas, tomar café, pintar, ler com o gato, passear com o cachorro. A paleta fica em mostarda, oliva e marrom, com textura granulada de guache e flores decorativas preenchendo os vãos. As figuras são simples e planas, e a frase no centro amarra tudo como um cartão."
+    prompt: "Warm Scandinavian folk illustration, cozy hygge lifestyle collage of small everyday scenes, a young woman with glasses in a mustard floral sweater watering plants, reading with a cat, painting, walking a dog, mustard olive and brown palette, grainy gouache texture, decorative folk florals and leaves filling the gaps, a hand-lettered quote in the center."
+    prompt_suffix: "flat naive figures, speckled print texture, autumn warmth, greeting card layout, matte finish"
+    avoid:
+      - "3D render"
+      - "photorealistic"
+      - "neon colors"
+      - "high contrast"
+      - "glossy"
+    avoid_why_pt: "Cor saturada e brilho digital quebram o aconchego terroso, que é o que o estilo transmite."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

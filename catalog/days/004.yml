@@ -30,6 +30,26 @@ curator:
   display_name: "Minimalist Cozy Slice-of-Life Illustration"
   summary_pt: "Cena cotidiana e aconchegante: duas mulheres tomando chá junto à janela, em luz morna. Bom para tema de casa, rotina e acolhimento."
   summary_review: poster_checked
+  reading:
+    descriptors:
+      - "cozy slice-of-life anime illustration"
+      - "soft hand-painted 2D"
+      - "warm window light"
+      - "quiet domestic scene"
+      - "muted green and wood tones"
+      - "gentle intergenerational moment"
+    observations_pt: "Apesar do nome, não é minimalista: é pintura 2D detalhada, no traço suave de anime de cotidiano. A luz entra pela janela e aquece a madeira da mesa, o vapor sobe das xícaras e as flores no vaso ficam no centro, entre as duas mulheres. É um momento parado, sem ação, em que o que importa é o olhar entre elas."
+    prompt: "Cozy slice-of-life anime illustration, soft hand-painted 2D, a young woman and an elderly woman sharing tea at a wooden table by a sunlit window, steam rising from cups, small vase of blossoms between them, warm natural light, muted greens and warm wood tones, quiet tender mood."
+    prompt_suffix: "gentle linework, painted background details, soft light diffusion, calm composition, hand-painted texture"
+    avoid:
+      - "3D render"
+      - "dramatic lighting"
+      - "action"
+      - "hyperrealistic"
+      - "neon"
+    avoid_why_pt: "Drama e acabamento digital quebram a calma, e o estilo depende dela."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration
