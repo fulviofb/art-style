@@ -47,10 +47,10 @@ function toast(message) {
   toast.timer = setTimeout(() => element.classList.remove("show"), 1600);
 }
 
-async function copyText(text) {
+async function copyText(text, done = "Prompt copiado") {
   try {
     await navigator.clipboard.writeText(text);
-    toast("Prompt copiado");
+    toast(done);
   } catch {
     toast("Não foi possível copiar — selecione o texto");
   }
@@ -145,6 +145,82 @@ function renderExplore(catalog) {
   render();
 }
 
+async function imageAsPng(url) {
+  const response = await fetch(url, { mode: "cors" });
+  if (!response.ok) throw new Error(String(response.status));
+  const source = await response.blob();
+  if (source.type === "image/png") return source;
+  const bitmap = await createImageBitmap(source);
+  const canvas = document.createElement("canvas");
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  canvas.getContext("2d").drawImage(bitmap, 0, 0);
+  return new Promise((resolve, reject) => canvas.toBlob((blob) => (blob ? resolve(blob) : reject(new Error("png"))), "image/png"));
+}
+
+async function copyImage(url) {
+  if (!navigator.clipboard?.write || typeof ClipboardItem === "undefined") {
+    toast("Este navegador não copia imagens — use “Abrir imagem”");
+    return;
+  }
+  // O ClipboardItem precisa nascer dentro do clique: o Safari recusa a escrita depois de um await.
+  const png = imageAsPng(url);
+  try {
+    await navigator.clipboard.write([new ClipboardItem({ "image/png": png })]);
+    toast("Imagem copiada — cole no seu editor");
+  } catch {
+    toast("Não foi possível copiar — use “Abrir imagem”");
+  }
+}
+
+function imageActions(url, source) {
+  if (!url) return "";
+  const credit = source?.source_label ? `Imagem de ${escapeHtml(source.source_label)}` : "Imagem da fonte";
+  const link = source?.source_url ? ` · <a href="${escapeHtml(source.source_url)}" rel="noopener noreferrer">ver na fonte ↗</a>` : "";
+  return `<div class="image-actions">
+    <button type="button" class="copy" data-copy-image="${escapeHtml(url)}">Copiar imagem</button>
+    <a class="ghost" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Abrir imagem ↗</a>
+    <p>${credit}${link}. Use como referência de estilo no seu editor; não publique como sua.</p>
+  </div>`;
+}
+
+const READING_TOAST = {
+  terms: "Termos copiados",
+  prompt: "Prompt copiado",
+  full: "Prompt e acréscimo copiados",
+  avoid: "Lista do que evitar copiada",
+};
+
+function readingText(reading, kind) {
+  if (!reading) return "";
+  if (kind === "terms") return (reading.descriptors || []).join(", ");
+  if (kind === "prompt") return reading.prompt || "";
+  if (kind === "full") return [reading.prompt, reading.prompt_suffix].filter(Boolean).join(", ");
+  if (kind === "avoid") return (reading.avoid || []).join(", ");
+  return "";
+}
+
+function readingSection(reading) {
+  if (!reading) return "";
+  const chips = (items) => `<div class="style-tags">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>`;
+  const block = (title, kind, label, content, ghost = false) => `<div class="reading-block">
+      <header><h3>${title}</h3>${kind ? `<button type="button" class="copy${ghost ? " ghost" : ""}" data-copy-reading="${kind}">${label}</button>` : ""}</header>
+      ${content}
+    </div>`;
+  const status = reading.tested ? "Prompt testado" : "Prompt ainda não testado";
+  return `<section class="detail-section reading">
+    <header><p class="section-kicker">Leitura da curadoria</p><h2>Como reconhecer e reproduzir</h2></header>
+    <div class="reading-body">
+      <p class="reading-note"><span class="reading-badge${reading.tested ? " is-tested" : ""}">${status}</span>Esta leitura e estes prompts são da curadoria, não do autor dos vídeos.${reading.tested ? "" : " Teste antes de confiar no resultado."}</p>
+      ${reading.observations_pt ? block("O que se vê", null, "", `<p class="reading-observations">${escapeHtml(reading.observations_pt)}</p>`) : ""}
+      ${reading.descriptors?.length ? block("Termos que definem o estilo", "terms", "Copiar termos", chips(reading.descriptors), true) : ""}
+      ${reading.prompt ? block("Prompt", "prompt", "Copiar prompt", `<pre>${escapeHtml(reading.prompt)}</pre>`) : ""}
+      ${reading.prompt_suffix ? block("Acréscimo para chegar mais perto", "full", "Copiar prompt + acréscimo", `<pre>${escapeHtml(reading.prompt_suffix)}</pre>`) : ""}
+      ${reading.avoid?.length ? block("Evite estes termos", "avoid", "Copiar lista", `${chips(reading.avoid)}${reading.avoid_why_pt ? `<p class="reading-why">${escapeHtml(reading.avoid_why_pt)}</p>` : ""}`, true) : ""}
+    </div>
+  </section>`;
+}
+
 function renderStyleDetail(catalog) {
   const root = document.getElementById("style-detail");
   if (!root) return;
@@ -155,8 +231,10 @@ function renderStyleDetail(catalog) {
     return;
   }
   document.title = `${style.display_name} — Técnicas de Art Style`;
+  const heroSource = (style.examples || []).find((example) => example.poster_url === style.poster_url) || (style.examples || [])[0];
   const examples = (style.examples || []).map((example, index) => `<article class="example-card">
     <div class="example-card__media">${still(example.poster_url, `${style.display_name} — exemplo ${index + 1}`)}</div>
+    ${imageActions(example.poster_url, example)}
     <div class="example-card__body">
       <p class="eyebrow">Referência selecionada · ${escapeHtml(example.source_label)}</p>
       ${example.caption ? `<p>${escapeHtml(example.caption)}</p>` : ""}
@@ -175,10 +253,20 @@ function renderStyleDetail(catalog) {
   root.innerHTML = `<a class="back-link" href="index.html">← Explorar estilos</a>
     <section class="style-hero">
       <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>${style.summary_pt ? `<p class="style-summary style-summary--pt">${escapeHtml(style.summary_pt)}</p>` : ""}<p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
-      <div class="style-hero__media">${still(style.poster_url, style.display_name, true)}</div>
+      <div class="style-hero__visual"><div class="style-hero__media">${still(style.poster_url, style.display_name, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
     </section>
+    ${readingSection(style.reading)}
     <section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>
-    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : "Receita ainda não catalogada"}</h2></header>${recipes || '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>'}</section>`;
+    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : style.reading ? "Nenhum prompt do autor" : "Receita ainda não catalogada"}</h2></header>${recipes || (style.reading ? '<p class="empty-note">O autor não publicou prompt para este estilo. A leitura da curadoria, acima, traz um prompt próprio.</p>' : '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>')}</section>`;
+  root.querySelectorAll("button[data-copy-image]").forEach((button) => {
+    button.addEventListener("click", () => copyImage(button.dataset.copyImage));
+  });
+  root.querySelectorAll("button[data-copy-reading]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const text = readingText(style.reading, button.dataset.copyReading);
+      if (text) copyText(text, READING_TOAST[button.dataset.copyReading]);
+    });
+  });
   root.querySelectorAll("button[data-recipe]").forEach((button) => {
     button.addEventListener("click", () => {
       const recipe = style.recipes[Number(button.dataset.recipe)];

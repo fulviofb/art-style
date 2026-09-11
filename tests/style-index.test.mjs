@@ -37,6 +37,7 @@ const items = [
     family_label: "Livro ilustrado e narrativa",
     tags: ["watercolor", "storybook"],
     tag_labels: ["Aquarela", "Livro ilustrado"],
+    reading: { descriptors: ["vintage pulp illustration"] },
     example_count: 1,
     recipe_count: 0,
     examples: [{ source_style_name: "Whimsical Watercolor Storybook", caption: "Soft narrative watercolor", tools: [] }],
@@ -63,6 +64,10 @@ test("filter reaches the portuguese summary, so intent words find a style", () =
     filterStyleItems(items, { query: "memoria" }).map((style) => style.id),
     ["ghibli-inspired-hand-painted-animation"],
   );
+});
+
+test("filter reaches the curator reading descriptors", () => {
+  assert.deepEqual(filterStyleItems(items, { query: "pulp" }).map((style) => style.id), ["whimsical-watercolor-storybook"]);
 });
 
 test("filter combines query and family", () => {

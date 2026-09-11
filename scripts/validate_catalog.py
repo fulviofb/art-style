@@ -51,6 +51,24 @@ ALLOWED_CONFIDENCE = {"high", "medium", "low"}
 ALLOWED_SUMMARY_REVIEW = {"poster_checked"}
 
 
+def validate_reading(reading) -> list[str]:
+    """Leitura da curadoria: prompt autoral do curador, separado do prompt publicado pelo autor."""
+    if not isinstance(reading, dict):
+        return ["curator.reading must be a mapping"]
+    found: list[str] = []
+    descriptors = reading.get("descriptors")
+    if not isinstance(descriptors, list) or not descriptors or not all(isinstance(d, str) and d.strip() for d in descriptors):
+        found.append("curator.reading.descriptors must be a non-empty list of terms")
+    if not str(reading.get("prompt") or "").strip():
+        found.append("curator.reading.prompt is required")
+    if not isinstance(reading.get("tested"), bool):
+        found.append("curator.reading.tested must be true or false")
+    avoid = reading.get("avoid")
+    if avoid is not None and (not isinstance(avoid, list) or not all(isinstance(a, str) and a.strip() for a in avoid)):
+        found.append("curator.reading.avoid must be a list of terms")
+    return found
+
+
 def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> list[str]:
     found: list[str] = []
     style = data.get("style") or {}
@@ -79,6 +97,8 @@ def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> l
             found.append("curator.summary_pt is required on canonical styles")
         elif curator.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
             found.append("curator.summary_review must record that the summary was checked against the poster")
+    if curator.get("reading") is not None:
+        found.extend(validate_reading(curator.get("reading")))
     return found
 
 

@@ -25,6 +25,10 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
   A frase descreve o que o pôster mostra, não o que o nome promete: quando o nome afirma algo que a imagem
   não tem, a frase diz isso. `curator.summary_review: poster_checked` registra que ela foi conferida contra o
   pôster, que é um quadro do vídeo e não o vídeo inteiro. O validador exige os dois campos nos estilos canônicos.
+- `curator.reading`: leitura da curadoria, opcional. Termos que definem o estilo, o que se vê, prompt,
+  acréscimo e termos a evitar, com `tested: true|false`. É autoria do curador: nunca vai para
+  `style.prompt_published`, que é do autor dos vídeos. O site mostra a leitura rotulada à parte e avisa
+  que o prompt não foi testado enquanto `tested` for falso.
 - `curator.style_family` e `curator.tags`: taxonomia em português.
 - `curator.canonical_style_id` + `canonical_relation`: agrupa continuações, o mesmo estilo ou a mesma obra.
 - Prompts ausentes nunca são inventados.

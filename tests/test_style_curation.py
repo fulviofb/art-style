@@ -5,7 +5,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from scripts.validate_catalog import validate_style_curation
+from scripts.validate_catalog import validate_reading, validate_style_curation
 from scripts.export_public_catalog import public_day
 
 
@@ -140,3 +140,20 @@ def test_repeated_styles_point_to_canonical_records():
         "057": "same_work",
         "075a": "same_style",
     }
+
+
+def test_curator_reading_shape_is_validated():
+    good = {"descriptors": ["vintage pulp illustration"], "prompt": "Stylized retro poster", "tested": False, "avoid": ["3D render"]}
+    assert validate_reading(good) == []
+    assert "curator.reading.tested must be true or false" in validate_reading({**good, "tested": "no"})
+    assert "curator.reading.descriptors must be a non-empty list of terms" in validate_reading({**good, "descriptors": []})
+    assert "curator.reading.prompt is required" in validate_reading({**good, "prompt": " "})
+
+
+def test_curator_reading_never_poses_as_the_author_prompt():
+    for path, data in reviewed_days():
+        reading = (data.get("curator") or {}).get("reading")
+        if not reading:
+            continue
+        published = (data.get("style") or {}).get("prompt_published")
+        assert published != reading.get("prompt"), f"{path.stem}: curator prompt copied into the author field"
