@@ -2672,8 +2672,29 @@
       "id": "soviet-constructivist-poster-style",
       "slug": "soviet-constructivist-poster-style",
       "display_name": "Soviet Constructivist Poster Style",
-      "summary_pt": "Cena de rua pintada com paleta de cartaz soviético: vermelho, ocre e figuras de sobretudo. Bom para ar de época; o tema carrega carga política, use com consciência.",
-      "reading": null,
+      "summary_pt": "Ilustração gráfica retrô: formas geométricas, sombras duras, paleta curta e textura de impressão gasta. Bom para movimento e ação; do cartaz construtivista do nome resta a paleta e o contraste, não a tipografia nem a montagem.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O ponto-chave é a simplificação gráfica: personagens, veículos e arquitetura são construídos com formas limpas, blocos de cor e sombras bem marcadas. A paleta limitada, os contrastes fortes e a perspectiva exagerada dão energia cinematográfica, enquanto texturas de desgaste e impressão antiga acrescentam um acabamento retrô.",
+        "prompt": "[seu tema], stylized retro graphic illustration, bold geometric shapes, simplified forms, strong graphic shadows, limited color palette, high contrast lighting, dynamic exaggerated perspective, clean flat planes, screen-printed poster texture, subtle distressed print marks, mid-century modern graphic design influence, cinematic composition",
+        "avoid": [
+          "photorealistic",
+          "soft watercolor",
+          "glossy 3D",
+          "highly detailed textures",
+          "pastel shading"
+        ],
+        "avoid_why_pt": "Esses elementos suavizam demais a imagem e tiram o impacto gráfico, geométrico e contrastado que define o estilo.",
+        "descriptors": [
+          "retro urban illustration",
+          "mid-century graphic poster",
+          "geometric city art",
+          "screen print illustration",
+          "cinematic poster art"
+        ],
+        "alt_pt": "Homem de boné pedala rapidamente por uma rua urbana, visto em perspectiva baixa, enquanto edifícios geométricos e pessoas de terno aparecem ao fundo.",
+        "tested": false
+      },
       "family": "editorial-poster",
       "family_label": "Editorial e pôster",
       "tags": [
