@@ -43,7 +43,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Cenário pintado como aquarela, de formas arredondadas e verdes suaves, com o personagem de contorno fino e cor chapada por cima. A luz é quente e difusa, sem sombras duras, e a paisagem costuma ser maior que o personagem."
-    prompt: "[seu tema], Studio Ghibli-inspired hand-painted animation, soft watercolor background painting with rounded natural shapes, cel-shaded characters with thin clean outlines and flat colors, warm diffuse light without harsh shadows, muted natural greens and soft skies, calm nostalgic mood, 1980s–1990s Japanese feature animation"
+    prompt: "[seu tema], Studio Ghibli-inspired hand-painted animation, soft watercolor background painting with rounded natural shapes, cel-shaded rendering with thin clean outlines and flat colors, warm diffuse light without harsh shadows, muted natural palette, calm nostalgic mood, 1980s–1990s Japanese feature animation"
     avoid:
       - "photorealistic"
       - "3D render"

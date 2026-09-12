@@ -35,7 +35,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Tudo é feito de lã feltrada: fibras aparentes, contornos macios e costuras à vista, como um diorama de tecido. A luz é quente, de mesa, e as cores são de brinquedo artesanal."
-    prompt: "[seu tema], needle-felted wool style, fuzzy felt characters with visible fibers, soft rounded shapes, stitched seams and embroidered details, handmade textile diorama, warm tabletop lighting, cozy handcrafted colors, shallow macro depth of field"
+    prompt: "[seu tema], needle-felted wool style, fuzzy felt surfaces with visible fibers, soft rounded shapes, stitched seams and embroidered details, handmade textile diorama, warm tabletop lighting, cozy handcrafted colors, shallow macro depth of field"
     avoid:
       - "plastic"
       - "smooth 3D render"

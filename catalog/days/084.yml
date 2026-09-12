@@ -32,7 +32,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Figuras planas e ornamentais sobre fundo liso de papel creme, quase sem perspectiva. Padrões dourados nas roupas e nuvens em volutas estilizadas, como num manuscrito iluminado."
-    prompt: "[seu tema], classical Persian miniature painting, flat ornamental figures, plain cream paper background with almost no perspective, fine gold patterns on clothing, stylized scroll-shaped clouds, gold and lapis blue accents, mineral pigments, illuminated manuscript look"
+    prompt: "[seu tema], classical Persian miniature painting, flat ornamental forms, plain cream paper background with almost no perspective, fine gold ornamental patterns, stylized scroll-shaped clouds, gold and lapis blue accents, mineral pigments, illuminated manuscript look"
     avoid:
       - "3D render"
       - "photorealistic"

@@ -29,7 +29,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Tudo parece modelado à mão em massinha: textura de dedo, bordas levemente imperfeitas e cenário de maquete. As proporções são de brinquedo, com cabeças grandes e corpos curtos, cores fortes e luz de estúdio suave."
-    prompt: "[seu tema], claymation stop-motion style, plasticine characters with visible sculpted texture and fingerprints, chunky toy-like proportions, handmade miniature set, slightly imperfect modeling, bright saturated colors, soft studio lighting, tactile matte surfaces"
+    prompt: "[seu tema], claymation stop-motion style, plasticine surfaces with visible sculpted texture and fingerprints, chunky toy-like proportions, handmade miniature set, slightly imperfect modeling, bright saturated colors, soft studio lighting, tactile matte surfaces"
     avoid:
       - "smooth CGI"
       - "photorealistic"

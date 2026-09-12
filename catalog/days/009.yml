@@ -35,7 +35,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Exagero simpático em 3D: cabeça e olhos grandes, nariz e mãos maiores que o real, pele com luz atravessando por dentro. A luz é quente e cinematográfica, com fundo desfocado, e a expressão do personagem é sempre o centro."
-    prompt: "[seu tema], Pixar-style 3D animated feature, stylized characters with oversized expressive eyes and exaggerated appealing proportions, soft subsurface skin, warm cinematic lighting with volumetric light rays, shallow depth of field, rich warm color grading, feature animation quality"
+    prompt: "[seu tema], Pixar-style 3D animated feature, stylized appealing design with rounded exaggerated proportions, soft subsurface shading, warm cinematic lighting with volumetric light rays, shallow depth of field, rich warm color grading, feature animation quality"
     avoid:
       - "photorealistic"
       - "realistic human proportions"

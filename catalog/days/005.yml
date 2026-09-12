@@ -28,7 +28,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Figuras simples e planas em paleta terrosa de mostarda, oliva e marrom, com textura granulada de guache. Flores e folhas decorativas preenchem os espaços, e o clima é sempre de aconchego."
-    prompt: "[seu tema], warm Scandinavian folk illustration, flat naive figures, mustard olive and brown palette, grainy gouache texture with speckled print feel, decorative folk florals and leaves filling the gaps, cozy hygge mood, matte finish"
+    prompt: "[seu tema], warm Scandinavian folk illustration, flat naive shapes, mustard olive and brown palette, grainy gouache texture with speckled print feel, decorative folk florals and leaves filling the gaps, cozy hygge mood, matte finish"
     avoid:
       - "3D render"
       - "photorealistic"

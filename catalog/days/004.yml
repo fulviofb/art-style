@@ -32,7 +32,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Pintura 2D suave de anime de cotidiano, bem mais detalhada do que o nome sugere. Luz natural morna, cores apagadas e momentos parados, em que o que importa é o gesto e o olhar."
-    prompt: "[seu tema], cozy slice-of-life anime illustration, soft hand-painted 2D, gentle linework, warm natural window light, muted greens and warm wood tones, painted background details, quiet tender mood, calm composition"
+    prompt: "[seu tema], cozy slice-of-life anime illustration, soft hand-painted 2D, gentle linework, warm natural light, muted greens and warm earthy tones, painted background details, quiet tender mood, calm composition"
     avoid:
       - "3D render"
       - "dramatic lighting"
