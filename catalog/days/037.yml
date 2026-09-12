@@ -29,8 +29,27 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Modern Ukiyo-e Illustration"
-  summary_pt: "Ateliê noturno cheio de gravuras ukiyo-e, com pagode e lua cheia na janela. Bom para tradição japonesa com leitura contemporânea."
+  summary_pt: "Anime de ambiente noturno, acolhedor e muito detalhado, com luz quente por dentro e azul profundo por fora. Bom para ateliês, bibliotecas, cafés e cenas contemplativas; não é ukiyo-e, as gravuras são objeto da cena, não a técnica."
   summary_review: poster_checked
+  reading:
+    defines_pt: "O essencial é o contraste entre iluminação interna quente e ambiente externo frio, mantendo tudo com acabamento de pintura de animação. A cena usa muitos pequenos objetos, madeira, papel, estantes e elementos decorativos para criar sensação de espaço vivido, enquanto a luz recorta volumes e conduz o olhar. A atmosfera é calma, artesanal e nostálgica, sem buscar realismo fotográfico."
+    prompt: "[seu tema], cinematic hand-painted anime scene, richly detailed environmental storytelling, warm ambient lighting contrasted with cool moonlit tones, painterly textures, layered wooden textures, intricate decorative details, atmospheric depth, soft cel-shaded accents, traditional Japanese animation background aesthetic, cozy nocturnal mood, refined 2D illustration"
+    avoid:
+      - "photorealistic"
+      - "glossy CGI"
+      - "flat vector art"
+      - "sterile minimalism"
+      - "harsh neon lighting"
+    avoid_why_pt: "Esses elementos tiram a sensação artesanal, íntima e pintada que depende do contraste suave entre luz quente, noite azul e muitos detalhes ambientais."
+    descriptors:
+      - "cozy anime interior"
+      - "hand-painted anime background"
+      - "Japanese animation interior"
+      - "nocturnal anime environment"
+      - "painterly studio illustration"
+    alt_pt: "Ateliê japonês repleto de pinturas, pincéis e livros, com um gato no chão e vista para pagodes iluminados sob a lua cheia."
+    tested: false
+    status: approved
   naming_basis: curator_normalization
   confidence: high
   style_family: folk-traditional

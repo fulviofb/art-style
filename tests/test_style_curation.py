@@ -5,8 +5,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from scripts.validate_catalog import validate_style_curation
-from scripts.export_public_catalog import public_day
+from scripts.validate_catalog import validate_reading, validate_style_curation
+from scripts.export_public_catalog import public_day, public_reading
 
 
 DAYS = ROOT / "catalog" / "days"
@@ -140,3 +140,48 @@ def test_repeated_styles_point_to_canonical_records():
         "057": "same_work",
         "075a": "same_style",
     }
+
+
+def _good_reading(**changes):
+    reading = {
+        "defines_pt": "Personagem simples sobre fundo pintado.",
+        "prompt": "[seu tema], hand-painted anime, painted animation backgrounds",
+        "descriptors": ["hand-painted anime", "cel-shaded characters", "painted backgrounds"],
+        "avoid": ["3D render"],
+        "tested": False,
+        "status": "approved",
+    }
+    reading.update(changes)
+    return reading
+
+
+def test_curator_reading_shape_is_validated():
+    assert validate_reading(_good_reading()) == []
+    assert "curator.reading.tested must be true or false" in validate_reading(_good_reading(tested="no"))
+    assert "curator.reading.descriptors must list 3 to 6 search terms" in validate_reading(_good_reading(descriptors=["um só"]))
+    assert "curator.reading.defines_pt is required" in validate_reading(_good_reading(defines_pt=" "))
+    assert "curator.reading.status must be draft or approved" in validate_reading(_good_reading(status="rascunho"))
+
+
+def test_reading_prompt_describes_the_style_not_the_scene():
+    errors = validate_reading(_good_reading(prompt="a blond child running downhill, hand-painted anime"))
+    assert any("[seu tema]" in error for error in errors)
+
+
+def test_old_reading_fields_are_rejected():
+    assert "curator.reading.prompt_suffix was merged into prompt" in validate_reading(_good_reading(prompt_suffix="x"))
+    assert "curator.reading.observations_pt was renamed to defines_pt" in validate_reading(_good_reading(observations_pt="x"))
+
+
+def test_draft_reading_never_reaches_the_site():
+    assert public_reading(_good_reading(status="draft")) is None
+    assert public_reading(_good_reading())["prompt"].startswith("[seu tema]")
+
+
+def test_curator_reading_never_poses_as_the_author_prompt():
+    for path, data in reviewed_days():
+        reading = (data.get("curator") or {}).get("reading")
+        if not reading:
+            continue
+        published = (data.get("style") or {}).get("prompt_published")
+        assert published != reading.get("prompt"), f"{path.stem}: curator prompt copied into the author field"

@@ -662,3 +662,27 @@ footer {
   .style-card__body { min-height: 0; }
   .style-card__eyebrow { align-items: flex-start; }
 }
+
+/* Copiar imagem: o uso principal do catálogo é colar a imagem como referência no editor. */
+.image-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .6rem; margin-top: .75rem; }
+.image-actions a.ghost { border-radius: 999px; padding: .45rem .85rem; font-size: .8rem; font-weight: 600; }
+.image-actions a.ghost:hover { text-decoration: none; border-color: rgb(255 255 255 / .32); }
+.image-actions p { flex-basis: 100%; margin: 0; color: var(--muted); font-size: .76rem; }
+.example-card > .image-actions { padding: 0 1rem; }
+
+/* Leitura da curadoria */
+.reading-body { display: grid; gap: 1.35rem; max-width: 60rem; }
+.reading-note { margin: 0; color: var(--muted); font-size: .88rem; }
+.reading-badge {
+  display: inline-block; margin-right: .55rem; padding: .18rem .55rem; border-radius: 999px;
+  border: 1px solid rgb(212 168 83 / .45); color: var(--accent);
+  font-size: .66rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; vertical-align: .1rem;
+}
+.reading-badge.is-tested { border-color: var(--ok); color: var(--ok); }
+.reading-block { display: grid; gap: .65rem; padding-top: 1.1rem; border-top: 1px solid var(--line); }
+.reading-block > header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.reading-block h3 { margin: 0; color: var(--muted); font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.reading-observations { margin: 0; max-width: 42rem; color: #e5ded2; font-family: Newsreader, Georgia, serif; font-size: 1.15rem; line-height: 1.5; }
+.reading-block pre { margin: 0; overflow-x: auto; white-space: pre-wrap; color: #e5ded2; font-family: Newsreader, Georgia, serif; font-size: 1.02rem; line-height: 1.55; }
+.reading-why { margin: 0; color: var(--muted); font-size: .82rem; }
+.reading-block mark.slot { padding: 0 .2rem; border-radius: 3px; background: rgb(212 168 83 / .22); color: var(--accent); }

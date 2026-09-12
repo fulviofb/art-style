@@ -51,6 +51,39 @@ ALLOWED_CONFIDENCE = {"high", "medium", "low"}
 ALLOWED_SUMMARY_REVIEW = {"poster_checked"}
 
 
+SEU_TEMA = "[seu tema]"
+
+
+def validate_reading(reading) -> list[str]:
+    """Leitura da curadoria: autoria do curador, separada do prompt publicado pelo autor dos vídeos."""
+    if not isinstance(reading, dict):
+        return ["curator.reading must be a mapping"]
+    found: list[str] = []
+    if not str(reading.get("defines_pt") or "").strip():
+        found.append("curator.reading.defines_pt is required")
+    prompt = str(reading.get("prompt") or "")
+    if not prompt.strip():
+        found.append("curator.reading.prompt is required")
+    elif SEU_TEMA not in prompt:
+        # Teste da troca de tema: o prompt descreve o estilo, não a cena do pôster.
+        found.append("curator.reading.prompt must carry the [seu tema] slot: it describes the style, not the poster's scene")
+    descriptors = reading.get("descriptors")
+    if not isinstance(descriptors, list) or not 3 <= len(descriptors) <= 6 or not all(isinstance(d, str) and d.strip() for d in descriptors):
+        found.append("curator.reading.descriptors must list 3 to 6 search terms")
+    avoid = reading.get("avoid")
+    if avoid is not None and (not isinstance(avoid, list) or not all(isinstance(a, str) and a.strip() for a in avoid)):
+        found.append("curator.reading.avoid must be a list of terms")
+    if "prompt_suffix" in reading:
+        found.append("curator.reading.prompt_suffix was merged into prompt")
+    if "observations_pt" in reading:
+        found.append("curator.reading.observations_pt was renamed to defines_pt")
+    if not isinstance(reading.get("tested"), bool):
+        found.append("curator.reading.tested must be true or false")
+    if reading.get("status") not in {"draft", "approved"}:
+        found.append("curator.reading.status must be draft or approved")
+    return found
+
+
 def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> list[str]:
     found: list[str] = []
     style = data.get("style") or {}
@@ -79,6 +112,8 @@ def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> l
             found.append("curator.summary_pt is required on canonical styles")
         elif curator.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
             found.append("curator.summary_review must record that the summary was checked against the poster")
+    if curator.get("reading") is not None:
+        found.extend(validate_reading(curator.get("reading")))
     return found
 
 

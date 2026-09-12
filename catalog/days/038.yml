@@ -26,8 +26,28 @@ thread:
     source_review: reviewed
 curator:
   display_name: "A stylized low-poly illustration blended with multiple artistic styles"
-  summary_pt: "Mistura de técnicas numa só cena: personagens caricatos de corpo exagerado sobre cenário pintado de litoral. Bom para humor de aventura; o low-poly do nome quase não aparece no pôster."
+  summary_pt: "Cartaz de aventura pintado dos anos 50: guache e óleo, proporções exageradas e perspectiva a serviço da história, com leve influência low-poly. Bom para aventura bem-humorada com ar de época."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Realismo fantástico de cartaz antigo: tudo é reconhecível, mas com proporções exageradas de propósito. As pessoas parecem personagens pintados, não fotografadas, e a perspectiva não é realista: é organizada para contar a história rapidamente."
+    prompt: "[seu tema], stylized retro adventure movie poster, hand-painted mid-century aesthetic, simplified geometric forms, subtle low-poly influence, painterly gouache and oil textures, exaggerated proportions and scale, slightly naive forms, simple cinematic storytelling, vintage commercial illustration, warm faded pigments, vintage print grain, matte painted surface, subtle canvas texture, imperfect hand-painted edges, 1950s–1960s illustrated film poster style"
+    avoid:
+      - "photorealistic"
+      - "hyperrealistic"
+      - "Unreal Engine"
+      - "3D render"
+      - "digital art"
+    avoid_why_pt: "Eles provavelmente fariam a IA se afastar justamente dessa aparência artesanal."
+    descriptors:
+      - "1950s adventure movie poster"
+      - "vintage pulp illustration"
+      - "mid-century painted movie poster"
+      - "gouache and oil illustration"
+      - "stylized realism"
+      - "aged print texture"
+    alt_pt: "Dois homens musculosos puxam um tubarão gigante por uma corda numa praia de pedras, com uma vila no alto da falésia."
+    tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: hybrid-experimental

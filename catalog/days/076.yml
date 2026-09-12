@@ -36,8 +36,27 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Vietnamese Lacquer Storybook"
-  summary_pt: "Rua vietnamita pintada em ouro e ocre: casas antigas, árvores e uma moto passando. Bom para memória e afeto de lugar."
+  summary_pt: "Anime ambiental pintado: arquitetura acolhedora, luz dourada e muitos detalhes pequenos. Bom para vilas, bairros e cenas cotidianas com atmosfera; a laca do nome não aparece no acabamento."
   summary_review: poster_checked
+  reading:
+    defines_pt: "O essencial é o cenário funcionar como uma pintura detalhada, com formas simplificadas, pinceladas aparentes e iluminação quente que organiza toda a imagem. A arquitetura recebe muitos pequenos elementos e variações de textura, enquanto vegetação, sombras e luz criam profundidade sem buscar realismo fotográfico. O resultado combina aconchego, nostalgia e sensação de lugar vivido."
+    prompt: "[seu tema], richly detailed hand-painted anime environment, painterly background painting, stylized realism, warm golden-hour lighting, soft textured brushwork, layered environmental details, richly painted natural textures, atmospheric depth, harmonious earthy color palette, cozy nostalgic mood, cinematic composition, traditional 2D animation background aesthetic"
+    avoid:
+      - "photorealistic"
+      - "sterile 3D render"
+      - "flat vector art"
+      - "glossy CGI"
+      - "minimal backgrounds"
+    avoid_why_pt: "Esses acabamentos eliminam a textura pintada, a densidade visual e a sensação acolhedora de ambiente vivido que definem o estilo."
+    descriptors:
+      - "hand-painted anime background"
+      - "cozy anime environment"
+      - "painterly village illustration"
+      - "animation background art"
+      - "warm cinematic environment"
+    alt_pt: "Rua de uma vila tradicional iluminada pelo sol, cercada por casas antigas, árvores e vegetação, enquanto uma pessoa passa de motocicleta diante de uma bandeira do Vietnã."
+    tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

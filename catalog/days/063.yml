@@ -33,8 +33,27 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Rough Blue-Pencil Animation Concept Art"
-  summary_pt: "Lápis azul de animação, antes da arte final: linha de construção à vista. Bom para mostrar processo e bastidor."
+  summary_pt: "Anime conceitual de aventura em lápis azul: desenho solto, pintura suave e forte sensação de movimento. Bom para fantasia, voo, exploração e cenas de descoberta."
   summary_review: poster_checked
+  reading:
+    defines_pt: "O essencial é a mistura de traço de animação simples com cenários pictóricos parcialmente esboçados, deixando a imagem entre concept art e frame de filme animado. A paleta reduzida, a perspectiva exagerada e o desfoque direcional criam velocidade e profundidade, enquanto formas leves e imperfeitas mantêm o aspecto artesanal e imaginativo."
+    prompt: "[seu tema], cinematic animated concept art, loose hand-drawn linework, visible blue pencil construction lines, soft painterly shading, simplified stylized forms, sketch-like environmental details, limited cool color palette, exaggerated perspective, atmospheric depth, dynamic motion blur, whimsical fantasy mood, expressive 2D animation aesthetic"
+    avoid:
+      - "photorealistic"
+      - "polished CGI"
+      - "rigid vector art"
+      - "hyper-detailed rendering"
+      - "saturated colors"
+    avoid_why_pt: "Esses elementos deixam a imagem acabada e rígida demais, eliminando o aspecto solto de concept art e a sensação de movimento."
+    descriptors:
+      - "animated concept art"
+      - "cinematic fantasy animation"
+      - "sketchy anime background"
+      - "painterly animation frame"
+      - "dynamic perspective illustration"
+    alt_pt: "Garoto voa entre ilhas suspensas nas nuvens montado num planador de papel de asas esticadas."
+    tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

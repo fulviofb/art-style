@@ -26,8 +26,25 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Anime"
-  summary_pt: "Anime de paisagem: céu de nuvens volumosas, colinas verdes e um personagem pequeno correndo. É o ponto de partida mais seguro quando você só quer algo que pareça anime."
+  summary_pt: "Anime de fundo pintado: personagem de traço simples sobre um cenário muito mais detalhado, com céu de nuvens altas e profundidade. É o ponto de partida mais seguro quando você quer algo que pareça anime."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Dois tratamentos ao mesmo tempo: o personagem em traço de anime simples, com linhas finas e cel shading, e o cenário muito mais detalhado, pintado como guache ou aquarela de fundo de animação. O céu pintado e as camadas de distância, que vão ficando azuladas, dão escala e aquele ar de filme de animação japonês."
+    prompt: "[seu tema], cinematic hand-painted Japanese anime style, cel-shaded characters with clean thin linework and simple shapes, set against highly detailed painted animation backgrounds, gouache and watercolor textures, painterly backgrounds and atmospheric depth, rich natural colors, nostalgic mood, traditional 2D animation aesthetic"
+    avoid:
+      - "photorealistic"
+      - "3D render"
+      - "CGI look"
+    avoid_why_pt: "Eles puxam o cenário para acabamento digital e apagam a diferença entre personagem simples e fundo pintado, que é o que define o estilo."
+    descriptors:
+      - "hand-painted anime"
+      - "cel-shaded characters"
+      - "painted animation backgrounds"
+      - "atmospheric perspective"
+      - "Japanese animation film"
+    alt_pt: "Criança loira, de costas, corre por uma encosta florida em direção a um vale montanhoso, sob céu azul de nuvens altas."
+    tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

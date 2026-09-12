@@ -26,6 +26,22 @@ OUTS = [
 ]
 
 
+def public_reading(reading):
+    """Leitura da curadoria. Só a aprovada vai ao público; é autoria do curador, não do autor dos vídeos."""
+    if not isinstance(reading, dict) or reading.get("status") != "approved":
+        return None
+    return {
+        "source_label": "Curadoria",
+        "defines_pt": reading.get("defines_pt"),
+        "prompt": reading.get("prompt"),
+        "avoid": list(reading.get("avoid") or []),
+        "avoid_why_pt": reading.get("avoid_why_pt"),
+        "descriptors": list(reading.get("descriptors") or []),
+        "alt_pt": reading.get("alt_pt"),
+        "tested": bool(reading.get("tested")),
+    }
+
+
 def slugify(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     ascii_value = normalized.encode("ascii", "ignore").decode("ascii").lower()
@@ -115,6 +131,7 @@ def build_public_library(
             "slug": slug,
             "display_name": display_name,
             "summary_pt": curator.get("summary_pt"),
+            "reading": public_reading(curator.get("reading")),
             "family": family,
             "family_label": family_labels.get(family, family),
             "tags": tags,
@@ -153,6 +170,7 @@ def build_public_library(
                     "slug": slug,
                     "display_name": display_name,
                     "summary_pt": entry.get("summary_pt"),
+                    "reading": public_reading(entry.get("reading")),
                     "family": family,
                     "family_label": family_labels.get(family, family),
                     "tags": tags,
