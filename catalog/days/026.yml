@@ -25,6 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Japanese anime concept art"
+  summary_pt: "Anime num mundo quase sem cor, com um vermelho que invade a cena. Bom para ação e para narrativa sobre perder e recuperar a cor."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

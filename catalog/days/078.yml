@@ -36,6 +36,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Soviet Constructivist Poster Style"
+  summary_pt: "Cena de rua pintada com paleta de cartaz soviético: vermelho, ocre e figuras de sobretudo. Bom para ar de época; o tema carrega carga política, use com consciência."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

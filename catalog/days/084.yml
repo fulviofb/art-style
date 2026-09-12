@@ -2,17 +2,39 @@ id: "084"
 day: 84
 variant: null
 slug: "084"
-source_review: empty
+source_review: reviewed
 copy_policy: link_only
-date_utc: null
+date_utc: "2026-09-10"
+poster_url: https://pbs.twimg.com/amplify_video_thumb/2098013880937336832/img/h7bDBTc-DrUWJGas.jpg
+poster_source: x_video_thumb
 style:
-  name: null
+  name: "Persian Miniature Surrealism"
+  name_status: published
   prompt_published: null
-logline: null
-creator_notes: null
-tools: []
+logline: "The Persian World and the War Against the Shadow Kingdom. A lone warrior follows his runaway shadow into a surreal Persian world, only to discover an entire kingdom of shadows waiting beyond the castle gates."
+creator_notes: "Stay tuned for Part 1."
+tools:
+  - name: Seedance 2.5
+    handles: []
+  - name: Flova
+    handles:
+      - Flovaai
+      - Flovaai_Japan
 inspiration: []
-thread: []
+thread:
+  - role: hero
+    post_url: https://x.com/NVTDanh/status/2098014090153378214
+    embed: true
+    source_review: reviewed
 curator:
-  style_family: null
+  display_name: "Persian Miniature Surrealism"
+  summary_pt: "Miniatura persa em movimento: cavaleiro de manto bordado sobre fundo de papel creme, nuvens estilizadas e uma sombra que ganha vida. Bom para lenda e aventura com ar de manuscrito."
+  summary_review: poster_checked
+  naming_basis: source_name
+  confidence: high
+  style_family: folk-traditional
+  tags:
+    - folk-art
+    - cultural-tradition
+    - fantasy
   notes: null

@@ -34,6 +34,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Ligne Claire Comic Art"
+  summary_pt: "Ligne claire: contorno uniforme, sem hachura, cor chapada e leitura instantânea. Bom para explicar algo com clareza em quadrinho."
+  summary_review: poster_checked
   naming_basis: curator_normalization
   confidence: high
   style_family: comics-graphic-novel

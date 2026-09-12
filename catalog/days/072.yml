@@ -28,6 +28,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Low-Poly Painterly Fantasy"
+  summary_pt: "Fantasia de formas em bloco com acabamento pintado: bruxinha numa ponte rumo a uma fortaleza escura. Bom para mundo de jogo."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-3d

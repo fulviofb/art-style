@@ -31,6 +31,8 @@ thread:
     note: Midjourney images --profile dzk1sty
 curator:
   display_name: "Architectural Expressionism (Modern German Expressionism-inspired)"
+  summary_pt: "Arquitetura empilhada e monumental, com arcos sem fim e feixes de luz vindos do alto. Bom para grandiosidade e vertigem."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

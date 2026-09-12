@@ -31,6 +31,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized 2D hand-painted storybook animation"
+  summary_pt: "Animação 2D pintada à mão: rua de cidade chinesa vista do alto, telhados azuis e carruagem. Bom para narrar história com calma."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

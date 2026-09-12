@@ -24,6 +24,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Paper-Craft Illustration"
+  summary_pt: "Papel recortado em camadas, com sombra e dobra visíveis. Bom para explicação passo a passo e para peça que precisa parecer construída."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

@@ -47,6 +47,8 @@ ALLOWED_NAMING_BASIS = {
     "curator_inference",
 }
 ALLOWED_CONFIDENCE = {"high", "medium", "low"}
+# A descrição em português precisa ter sido conferida contra a imagem, não escrita a partir do nome.
+ALLOWED_SUMMARY_REVIEW = {"poster_checked"}
 
 
 def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> list[str]:
@@ -71,6 +73,12 @@ def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> l
         found.append("curator.tags must not be empty")
     elif any(tag not in tags for tag in item_tags):
         found.append("curator.tags contains an unregistered tag")
+    canonical_id = str(curator.get("canonical_style_id") or data.get("id") or "")
+    if canonical_id == str(data.get("id") or ""):
+        if not str(curator.get("summary_pt") or "").strip():
+            found.append("curator.summary_pt is required on canonical styles")
+        elif curator.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
+            found.append("curator.summary_review must record that the summary was checked against the poster")
     return found
 
 

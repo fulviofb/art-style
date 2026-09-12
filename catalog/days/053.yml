@@ -31,6 +31,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Claymation art style"
+  summary_pt: "Massinha em alta velocidade: cidade colorida, desfoque de movimento e um cursor gigante. Compare com Claymation Art antes de escolher."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

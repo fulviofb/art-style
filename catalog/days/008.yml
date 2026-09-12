@@ -31,6 +31,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized 3D Storybook"
+  summary_pt: "Fábula em 3D de textura de pedra e névoa: a tartaruga e a lebre, reinventadas. Bom para fábula infantil e superação."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-3d

@@ -31,6 +31,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Classic European fairy tale illustration"
+  summary_pt: "Conto de fadas europeu em animação 2D clássica: vestidos longos, cidade ornamentada e cor viva de entardecer. Bom para história com ar atemporal."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

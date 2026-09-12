@@ -26,6 +26,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Anime"
+  summary_pt: "Anime de paisagem: céu de nuvens volumosas, colinas verdes e um personagem pequeno correndo. É o ponto de partida mais seguro quando você só quer algo que pareça anime."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

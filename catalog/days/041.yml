@@ -39,6 +39,8 @@ thread:
     note: MJ v7 images on HailuoAI
 curator:
   display_name: "Ghibli-Inspired Hand-Painted Animation"
+  summary_pt: "Aquarela à moda Ghibli: céu amplo, verde vivo e luz suave. Bom para nostalgia, natureza e memória de infância."
+  summary_review: poster_checked
   naming_basis: published_prompt
   confidence: high
   style_family: animation-2d

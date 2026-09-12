@@ -24,6 +24,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Mid-Century Modern Editorial Illustration, Geometric Character Design"
+  summary_pt: "Ilustração editorial de meados do século: figuras geométricas, textura de impressão e céu de pôr do sol. Bom para cartaz e capa com ar sofisticado."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

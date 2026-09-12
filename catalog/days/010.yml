@@ -31,6 +31,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Military Concept Art"
+  summary_pt: "Concept art militar estilizado: soldados de ombros largos atacando uma muralha antiga, sob céu claro. Bom para tema histórico; sensível para comunicação institucional."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

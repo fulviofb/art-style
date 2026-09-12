@@ -19,6 +19,7 @@ const items = [
     id: "ghibli-inspired-hand-painted-animation",
     slug: "ghibli-inspired-hand-painted-animation",
     display_name: "Ghibli-Inspired Hand-Painted Animation",
+    summary_pt: "Pintura à mão à moda Ghibli: céu amplo e luz suave. Bom para nostalgia e memória de infância.",
     family: "animation-2d",
     family_label: "Animação 2D",
     tags: ["painterly"],
@@ -31,6 +32,7 @@ const items = [
     id: "whimsical-watercolor-storybook",
     slug: "whimsical-watercolor-storybook",
     display_name: "Whimsical Watercolor Storybook",
+    summary_pt: "Aquarela de livro ilustrado: cor que sangra no papel. Bom para delicadeza e acolhimento.",
     family: "storybook-illustration",
     family_label: "Livro ilustrado e narrativa",
     tags: ["watercolor", "storybook"],
@@ -45,6 +47,22 @@ test("filter searches timeless style fields and example metadata", () => {
   assert.deepEqual(filterStyleItems(items, { query: "aquarela" }).map((style) => style.id), ["whimsical-watercolor-storybook"]);
   assert.deepEqual(filterStyleItems(items, { query: "ghibli" }).map((style) => style.id), ["ghibli-inspired-hand-painted-animation"]);
   assert.deepEqual(filterStyleItems(items, { query: "seedance" }).map((style) => style.id), ["ghibli-inspired-hand-painted-animation"]);
+});
+
+test("filter reaches the portuguese summary, so intent words find a style", () => {
+  assert.deepEqual(
+    filterStyleItems(items, { query: "nostalgia" }).map((style) => style.id),
+    ["ghibli-inspired-hand-painted-animation"],
+  );
+  assert.deepEqual(
+    filterStyleItems(items, { query: "acolhimento" }).map((style) => style.id),
+    ["whimsical-watercolor-storybook"],
+  );
+  // acentuacao nao pode atrapalhar: "memoria" acha "memória"
+  assert.deepEqual(
+    filterStyleItems(items, { query: "memoria" }).map((style) => style.id),
+    ["ghibli-inspired-hand-painted-animation"],
+  );
 });
 
 test("filter combines query and family", () => {

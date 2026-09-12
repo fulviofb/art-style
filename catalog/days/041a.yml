@@ -25,6 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Needle-felt art style"
+  summary_pt: "Feltro agulhado no fundo do mar: peixe, tartaruga e coral de lã. Bom para ternura e público infantil."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

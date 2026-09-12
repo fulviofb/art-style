@@ -31,6 +31,8 @@ thread:
     note: Prompt 1 e 2 no fio; URLs nao capturadas.
 curator:
   display_name: "Painterly Retro Mecha"
+  summary_pt: "Mecha retrô pintado: robô atirando numa cidade em ruínas, cor chapada e poeira. Bom para ficção científica com ar de capa de revista antiga."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

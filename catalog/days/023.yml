@@ -29,6 +29,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Post-Apocalyptic Cinematic Concept Art"
+  summary_pt: "Deserto pós-apocalíptico com luz de cinema: soldados de sobretudo diante de uma fortaleza, poeira no ar. Bom para alerta e reflexão; evite em convite."
+  summary_review: poster_checked
   naming_basis: curator_inference
   confidence: medium
   style_family: concept-art-painting

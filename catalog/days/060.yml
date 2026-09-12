@@ -28,6 +28,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Whimsical hand-painted storybook illustration"
+  summary_pt: "Beco de mercado em cor viva e pincelada solta, com um personagem em fuga. Bom para conteúdo lúdico e aventura."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

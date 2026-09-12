@@ -42,6 +42,8 @@ thread:
     note: Versão live-action prometida nos comentários — não capturada nesta leva.
 curator:
   display_name: "Stylized Mediterranean Mythic Storybook illustration"
+  summary_pt: "Mito mediterrâneo em livro ilustrado: Ícaro de asas de pena, colunas e ânforas de barro. Bom para releitura de mito clássico."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

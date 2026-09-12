@@ -34,6 +34,8 @@ thread:
     note: Reply de prompt existe no fio; URL não capturada nesta leva.
 curator:
   display_name: "Stylized Arabian Folk Art / Modernist Storybook Illustration"
+  summary_pt: "Arte popular árabe em chave modernista: tapete voador e cidade rosa e amarela em camadas. Bom para conto de viagem."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

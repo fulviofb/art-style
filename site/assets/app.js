@@ -69,6 +69,7 @@ function styleCard(style) {
     <div class="style-card__body">
       <div class="style-card__eyebrow"><span>${escapeHtml(style.family_label)}</span><span>${escapeHtml(metricText(style))}</span></div>
       <h3>${escapeHtml(style.display_name)}</h3>
+      ${style.summary_pt ? `<p class="style-card__summary">${escapeHtml(style.summary_pt)}</p>` : ""}
       ${tags.length ? `<div class="style-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
     </div>
   </a>`;
@@ -173,7 +174,7 @@ function renderStyleDetail(catalog) {
   }).join("");
   root.innerHTML = `<a class="back-link" href="index.html">← Explorar estilos</a>
     <section class="style-hero">
-      <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div><p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
+      <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>${style.summary_pt ? `<p class="style-summary style-summary--pt">${escapeHtml(style.summary_pt)}</p>` : ""}<p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
       <div class="style-hero__media">${still(style.poster_url, style.display_name, true)}</div>
     </section>
     <section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>

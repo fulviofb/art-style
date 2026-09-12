@@ -27,6 +27,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Chinese Folklore Animation"
+  summary_pt: "Folclore chinês de assombração: caixões, templo ao fundo e luz de fim de dia. Bom para história tradicional com susto leve."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: animation-2d

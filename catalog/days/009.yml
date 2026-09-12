@@ -31,6 +31,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Pixar-Inspired 3D Animation"
+  summary_pt: "3D de longa de animação: personagem redondo, olho grande e luz suave. Bom para família e emoção direta."
+  summary_review: poster_checked
   naming_basis: curator_normalization
   confidence: high
   style_family: animation-3d

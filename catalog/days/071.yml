@@ -28,6 +28,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Dark Deco x Ancient Mexica"
+  summary_pt: "Traço gráfico de contorno forte e cor chapada em cenário mexica: mercado, penacho e pedra entalhada. Bom para aventura histórica de forte impacto."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

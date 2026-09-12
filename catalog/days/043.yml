@@ -25,6 +25,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Claymation and Stylized 3D Animation"
+  summary_pt: "Massinha misturada a 3D estilizado: formiga de argila, cogumelos e fundo desfocado. Bom quando você quer o charme artesanal sem a limitação do stop motion."
+  summary_review: poster_checked
   naming_basis: curator_normalization
   confidence: high
   style_family: hybrid-experimental

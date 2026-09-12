@@ -26,6 +26,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Painterly 3D and Papercraft Fantasy"
+  summary_pt: "3D pintado misturado a recorte de papel: camada, dobra e sombra projetada. Bom para fantasia com aparência de diorama."
+  summary_review: poster_checked
   naming_basis: curator_inference
   confidence: medium
   style_family: hybrid-experimental

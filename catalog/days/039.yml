@@ -31,6 +31,8 @@ thread:
     source_review: discovered_needs_original_review
 curator:
   display_name: "Stylized 3D Martial-Arts Animation"
+  summary_pt: "Artes marciais em traço pintado: menino arqueiro montado numa raposa em disparada. Bom para treino, disciplina e superação."
+  summary_review: poster_checked
   naming_basis: curator_inference
   confidence: medium
   style_family: animation-3d

@@ -27,6 +27,8 @@ entries:
         Bright yet harmonious, lightly saturated palette; dreamy, nostalgic, heartwarming mood.
         Clean delicate linework, painterly hand-drawn feel — not 3D, not photoreal, not a digital vector, not cluttered, not fragmented.
   - id: family-crayon-card
+    summary_pt: "Giz de cera sobre papel, como desenho de criança em cartão de família. Bom para convite afetivo e data comemorativa."
+    summary_review: poster_checked
     source_style_id: "3.1"
     source_style_name: 蜡笔童涂-潦草自画版
     display_name: Family Crayon Card

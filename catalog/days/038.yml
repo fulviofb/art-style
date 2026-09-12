@@ -26,6 +26,8 @@ thread:
     source_review: reviewed
 curator:
   display_name: "A stylized low-poly illustration blended with multiple artistic styles"
+  summary_pt: "Mistura de técnicas numa só cena: personagens caricatos de corpo exagerado sobre cenário pintado de litoral. Bom para humor de aventura; o low-poly do nome quase não aparece no pôster."
+  summary_review: poster_checked
   naming_basis: source_name
   confidence: high
   style_family: hybrid-experimental
