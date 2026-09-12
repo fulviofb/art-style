@@ -30,7 +30,7 @@ curator:
   summary_review: poster_checked
   reading:
     defines_pt: "Realismo fantástico de cartaz antigo: tudo é reconhecível, mas com proporções exageradas de propósito. As pessoas parecem personagens pintados, não fotografadas, e a perspectiva não é realista: é organizada para contar a história rapidamente."
-    prompt: "[seu tema], stylized retro adventure movie poster, hand-painted mid-century aesthetic, simplified geometric forms, subtle low-poly influence, painterly gouache and oil textures, exaggerated proportions and scale, slightly naive anatomy, simple cinematic storytelling, vintage commercial illustration, warm faded pigments, vintage print grain, matte painted surface, subtle canvas texture, imperfect hand-painted edges, 1950s–1960s illustrated film poster style"
+    prompt: "[seu tema], stylized retro adventure movie poster, hand-painted mid-century aesthetic, simplified geometric forms, subtle low-poly influence, painterly gouache and oil textures, exaggerated proportions and scale, slightly naive forms, simple cinematic storytelling, vintage commercial illustration, warm faded pigments, vintage print grain, matte painted surface, subtle canvas texture, imperfect hand-painted edges, 1950s–1960s illustrated film poster style"
     avoid:
       - "photorealistic"
       - "hyperrealistic"
