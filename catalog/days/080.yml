@@ -38,6 +38,23 @@ curator:
   display_name: "Wayang Kulit–Inspired Shadow-Puppet Animation"
   summary_pt: "Teatro de sombras javanês: silhueta recortada contra a luz e movimento lateral. Bom para narrar mito com pouco recurso visual."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Silhuetas pretas contra uma tela iluminada por trás, em laranja e dourado. O detalhe está nos recortes vazados, como couro perfurado, e a cena é plana e frontal, como um palco."
+    prompt: "[seu tema], wayang kulit inspired shadow puppet style, black silhouettes against a warm backlit screen glowing orange and gold, intricate perforated cut-leather ornament, flat frontal stage composition, textured screen, theatrical framing"
+    avoid:
+      - "3D render"
+      - "detailed faces"
+      - "colorful characters"
+      - "perspective depth"
+    avoid_why_pt: "O teatro de sombras vive do contraste entre silhueta e luz; rosto detalhado, cor nos personagens e profundidade apagam isso."
+    descriptors:
+      - "wayang kulit"
+      - "shadow puppetry"
+      - "backlit silhouettes"
+      - "cut-leather ornament"
+    alt_pt: "Silhuetas de músicos de gamelan sob um pavilhão com gongos, contra uma tela laranja iluminada por trás."
+    tested: false
+    status: draft
   naming_basis: curator_normalization
   confidence: high
   style_family: folk-traditional

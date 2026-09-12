@@ -27,6 +27,23 @@ curator:
   display_name: "Claymation Art"
   summary_pt: "Massinha de cor viva: cavaleiro, dragão e castelo com cara de brinquedo. Bom para humor afetuoso e para conteúdo que precisa parecer feito à mão."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Tudo parece modelado à mão em massinha: textura de dedo, bordas levemente imperfeitas e cenário de maquete. As proporções são de brinquedo, com cabeças grandes e corpos curtos, cores fortes e luz de estúdio suave."
+    prompt: "[seu tema], claymation stop-motion style, plasticine surfaces with visible sculpted texture and fingerprints, chunky toy-like proportions, handmade miniature set, slightly imperfect modeling, bright saturated colors, soft studio lighting, tactile matte surfaces"
+    avoid:
+      - "smooth CGI"
+      - "photorealistic"
+      - "glossy plastic"
+      - "digital painting"
+    avoid_why_pt: "A graça da massinha está na textura imperfeita; esses termos alisam tudo, e o resultado vira brinquedo de plástico ou CGI."
+    descriptors:
+      - "claymation"
+      - "plasticine stop-motion"
+      - "handmade miniature set"
+      - "toy-like proportions"
+    alt_pt: "Cavaleiro de armadura e dragão azul de massinha frente a frente diante de um castelo de brinquedo."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

@@ -26,6 +26,23 @@ curator:
   display_name: "Warm Scandinavian Folk Illustration"
   summary_pt: "Folk escandinavo: cor quente e terrosa, colagem de cenas cotidianas e plantas. Bom para acolhimento e conteúdo de estação."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Figuras simples e planas em paleta terrosa de mostarda, oliva e marrom, com textura granulada de guache. Flores e folhas decorativas preenchem os espaços, e o clima é sempre de aconchego."
+    prompt: "[seu tema], warm Scandinavian folk illustration, flat naive shapes, mustard olive and brown palette, grainy gouache texture with speckled print feel, decorative folk florals and leaves filling the gaps, cozy hygge mood, matte finish"
+    avoid:
+      - "3D render"
+      - "photorealistic"
+      - "neon colors"
+      - "glossy"
+    avoid_why_pt: "Cor saturada e brilho digital quebram o aconchego terroso, que é o que o estilo transmite."
+    descriptors:
+      - "Scandinavian folk illustration"
+      - "hygge"
+      - "mustard and olive palette"
+      - "gouache texture"
+    alt_pt: "Colagem de cenas do dia a dia de uma moça de óculos e suéter mostarda, com a frase Slow down and love life a little more."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration

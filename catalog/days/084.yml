@@ -30,6 +30,23 @@ curator:
   display_name: "Persian Miniature Surrealism"
   summary_pt: "Miniatura persa em movimento: cavaleiro de manto bordado sobre fundo de papel creme, nuvens estilizadas e uma sombra que ganha vida. Bom para lenda e aventura com ar de manuscrito."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Figuras planas e ornamentais sobre fundo liso de papel creme, quase sem perspectiva. Padrões dourados nas roupas e nuvens em volutas estilizadas, como num manuscrito iluminado."
+    prompt: "[seu tema], classical Persian miniature painting, flat ornamental forms, plain cream paper background with almost no perspective, fine gold ornamental patterns, stylized scroll-shaped clouds, gold and lapis blue accents, mineral pigments, illuminated manuscript look"
+    avoid:
+      - "3D render"
+      - "photorealistic"
+      - "dramatic perspective"
+      - "heavy shading"
+    avoid_why_pt: "A miniatura persa é plana e ornamental; perspectiva forte e sombreado realista a transformam em outra coisa."
+    descriptors:
+      - "Persian miniature painting"
+      - "illuminated manuscript"
+      - "flat ornamental figures"
+      - "gold and lapis palette"
+    alt_pt: "Cavaleiro de manto vermelho bordado galopa sobre fundo creme, com uma sombra negra sobre o cavalo."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: folk-traditional

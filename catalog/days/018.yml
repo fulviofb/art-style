@@ -26,6 +26,23 @@ curator:
   display_name: "Paper-Craft Illustration"
   summary_pt: "Papel recortado em camadas, com sombra e dobra visíveis. Bom para explicação passo a passo e para peça que precisa parecer construída."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Tudo é recorte e dobra de papel: formas facetadas, camadas empilhadas com sombra entre elas e bordas de papel à vista. A paleta é contida, com uma ou duas cores fortes guardadas para o foco."
+    prompt: "[seu tema], paper craft illustration, layered cut paper with soft shadows between layers, folded faceted paper shapes, visible paper edges and card texture, diorama depth, restrained palette with one or two strong accent colors, flat graphic shapes"
+    avoid:
+      - "photorealistic"
+      - "glossy 3D"
+      - "painterly brushstrokes"
+      - "smooth gradients"
+    avoid_why_pt: "Esses termos apagam as bordas e as dobras de papel, que são o que faz o estilo ser reconhecido."
+    descriptors:
+      - "paper craft illustration"
+      - "layered cut paper"
+      - "folded paper facets"
+      - "papercraft diorama"
+    alt_pt: "Gigante de papel com espinhos protege uma pequena flor laranja sob a chuva, diante de montanhas recortadas."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: craft-stop-motion

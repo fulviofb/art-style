@@ -36,6 +36,23 @@ curator:
   display_name: "Ligne Claire Comic Art"
   summary_pt: "Ligne claire: contorno uniforme, sem hachura, cor chapada e leitura instantânea. Bom para explicar algo com clareza em quadrinho."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Contorno preto uniforme em tudo, sem hachura: personagens simples sobre cenários detalhados, na tradição de Tintim. A leitura é imediata; neste exemplo a luz é mais pintada que na ligne claire clássica, com céu em degradê."
+    prompt: "[seu tema], ligne claire comic art, Franco-Belgian style, clean uniform black ink outlines, no hatching, simple expressive foreground shapes over richly detailed backgrounds, flat color fills, clear readable staging, classic European comic album look"
+    avoid:
+      - "cross-hatching"
+      - "manga"
+      - "gritty"
+      - "heavy shadows"
+    avoid_why_pt: "Hachura, sombra pesada e mangá quebram a clareza da linha uniforme, que é a regra da ligne claire."
+    descriptors:
+      - "ligne claire"
+      - "Franco-Belgian comics"
+      - "clean uniform outlines"
+      - "European comic album"
+    alt_pt: "Jovem detetive de sobretudo tenta pegar um pombo que leva um envelope secreto numa praça europeia."
+    tested: false
+    status: draft
   naming_basis: curator_normalization
   confidence: high
   style_family: comics-graphic-novel

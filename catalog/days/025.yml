@@ -26,6 +26,23 @@ curator:
   display_name: "Mid-Century Modern Editorial Illustration, Geometric Character Design"
   summary_pt: "Ilustração editorial de meados do século: figuras geométricas, textura de impressão e céu de pôr do sol. Bom para cartaz e capa com ar sofisticado."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Personagens construídos com formas geométricas simples e silhueta forte, com textura granulada de impressão. A paleta é curta, de duas ou três cores, como ilustração de revista dos anos 50 e 60."
+    prompt: "[seu tema], mid-century modern editorial illustration, geometric shape design, simplified forms and strong silhouettes, grainy risograph screen-print texture, limited palette of two or three colors, flat shapes with slightly rough edges, subtle paper wear, 1950s–1960s magazine illustration"
+    avoid:
+      - "3D render"
+      - "photorealistic"
+      - "glossy"
+      - "detailed anatomy"
+    avoid_why_pt: "Anatomia detalhada e brilho puxam para o realismo, e o estilo depende da forma simplificada e da textura de impressão."
+    descriptors:
+      - "mid-century editorial illustration"
+      - "geometric character design"
+      - "risograph texture"
+      - "limited palette"
+    alt_pt: "Heroína de capa vermelha encara um herói grandalhão de armadura num telhado, ao pôr do sol."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: editorial-poster

@@ -33,6 +33,23 @@ curator:
   display_name: "Pixar-Inspired 3D Animation"
   summary_pt: "3D de longa de animação: personagem redondo, olho grande e luz suave. Bom para família e emoção direta."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Exagero simpático em 3D: cabeça e olhos grandes, nariz e mãos maiores que o real, pele com luz atravessando por dentro. A luz é quente e cinematográfica, com fundo desfocado, e a expressão do personagem é sempre o centro."
+    prompt: "[seu tema], Pixar-style 3D animated feature, stylized appealing design with rounded exaggerated proportions, soft subsurface shading, warm cinematic lighting with volumetric light rays, shallow depth of field, rich warm color grading, feature animation quality"
+    avoid:
+      - "photorealistic"
+      - "realistic human proportions"
+      - "flat 2D"
+      - "horror lighting"
+    avoid_why_pt: "Eles puxam para gente de verdade ou para o traço plano, e o que define o estilo é justamente o exagero simpático em 3D."
+    descriptors:
+      - "Pixar-style 3D animation"
+      - "stylized 3D characters"
+      - "expressive oversized eyes"
+      - "cinematic warm light"
+    alt_pt: "Menino de cabelo cacheado, com uma borboleta no nariz, estende a mão num corredor de escola cheio de pássaros e luz dourada."
+    tested: false
+    status: draft
   naming_basis: curator_normalization
   confidence: high
   style_family: animation-3d

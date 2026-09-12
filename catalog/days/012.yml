@@ -33,6 +33,23 @@ curator:
   display_name: "Whimsical Watercolor Storybook"
   summary_pt: "Aquarela de livro ilustrado: transparência, borda molhada e cor que sangra no papel. Bom para delicadeza e infância."
   summary_review: poster_checked
+  reading:
+    defines_pt: "Aquarela solta, molhada sobre molhada: a cor escorre, mancha e respinga, e o branco do papel faz a luz. O movimento das pinceladas conta tanto quanto o desenho, e tudo parece estar sendo pintado naquele momento."
+    prompt: "[seu tema], whimsical watercolor storybook illustration, loose wet-on-wet watercolor with blooms, bleeding colors and paint splatters, white paper highlights, visible paper grain and pigment granulation, expressive swirling brushstrokes, children's book magic"
+    avoid:
+      - "3D render"
+      - "digital painting"
+      - "sharp vector"
+      - "photorealistic"
+    avoid_why_pt: "Eles trocam a transparência e as manchas da aquarela por acabamento digital limpo, e a magia some."
+    descriptors:
+      - "watercolor storybook"
+      - "wet-on-wet watercolor"
+      - "paint splatters"
+      - "children's book illustration"
+    alt_pt: "Criança corre para dentro de um céu azul em espiral que sai de um livro aberto, com rochas flutuando."
+    tested: false
+    status: draft
   naming_basis: source_name
   confidence: high
   style_family: storybook-illustration
