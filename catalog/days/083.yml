@@ -24,8 +24,27 @@ thread:
     source_review: reviewed
 curator:
   display_name: "Stylized Italian Renaissance Fresco"
-  summary_pt: "Afresco renascentista estilizado: abóbadas de igreja, andaime e luz clara, em pintura de formas simples. Bom para falar de ofício, criação e história da arte."
+  summary_pt: "Concept art de animação: pintura arquitetônica suave, luz natural quente e formas simplificadas. Bom para interiores amplos, oficinas e cenas de trabalho; o afresco do nome é o assunto da cena, não a técnica."
   summary_review: poster_checked
+  reading:
+    defines_pt: "O essencial é combinar arquitetura bem estruturada com personagens pequenos e simplificados, mantendo acabamento pictórico em vez de realismo rígido. As formas usam poucos detalhes, sombras amplas e cores quentes e dessaturadas, enquanto a luz natural cria profundidade e volume. O resultado lembra um frame de filme de animação ainda próximo do concept art."
+    prompt: "[seu tema], cinematic animated concept art, painterly illustration, simplified stylized forms, clean structural perspective, broad soft-edged shadows, warm muted color palette, natural diffused lighting, subtle brush textures, atmospheric depth, restrained detail, elegant shape design, refined 2D animation aesthetic"
+    avoid:
+      - "photorealistic"
+      - "glossy CGI"
+      - "hyper-detailed textures"
+      - "hard cel shading"
+      - "saturated colors"
+    avoid_why_pt: "Esses elementos deixam a imagem rígida ou digital demais e eliminam a combinação de arquitetura sólida com pintura suave e simplificada."
+    descriptors:
+      - "animated architectural concept art"
+      - "painterly animation background"
+      - "cinematic environment design"
+      - "stylized architectural illustration"
+      - "animation production art"
+    alt_pt: "Homem trabalha no alto de um grande andaime dentro de um salão monumental, acompanhado por um gato, enquanto a luz entra pelas grandes janelas."
+    tested: false
+    status: approved
   naming_basis: source_name
   confidence: high
   style_family: concept-art-painting

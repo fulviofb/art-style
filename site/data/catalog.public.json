@@ -1911,8 +1911,29 @@
       "id": "modern-ukiyo-e-illustration",
       "slug": "modern-ukiyo-e-illustration",
       "display_name": "Modern Ukiyo-e Illustration",
-      "summary_pt": "Ateliê noturno cheio de gravuras ukiyo-e, com pagode e lua cheia na janela. Bom para tradição japonesa com leitura contemporânea.",
-      "reading": null,
+      "summary_pt": "Anime de ambiente noturno, acolhedor e muito detalhado, com luz quente por dentro e azul profundo por fora. Bom para ateliês, bibliotecas, cafés e cenas contemplativas; não é ukiyo-e, as gravuras são objeto da cena, não a técnica.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O essencial é o contraste entre iluminação interna quente e ambiente externo frio, mantendo tudo com acabamento de pintura de animação. A cena usa muitos pequenos objetos, madeira, papel, estantes e elementos decorativos para criar sensação de espaço vivido, enquanto a luz recorta volumes e conduz o olhar. A atmosfera é calma, artesanal e nostálgica, sem buscar realismo fotográfico.",
+        "prompt": "[seu tema], cinematic hand-painted anime scene, richly detailed environmental storytelling, warm ambient lighting contrasted with cool moonlit tones, painterly textures, layered wooden textures, intricate decorative details, atmospheric depth, soft cel-shaded accents, traditional Japanese animation background aesthetic, cozy nocturnal mood, refined 2D illustration",
+        "avoid": [
+          "photorealistic",
+          "glossy CGI",
+          "flat vector art",
+          "sterile minimalism",
+          "harsh neon lighting"
+        ],
+        "avoid_why_pt": "Esses elementos tiram a sensação artesanal, íntima e pintada que depende do contraste suave entre luz quente, noite azul e muitos detalhes ambientais.",
+        "descriptors": [
+          "cozy anime interior",
+          "hand-painted anime background",
+          "Japanese animation interior",
+          "nocturnal anime environment",
+          "painterly studio illustration"
+        ],
+        "alt_pt": "Ateliê japonês repleto de pinturas, pincéis e livros, com um gato no chão e vista para pagodes iluminados sob a lua cheia.",
+        "tested": false
+      },
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
@@ -2551,8 +2572,29 @@
       "id": "rough-blue-pencil-animation-concept-art",
       "slug": "rough-blue-pencil-animation-concept-art",
       "display_name": "Rough Blue-Pencil Animation Concept Art",
-      "summary_pt": "Lápis azul de animação, antes da arte final: linha de construção à vista. Bom para mostrar processo e bastidor.",
-      "reading": null,
+      "summary_pt": "Anime conceitual de aventura em lápis azul: desenho solto, pintura suave e forte sensação de movimento. Bom para fantasia, voo, exploração e cenas de descoberta.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O essencial é a mistura de traço de animação simples com cenários pictóricos parcialmente esboçados, deixando a imagem entre concept art e frame de filme animado. A paleta reduzida, a perspectiva exagerada e o desfoque direcional criam velocidade e profundidade, enquanto formas leves e imperfeitas mantêm o aspecto artesanal e imaginativo.",
+        "prompt": "[seu tema], cinematic animated concept art, loose hand-drawn linework, visible blue pencil construction lines, soft painterly shading, simplified stylized forms, sketch-like environmental details, limited cool color palette, exaggerated perspective, atmospheric depth, dynamic motion blur, whimsical fantasy mood, expressive 2D animation aesthetic",
+        "avoid": [
+          "photorealistic",
+          "polished CGI",
+          "rigid vector art",
+          "hyper-detailed rendering",
+          "saturated colors"
+        ],
+        "avoid_why_pt": "Esses elementos deixam a imagem acabada e rígida demais, eliminando o aspecto solto de concept art e a sensação de movimento.",
+        "descriptors": [
+          "animated concept art",
+          "cinematic fantasy animation",
+          "sketchy anime background",
+          "painterly animation frame",
+          "dynamic perspective illustration"
+        ],
+        "alt_pt": "Garoto voa entre ilhas suspensas nas nuvens montado num planador de papel de asas esticadas.",
+        "tested": false
+      },
       "family": "animation-2d",
       "family_label": "Animação 2D",
       "tags": [
@@ -3125,8 +3167,29 @@
       "id": "stylized-italian-renaissance-fresco",
       "slug": "stylized-italian-renaissance-fresco",
       "display_name": "Stylized Italian Renaissance Fresco",
-      "summary_pt": "Afresco renascentista estilizado: abóbadas de igreja, andaime e luz clara, em pintura de formas simples. Bom para falar de ofício, criação e história da arte.",
-      "reading": null,
+      "summary_pt": "Concept art de animação: pintura arquitetônica suave, luz natural quente e formas simplificadas. Bom para interiores amplos, oficinas e cenas de trabalho; o afresco do nome é o assunto da cena, não a técnica.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O essencial é combinar arquitetura bem estruturada com personagens pequenos e simplificados, mantendo acabamento pictórico em vez de realismo rígido. As formas usam poucos detalhes, sombras amplas e cores quentes e dessaturadas, enquanto a luz natural cria profundidade e volume. O resultado lembra um frame de filme de animação ainda próximo do concept art.",
+        "prompt": "[seu tema], cinematic animated concept art, painterly illustration, simplified stylized forms, clean structural perspective, broad soft-edged shadows, warm muted color palette, natural diffused lighting, subtle brush textures, atmospheric depth, restrained detail, elegant shape design, refined 2D animation aesthetic",
+        "avoid": [
+          "photorealistic",
+          "glossy CGI",
+          "hyper-detailed textures",
+          "hard cel shading",
+          "saturated colors"
+        ],
+        "avoid_why_pt": "Esses elementos deixam a imagem rígida ou digital demais e eliminam a combinação de arquitetura sólida com pintura suave e simplificada.",
+        "descriptors": [
+          "animated architectural concept art",
+          "painterly animation background",
+          "cinematic environment design",
+          "stylized architectural illustration",
+          "animation production art"
+        ],
+        "alt_pt": "Homem trabalha no alto de um grande andaime dentro de um salão monumental, acompanhado por um gato, enquanto a luz entra pelas grandes janelas.",
+        "tested": false
+      },
       "family": "concept-art-painting",
       "family_label": "Concept art e pintura",
       "tags": [
@@ -3443,8 +3506,29 @@
       "id": "vietnamese-lacquer-storybook",
       "slug": "vietnamese-lacquer-storybook",
       "display_name": "Vietnamese Lacquer Storybook",
-      "summary_pt": "Rua vietnamita pintada em ouro e ocre: casas antigas, árvores e uma moto passando. Bom para memória e afeto de lugar.",
-      "reading": null,
+      "summary_pt": "Anime ambiental pintado: arquitetura acolhedora, luz dourada e muitos detalhes pequenos. Bom para vilas, bairros e cenas cotidianas com atmosfera; a laca do nome não aparece no acabamento.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O essencial é o cenário funcionar como uma pintura detalhada, com formas simplificadas, pinceladas aparentes e iluminação quente que organiza toda a imagem. A arquitetura recebe muitos pequenos elementos e variações de textura, enquanto vegetação, sombras e luz criam profundidade sem buscar realismo fotográfico. O resultado combina aconchego, nostalgia e sensação de lugar vivido.",
+        "prompt": "[seu tema], richly detailed hand-painted anime environment, painterly background painting, stylized realism, warm golden-hour lighting, soft textured brushwork, layered environmental details, richly painted natural textures, atmospheric depth, harmonious earthy color palette, cozy nostalgic mood, cinematic composition, traditional 2D animation background aesthetic",
+        "avoid": [
+          "photorealistic",
+          "sterile 3D render",
+          "flat vector art",
+          "glossy CGI",
+          "minimal backgrounds"
+        ],
+        "avoid_why_pt": "Esses acabamentos eliminam a textura pintada, a densidade visual e a sensação acolhedora de ambiente vivido que definem o estilo.",
+        "descriptors": [
+          "hand-painted anime background",
+          "cozy anime environment",
+          "painterly village illustration",
+          "animation background art",
+          "warm cinematic environment"
+        ],
+        "alt_pt": "Rua de uma vila tradicional iluminada pelo sol, cercada por casas antigas, árvores e vegetação, enquanto uma pessoa passa de motocicleta diante de uma bandeira do Vietnã.",
+        "tested": false
+      },
       "family": "folk-traditional",
       "family_label": "Arte popular e tradições",
       "tags": [
