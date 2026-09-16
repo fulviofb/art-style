@@ -16,3 +16,13 @@ sources:
     copy_policy: can_adapt_with_attribution
     pinned_commit: 7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d
     notes: Receitas MIT testadas no commit fixado; atribuição obrigatória. A variante 3.1 não é copiada como prompt isolado.
+  - id: handraw-style
+    label: handraw-style
+    creator: yang0
+    handle: yang02010
+    url: https://github.com/yang0/handraw-style
+    kind: style_library
+    license: null
+    copy_policy: link_only
+    pinned_commit: 70bf51d6b4c301805dd6c083355a2ad18db1023b
+    notes: Biblioteca de 261 estilos sem licença. Só o grupo F (155–200), que não usa nome de artista, é indexado, e só com links.

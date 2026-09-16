@@ -67,3 +67,8 @@ tags:
   - { id: brazilian-folklore, label_pt: Folclore brasileiro }
   - { id: cel-animation, label_pt: Animação em células }
   - { id: comedy, label_pt: Comédia }
+  - { id: doodle, label_pt: Rabisco }
+  - { id: pencil-crayon, label_pt: Lápis, giz e pastel }
+  - { id: risograph, label_pt: Risografia }
+  - { id: minimal-line, label_pt: Linha mínima }
+  - { id: social-media, label_pt: Redes sociais }

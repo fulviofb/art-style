@@ -197,6 +197,27 @@
       {
         "id": "comedy",
         "label_pt": "Comédia"
+      },
+      {
+        "id": "doodle",
+        "label_pt": "Rabisco"
+      },
+      {
+        "id": "pencil-crayon",
+        "label_pt": "Lápis",
+        "giz e pastel": null
+      },
+      {
+        "id": "risograph",
+        "label_pt": "Risografia"
+      },
+      {
+        "id": "minimal-line",
+        "label_pt": "Linha mínima"
+      },
+      {
+        "id": "social-media",
+        "label_pt": "Redes sociais"
       }
     ]
   },
@@ -221,11 +242,23 @@
       "copy_policy": "can_adapt_with_attribution",
       "pinned_commit": "7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d",
       "notes": "Receitas MIT testadas no commit fixado; atribuição obrigatória. A variante 3.1 não é copiada como prompt isolado."
+    },
+    {
+      "id": "handraw-style",
+      "label": "handraw-style",
+      "creator": "yang0",
+      "handle": "yang02010",
+      "url": "https://github.com/yang0/handraw-style",
+      "kind": "style_library",
+      "license": null,
+      "copy_policy": "link_only",
+      "pinned_commit": "70bf51d6b4c301805dd6c083355a2ad18db1023b",
+      "notes": "Biblioteca de 261 estilos sem licença. Só o grupo F (155–200), que não usa nome de artista, é indexado, e só com links."
     }
   ],
   "counts": {
-    "styles": 80,
-    "references": 86,
+    "styles": 126,
+    "references": 132,
     "recipes": 12
   },
   "styles": [
@@ -417,6 +450,45 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "airy-transparent-watercolor",
+      "slug": "airy-transparent-watercolor",
+      "display_name": "Airy Transparent Watercolor",
+      "summary_pt": "Aquarela transparente e leve: manchas claras, bordas que se dissolvem e muito branco. Bom para delicadeza, flores e afeto.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "watercolor"
+      ],
+      "tag_labels": [
+        "Aquarela"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/182.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "182 · Airy Transparent Watercolor",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/182.png",
+        "label": "nº 182 · handraw-style"
+      }
     },
     {
       "id": "anime",
@@ -673,6 +745,47 @@
       "recipes": []
     },
     {
+      "id": "awkward-cute",
+      "slug": "awkward-cute",
+      "display_name": "Awkward Cute",
+      "summary_pt": "Fofo e sem jeito: lápis de cor suave, bochechas coradas e olhar de lado. Bom para humor tímido e sentimentos.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "pencil-crayon",
+        "comedy"
+      ],
+      "tag_labels": [
+        "Lápis",
+        "Comédia"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/178.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "178 · Awkward Cute",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/178.png",
+        "label": "nº 178 · handraw-style"
+      }
+    },
+    {
       "id": "black-and-white-ink-illustration-tim-burton-inspired-proportions",
       "slug": "black-and-white-ink-illustration-tim-burton-inspired-proportions",
       "display_name": "Black-and-white ink illustration + Tim Burton-inspired proportions",
@@ -710,6 +823,47 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "black-white-pen-deadpan-humor",
+      "slug": "black-white-pen-deadpan-humor",
+      "display_name": "Black-White Pen Deadpan Humor",
+      "summary_pt": "Humor seco em caneta preta: traço limpo, cara de tédio e balão de reticências. Bom para meme de rotina e ironia; parecido com Deadpan Doodle, com mais hachura.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comedy",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Comédia",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/198.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "198 · Black-White Pen Deadpan Humor",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/198.png",
+        "label": "nº 198 · handraw-style"
+      }
     },
     {
       "id": "brazilian-urban-graffiti-illustration",
@@ -759,6 +913,90 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "brush-pen-cartoon",
+      "slug": "brush-pen-cartoon",
+      "display_name": "Brush-Pen Cartoon",
+      "summary_pt": "Cartum a caneta-pincel: traço grosso que afina, muita energia e linhas de movimento. Bom para ação, esporte e alegria.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comics",
+        "ink-drawing",
+        "action"
+      ],
+      "tag_labels": [
+        "Quadrinhos",
+        "Tinta e desenho",
+        "Ação"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/170.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "170 · Brush-Pen Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/170.png",
+        "label": "nº 170 · handraw-style"
+      }
+    },
+    {
+      "id": "cantonese-dim-sum-guochao",
+      "slug": "cantonese-dim-sum-guochao",
+      "display_name": "Cantonese Dim-Sum Guochao",
+      "summary_pt": "Guochao cantonês: cores quentes, padrão de janela chinesa e contorno marcado. Bom para comida, marca e festa.",
+      "reading": null,
+      "family": "folk-traditional",
+      "family_label": "Arte popular e tradições",
+      "tags": [
+        "cultural-tradition",
+        "poster"
+      ],
+      "tag_labels": [
+        "Tradição cultural",
+        "Pôster"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/193.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "193 · Cantonese Dim-Sum Guochao",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/193.png",
+        "label": "nº 193 · handraw-style"
+      }
     },
     {
       "id": "cartoon-salooninspired-2d-animation",
@@ -855,6 +1093,47 @@
       "recipes": []
     },
     {
+      "id": "childlike-crayon-naive-style",
+      "slug": "childlike-crayon-naive-style",
+      "display_name": "Childlike Crayon Naive Style",
+      "summary_pt": "Desenho de criança em giz de cera: riscos à vista, formas tortas e cores primárias. Bom para infância e convite infantil.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "pencil-crayon",
+        "children"
+      ],
+      "tag_labels": [
+        "Lápis",
+        "Infantil"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/197.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "197 · Childlike Crayon Naive Style",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/197.png",
+        "label": "nº 197 · handraw-style"
+      }
+    },
+    {
       "id": "chinese-mythical-fantasy-animation",
       "slug": "chinese-mythical-fantasy-animation",
       "display_name": "Chinese Mythical Fantasy Animation",
@@ -896,6 +1175,51 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "chinese-retro-lianhuanhua",
+      "slug": "chinese-retro-lianhuanhua",
+      "display_name": "Chinese Retro Lianhuanhua",
+      "summary_pt": "Lianhuanhua, o livrinho ilustrado chinês: nanquim detalhado, hachura fina e papel envelhecido. Bom para história tradicional e ar de época.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comics",
+        "cultural-tradition",
+        "ink-drawing",
+        "retro"
+      ],
+      "tag_labels": [
+        "Quadrinhos",
+        "Tradição cultural",
+        "Tinta e desenho",
+        "Retrô"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/188.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "188 · Chinese Retro Lianhuanhua",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/188.png",
+        "label": "nº 188 · handraw-style"
+      }
     },
     {
       "id": "cinematic-3d-medieval-fantasy",
@@ -1035,6 +1359,49 @@
       "recipes": []
     },
     {
+      "id": "classic-magazine-single-panel-cartoon",
+      "slug": "classic-magazine-single-panel-cartoon",
+      "display_name": "Classic Magazine Single-Panel Cartoon",
+      "summary_pt": "Cartum de revista em quadro único: nanquim com hachura leve e cinza aguado. Bom para humor de situação e crônica.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comics",
+        "comedy",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Quadrinhos",
+        "Comédia",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/158.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "158 · Classic Magazine Single-Panel Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/158.png",
+        "label": "nº 158 · handraw-style"
+      }
+    },
+    {
       "id": "claymation-and-stylized-3d-animation",
       "slug": "claymation-and-stylized-3d-animation",
       "display_name": "Claymation and Stylized 3D Animation",
@@ -1154,6 +1521,209 @@
       "recipes": []
     },
     {
+      "id": "colored-pencil-diary",
+      "slug": "colored-pencil-diary",
+      "display_name": "Colored Pencil Diary",
+      "summary_pt": "Diário em lápis de cor: traço hachurado, cores claras e clima íntimo. Bom para cotidiano, memória e afeto.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "pencil-crayon"
+      ],
+      "tag_labels": [
+        "Lápis"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/169.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "169 · Colored Pencil Diary",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/169.png",
+        "label": "nº 169 · handraw-style"
+      }
+    },
+    {
+      "id": "conceptual-line-drawing",
+      "slug": "conceptual-line-drawing",
+      "display_name": "Conceptual Line Drawing",
+      "summary_pt": "Linha fina e mínima a serviço de uma ideia: metáfora visual com quase nada. Bom para artigo, reflexão e post conceitual.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "editorial",
+        "minimal-line"
+      ],
+      "tag_labels": [
+        "Editorial",
+        "Linha mínima"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/157.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "157 · Conceptual Line Drawing",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/157.png",
+        "label": "nº 157 · handraw-style"
+      }
+    },
+    {
+      "id": "copic-pastel",
+      "slug": "copic-pastel",
+      "display_name": "Copic Pastel",
+      "summary_pt": "Marcador Copic em tons pastel: cor alcoólica suave, traço de mangá fofo e corações. Bom para fofura e personagem kawaii.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "anime-manga",
+        "children"
+      ],
+      "tag_labels": [
+        "Anime e mangá",
+        "Infantil"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/183.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "183 · Copic Pastel",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/183.png",
+        "label": "nº 183 · handraw-style"
+      }
+    },
+    {
+      "id": "crayon-editorial",
+      "slug": "crayon-editorial",
+      "display_name": "Crayon Editorial",
+      "summary_pt": "Editorial em giz de cera: textura grossa, cor viva e contorno irregular. Bom para retrato leve e matéria de comportamento.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "editorial",
+        "pencil-crayon"
+      ],
+      "tag_labels": [
+        "Editorial",
+        "Lápis"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/168.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "168 · Crayon Editorial",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/168.png",
+        "label": "nº 168 · handraw-style"
+      }
+    },
+    {
+      "id": "creamy-social-media-doodle",
+      "slug": "creamy-social-media-doodle",
+      "display_name": "Creamy Social-Media Doodle",
+      "summary_pt": "Rabisco cremoso de rede social: cores leitosas, contorno marrom e clima de conforto. Bom para post de bem-estar.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "social-media",
+        "pencil-crayon"
+      ],
+      "tag_labels": [
+        "Redes sociais",
+        "Lápis"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/185.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "185 · Creamy Social-Media Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/185.png",
+        "label": "nº 185 · handraw-style"
+      }
+    },
+    {
       "id": "dark-deco-x-ancient-mexica",
       "slug": "dark-deco-x-ancient-mexica",
       "display_name": "Dark Deco x Ancient Mexica",
@@ -1240,6 +1810,47 @@
       "recipes": []
     },
     {
+      "id": "deadpan-doodle",
+      "slug": "deadpan-doodle",
+      "display_name": "Deadpan Doodle",
+      "summary_pt": "Rabisco de cara fechada: linha preta limpa, expressão séria e humor seco. Bom para meme, tirinha e ironia.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comedy",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Comédia",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/177.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "177 · Deadpan Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/177.png",
+        "label": "nº 177 · handraw-style"
+      }
+    },
+    {
       "id": "digital-oil-painting",
       "slug": "digital-oil-painting",
       "display_name": "Digital Oil Painting",
@@ -1279,6 +1890,92 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "dry-brush-editorial",
+      "slug": "dry-brush-editorial",
+      "display_name": "Dry-Brush Editorial",
+      "summary_pt": "Editorial em pincel seco: textura áspera, tons de sépia e um acento ocre. Bom para retrato sóbrio e matéria séria.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "editorial",
+        "painterly",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Editorial",
+        "Pictórico",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/174.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "174 · Dry-Brush Editorial",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/174.png",
+        "label": "nº 174 · handraw-style"
+      }
+    },
+    {
+      "id": "editorial-doodle",
+      "slug": "editorial-doodle",
+      "display_name": "Editorial Doodle",
+      "summary_pt": "Rabisco editorial: linha preta solta, poucas cores chapadas e fundo branco. Bom para post explicativo e ilustração de texto.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "editorial",
+        "doodle",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Editorial",
+        "Rabisco",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/155.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "155 · Editorial Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/155.png",
+        "label": "nº 155 · handraw-style"
+      }
     },
     {
       "id": "family-crayon-card",
@@ -1408,6 +2105,47 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "french-cafe-sketch",
+      "slug": "french-cafe-sketch",
+      "display_name": "French Café Sketch",
+      "summary_pt": "Croqui de café à francesa: caneta solta, aquarela leve e cenário esboçado. Bom para viagem, cotidiano e lifestyle.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "ink-drawing",
+        "watercolor"
+      ],
+      "tag_labels": [
+        "Tinta e desenho",
+        "Aquarela"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/159.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "159 · French Café Sketch",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/159.png",
+        "label": "nº 159 · handraw-style"
+      }
     },
     {
       "id": "genndy-tartakovskyinspired-2d-animation",
@@ -1661,6 +2399,129 @@
       "recipes": []
     },
     {
+      "id": "heisei-girls-diary-illustration",
+      "slug": "heisei-girls-diary-illustration",
+      "display_name": "Heisei Girls Diary Illustration",
+      "summary_pt": "Diário de garota da era Heisei: traço de mangá shoujo, adesivos e cores pastel. Bom para fofura, álbum e recordação.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "pencil-crayon",
+        "anime-manga"
+      ],
+      "tag_labels": [
+        "Lápis",
+        "Anime e mangá"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/181.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "181 · Heisei Girls Diary Illustration",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/181.png",
+        "label": "nº 181 · handraw-style"
+      }
+    },
+    {
+      "id": "heta-uma",
+      "slug": "heta-uma",
+      "display_name": "Heta-Uma",
+      "summary_pt": "Heta-uma, o \"mal desenhado bom\" japonês: traço tosco de propósito e cor de giz. Bom para humor e personalidade.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "doodle",
+        "comedy"
+      ],
+      "tag_labels": [
+        "Rabisco",
+        "Comédia"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/179.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "179 · Heta-Uma",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/179.png",
+        "label": "nº 179 · handraw-style"
+      }
+    },
+    {
+      "id": "high-saturation-social-doodle",
+      "slug": "high-saturation-social-doodle",
+      "display_name": "High-Saturation Social Doodle",
+      "summary_pt": "Rabisco saturado de rede social: contorno colorido grosso, cores vibrantes e estrelas. Bom para post alegre e chamada de atenção.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "social-media",
+        "doodle"
+      ],
+      "tag_labels": [
+        "Redes sociais",
+        "Rabisco"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/186.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "186 · High-Saturation Social Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/186.png",
+        "label": "nº 186 · handraw-style"
+      }
+    },
+    {
       "id": "indian-mythic-folk-art",
       "slug": "indian-mythic-folk-art",
       "display_name": "Indian Mythic Folk Art",
@@ -1713,6 +2574,254 @@
       ]
     },
     {
+      "id": "indie-zine-rough-drawing",
+      "slug": "indie-zine-rough-drawing",
+      "display_name": "Indie Zine Rough Drawing",
+      "summary_pt": "Desenho cru de fanzine: esferográfica azul, rabiscos e cara de fotocópia. Bom para cultura alternativa e humor independente.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "ink-drawing",
+        "doodle"
+      ],
+      "tag_labels": [
+        "Tinta e desenho",
+        "Rabisco"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/166.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "166 · Indie Zine Rough Drawing",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/166.png",
+        "label": "nº 166 · handraw-style"
+      }
+    },
+    {
+      "id": "ink-with-flat-spot-color",
+      "slug": "ink-with-flat-spot-color",
+      "display_name": "Ink with Flat Spot Color",
+      "summary_pt": "Nanquim com uma só cor chapada: traço preto expressivo e um objeto colorido. Bom para ilustração de texto e destaque.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "ink-drawing",
+        "editorial"
+      ],
+      "tag_labels": [
+        "Tinta e desenho",
+        "Editorial"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/175.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "175 · Ink with Flat Spot Color",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/175.png",
+        "label": "nº 175 · handraw-style"
+      }
+    },
+    {
+      "id": "japanese-deadpan-loose-line-cartoon",
+      "slug": "japanese-deadpan-loose-line-cartoon",
+      "display_name": "Japanese Deadpan Loose-Line Cartoon",
+      "summary_pt": "Cartum japonês de cansaço cômico: linha fina e frouxa, clima apático. Bom para humor de rotina e trabalho.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comics",
+        "comedy",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Quadrinhos",
+        "Comédia",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/160.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "160 · Japanese Deadpan Loose-Line Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/160.png",
+        "label": "nº 160 · handraw-style"
+      }
+    },
+    {
+      "id": "japanese-magazine-essay-illustration",
+      "slug": "japanese-magazine-essay-illustration",
+      "display_name": "Japanese Magazine Essay Illustration",
+      "summary_pt": "Ilustração de coluna de revista japonesa: traço fino, cor aguada suave e clima calmo. Bom para crônica, comida e cotidiano.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "pencil-crayon",
+        "watercolor"
+      ],
+      "tag_labels": [
+        "Lápis",
+        "Aquarela"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/162.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "162 · Japanese Magazine Essay Illustration",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/162.png",
+        "label": "nº 162 · handraw-style"
+      }
+    },
+    {
+      "id": "japanese-notebook-doodle",
+      "slug": "japanese-notebook-doodle",
+      "display_name": "Japanese Notebook Doodle",
+      "summary_pt": "Rabisco de caderno à japonesa: ícones pequenos, setas e cores suaves. Bom para rotina, lista e planejamento.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "doodle",
+        "pencil-crayon"
+      ],
+      "tag_labels": [
+        "Rabisco",
+        "Lápis"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/161.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "161 · Japanese Notebook Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/161.png",
+        "label": "nº 161 · handraw-style"
+      }
+    },
+    {
+      "id": "japanese-offbeat-four-panel-cartoon",
+      "slug": "japanese-offbeat-four-panel-cartoon",
+      "display_name": "Japanese Offbeat Four-Panel Cartoon",
+      "summary_pt": "Tirinha japonesa de quatro quadros: traço simples e virada absurda no fim. Bom para piada curta e sequência.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "comics",
+        "comedy"
+      ],
+      "tag_labels": [
+        "Quadrinhos",
+        "Comédia"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/163.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "163 · Japanese Offbeat Four-Panel Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/163.png",
+        "label": "nº 163 · handraw-style"
+      }
+    },
+    {
       "id": "kids-drawing-style",
       "slug": "kids-drawing-style",
       "display_name": "Kids’ Drawing Style",
@@ -1752,6 +2861,170 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "kissaten-retro-sketch",
+      "slug": "kissaten-retro-sketch",
+      "display_name": "Kissaten Retro Sketch",
+      "summary_pt": "Croqui retrô de café japonês: lápis de cor em marrom e âmbar, luz quente e ar gasto. Bom para nostalgia e cenas de interior.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "retro",
+        "pencil-crayon"
+      ],
+      "tag_labels": [
+        "Retrô",
+        "Lápis"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/184.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "184 · Kissaten Retro Sketch",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/184.png",
+        "label": "nº 184 · handraw-style"
+      }
+    },
+    {
+      "id": "korean-black-line-red-accent-editorial",
+      "slug": "korean-black-line-red-accent-editorial",
+      "display_name": "Korean Black-Line Red-Accent Editorial",
+      "summary_pt": "Editorial em preto com um só vermelho: traço elegante, preto chapado e um detalhe em cor. Bom para moda, beleza e capa.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "editorial",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Editorial",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/165.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "165 · Korean Black-Line Red-Accent Editorial",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/165.png",
+        "label": "nº 165 · handraw-style"
+      }
+    },
+    {
+      "id": "korean-high-saturation-pop-doodle",
+      "slug": "korean-high-saturation-pop-doodle",
+      "display_name": "Korean High-Saturation Pop Doodle",
+      "summary_pt": "Pop coreano saturado: contorno preto, rosa e azul intensos e colagem de adesivos. Bom para público jovem, moda e cartaz divertido.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "social-media",
+        "doodle"
+      ],
+      "tag_labels": [
+        "Redes sociais",
+        "Rabisco"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/187.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "187 · Korean High-Saturation Pop Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/187.png",
+        "label": "nº 187 · handraw-style"
+      }
+    },
+    {
+      "id": "korean-lifestyle-doodle",
+      "slug": "korean-lifestyle-doodle",
+      "display_name": "Korean Lifestyle Doodle",
+      "summary_pt": "Rabisco coreano de estilo de vida: tons pastel, contorno marrom suave e clima de conforto. Bom para rotina, café e bem-estar.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "doodle",
+        "pencil-crayon"
+      ],
+      "tag_labels": [
+        "Rabisco",
+        "Lápis"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/164.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "164 · Korean Lifestyle Doodle",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/164.png",
+        "label": "nº 164 · handraw-style"
+      }
     },
     {
       "id": "lego-brick-animation",
@@ -1827,6 +3100,88 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "loose-ink",
+      "slug": "loose-ink",
+      "display_name": "Loose Ink",
+      "summary_pt": "Nanquim solto e rápido: traço grosso, respingos e muita energia. Bom para movimento, esporte e cenas urbanas.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "ink-drawing",
+        "action"
+      ],
+      "tag_labels": [
+        "Tinta e desenho",
+        "Ação"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/156.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "156 · Loose Ink",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/156.png",
+        "label": "nº 156 · handraw-style"
+      }
+    },
+    {
+      "id": "mid-century-deadpan-ink-mascot",
+      "slug": "mid-century-deadpan-ink-mascot",
+      "display_name": "Mid-century Deadpan Ink Mascot",
+      "summary_pt": "Nanquim de meados do século: preto chapado elegante, pose relaxada e tédio chique. Bom para marca, capa e lifestyle.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "retro",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Retrô",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/200.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "200 · Mid-century Deadpan Ink Mascot",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/200.png",
+        "label": "nº 200 · handraw-style"
+      }
     },
     {
       "id": "mid-century-modern-editorial-illustration-geometric-character-design",
@@ -1908,6 +3263,47 @@
       "recipes": []
     },
     {
+      "id": "modern-dunhuang-illustration",
+      "slug": "modern-dunhuang-illustration",
+      "display_name": "Modern Dunhuang Illustration",
+      "summary_pt": "Dunhuang moderno: cores de mural antigo, tecidos esvoaçantes e textura envelhecida. Bom para lenda e cena celestial; nasce de arte religiosa budista, use com respeito.",
+      "reading": null,
+      "family": "folk-traditional",
+      "family_label": "Arte popular e tradições",
+      "tags": [
+        "cultural-tradition",
+        "mythology"
+      ],
+      "tag_labels": [
+        "Tradição cultural",
+        "Mitologia"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/190.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "190 · Modern Dunhuang Illustration",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/190.png",
+        "label": "nº 190 · handraw-style"
+      }
+    },
+    {
       "id": "modern-ukiyo-e-illustration",
       "slug": "modern-ukiyo-e-illustration",
       "display_name": "Modern Ukiyo-e Illustration",
@@ -1971,6 +3367,49 @@
       "recipes": []
     },
     {
+      "id": "modernized-song-dynasty-light-color",
+      "slug": "modernized-song-dynasty-light-color",
+      "display_name": "Modernized Song-Dynasty Light Color",
+      "summary_pt": "Pintura Song modernizada: cor clara e aguada, traço fino e muito ar. Bom para cena contemplativa e natureza.",
+      "reading": null,
+      "family": "folk-traditional",
+      "family_label": "Arte popular e tradições",
+      "tags": [
+        "cultural-tradition",
+        "painterly",
+        "watercolor"
+      ],
+      "tag_labels": [
+        "Tradição cultural",
+        "Pictórico",
+        "Aquarela"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/191.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "191 · Modernized Song-Dynasty Light Color",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/191.png",
+        "label": "nº 191 · handraw-style"
+      }
+    },
+    {
       "id": "multi-style-scene-blend",
       "slug": "multi-style-scene-blend",
       "display_name": "Multi-Style Scene Blend",
@@ -2006,6 +3445,47 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "naive-folk-cartoon",
+      "slug": "naive-folk-cartoon",
+      "display_name": "Naive Folk Cartoon",
+      "summary_pt": "Cartum ingênuo de traço popular: formas desajeitadas, cor chapada viva e humor carinhoso. Bom para cenas de bairro e afeto.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "folk-art",
+        "comedy"
+      ],
+      "tag_labels": [
+        "Arte popular",
+        "Comédia"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/172.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "172 · Naive Folk Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/172.png",
+        "label": "nº 172 · handraw-style"
+      }
     },
     {
       "id": "needle-felt-art-style",
@@ -2045,6 +3525,209 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "new-chinese-tiny-ink-figures",
+      "slug": "new-chinese-tiny-ink-figures",
+      "display_name": "New-Chinese Tiny Ink Figures",
+      "summary_pt": "Nanquim chinês com o tema bem pequeno: aguada, névoa e muito vazio. Bom para contemplação, solidão e caminho.",
+      "reading": null,
+      "family": "folk-traditional",
+      "family_label": "Arte popular e tradições",
+      "tags": [
+        "cultural-tradition",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Tradição cultural",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/192.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "192 · New-Chinese Tiny Ink Figures",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/192.png",
+        "label": "nº 192 · handraw-style"
+      }
+    },
+    {
+      "id": "new-guochao-flat-gongbi",
+      "slug": "new-guochao-flat-gongbi",
+      "display_name": "New-Guochao Flat Gongbi",
+      "summary_pt": "Guochao com gongbi plano: contorno fino de pintura chinesa, cores chapadas modernas e ornamento. Bom para cartaz cultural e marca.",
+      "reading": null,
+      "family": "folk-traditional",
+      "family_label": "Arte popular e tradições",
+      "tags": [
+        "cultural-tradition",
+        "folk-art"
+      ],
+      "tag_labels": [
+        "Tradição cultural",
+        "Arte popular"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/189.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "189 · New-Guochao Flat Gongbi",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/189.png",
+        "label": "nº 189 · handraw-style"
+      }
+    },
+    {
+      "id": "notebook-margin-cartoon",
+      "slug": "notebook-margin-cartoon",
+      "display_name": "Notebook Margin Cartoon",
+      "summary_pt": "Rabisco de margem de caderno: caneta azul sobre papel pautado. Bom para escola, estudo e humor de sala de aula.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "doodle",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Rabisco",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/176.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "176 · Notebook Margin Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/176.png",
+        "label": "nº 176 · handraw-style"
+      }
+    },
+    {
+      "id": "oil-pastel-healing-illustration",
+      "slug": "oil-pastel-healing-illustration",
+      "display_name": "Oil-Pastel Healing Illustration",
+      "summary_pt": "Pastel oleoso acolhedor: textura grossa, cores fortes sobrepostas e clima de conforto. Bom para bem-estar, infância e afeto.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "pencil-crayon",
+        "children"
+      ],
+      "tag_labels": [
+        "Lápis",
+        "Infantil"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/196.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "196 · Oil-Pastel Healing Illustration",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/196.png",
+        "label": "nº 196 · handraw-style"
+      }
+    },
+    {
+      "id": "one-line-character",
+      "slug": "one-line-character",
+      "display_name": "One-Line Character",
+      "summary_pt": "Desenho de linha única: um traço contínuo e fino forma tudo. Bom para logotipo, tatuagem e post minimalista.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "minimal-line"
+      ],
+      "tag_labels": [
+        "Linha mínima"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/171.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "171 · One-Line Character",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/171.png",
+        "label": "nº 171 · handraw-style"
+      }
     },
     {
       "id": "painterly-3d-and-papercraft-fantasy",
@@ -2528,6 +4211,131 @@
       ]
     },
     {
+      "id": "primitive-marker-cartoon",
+      "slug": "primitive-marker-cartoon",
+      "display_name": "Primitive Marker Cartoon",
+      "summary_pt": "Cartum de marcador grosso: traço preto pesado, formas primárias e cor mínima. Bom para mascote, adesivo e alegria.",
+      "reading": null,
+      "family": "comics-graphic-novel",
+      "family_label": "Quadrinhos e graphic novel",
+      "tags": [
+        "doodle",
+        "children"
+      ],
+      "tag_labels": [
+        "Rabisco",
+        "Infantil"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/173.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "173 · Primitive Marker Cartoon",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/173.png",
+        "label": "nº 173 · handraw-style"
+      }
+    },
+    {
+      "id": "red-blue-riso-guochao",
+      "slug": "red-blue-riso-guochao",
+      "display_name": "Red-Blue Riso Guochao",
+      "summary_pt": "Guochao em risografia vermelha e azul: grão de impressão, motivos chineses e letras grandes. Bom para cartaz cultural e festa.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "risograph",
+        "cultural-tradition",
+        "poster"
+      ],
+      "tag_labels": [
+        "Risografia",
+        "Tradição cultural",
+        "Pôster"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/199.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "199 · Red-Blue Riso Guochao",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/199.png",
+        "label": "nº 199 · handraw-style"
+      }
+    },
+    {
+      "id": "republic-era-advertising-redesign",
+      "slug": "republic-era-advertising-redesign",
+      "display_name": "Republic-Era Advertising Redesign",
+      "summary_pt": "Anúncio chinês de época redesenhado: formas chapadas, letreiro grande e sorriso de propaganda. Bom para cartaz, marca e humor vintage.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "poster",
+        "retro"
+      ],
+      "tag_labels": [
+        "Pôster",
+        "Retrô"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/195.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "195 · Republic-Era Advertising Redesign",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/195.png",
+        "label": "nº 195 · handraw-style"
+      }
+    },
+    {
       "id": "retro-editorial-cartoon-mid-century-storybook-illustration",
       "slug": "retro-editorial-cartoon-mid-century-storybook-illustration",
       "display_name": "Retro Editorial Cartoon / Mid-Century Storybook Illustration",
@@ -2672,6 +4480,90 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "shanghai-calendar-poster-retro",
+      "slug": "shanghai-calendar-poster-retro",
+      "display_name": "Shanghai Calendar-Poster Retro",
+      "summary_pt": "Cartaz-calendário de Xangai dos anos 30: pintura suave, cores desbotadas e glamour de época. Bom para cartaz vintage e moda retrô.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "poster",
+        "retro",
+        "cultural-tradition"
+      ],
+      "tag_labels": [
+        "Pôster",
+        "Retrô",
+        "Tradição cultural"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/194.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "194 · Shanghai Calendar-Poster Retro",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/194.png",
+        "label": "nº 194 · handraw-style"
+      }
+    },
+    {
+      "id": "showa-retro-girl-illustration",
+      "slug": "showa-retro-girl-illustration",
+      "display_name": "Showa Retro Girl Illustration",
+      "summary_pt": "Ilustração retrô da era Showa: estilo de revista japonesa dos anos 60 e cor de impressão antiga. Bom para nostalgia e cartaz vintage.",
+      "reading": null,
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "retro",
+        "editorial"
+      ],
+      "tag_labels": [
+        "Retrô",
+        "Editorial"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/180.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "180 · Showa Retro Girl Illustration",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/180.png",
+        "label": "nº 180 · handraw-style"
+      }
     },
     {
       "id": "showrunner-multi-style-experiment",
@@ -3461,6 +5353,47 @@
         }
       ],
       "recipes": []
+    },
+    {
+      "id": "two-color-risograph-drawing",
+      "slug": "two-color-risograph-drawing",
+      "display_name": "Two-Color Risograph Drawing",
+      "summary_pt": "Risografia em duas cores: textura granulada e sobreposição de rosa e azul. Bom para cartaz, capa e música.",
+      "reading": null,
+      "family": "editorial-poster",
+      "family_label": "Editorial e pôster",
+      "tags": [
+        "risograph",
+        "poster"
+      ],
+      "tag_labels": [
+        "Risografia",
+        "Pôster"
+      ],
+      "naming_basis": "source_name",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 1,
+      "recipe_count": 0,
+      "examples": [
+        {
+          "source_id": "handraw-style",
+          "source_label": "handraw-style",
+          "source_url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/167.png",
+          "date_utc": null,
+          "poster_url": null,
+          "caption": null,
+          "creator_notes": null,
+          "source_style_name": "167 · Two-Color Risograph Drawing",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
+      "recipes": [],
+      "image_link": {
+        "url": "https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/167.png",
+        "label": "nº 167 · handraw-style"
+      }
     },
     {
       "id": "vietnamese-folk-art-inspired-style",
