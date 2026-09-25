@@ -95,6 +95,10 @@
         "label_pt": "Pictórico"
       },
       {
+        "id": "textured",
+        "label_pt": "Texturizado"
+      },
+      {
         "id": "storybook",
         "label_pt": "Livro ilustrado"
       },
@@ -270,7 +274,7 @@
     }
   ],
   "counts": {
-    "styles": 127,
+    "styles": 128,
     "references": 133,
     "recipes": 12
   },
@@ -5809,6 +5813,110 @@
           "tools": []
         }
       ],
+      "recipes": []
+    },
+    {
+      "id": "textured-gouache-picture-book",
+      "slug": "textured-gouache-picture-book",
+      "display_name": "Textured Gouache Picture Book",
+      "summary_pt": "Livro infantil com textura de papel: formas simples e arredondadas, pintura chapada tipo guache com grão visível e paleta quente e terrosa. Boa para histórias acolhedoras, narrativas sensíveis e material com clima artesanal.",
+      "palette": [
+        {
+          "hex": "#E7BD4E",
+          "name_pt": "Amarelo-mostarda",
+          "role_pt": "base quente, capa e fundos"
+        },
+        {
+          "hex": "#EFD48C",
+          "name_pt": "Amarelo-claro",
+          "role_pt": "variação de luz no fundo"
+        },
+        {
+          "hex": "#F1E8D6",
+          "name_pt": "Creme",
+          "role_pt": "página, nuvens e respiro"
+        },
+        {
+          "hex": "#B24F3F",
+          "name_pt": "Vermelho-telha",
+          "role_pt": "roupas, títulos e acentos"
+        },
+        {
+          "hex": "#D8A5A8",
+          "name_pt": "Rosa-queimado",
+          "role_pt": "fundos delicados e cenas afetivas"
+        },
+        {
+          "hex": "#79873F",
+          "name_pt": "Verde-oliva",
+          "role_pt": "folhagem e objetos"
+        },
+        {
+          "hex": "#B6C39A",
+          "name_pt": "Verde-sálvia",
+          "role_pt": "folhas claras e elementos leves"
+        },
+        {
+          "hex": "#B5734F",
+          "name_pt": "Pele-canela",
+          "role_pt": "personagens"
+        },
+        {
+          "hex": "#55372E",
+          "name_pt": "Marrom-cacau",
+          "role_pt": "cabelo e contraste"
+        },
+        {
+          "hex": "#64615E",
+          "name_pt": "Cinza-grafite",
+          "role_pt": "texto e sombras"
+        }
+      ],
+      "palette_note_pt": "Cores medidas nas fotos do material impresso, com o branco do papel corrigido, e conferidas contra uma imagem digital no mesmo estilo. A lógica importa mais que os códigos: base de amarelos quentes com creme, acentos narrativos em telha e rosa queimado, apoio orgânico em oliva e sálvia, contraste em marrom e cinza no lugar do preto. É paleta de pouco contraste, acolhedora, sem o brilho saturado do desenho televisivo.",
+      "observed_in_pt": "Estilo observado em um exemplar de “Yara e as Cores” (Leiturinha), fotografado pela curadoria para estudo. A ilustração é de seus autores e não é reproduzida aqui; a ficha descreve a linguagem visual, não indexa o ilustrador.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O essencial é que a imagem não parece vetor liso: sobre o preenchimento chapado existe grão de papel visível, as bordas são macias e o acabamento lembra guache impresso. As formas são arredondadas e simplificadas, com volume sugerido por pouquíssimas variações de tom e um leve rubor nas bochechas, nunca por sombra elaborada. A composição respira, com bastante espaço vazio e poucos elementos de fundo, e a paleta é quente, terrosa e de pouco contraste — o escuro é marrom ou cinza, não preto. A textura é do estilo e não da fotografia: medida em área chapada, ela é cerca de três vezes mais forte do que no Flat Vector Picture Book, que é o irmão liso desta mesma família. A expressão vem dos olhos grandes e das sobrancelhas. Se o seu tema não é personagem, tire do prompt o trecho \"friendly character faces with large expressive eyes\".",
+        "prompt": "[seu tema], textured children's picture book illustration, warm handcrafted storybook aesthetic, gouache-like flat painting, visible grainy paper texture, soft edges, simplified rounded forms, gentle organic shapes, subtle print-like imperfections, muted earthy palette of mustard yellow, terracotta red and olive green, generous empty background, cozy editorial picture book mood, friendly character faces with large expressive eyes",
+        "avoid": [
+          "glossy vector",
+          "neon colors",
+          "hyper-detailed shading",
+          "3D render",
+          "photorealistic"
+        ],
+        "avoid_why_pt": "Esses termos devolvem a imagem ao acabamento digital que este estilo evita. Vetor brilhante e cor neon apagam o grão e a suavidade impressa, que são justamente o encanto daqui.",
+        "descriptors": [
+          "textured children's book illustration",
+          "handcrafted picture book art",
+          "gouache kids illustration",
+          "grainy storybook illustration",
+          "editorial children's picture book",
+          "warm naive illustration"
+        ],
+        "alt_pt": null,
+        "tested": false
+      },
+      "family": "storybook-illustration",
+      "family_label": "Livro ilustrado e narrativa",
+      "tags": [
+        "storybook",
+        "children",
+        "textured",
+        "painterly"
+      ],
+      "tag_labels": [
+        "Livro ilustrado",
+        "Infantil",
+        "Texturizado",
+        "Pictórico"
+      ],
+      "naming_basis": "curator_inference",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 0,
+      "recipe_count": 0,
+      "examples": [],
       "recipes": []
     },
     {
