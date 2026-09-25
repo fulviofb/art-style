@@ -46,6 +46,7 @@ tags:
   - { id: editorial, label_pt: Editorial }
   - { id: poster, label_pt: Pôster }
   - { id: geometric, label_pt: Geométrico }
+  - { id: flat-vector, label_pt: Vetor chapado }
   - { id: low-poly, label_pt: Low-poly }
   - { id: folk-art, label_pt: Arte popular }
   - { id: cultural-tradition, label_pt: Tradição cultural }

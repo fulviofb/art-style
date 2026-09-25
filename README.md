@@ -32,6 +32,11 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
   **Teste da troca de tema:** troque o assunto do pôster por outro qualquer; o que continuar verdadeiro é estilo
   e fica no prompt, o que deixar de fazer sentido é cena e sai. A cena só entra em `alt_pt`. O validador exige
   `[seu tema]` no prompt.
+- `curator.palette` (ou `palette`, nas coleções): de 3 a 12 cores medidas na referência, cada uma com
+  `hex` em maiúsculas, `name_pt` e `role_pt` (onde a cor aparece). É dado da ficha, não leitura: vai ao ar
+  mesmo enquanto a leitura ainda é rascunho, e `palette_note_pt` diz de onde os valores vieram. Quando a cor
+  foi medida em foto de material impresso, a nota registra isso — é referência para montar a sua paleta, não
+  a especificação gráfica do original. Sem imagem publicável, a paleta vira a própria miniatura do estilo.
 - `curator.style_family` e `curator.tags`: taxonomia em português.
 - `curator.canonical_style_id` + `canonical_relation`: agrupa continuações, o mesmo estilo ou a mesma obra.
 - Prompts ausentes nunca são inventados.
@@ -46,13 +51,23 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
   nome de um ilustrador, e o catálogo não ensina a gerar "no estilo de" pessoas reais. O validador recusa,
   em coleções `link_only`, imagem embutida e prompt copiado.
 
+## Estilos observados pela curadoria
+
+A coleção `catalog/collections/curadoria.yml` (fonte `curadoria`, `copy_policy: own_notes_only`) guarda os
+estilos que a curadoria descreve a partir de referências vistas fora da série — um livro impresso, um cartaz,
+uma embalagem. A descrição, a leitura e a paleta são autorais e podem ser publicadas; **a imagem observada não
+entra no repositório nem no site**, porque a ilustração é de quem a fez. `observed_in_pt` diz de onde veio a
+observação sem reproduzir a obra. Se depois existir uma imagem própria, gerada com o prompt da ficha, ela pode
+virar exemplo. Os testes recusam `example` e `recipe` nessa coleção.
+
 ## Regra de idioma
 
 - **Inglês, para o que vai ao gerador:** `curator.reading.prompt`, `descriptors` e `avoid`.
   Os modelos de imagem e vídeo respondem melhor em inglês. O nome do estilo (`style.name` e
   `curator.display_name`) também fica no idioma da fonte, porque já é material de prompt.
 - **Português, para o que a pessoa lê para entender e decidir:** `curator.summary_pt`,
-  `curator.reading.defines_pt`, `curator.reading.alt_pt`, `curator.reading.avoid_why_pt`, famílias, tags e toda a interface do site.
+  `curator.reading.defines_pt`, `curator.reading.alt_pt`, `curator.reading.avoid_why_pt`, `name_pt` e `role_pt` da paleta,
+  famílias, tags e toda a interface do site.
   Os campos em português levam o sufixo `_pt`.
 - **Idioma original, para o que é do autor:** `logline`, `creator_notes` e `style.prompt_published` ficam como
   foram publicados.
@@ -60,6 +75,7 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
 ## Fontes atuais
 
 - Publicações de [ToaiDanh (@NVTDanh)](https://x.com/NVTDanh): `copy_policy: link_only`.
+- Observações da curadoria sobre referências de fora da série: `copy_policy: own_notes_only`, sem imagem de terceiros.
 - Receitas testadas de [threerocks/hand-drawn-styles](https://github.com/threerocks/hand-drawn-styles) no commit `7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d`, licença MIT, com atribuição. A variante 3.1 exige âncora e fluxo em três estágios; não é oferecida como prompt isolado.
 
 ## Site local

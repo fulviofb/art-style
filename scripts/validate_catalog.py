@@ -2,6 +2,7 @@
 """Validate catalog YAML. Exit 1 on schema errors."""
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -52,6 +53,23 @@ ALLOWED_SUMMARY_REVIEW = {"poster_checked"}
 
 
 SEU_TEMA = "[seu tema]"
+HEX_COLOR = re.compile(r"^#[0-9A-F]{6}$")
+
+
+def validate_palette(palette) -> list[str]:
+    """Paleta medida na referência. É dado da ficha, não leitura: publica mesmo com a leitura em rascunho."""
+    if not isinstance(palette, list) or not 3 <= len(palette) <= 12:
+        return ["palette must list 3 to 12 colors"]
+    found: list[str] = []
+    for index, color in enumerate(palette):
+        if not isinstance(color, dict):
+            found.append(f"palette[{index}] must be a mapping")
+            continue
+        if not HEX_COLOR.match(str(color.get("hex") or "")):
+            found.append(f"palette[{index}].hex must be #RRGGBB in uppercase")
+        if not str(color.get("name_pt") or "").strip():
+            found.append(f"palette[{index}].name_pt is required")
+    return found
 
 
 def validate_reading(reading) -> list[str]:
@@ -106,6 +124,8 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
             found.append(f"{label}: tags must be registered and not empty")
         if str(entry.get("summary_pt") or "").strip() and entry.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
             found.append(f"{label}: summary_review must record that the summary was checked against the image")
+        if entry.get("palette") is not None:
+            found.extend(f"{label}: {message}" for message in validate_palette(entry.get("palette")))
         if entry.get("reading") is not None:
             found.extend(f"{label}: {message}" for message in validate_reading(entry.get("reading")))
     return found
@@ -139,6 +159,8 @@ def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> l
             found.append("curator.summary_pt is required on canonical styles")
         elif curator.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
             found.append("curator.summary_review must record that the summary was checked against the poster")
+    if curator.get("palette") is not None:
+        found.extend(validate_palette(curator.get("palette")))
     if curator.get("reading") is not None:
         found.extend(validate_reading(curator.get("reading")))
     return found

@@ -3,10 +3,10 @@ import {
   groupStyleItems,
   parseStyleState,
   serializeStyleState,
-} from "./style-index.mjs?v=15";
+} from "./style-index.mjs?v=16";
 
 async function loadCatalog() {
-  const response = await fetch("data/catalog.public.json?v=15", { cache: "no-store" });
+  const response = await fetch("data/catalog.public.json?v=16", { cache: "no-store" });
   if (!response.ok) throw new Error("Falha ao carregar a biblioteca");
   return response.json();
 }
@@ -31,6 +31,18 @@ function sourceTile(link, asLink) {
   return asLink
     ? `<a class="media-fallback media-fallback--source" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${inner}</a>`
     : `<div class="media-fallback media-fallback--source">${inner}</div>`;
+}
+
+function paletteTile(palette) {
+  // Estilo sem imagem publicável: a paleta é a própria miniatura.
+  return `<div class="palette-tile" aria-hidden="true">${palette.map((color) => `<span style="background:${escapeHtml(color.hex)}"></span>`).join("")}</div>`;
+}
+
+function styleMedia(style, alt, asLink, eager = false) {
+  if (style.poster_url) return still(style.poster_url, alt, eager);
+  if (style.image_link) return sourceTile(style.image_link, asLink);
+  if (style.palette?.length) return paletteTile(style.palette);
+  return still(null, alt);
 }
 
 function installImageFallback() {
@@ -65,6 +77,8 @@ async function copyText(text, done = "Prompt copiado") {
 }
 
 function metricText(style) {
+  // Estilo descrito pela curadoria, sem imagem publicada: o que se pode contar é a paleta.
+  if (!style.example_count && style.palette?.length) return `${style.palette.length} cores na paleta`;
   const references = `${style.example_count} ${style.example_count === 1 ? "referência" : "referências"}`;
   if (!style.recipe_count) return references;
   return `${references} · ${style.recipe_count} ${style.recipe_count === 1 ? "receita" : "receitas"}`;
@@ -73,7 +87,7 @@ function metricText(style) {
 function styleCard(style) {
   const tags = (style.tag_labels || []).slice(0, 4);
   return `<a class="style-card" href="estilo.html?id=${encodeURIComponent(style.slug)}">
-    <div class="style-card__image">${style.poster_url || !style.image_link ? still(style.poster_url, style.display_name) : sourceTile(style.image_link, false)}</div>
+    <div class="style-card__image">${styleMedia(style, style.display_name, false)}</div>
     <div class="style-card__body">
       <div class="style-card__eyebrow"><span>${escapeHtml(style.family_label)}</span><span>${escapeHtml(metricText(style))}</span></div>
       <h3>${escapeHtml(style.display_name)}</h3>
@@ -206,6 +220,24 @@ function readingText(reading, kind) {
   return "";
 }
 
+function paletteSection(style) {
+  const palette = style.palette || [];
+  if (!palette.length) return "";
+  return `<section class="detail-section palette">
+    <header><p class="section-kicker">Paleta</p><h2>As cores do estilo</h2></header>
+    <div class="palette-body">
+      <div class="palette-grid">${palette.map((color) => `<button type="button" class="swatch" data-copy-hex="${escapeHtml(color.hex)}">
+        <span class="swatch__chip" style="background:${escapeHtml(color.hex)}"></span>
+        <span class="swatch__text"><strong>${escapeHtml(color.name_pt)}</strong><code>${escapeHtml(color.hex)}</code>${color.role_pt ? `<small>${escapeHtml(color.role_pt)}</small>` : ""}</span>
+      </button>`).join("")}</div>
+      <div class="palette-foot">
+        <button type="button" class="copy ghost" data-copy-palette>Copiar todos os códigos</button>
+        ${style.palette_note_pt ? `<p class="reading-why">${escapeHtml(style.palette_note_pt)}</p>` : ""}
+      </div>
+    </div>
+  </section>`;
+}
+
 function readingSection(reading) {
   if (!reading) return "";
   const chips = (items) => `<div class="style-tags">${items.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>`;
@@ -258,14 +290,21 @@ function renderStyleDetail(catalog) {
   }).join("");
   root.innerHTML = `<a class="back-link" href="index.html">← Explorar estilos</a>
     <section class="style-hero">
-      <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>${style.summary_pt ? `<p class="style-summary style-summary--pt">${escapeHtml(style.summary_pt)}</p>` : ""}<p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
-      <div class="style-hero__visual"><div class="style-hero__media">${style.poster_url || !style.image_link ? still(style.poster_url, style.reading?.alt_pt || style.display_name, true) : sourceTile(style.image_link, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
+      <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>${style.summary_pt ? `<p class="style-summary style-summary--pt">${escapeHtml(style.summary_pt)}</p>` : ""}${style.observed_in_pt ? `<p class="style-origin">${escapeHtml(style.observed_in_pt)}</p>` : ""}${style.example_count ? `<p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p>` : '<p class="style-summary">Estilo descrito pela curadoria, com a paleta medida na referência.</p>'}</div>
+      <div class="style-hero__visual"><div class="style-hero__media">${styleMedia(style, style.reading?.alt_pt || style.display_name, true, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
     </section>
+    ${paletteSection(style)}
     ${readingSection(style.reading)}
-    <section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>
-    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : style.reading ? "Nenhum prompt do autor" : "Receita ainda não catalogada"}</h2></header>${recipes || (style.reading ? '<p class="empty-note">O autor não publicou prompt para este estilo. A leitura da curadoria, acima, traz um prompt próprio.</p>' : '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>')}</section>`;
+    ${examples ? `<section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>` : ""}
+    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : style.reading ? "Nenhum prompt do autor" : "Receita ainda não catalogada"}</h2></header>${recipes || (style.reading ? '<p class="empty-note">O autor não publicou prompt para este estilo. A leitura da curadoria, acima, traz um prompt próprio.</p>' : examples ? '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>' : '<p class="empty-note">A leitura da curadoria para este estilo ainda está em revisão. Por enquanto a ficha traz a descrição e a paleta.</p>')}</section>`;
   root.querySelectorAll("button[data-copy-image]").forEach((button) => {
     button.addEventListener("click", () => copyImage(button.dataset.copyImage));
+  });
+  root.querySelectorAll("button[data-copy-hex]").forEach((button) => {
+    button.addEventListener("click", () => copyText(button.dataset.copyHex, `${button.dataset.copyHex} copiado`));
+  });
+  root.querySelector("button[data-copy-palette]")?.addEventListener("click", () => {
+    copyText((style.palette || []).map((color) => color.hex).join(", "), "Paleta copiada");
   });
   root.querySelectorAll("button[data-copy-reading]").forEach((button) => {
     button.addEventListener("click", () => {
