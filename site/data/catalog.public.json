@@ -275,7 +275,7 @@
   ],
   "counts": {
     "styles": 128,
-    "references": 133,
+    "references": 134,
     "recipes": 12
   },
   "styles": [
@@ -5913,10 +5913,24 @@
       ],
       "naming_basis": "curator_inference",
       "confidence": "high",
-      "poster_url": null,
-      "example_count": 0,
+      "poster_url": "assets/img/textured-gouache-picture-book.webp",
+      "example_count": 1,
       "recipe_count": 0,
-      "examples": [],
+      "examples": [
+        {
+          "source_id": "curadoria",
+          "source_label": "Curadoria",
+          "source_url": "https://github.com/fulviofb/art-style",
+          "date_utc": "2026-09-25",
+          "poster_url": "assets/img/textured-gouache-picture-book.webp",
+          "caption": "Imagem gerada pela própria curadoria a partir da referência observada.",
+          "creator_notes": null,
+          "own_work": true,
+          "source_style_name": "Textured Gouache Picture Book",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
       "recipes": []
     },
     {

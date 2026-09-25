@@ -86,6 +86,11 @@ entries:
     observed_in_pt: "Estilo observado em um exemplar de “Yara e as Cores” (Leiturinha), fotografado pela curadoria para estudo. A ilustração é de seus autores e não é reproduzida aqui; a ficha descreve a linguagem visual, não indexa o ilustrador."
     summary_pt: "Livro infantil com textura de papel: formas simples e arredondadas, pintura chapada tipo guache com grão visível e paleta quente e terrosa. Boa para histórias acolhedoras, narrativas sensíveis e material com clima artesanal."
     summary_review: poster_checked
+    example:
+      own_work: true
+      poster_url: assets/img/textured-gouache-picture-book.webp
+      caption: "Imagem gerada pela própria curadoria a partir da referência observada."
+      date_utc: "2026-09-25"
     palette:
       - hex: "#E7BD4E"
         name_pt: Amarelo-mostarda
