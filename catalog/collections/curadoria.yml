@@ -1,0 +1,76 @@
+source_id: curadoria
+copy_policy: own_notes_only
+# Estilos que a curadoria descreve a partir de referências observadas fora da série.
+# Regra da coleção: a descrição e a paleta são autorais; a imagem observada não entra no repositório
+# nem no site. Quando o estilo tiver uma imagem própria, gerada com o prompt da ficha, ela pode virar exemplo.
+entries:
+  - id: flat-vector-picture-book
+    display_name: Flat Vector Picture Book
+    naming_basis: curator_inference
+    family: storybook-illustration
+    tags:
+      - storybook
+      - children
+      - flat-vector
+      - geometric
+    observed_in_pt: "Estilo observado em um livro infantil impresso, fotografado pela curadoria para estudo. As ilustrações originais são de seus autores e não são reproduzidas aqui: a imagem desta ficha foi gerada pela própria curadoria."
+    summary_pt: "Ilustração infantil em vetor chapado: formas geométricas arredondadas, cor cheia sem contorno e personagens de olhos enormes, com espirais e marquinhas de movimento. Boa para histórias para crianças pequenas, cartazes e material didático."
+    summary_review: poster_checked
+    example:
+      own_work: true
+      poster_url: assets/img/flat-vector-picture-book.webp
+      caption: "Imagem gerada pela própria curadoria, no estilo descrito nesta ficha."
+      date_utc: "2026-09-25"
+    palette:
+      - hex: "#F4F5EF"
+        name_pt: Branco-papel
+        role_pt: fundo e nuvens
+      - hex: "#5EA9E0"
+        name_pt: Azul-céu
+        role_pt: céu e água rasa
+      - hex: "#2E5596"
+        name_pt: Azul-profundo
+        role_pt: água funda e noite
+      - hex: "#CCDC4E"
+        name_pt: Verde-limão
+        role_pt: grama e folhagem
+      - hex: "#709854"
+        name_pt: Verde-folha
+        role_pt: tom escuro do verde
+      - hex: "#E8A97A"
+        name_pt: Laranja-areia
+        role_pt: pele e pelo
+      - hex: "#E4D257"
+        name_pt: Amarelo-sol
+        role_pt: luz e detalhes
+      - hex: "#97569B"
+        name_pt: Roxo-uva
+        role_pt: acento e cenas de fim de tarde
+      - hex: "#D1799C"
+        name_pt: Rosa-doce
+        role_pt: acento quente
+      - hex: "#3A3034"
+        name_pt: Marrom quase preto
+        role_pt: manchas, olhos e texto
+    palette_note_pt: "Cores medidas nas fotos do material impresso, com o branco do papel corrigido: são referência para montar a sua paleta, não a especificação gráfica do original. Mais do que os códigos exatos, vale a relação entre eles — base alegre de azul, verde-limão e caramelo; dois ou três acentos de rosa, roxo e amarelo; ameixa quase preto no lugar do preto; branco de respiro. Uma geração digital neste estilo costuma sair mais saturada do que a página impressa."
+    reading:
+      defines_pt: "Tudo é construído com poucas formas geométricas arredondadas — círculos, ovais e retângulos de canto redondo — preenchidas com cor chapada. Não existe contorno em volta das formas; o escuro aparece só como detalhe interno, em traço fino ou em peça cheia, como cascos, chifres e perninhas de passarinho. E esse escuro é um ameixa quase preto, nunca preto puro, o que mantém o desenho macio. A profundidade vem da sobreposição das camadas e de um único tom mais escuro da mesma cor: não há degradê, textura de pincel nem sombra realista. Volta e meia aparece uma espiral — nas manchas, no sol, nas antenas — e pequenas marcas de movimento, tracinhos e trilhas pontilhadas, que dão espontaneidade sem sujar o acabamento. O fundo permanece largo e vazio, com silhuetas simples atrás do assunto, e a paleta é curta, saturada sem ser neon. A expressão mora no rosto: olhos ovais enormes com um único brilho branco. Se o seu tema não é personagem e não deve ganhar rosto, tire do prompt o trecho \"friendly character faces with oversized oval eyes and a single white highlight\" — nesta linguagem até objeto costuma ganhar olhos."
+      prompt: "[seu tema], playful children's picture book illustration, flat vector style, simple rounded geometric shapes, bold flat color fills with no outlines around shapes, selective very dark plum linework for small details, one slightly darker tone of the same color for depth, overlapping layered shapes, spiral and swirl motifs, small hand-drawn motion marks and dashed trails, friendly character faces with oversized oval eyes and a single white highlight, short saturated palette of sky blue, lime green, orange tan and purple, generous empty background, clean modern early-reader aesthetic"
+      avoid:
+        - "black outlines"
+        - "gradients"
+        - "complex shading"
+        - "realistic anatomy"
+        - "textured brush strokes"
+        - "3D render"
+        - "photorealistic"
+      avoid_why_pt: "Contorno em volta das formas, degradê, sombra elaborada e anatomia correta são exatamente o que este estilo não tem: a forma chapada perde o corte limpo e a expressão exagerada some assim que a IA acrescenta volume, pincelada ou proporção realista."
+      descriptors:
+        - "flat vector children's book illustration"
+        - "playful picture book cartoon"
+        - "geometric character design"
+        - "early reader picture book art"
+        - "expressive kids illustration"
+        - "modern children's book vector"
+      tested: false
+      status: approved

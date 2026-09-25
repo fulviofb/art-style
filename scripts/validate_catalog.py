@@ -2,6 +2,7 @@
 """Validate catalog YAML. Exit 1 on schema errors."""
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -52,6 +53,23 @@ ALLOWED_SUMMARY_REVIEW = {"poster_checked"}
 
 
 SEU_TEMA = "[seu tema]"
+HEX_COLOR = re.compile(r"^#[0-9A-F]{6}$")
+
+
+def validate_palette(palette) -> list[str]:
+    """Paleta medida na referência. É dado da ficha, não leitura: publica mesmo com a leitura em rascunho."""
+    if not isinstance(palette, list) or not 3 <= len(palette) <= 12:
+        return ["palette must list 3 to 12 colors"]
+    found: list[str] = []
+    for index, color in enumerate(palette):
+        if not isinstance(color, dict):
+            found.append(f"palette[{index}] must be a mapping")
+            continue
+        if not HEX_COLOR.match(str(color.get("hex") or "")):
+            found.append(f"palette[{index}].hex must be #RRGGBB in uppercase")
+        if not str(color.get("name_pt") or "").strip():
+            found.append(f"palette[{index}].name_pt is required")
+    return found
 
 
 def validate_reading(reading) -> list[str]:
@@ -88,6 +106,7 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
     """Coleção externa: respeita a política de cópia e cria estilos com a mesma curadoria dos dias."""
     found: list[str] = []
     link_only = collection.get("copy_policy") == "link_only"
+    own_notes = collection.get("copy_policy") == "own_notes_only"
     for entry in collection.get("entries") or []:
         label = entry.get("id") or "?"
         if link_only:
@@ -95,6 +114,13 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
                 found.append(f"{label}: link_only collections must not embed source images")
             if (entry.get("recipe") or {}).get("template"):
                 found.append(f"{label}: link_only collections must not copy source prompts")
+        if own_notes:
+            # A referência observada fica de fora; o exemplo, quando existe, é imagem do próprio curador.
+            example = entry.get("example") or {}
+            if example and not example.get("own_work"):
+                found.append(f"{label}: curator collections only carry the curator's own image")
+            if entry.get("recipe"):
+                found.append(f"{label}: curator collections do not copy third-party recipes")
         if entry.get("canonical_style_id"):
             continue
         if not str(entry.get("display_name") or "").strip():
@@ -106,6 +132,8 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
             found.append(f"{label}: tags must be registered and not empty")
         if str(entry.get("summary_pt") or "").strip() and entry.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
             found.append(f"{label}: summary_review must record that the summary was checked against the image")
+        if entry.get("palette") is not None:
+            found.extend(f"{label}: {message}" for message in validate_palette(entry.get("palette")))
         if entry.get("reading") is not None:
             found.extend(f"{label}: {message}" for message in validate_reading(entry.get("reading")))
     return found
@@ -139,6 +167,8 @@ def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> l
             found.append("curator.summary_pt is required on canonical styles")
         elif curator.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
             found.append("curator.summary_review must record that the summary was checked against the poster")
+    if curator.get("palette") is not None:
+        found.extend(validate_palette(curator.get("palette")))
     if curator.get("reading") is not None:
         found.extend(validate_reading(curator.get("reading")))
     return found

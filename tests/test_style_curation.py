@@ -228,3 +228,48 @@ def test_handraw_collection_is_group_f_only_and_link_only():
     numbers = [int(entry["source_style_id"]) for entry in data["entries"]]
     assert numbers and all(155 <= n <= 200 for n in numbers)
     assert all(entry["reading"]["prompt"].startswith("[seu tema]") for entry in data["entries"])
+
+
+def test_palette_requires_named_colors_in_uppercase_hex():
+    from scripts.validate_catalog import validate_palette
+
+    assert validate_palette([{"hex": "#CCDC4E", "name_pt": "Verde-limão"}]) == ["palette must list 3 to 12 colors"]
+    messages = validate_palette([
+        {"hex": "#CCDC4E", "name_pt": "Verde-limão"},
+        {"hex": "ccdc4e", "name_pt": "Minúsculo"},
+        {"hex": "#3A3034", "name_pt": ""},
+    ])
+    assert any("hex" in m for m in messages)
+    assert any("name_pt" in m for m in messages)
+
+
+def test_palette_is_published_even_when_the_reading_is_still_a_draft():
+    from scripts.export_public_catalog import build_public_library
+
+    taxonomy = {"families": [{"id": "storybook-illustration", "label_pt": "Livro ilustrado"}], "tags": [{"id": "children", "label_pt": "Infantil"}]}
+    sources = {"sources": [{"id": "curadoria", "label": "Curadoria"}]}
+    collections = [{
+        "source_id": "curadoria",
+        "copy_policy": "own_notes_only",
+        "entries": [{
+            "id": "estilo-observado", "display_name": "Estilo Observado",
+            "family": "storybook-illustration", "tags": ["children"],
+            "palette": [{"hex": "#CCDC4E", "name_pt": "Verde-limão", "role_pt": "grama"}],
+            "reading": {"prompt": "[seu tema], flat", "status": "draft"},
+        }],
+    }]
+    style = next(s for s in build_public_library([], taxonomy, sources, collections)["styles"] if s["id"] == "estilo-observado")
+    assert style["reading"] is None
+    assert style["palette"][0]["hex"] == "#CCDC4E"
+
+
+def test_curator_collection_never_carries_third_party_media_or_prompts():
+    data = yaml.safe_load((ROOT / "catalog" / "collections" / "curadoria.yml").read_text(encoding="utf-8"))
+    assert data["copy_policy"] == "own_notes_only"
+    for entry in data["entries"]:
+        example = entry.get("example") or {}
+        assert example.get("own_work") if example else True, f"{entry['id']}: só imagem da própria curadoria entra aqui"
+        assert "//" not in str(example.get("poster_url") or ""), f"{entry['id']}: a imagem é servida pelo próprio site"
+        assert not entry.get("recipe"), f"{entry['id']}: a curadoria não copia receita de terceiro"
+        assert entry["palette"], f"{entry['id']}: estilo da curadoria precisa da paleta medida"
+        assert entry["reading"]["prompt"].startswith("[seu tema]")

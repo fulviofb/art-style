@@ -26,3 +26,10 @@ sources:
     copy_policy: link_only
     pinned_commit: 70bf51d6b4c301805dd6c083355a2ad18db1023b
     notes: Biblioteca de 261 estilos sem licença. Só o grupo F (155–200), que não usa nome de artista, é indexado, e só com links.
+  - id: curadoria
+    label: Curadoria
+    creator: Curadoria do Técnicas de Art Style
+    url: https://github.com/fulviofb/art-style
+    kind: curator_observation
+    copy_policy: own_notes_only
+    notes: Estilos descritos pela curadoria a partir de referências observadas fora da série. A descrição e a paleta são autorais; nenhuma imagem de terceiros é hospedada ou reproduzida aqui.
