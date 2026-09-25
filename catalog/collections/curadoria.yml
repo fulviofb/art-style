@@ -13,9 +13,14 @@ entries:
       - children
       - flat-vector
       - geometric
-    observed_in_pt: "Livro infantil impresso, fotografado pela curadoria para estudo. As ilustrações originais são de seus autores e não são reproduzidas aqui."
+    observed_in_pt: "Estilo observado em um livro infantil impresso, fotografado pela curadoria para estudo. As ilustrações originais são de seus autores e não são reproduzidas aqui: a imagem desta ficha foi gerada pela própria curadoria."
     summary_pt: "Ilustração infantil em vetor chapado: formas geométricas arredondadas, cor cheia sem contorno e personagens de olhos enormes, com espirais e marquinhas de movimento. Boa para histórias para crianças pequenas, cartazes e material didático."
     summary_review: poster_checked
+    example:
+      own_work: true
+      poster_url: assets/img/flat-vector-picture-book.webp
+      caption: "Imagem gerada pela própria curadoria, no estilo descrito nesta ficha."
+      date_utc: "2026-09-25"
     palette:
       - hex: "#F4F5EF"
         name_pt: Branco-papel
@@ -68,4 +73,4 @@ entries:
         - "expressive kids illustration"
         - "modern children's book vector"
       tested: false
-      status: draft
+      status: approved

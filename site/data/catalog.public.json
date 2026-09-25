@@ -271,7 +271,7 @@
   ],
   "counts": {
     "styles": 127,
-    "references": 132,
+    "references": 133,
     "recipes": 12
   },
   "styles": [
@@ -503,6 +503,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "182 · Airy Transparent Watercolor",
           "source_style_name_status": "published",
           "tools": []
@@ -811,6 +812,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "178 · Awkward Cute",
           "source_style_name_status": "published",
           "tools": []
@@ -896,6 +898,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "198 · Black-White Pen Deadpan Humor",
           "source_style_name_status": "published",
           "tools": []
@@ -993,6 +996,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "170 · Brush-Pen Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -1037,6 +1041,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "193 · Cantonese Dim-Sum Guochao",
           "source_style_name_status": "published",
           "tools": []
@@ -1179,6 +1184,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "197 · Childlike Crayon Naive Style",
           "source_style_name_status": "published",
           "tools": []
@@ -1272,6 +1278,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "188 · Chinese Retro Lianhuanhua",
           "source_style_name_status": "published",
           "tools": []
@@ -1461,6 +1468,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "158 · Classic Magazine Single-Panel Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -1628,6 +1636,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "169 · Colored Pencil Diary",
           "source_style_name_status": "published",
           "tools": []
@@ -1672,6 +1681,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "157 · Conceptual Line Drawing",
           "source_style_name_status": "published",
           "tools": []
@@ -1716,6 +1726,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "183 · Copic Pastel",
           "source_style_name_status": "published",
           "tools": []
@@ -1760,6 +1771,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "168 · Crayon Editorial",
           "source_style_name_status": "published",
           "tools": []
@@ -1804,6 +1816,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "185 · Creamy Social-Media Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -1938,6 +1951,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "177 · Deadpan Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -2027,6 +2041,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "174 · Dry-Brush Editorial",
           "source_style_name_status": "published",
           "tools": []
@@ -2073,6 +2088,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "155 · Editorial Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -2117,6 +2133,7 @@
           "poster_url": "https://raw.githubusercontent.com/threerocks/hand-drawn-styles/7388c55d2a135e91eb62f5b6b2fc5300a5b0f40d/assets/style-3.1/anchor-family.png",
           "caption": "Referência visual oficial da variante 3.1 no commit homologado.",
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "蜡笔童涂-潦草自画版",
           "source_style_name_status": "published",
           "tools": []
@@ -2237,8 +2254,32 @@
         }
       ],
       "palette_note_pt": "Cores medidas nas fotos do material impresso, com o branco do papel corrigido: são referência para montar a sua paleta, não a especificação gráfica do original. Mais do que os códigos exatos, vale a relação entre eles — base alegre de azul, verde-limão e caramelo; dois ou três acentos de rosa, roxo e amarelo; ameixa quase preto no lugar do preto; branco de respiro. Uma geração digital neste estilo costuma sair mais saturada do que a página impressa.",
-      "observed_in_pt": "Livro infantil impresso, fotografado pela curadoria para estudo. As ilustrações originais são de seus autores e não são reproduzidas aqui.",
-      "reading": null,
+      "observed_in_pt": "Estilo observado em um livro infantil impresso, fotografado pela curadoria para estudo. As ilustrações originais são de seus autores e não são reproduzidas aqui: a imagem desta ficha foi gerada pela própria curadoria.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "Tudo é construído com poucas formas geométricas arredondadas — círculos, ovais e retângulos de canto redondo — preenchidas com cor chapada. Não existe contorno em volta das formas; o escuro aparece só como detalhe interno, em traço fino ou em peça cheia, como cascos, chifres e perninhas de passarinho. E esse escuro é um ameixa quase preto, nunca preto puro, o que mantém o desenho macio. A profundidade vem da sobreposição das camadas e de um único tom mais escuro da mesma cor: não há degradê, textura de pincel nem sombra realista. Volta e meia aparece uma espiral — nas manchas, no sol, nas antenas — e pequenas marcas de movimento, tracinhos e trilhas pontilhadas, que dão espontaneidade sem sujar o acabamento. O fundo permanece largo e vazio, com silhuetas simples atrás do assunto, e a paleta é curta, saturada sem ser neon. A expressão mora no rosto: olhos ovais enormes com um único brilho branco. Se o seu tema não é personagem e não deve ganhar rosto, tire do prompt o trecho \"friendly character faces with oversized oval eyes and a single white highlight\" — nesta linguagem até objeto costuma ganhar olhos.",
+        "prompt": "[seu tema], playful children's picture book illustration, flat vector style, simple rounded geometric shapes, bold flat color fills with no outlines around shapes, selective very dark plum linework for small details, one slightly darker tone of the same color for depth, overlapping layered shapes, spiral and swirl motifs, small hand-drawn motion marks and dashed trails, friendly character faces with oversized oval eyes and a single white highlight, short saturated palette of sky blue, lime green, orange tan and purple, generous empty background, clean modern early-reader aesthetic",
+        "avoid": [
+          "black outlines",
+          "gradients",
+          "complex shading",
+          "realistic anatomy",
+          "textured brush strokes",
+          "3D render",
+          "photorealistic"
+        ],
+        "avoid_why_pt": "Contorno em volta das formas, degradê, sombra elaborada e anatomia correta são exatamente o que este estilo não tem: a forma chapada perde o corte limpo e a expressão exagerada some assim que a IA acrescenta volume, pincelada ou proporção realista.",
+        "descriptors": [
+          "flat vector children's book illustration",
+          "playful picture book cartoon",
+          "geometric character design",
+          "early reader picture book art",
+          "expressive kids illustration",
+          "modern children's book vector"
+        ],
+        "alt_pt": null,
+        "tested": false
+      },
       "family": "storybook-illustration",
       "family_label": "Livro ilustrado e narrativa",
       "tags": [
@@ -2255,10 +2296,24 @@
       ],
       "naming_basis": "curator_inference",
       "confidence": "high",
-      "poster_url": null,
-      "example_count": 0,
+      "poster_url": "assets/img/flat-vector-picture-book.webp",
+      "example_count": 1,
       "recipe_count": 0,
-      "examples": [],
+      "examples": [
+        {
+          "source_id": "curadoria",
+          "source_label": "Curadoria",
+          "source_url": "https://github.com/fulviofb/art-style",
+          "date_utc": "2026-09-25",
+          "poster_url": "assets/img/flat-vector-picture-book.webp",
+          "caption": "Imagem gerada pela própria curadoria, no estilo descrito nesta ficha.",
+          "creator_notes": null,
+          "own_work": true,
+          "source_style_name": "Flat Vector Picture Book",
+          "source_style_name_status": "published",
+          "tools": []
+        }
+      ],
       "recipes": []
     },
     {
@@ -2335,6 +2390,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "159 · French Café Sketch",
           "source_style_name_status": "published",
           "tools": []
@@ -2640,6 +2696,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "181 · Heisei Girls Diary Illustration",
           "source_style_name_status": "published",
           "tools": []
@@ -2684,6 +2741,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "179 · Heta-Uma",
           "source_style_name_status": "published",
           "tools": []
@@ -2728,6 +2786,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "186 · High-Saturation Social Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -2826,6 +2885,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "166 · Indie Zine Rough Drawing",
           "source_style_name_status": "published",
           "tools": []
@@ -2870,6 +2930,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "175 · Ink with Flat Spot Color",
           "source_style_name_status": "published",
           "tools": []
@@ -2916,6 +2977,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "160 · Japanese Deadpan Loose-Line Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -2960,6 +3022,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "162 · Japanese Magazine Essay Illustration",
           "source_style_name_status": "published",
           "tools": []
@@ -3004,6 +3067,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "161 · Japanese Notebook Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -3048,6 +3112,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "163 · Japanese Offbeat Four-Panel Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -3135,6 +3200,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "184 · Kissaten Retro Sketch",
           "source_style_name_status": "published",
           "tools": []
@@ -3179,6 +3245,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "165 · Korean Black-Line Red-Accent Editorial",
           "source_style_name_status": "published",
           "tools": []
@@ -3223,6 +3290,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "187 · Korean High-Saturation Pop Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -3267,6 +3335,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "164 · Korean Lifestyle Doodle",
           "source_style_name_status": "published",
           "tools": []
@@ -3390,6 +3459,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "156 · Loose Ink",
           "source_style_name_status": "published",
           "tools": []
@@ -3434,6 +3504,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "200 · Mid-century Deadpan Ink Mascot",
           "source_style_name_status": "published",
           "tools": []
@@ -3561,6 +3632,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "190 · Modern Dunhuang Illustration",
           "source_style_name_status": "published",
           "tools": []
@@ -3672,6 +3744,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "191 · Modernized Song-Dynasty Light Color",
           "source_style_name_status": "published",
           "tools": []
@@ -3755,6 +3828,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "172 · Naive Folk Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -3840,6 +3914,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "192 · New-Chinese Tiny Ink Figures",
           "source_style_name_status": "published",
           "tools": []
@@ -3884,6 +3959,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "189 · New-Guochao Flat Gongbi",
           "source_style_name_status": "published",
           "tools": []
@@ -3928,6 +4004,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "176 · Notebook Margin Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -3972,6 +4049,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "196 · Oil-Pastel Healing Illustration",
           "source_style_name_status": "published",
           "tools": []
@@ -4014,6 +4092,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "171 · One-Line Character",
           "source_style_name_status": "published",
           "tools": []
@@ -4561,6 +4640,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "173 · Primitive Marker Cartoon",
           "source_style_name_status": "published",
           "tools": []
@@ -4607,6 +4687,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "199 · Red-Blue Riso Guochao",
           "source_style_name_status": "published",
           "tools": []
@@ -4651,6 +4732,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "195 · Republic-Era Advertising Redesign",
           "source_style_name_status": "published",
           "tools": []
@@ -4849,6 +4931,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "194 · Shanghai Calendar-Poster Retro",
           "source_style_name_status": "published",
           "tools": []
@@ -4893,6 +4976,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "180 · Showa Retro Girl Illustration",
           "source_style_name_status": "published",
           "tools": []
@@ -5760,6 +5844,7 @@
           "poster_url": null,
           "caption": null,
           "creator_notes": null,
+          "own_work": false,
           "source_style_name": "167 · Two-Color Risograph Drawing",
           "source_style_name_status": "published",
           "tools": []

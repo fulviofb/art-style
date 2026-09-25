@@ -210,6 +210,7 @@ def build_public_library(
                         "poster_url": example.get("poster_url"),
                         "caption": example.get("caption"),
                         "creator_notes": example.get("creator_notes"),
+                        "own_work": bool(example.get("own_work")),
                         "source_style_name": entry.get("source_style_name") or entry.get("display_name"),
                         "source_style_name_status": "published",
                         "tools": example.get("tools") or [],

@@ -267,7 +267,9 @@ def test_curator_collection_never_carries_third_party_media_or_prompts():
     data = yaml.safe_load((ROOT / "catalog" / "collections" / "curadoria.yml").read_text(encoding="utf-8"))
     assert data["copy_policy"] == "own_notes_only"
     for entry in data["entries"]:
-        assert not entry.get("example"), f"{entry['id']}: a referência observada não é hospedada aqui"
+        example = entry.get("example") or {}
+        assert example.get("own_work") if example else True, f"{entry['id']}: só imagem da própria curadoria entra aqui"
+        assert "//" not in str(example.get("poster_url") or ""), f"{entry['id']}: a imagem é servida pelo próprio site"
         assert not entry.get("recipe"), f"{entry['id']}: a curadoria não copia receita de terceiro"
         assert entry["palette"], f"{entry['id']}: estilo da curadoria precisa da paleta medida"
         assert entry["reading"]["prompt"].startswith("[seu tema]")

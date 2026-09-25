@@ -106,6 +106,7 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
     """Coleção externa: respeita a política de cópia e cria estilos com a mesma curadoria dos dias."""
     found: list[str] = []
     link_only = collection.get("copy_policy") == "link_only"
+    own_notes = collection.get("copy_policy") == "own_notes_only"
     for entry in collection.get("entries") or []:
         label = entry.get("id") or "?"
         if link_only:
@@ -113,6 +114,13 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
                 found.append(f"{label}: link_only collections must not embed source images")
             if (entry.get("recipe") or {}).get("template"):
                 found.append(f"{label}: link_only collections must not copy source prompts")
+        if own_notes:
+            # A referência observada fica de fora; o exemplo, quando existe, é imagem do próprio curador.
+            example = entry.get("example") or {}
+            if example and not example.get("own_work"):
+                found.append(f"{label}: curator collections only carry the curator's own image")
+            if entry.get("recipe"):
+                found.append(f"{label}: curator collections do not copy third-party recipes")
         if entry.get("canonical_style_id"):
             continue
         if not str(entry.get("display_name") or "").strip():

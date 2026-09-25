@@ -197,12 +197,16 @@ async function copyImage(url) {
 
 function imageActions(url, source) {
   if (!url) return "";
-  const credit = source?.source_label ? `Imagem de ${escapeHtml(source.source_label)}` : "Imagem da fonte";
-  const link = source?.source_url ? ` · <a href="${escapeHtml(source.source_url)}" rel="noopener noreferrer">ver na fonte ↗</a>` : "";
+  const own = Boolean(source?.own_work);
+  const credit = own
+    ? "Imagem gerada pela própria curadoria"
+    : source?.source_label ? `Imagem de ${escapeHtml(source.source_label)}` : "Imagem da fonte";
+  const link = !own && source?.source_url ? ` · <a href="${escapeHtml(source.source_url)}" rel="noopener noreferrer">ver na fonte ↗</a>` : "";
+  const note = own ? "Use à vontade como referência de estilo." : "Use como referência de estilo no seu editor; não publique como sua.";
   return `<div class="image-actions">
     <button type="button" class="copy" data-copy-image="${escapeHtml(url)}">Copiar imagem</button>
     <a class="ghost" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Abrir imagem ↗</a>
-    <p>${credit}${link}. Use como referência de estilo no seu editor; não publique como sua.</p>
+    <p>${credit}${link}. ${note}</p>
   </div>`;
 }
 
@@ -274,10 +278,10 @@ function renderStyleDetail(catalog) {
     <div class="example-card__media">${example.poster_url || !style.image_link ? still(example.poster_url, `${style.display_name} — exemplo ${index + 1}`) : sourceTile(style.image_link, true)}</div>
     ${imageActions(example.poster_url, example)}
     <div class="example-card__body">
-      <p class="eyebrow">Referência selecionada · ${escapeHtml(example.source_label)}</p>
+      <p class="eyebrow">${example.own_work ? "Imagem da curadoria" : `Referência selecionada · ${escapeHtml(example.source_label)}`}</p>
       ${example.caption ? `<p>${escapeHtml(example.caption)}</p>` : ""}
       ${(example.tools || []).length ? `<p class="example-tools">${example.tools.map(escapeHtml).join(" · ")}</p>` : ""}
-      ${example.source_url ? `<a href="${escapeHtml(example.source_url)}" rel="noopener noreferrer">Abrir fonte original ↗</a>` : ""}
+      ${!example.own_work && example.source_url ? `<a href="${escapeHtml(example.source_url)}" rel="noopener noreferrer">Abrir fonte original ↗</a>` : ""}
     </div>
   </article>`).join("");
   const recipes = (style.recipes || []).map((recipe, index) => {
@@ -296,7 +300,7 @@ function renderStyleDetail(catalog) {
     ${paletteSection(style)}
     ${readingSection(style.reading)}
     ${examples ? `<section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>` : ""}
-    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : style.reading ? "Nenhum prompt do autor" : "Receita ainda não catalogada"}</h2></header>${recipes || (style.reading ? '<p class="empty-note">O autor não publicou prompt para este estilo. A leitura da curadoria, acima, traz um prompt próprio.</p>' : examples ? '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>' : '<p class="empty-note">A leitura da curadoria para este estilo ainda está em revisão. Por enquanto a ficha traz a descrição e a paleta.</p>')}</section>`;
+    <section class="detail-section"><header><p class="section-kicker">Receitas</p><h2>${recipes ? "Prompts disponíveis" : style.observed_in_pt ? "Sem receita de terceiros" : style.reading ? "Nenhum prompt do autor" : "Receita ainda não catalogada"}</h2></header>${recipes || (style.observed_in_pt && style.reading ? '<p class="empty-note">Este estilo não tem prompt de terceiros: quem o descreveu foi a curadoria, e o prompt está na leitura acima.</p>' : style.reading ? '<p class="empty-note">O autor não publicou prompt para este estilo. A leitura da curadoria, acima, traz um prompt próprio.</p>' : examples ? '<p class="empty-note">A referência visual está catalogada, mas nenhuma receita verificável foi publicada ou incorporada.</p>' : '<p class="empty-note">A leitura da curadoria para este estilo ainda está em revisão. Por enquanto a ficha traz a descrição e a paleta.</p>')}</section>`;
   root.querySelectorAll("button[data-copy-image]").forEach((button) => {
     button.addEventListener("click", () => copyImage(button.dataset.copyImage));
   });
