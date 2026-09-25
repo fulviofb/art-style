@@ -25,6 +25,14 @@ function still(url, alt, eager = false) {
   return `<img src="${escapeHtml(url)}" alt="${escapeHtml(alt)}" referrerpolicy="no-referrer" loading="${eager ? "eager" : "lazy"}" decoding="async" width="1600" height="900">`;
 }
 
+function sourceTile(link, asLink) {
+  if (!link?.url) return still(null, "");
+  const inner = `<span>${asLink ? "Ver imagem na fonte ↗" : "Imagem na fonte"}</span><small>${escapeHtml(link.label || "")}</small>`;
+  return asLink
+    ? `<a class="media-fallback media-fallback--source" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${inner}</a>`
+    : `<div class="media-fallback media-fallback--source">${inner}</div>`;
+}
+
 function installImageFallback() {
   document.addEventListener("error", (event) => {
     if (!(event.target instanceof HTMLImageElement)) return;
@@ -65,7 +73,7 @@ function metricText(style) {
 function styleCard(style) {
   const tags = (style.tag_labels || []).slice(0, 4);
   return `<a class="style-card" href="estilo.html?id=${encodeURIComponent(style.slug)}">
-    <div class="style-card__image">${still(style.poster_url, style.display_name)}</div>
+    <div class="style-card__image">${style.poster_url || !style.image_link ? still(style.poster_url, style.display_name) : sourceTile(style.image_link, false)}</div>
     <div class="style-card__body">
       <div class="style-card__eyebrow"><span>${escapeHtml(style.family_label)}</span><span>${escapeHtml(metricText(style))}</span></div>
       <h3>${escapeHtml(style.display_name)}</h3>
@@ -231,7 +239,7 @@ function renderStyleDetail(catalog) {
   document.title = `${style.display_name} — Técnicas de Art Style`;
   const heroSource = (style.examples || []).find((example) => example.poster_url === style.poster_url) || (style.examples || [])[0];
   const examples = (style.examples || []).map((example, index) => `<article class="example-card">
-    <div class="example-card__media">${still(example.poster_url, `${style.display_name} — exemplo ${index + 1}`)}</div>
+    <div class="example-card__media">${example.poster_url || !style.image_link ? still(example.poster_url, `${style.display_name} — exemplo ${index + 1}`) : sourceTile(style.image_link, true)}</div>
     ${imageActions(example.poster_url, example)}
     <div class="example-card__body">
       <p class="eyebrow">Referência selecionada · ${escapeHtml(example.source_label)}</p>
@@ -251,7 +259,7 @@ function renderStyleDetail(catalog) {
   root.innerHTML = `<a class="back-link" href="index.html">← Explorar estilos</a>
     <section class="style-hero">
       <div class="style-hero__copy"><p class="section-kicker">${escapeHtml(style.family_label)}</p><h2>${escapeHtml(style.display_name)}</h2><div class="style-tags">${(style.tag_labels || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>${style.summary_pt ? `<p class="style-summary style-summary--pt">${escapeHtml(style.summary_pt)}</p>` : ""}<p class="style-summary">${escapeHtml(metricText(style))} nesta curadoria.</p></div>
-      <div class="style-hero__visual"><div class="style-hero__media">${still(style.poster_url, style.reading?.alt_pt || style.display_name, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
+      <div class="style-hero__visual"><div class="style-hero__media">${style.poster_url || !style.image_link ? still(style.poster_url, style.reading?.alt_pt || style.display_name, true) : sourceTile(style.image_link, true)}</div>${imageActions(style.poster_url, heroSource)}</div>
     </section>
     ${readingSection(style.reading)}
     <section class="detail-section"><header><p class="section-kicker">Referências</p><h2>Veja a linguagem em uso</h2></header><div class="example-grid">${examples}</div></section>

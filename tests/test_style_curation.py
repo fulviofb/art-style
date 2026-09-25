@@ -185,3 +185,46 @@ def test_curator_reading_never_poses_as_the_author_prompt():
             continue
         published = (data.get("style") or {}).get("prompt_published")
         assert published != reading.get("prompt"), f"{path.stem}: curator prompt copied into the author field"
+
+
+def test_link_only_collections_never_embed_or_copy():
+    from scripts.validate_catalog import validate_collection
+
+    bad = {
+        "copy_policy": "link_only",
+        "entries": [{"id": "x", "canonical_style_id": "001", "example": {"poster_url": "https://img"}, "recipe": {"template": "p"}}],
+    }
+    messages = validate_collection(bad, set(), set())
+    assert any("embed" in m for m in messages)
+    assert any("copy" in m for m in messages)
+
+
+def test_link_only_export_hides_media_and_points_to_source():
+    from scripts.export_public_catalog import build_public_library
+
+    taxonomy = {"families": [{"id": "editorial-poster", "label_pt": "Editorial"}], "tags": [{"id": "doodle", "label_pt": "Rabisco"}]}
+    sources = {"sources": [{"id": "src", "label": "Fonte", "url": "https://example.com", "copy_policy": "link_only"}]}
+    collections = [{
+        "source_id": "src",
+        "copy_policy": "link_only",
+        "entries": [{
+            "id": "src-1", "source_style_id": "1", "display_name": "Estilo X",
+            "family": "editorial-poster", "tags": ["doodle"],
+            "example": {"source_url": "https://example.com/1.png", "poster_url": "https://example.com/1.png"},
+            "recipe": {"template": "copied prompt"},
+        }],
+    }]
+    payload = build_public_library([], taxonomy, sources, collections)
+    style = next(s for s in payload["styles"] if s["display_name"] == "Estilo X")
+    assert style["poster_url"] is None
+    assert style["recipe_count"] == 0
+    assert style["image_link"]["url"] == "https://example.com/1.png"
+
+
+def test_handraw_collection_is_group_f_only_and_link_only():
+    data = yaml.safe_load((ROOT / "catalog" / "collections" / "handraw-style.yml").read_text(encoding="utf-8"))
+    assert data["copy_policy"] == "link_only"
+    assert not data.get("license")
+    numbers = [int(entry["source_style_id"]) for entry in data["entries"]]
+    assert numbers and all(155 <= n <= 200 for n in numbers)
+    assert all(entry["reading"]["prompt"].startswith("[seu tema]") for entry in data["entries"])

@@ -37,6 +37,15 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
 - Prompts ausentes nunca são inventados.
 
 
+## Fontes externas
+
+- **hand-drawn-styles** (MIT): receitas testadas, copiadas com atribuição no commit fixado.
+- **handraw-style** (yang0, sem licença): só o grupo F (155–200) é indexado, e **só com links**. Nenhuma
+  imagem nem texto do repositório é copiado; a ficha mostra "Imagem na fonte" e abre a imagem no GitHub.
+  Frases e leituras são da curadoria. Os grupos A–E e G ficam de fora porque cada estilo é indexado pelo
+  nome de um ilustrador, e o catálogo não ensina a gerar "no estilo de" pessoas reais. O validador recusa,
+  em coleções `link_only`, imagem embutida e prompt copiado.
+
 ## Regra de idioma
 
 - **Inglês, para o que vai ao gerador:** `curator.reading.prompt`, `descriptors` e `avoid`.

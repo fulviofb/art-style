@@ -686,3 +686,8 @@ footer {
 .reading-block pre { margin: 0; overflow-x: auto; white-space: pre-wrap; color: #e5ded2; font-family: Newsreader, Georgia, serif; font-size: 1.02rem; line-height: 1.55; }
 .reading-why { margin: 0; color: var(--muted); font-size: .82rem; }
 .reading-block mark.slot { padding: 0 .2rem; border-radius: 3px; background: rgb(212 168 83 / .22); color: var(--accent); }
+
+/* Fonte só com link: a imagem continua na fonte e o bloco aponta para ela. */
+.media-fallback--source { gap: .35rem; padding: 1rem; text-align: center; color: var(--fg); text-decoration: none; }
+.media-fallback--source small { color: var(--muted); font-size: .72rem; letter-spacing: .02em; text-transform: none; }
+a.media-fallback--source:hover { text-decoration: none; color: var(--accent); }

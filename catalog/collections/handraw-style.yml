@@ -1,0 +1,1309 @@
+# Coleção só com links: nenhuma imagem nem texto do handraw-style é copiado.
+# Nome e número de cada estilo são citados com crédito; frases e leituras são da curadoria.
+source_id: handraw-style
+source_commit: 70bf51d6b4c301805dd6c083355a2ad18db1023b
+license: null
+copy_policy: link_only
+attribution: 'yang0 (X: @yang02010) · handraw-style'
+scope:
+  included: 'Grupo F (155–200): estilos de mídia e de região, sem nome de artista.'
+  excluded: 'Grupos A–E e G: estilos indexados por ilustradores com nome. Não entram no catálogo.'
+  license: Sem licença no repositório. Pedido de licença redigido; enquanto não houver resposta, só links.
+entries:
+- id: handraw-155
+  source_style_id: '155'
+  source_style_name: 155 · Editorial Doodle
+  display_name: Editorial Doodle
+  family: editorial-poster
+  tags:
+  - editorial
+  - doodle
+  - ink-drawing
+  summary_pt: 'Rabisco editorial: linha preta solta, poucas cores chapadas e fundo branco. Bom para post explicativo e ilustração de texto.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Linha preta fina e um pouco trêmula sobre fundo branco, com duas ou três cores chapadas só nos pontos de atenção. O desenho é simples e amigável, feito para acompanhar uma ideia, não para ser um quadro.
+    prompt: '[seu tema], editorial doodle illustration, loose thin black ink line, slightly wobbly hand-drawn contour, two or three flat accent colors, lots of white space, simple friendly shapes, clean white background'
+    avoid:
+    - 3D render
+    - photorealistic
+    - heavy shading
+    avoid_why_pt: Sombreado e volume tiram a leveza de rabisco que faz o estilo funcionar ao lado de um texto.
+    descriptors:
+    - editorial doodle
+    - hand-drawn line illustration
+    - spot color doodle
+    alt_pt: Moça pensativa diante de um notebook, com planta, caneca e uma lâmpada acesa ao lado.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/155.png
+    caption: null
+- id: handraw-156
+  source_style_id: '156'
+  source_style_name: 156 · Loose Ink
+  display_name: Loose Ink
+  family: comics-graphic-novel
+  tags:
+  - ink-drawing
+  - action
+  summary_pt: 'Nanquim solto e rápido: traço grosso, respingos e muita energia. Bom para movimento, esporte e cenas urbanas.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Pinceladas de nanquim rápidas e secas, com respingos e falhas que mostram a velocidade do gesto. Só preto sobre branco; o movimento vem do traço, não da cor.
+    prompt: '[seu tema], loose black ink illustration, fast expressive brush strokes, dry-brush breaks and ink splatters, black ink on white paper only, energetic gestural drawing, strong sense of motion'
+    avoid:
+    - color fill
+    - smooth vector lines
+    - 3D render
+    avoid_why_pt: Cor e linha limpa apagam o gesto rápido, que é todo o estilo.
+    descriptors:
+    - loose ink
+    - gestural ink sketch
+    - ink splatter drawing
+    alt_pt: Skatista de boné saltando com o skate, em nanquim com respingos.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/156.png
+    caption: null
+- id: handraw-157
+  source_style_id: '157'
+  source_style_name: 157 · Conceptual Line Drawing
+  display_name: Conceptual Line Drawing
+  family: editorial-poster
+  tags:
+  - editorial
+  - minimal-line
+  summary_pt: 'Linha fina e mínima a serviço de uma ideia: metáfora visual com quase nada. Bom para artigo, reflexão e post conceitual.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Contorno fino e contínuo, muito espaço vazio e uma metáfora visual clara; um único toque de cor guia o olhar. A ideia vale mais que o detalhe.
+    prompt: '[seu tema], conceptual minimalist line drawing, thin continuous black contour, clear visual metaphor, generous negative space, a single small accent of color, clean white background, editorial illustration'
+    avoid:
+    - detailed rendering
+    - busy background
+    - shading
+    avoid_why_pt: Detalhe e fundo cheio escondem a metáfora, que precisa ser lida em um segundo.
+    descriptors:
+    - conceptual line art
+    - visual metaphor illustration
+    - minimalist editorial
+    alt_pt: Perfil de cabeça com um lago no topo, onde uma pessoa pesca um coração vermelho.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/157.png
+    caption: null
+- id: handraw-158
+  source_style_id: '158'
+  source_style_name: 158 · Classic Magazine Single-Panel Cartoon
+  display_name: Classic Magazine Single-Panel Cartoon
+  family: comics-graphic-novel
+  tags:
+  - comics
+  - comedy
+  - ink-drawing
+  summary_pt: 'Cartum de revista em quadro único: nanquim com hachura leve e cinza aguado. Bom para humor de situação e crônica.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Nanquim com hachura leve e sombras em cinza aguado, num quadro só que conta a piada inteira. O humor está na situação, com cenário simples e personagens contidos.
+    prompt: '[seu tema], classic magazine single-panel cartoon, black ink linework with light hatching, gray wash shading, understated deadpan humor, simple setting, vintage print feel, white background'
+    avoid:
+    - bright saturated colors
+    - manga style
+    - 3D render
+    avoid_why_pt: Cor forte e traço de mangá tiram o ar sóbrio de revista, que é de onde vem o humor.
+    descriptors:
+    - single-panel gag cartoon
+    - magazine cartoon
+    - ink wash cartoon
+    alt_pt: Senhor de óculos lê o jornal numa poltrona, ao lado de um gato sentado em outra poltrona.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/158.png
+    caption: null
+- id: handraw-159
+  source_style_id: '159'
+  source_style_name: 159 · French Café Sketch
+  display_name: French Café Sketch
+  family: editorial-poster
+  tags:
+  - ink-drawing
+  - watercolor
+  summary_pt: 'Croqui de café à francesa: caneta solta, aquarela leve e cenário esboçado. Bom para viagem, cotidiano e lifestyle.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Linha de caneta rápida e aquarela em manchas leves, que não preenchem tudo; o cenário aparece só esboçado ao fundo. Parece desenhado ao vivo, sentado à mesa.
+    prompt: '[seu tema], urban sketching style, quick loose pen line, light watercolor washes that don''t fill every shape, sketchy background details, relaxed on-location sketching feel, sketchbook paper'
+    avoid:
+    - clean vector
+    - 3D render
+    - heavy saturated color
+    avoid_why_pt: Linha limpa e cor pesada acabam com a sensação de croqui feito na hora.
+    descriptors:
+    - urban sketching
+    - pen and watercolor sketch
+    - café sketch
+    alt_pt: Mulher de óculos escuros sentada num café de calçada, com cadeiras e toldo ao fundo.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/159.png
+    caption: null
+- id: handraw-160
+  source_style_id: '160'
+  source_style_name: 160 · Japanese Deadpan Loose-Line Cartoon
+  display_name: Japanese Deadpan Loose-Line Cartoon
+  family: comics-graphic-novel
+  tags:
+  - comics
+  - comedy
+  - ink-drawing
+  summary_pt: 'Cartum japonês de cansaço cômico: linha fina e frouxa, clima apático. Bom para humor de rotina e trabalho.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Linha fina e frouxa, pouquíssima cor e um clima de apatia; o humor vem do exagero sutil, como um suspiro em espiral. Muito espaço em branco em volta.
+    prompt: '[seu tema], Japanese deadpan loose-line cartoon, thin relaxed ink lines, deadpan understated mood, minimal gray tones, subtle comedic exaggeration, lots of white space, simple composition'
+    avoid:
+    - dynamic action
+    - saturated colors
+    - detailed rendering
+    avoid_why_pt: Ação e cor forte quebram a apatia calma que faz a graça.
+    descriptors:
+    - Japanese deadpan cartoon
+    - datsuryoku illustration
+    - loose line comic
+    alt_pt: Funcionário cansado apoia o rosto na mão diante de uma pilha de papéis e de um monitor.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/160.png
+    caption: null
+- id: handraw-161
+  source_style_id: '161'
+  source_style_name: 161 · Japanese Notebook Doodle
+  display_name: Japanese Notebook Doodle
+  family: storybook-illustration
+  tags:
+  - doodle
+  - pencil-crayon
+  summary_pt: 'Rabisco de caderno à japonesa: ícones pequenos, setas e cores suaves. Bom para rotina, lista e planejamento.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Pequenos desenhos soltos ligados por setas tracejadas, como anotações de caderno, com cores claras de marcador. Tudo é pequeno, fofo e organizado em volta de uma ideia central.
+    prompt: '[seu tema], Japanese notebook doodle, small cute hand-drawn icons, dashed arrows connecting ideas, soft pastel marker colors, thin pen lines, planner and journal aesthetic, white paper'
+    avoid:
+    - realistic shading
+    - dark palette
+    - 3D render
+    avoid_why_pt: Sombreado e cor escura tiram a leveza de anotação.
+    descriptors:
+    - notebook doodle
+    - journal doodle
+    - planner illustration
+    alt_pt: 'Menina de mochila cercada de pequenos desenhos: sol, gato, casa, café e lista de tarefas.'
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/161.png
+    caption: null
+- id: handraw-162
+  source_style_id: '162'
+  source_style_name: 162 · Japanese Magazine Essay Illustration
+  display_name: Japanese Magazine Essay Illustration
+  family: storybook-illustration
+  tags:
+  - pencil-crayon
+  - watercolor
+  summary_pt: 'Ilustração de coluna de revista japonesa: traço fino, cor aguada suave e clima calmo. Bom para crônica, comida e cotidiano.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: 'Linha fina de lápis com cor aguada leve e bastante branco; o clima é calmo e acolhedor. Parece ilustração de coluna de revista: delicada, sem drama.'
+    prompt: '[seu tema], Japanese lifestyle magazine essay illustration, fine pencil line, soft light watercolor tint, muted warm palette, calm cozy mood, plenty of white space, delicate hand-drawn details'
+    avoid:
+    - bold outlines
+    - saturated colors
+    - dramatic lighting
+    avoid_why_pt: Contorno forte e drama tiram a delicadeza de coluna de revista.
+    descriptors:
+    - magazine essay illustration
+    - soft pencil illustration
+    - lifestyle illustration
+    alt_pt: Mulher de suéter toma chá à mesa, com um prato de comida, flores e uma planta.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/162.png
+    caption: null
+- id: handraw-163
+  source_style_id: '163'
+  source_style_name: 163 · Japanese Offbeat Four-Panel Cartoon
+  display_name: Japanese Offbeat Four-Panel Cartoon
+  family: comics-graphic-novel
+  tags:
+  - comics
+  - comedy
+  summary_pt: 'Tirinha japonesa de quatro quadros: traço simples e virada absurda no fim. Bom para piada curta e sequência.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Quatro quadros em grade, traço preto simples e cor mínima; a graça está no ritmo, com a reação exagerada no último quadro. Expressões grandes e cenário quase vazio.
+    prompt: '[seu tema], Japanese four-panel comic strip (yonkoma), 2x2 panel grid, simple black ink lines, minimal flat color, comedic timing with an exaggerated reaction in the final panel, clean white background'
+    avoid:
+    - single illustration
+    - realistic shading
+    - detailed backgrounds
+    avoid_why_pt: Sem os quatro quadros e o traço simples, o ritmo da piada se perde.
+    descriptors:
+    - yonkoma
+    - four-panel comic
+    - gag strip
+    alt_pt: Tirinha de quatro quadros em que uma menina come um biscoito e reage com cada vez mais espanto.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/163.png
+    caption: null
+- id: handraw-164
+  source_style_id: '164'
+  source_style_name: 164 · Korean Lifestyle Doodle
+  display_name: Korean Lifestyle Doodle
+  family: storybook-illustration
+  tags:
+  - doodle
+  - pencil-crayon
+  summary_pt: 'Rabisco coreano de estilo de vida: tons pastel, contorno marrom suave e clima de conforto. Bom para rotina, café e bem-estar.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Contorno marrom fino em vez de preto, cores pastel apagadas e formas arredondadas. Tudo é macio e aconchegante, com poucos elementos.
+    prompt: '[seu tema], Korean lifestyle doodle, soft thin brown outlines, muted pastel colors, gentle rounded shapes, cozy comforting mood, light colored-pencil texture, white background'
+    avoid:
+    - heavy black outlines
+    - saturated colors
+    - 3D render
+    avoid_why_pt: Contorno preto e cor forte quebram a maciez que define o estilo.
+    descriptors:
+    - Korean doodle
+    - cozy lifestyle illustration
+    - pastel doodle
+    alt_pt: Moça sorridente apoia o rosto nas mãos à mesa, com um gato dormindo sobre um caderno e um café gelado.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/164.png
+    caption: null
+- id: handraw-165
+  source_style_id: '165'
+  source_style_name: 165 · Korean Black-Line Red-Accent Editorial
+  display_name: Korean Black-Line Red-Accent Editorial
+  family: editorial-poster
+  tags:
+  - editorial
+  - ink-drawing
+  summary_pt: 'Editorial em preto com um só vermelho: traço elegante, preto chapado e um detalhe em cor. Bom para moda, beleza e capa.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Preto e branco com áreas de preto chapado e uma única cor de destaque, sempre vermelho. O traço é elegante e econômico, e o vermelho aparece só onde o olhar deve ir.
+    prompt: '[seu tema], black-and-white editorial illustration, elegant fine ink linework, solid black fills, a single red accent color, high contrast, minimal composition, white background'
+    avoid:
+    - multiple colors
+    - soft gradients
+    - 3D render
+    avoid_why_pt: Mais de uma cor tira a força do vermelho único, que é a assinatura do estilo.
+    descriptors:
+    - black and red editorial
+    - spot color illustration
+    - ink fashion illustration
+    alt_pt: Mulher de gola alta preta e batom vermelho, com uma flor vermelha num vaso ao lado.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/165.png
+    caption: null
+- id: handraw-166
+  source_style_id: '166'
+  source_style_name: 166 · Indie Zine Rough Drawing
+  display_name: Indie Zine Rough Drawing
+  family: editorial-poster
+  tags:
+  - ink-drawing
+  - doodle
+  summary_pt: 'Desenho cru de fanzine: esferográfica azul, rabiscos e cara de fotocópia. Bom para cultura alternativa e humor independente.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Tudo numa só cor de caneta, com rabiscos, hachuras e preenchimentos riscados à vista, como página de caderno fotocopiada. A imperfeição é proposital.
+    prompt: '[seu tema], indie zine rough drawing, single blue ballpoint pen color, scribbly hatching and messy fills, doodled marks and stars, photocopied zine texture, raw DIY aesthetic, white paper'
+    avoid:
+    - clean vector
+    - full color
+    - polished rendering
+    avoid_why_pt: Acabamento limpo apaga o ar de feito em casa que dá personalidade ao fanzine.
+    descriptors:
+    - zine illustration
+    - ballpoint pen drawing
+    - DIY sketch
+    alt_pt: Jovem de gorro e camiseta de caveira sentado no chão, com um gato e uma pilha de livros, em caneta azul.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/166.png
+    caption: null
+- id: handraw-167
+  source_style_id: '167'
+  source_style_name: 167 · Two-Color Risograph Drawing
+  display_name: Two-Color Risograph Drawing
+  family: editorial-poster
+  tags:
+  - risograph
+  - poster
+  summary_pt: 'Risografia em duas cores: textura granulada e sobreposição de rosa e azul. Bom para cartaz, capa e música.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Duas tintas apenas, geralmente rosa-coral e azul, com textura granulada e leve desalinhamento entre as camadas. Onde as cores se cruzam nasce uma terceira.
+    prompt: '[seu tema], two-color risograph print, coral pink and blue inks only, grainy print texture, slight layer misregistration, overlapping inks creating a third tone, flat graphic shapes'
+    avoid:
+    - full color palette
+    - smooth gradients
+    - photorealistic
+    avoid_why_pt: Mais cores e degradê apagam a textura e o limite de duas tintas, que são o estilo.
+    descriptors:
+    - risograph
+    - two-color print
+    - riso illustration
+    alt_pt: Jovem de boné e fones de ouvido diante de prédios, em rosa e azul granulados.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/167.png
+    caption: null
+- id: handraw-168
+  source_style_id: '168'
+  source_style_name: 168 · Crayon Editorial
+  display_name: Crayon Editorial
+  family: editorial-poster
+  tags:
+  - editorial
+  - pencil-crayon
+  summary_pt: 'Editorial em giz de cera: textura grossa, cor viva e contorno irregular. Bom para retrato leve e matéria de comportamento.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Giz de cera com a textura do papel aparecendo, cores vivas e contornos irregulares. O material é infantil, mas a composição é adulta.
+    prompt: '[seu tema], crayon editorial illustration, thick waxy crayon texture with paper grain showing, bold bright colors, irregular hand-drawn edges, simple composition, white background'
+    avoid:
+    - smooth digital brush
+    - vector
+    - photorealistic
+    avoid_why_pt: Pincel liso tira a textura cerosa, que é o que diferencia o estilo.
+    descriptors:
+    - crayon illustration
+    - wax crayon editorial
+    - textured crayon drawing
+    alt_pt: Homem barbudo de óculos e suéter verde segura uma caneca, entre plantas desenhadas a giz.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/168.png
+    caption: null
+- id: handraw-169
+  source_style_id: '169'
+  source_style_name: 169 · Colored Pencil Diary
+  display_name: Colored Pencil Diary
+  family: storybook-illustration
+  tags:
+  - pencil-crayon
+  summary_pt: 'Diário em lápis de cor: traço hachurado, cores claras e clima íntimo. Bom para cotidiano, memória e afeto.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Lápis de cor com o traço visível em hachuras, cores claras e bastante papel aparecendo. Cenas pequenas e íntimas, com luz suave.
+    prompt: '[seu tema], colored pencil diary illustration, visible hatched pencil strokes, soft light colors, paper texture showing through, gentle intimate mood, delicate details'
+    avoid:
+    - digital flat color
+    - bold outlines
+    - 3D render
+    avoid_why_pt: Cor chapada e contorno forte escondem o traço de lápis, que é o estilo.
+    descriptors:
+    - colored pencil illustration
+    - diary illustration
+    - hatched pencil drawing
+    alt_pt: Moça escreve num caderno deitada na cama, ao lado de um cachorro dormindo.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/169.png
+    caption: null
+- id: handraw-170
+  source_style_id: '170'
+  source_style_name: 170 · Brush-Pen Cartoon
+  display_name: Brush-Pen Cartoon
+  family: comics-graphic-novel
+  tags:
+  - comics
+  - ink-drawing
+  - action
+  summary_pt: 'Cartum a caneta-pincel: traço grosso que afina, muita energia e linhas de movimento. Bom para ação, esporte e alegria.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Caneta-pincel com traço que vai do grosso ao fino num só gesto, preto sobre branco, com linhas de movimento em volta. Tudo parece estar em movimento.
+    prompt: '[seu tema], brush pen cartoon, bold black strokes that taper from thick to thin, dynamic motion lines, energetic gestures, black ink on white, minimal spot color'
+    avoid:
+    - thin uniform lines
+    - soft shading
+    - 3D render
+    avoid_why_pt: Linha uniforme perde a variação do pincel, que dá a energia.
+    descriptors:
+    - brush pen cartoon
+    - dynamic ink cartoon
+    - tapered brush lines
+    alt_pt: Menino de mochila corre sorrindo, com linhas de movimento em volta.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/170.png
+    caption: null
+- id: handraw-171
+  source_style_id: '171'
+  source_style_name: 171 · One-Line Character
+  display_name: One-Line Character
+  family: editorial-poster
+  tags:
+  - minimal-line
+  summary_pt: 'Desenho de linha única: um traço contínuo e fino forma tudo. Bom para logotipo, tatuagem e post minimalista.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Um só traço fino e contínuo, sem tirar a caneta do papel, desenha a figura inteira. Sem cor, sem sombra, com muito vazio em volta.
+    prompt: '[seu tema], one continuous line drawing, single unbroken thin black line, no shading, no color, minimalist elegant contour, generous white space'
+    avoid:
+    - multiple strokes
+    - shading
+    - color fill
+    avoid_why_pt: Qualquer segundo traço ou sombra desfaz a ideia de linha contínua.
+    descriptors:
+    - one line drawing
+    - continuous line art
+    - minimalist line illustration
+    alt_pt: Mulher sentada de pernas cruzadas, desenhada com uma única linha contínua.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/171.png
+    caption: null
+- id: handraw-172
+  source_style_id: '172'
+  source_style_name: 172 · Naive Folk Cartoon
+  display_name: Naive Folk Cartoon
+  family: storybook-illustration
+  tags:
+  - folk-art
+  - comedy
+  summary_pt: 'Cartum ingênuo de traço popular: formas desajeitadas, cor chapada viva e humor carinhoso. Bom para cenas de bairro e afeto.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Figuras de proporção desajeitada, cores chapadas vivas e detalhes pontilhados, como pintura ingênua. O humor é carinhoso, sem ironia.
+    prompt: '[seu tema], naive folk cartoon, simple clumsy proportions, bright flat gouache colors, dotted texture details, childlike honest shapes, warm affectionate humor, white background'
+    avoid:
+    - realistic anatomy
+    - glossy 3D
+    - dark mood
+    avoid_why_pt: Anatomia correta e acabamento polido tiram a ingenuidade, que é o encanto.
+    descriptors:
+    - naive art illustration
+    - folk cartoon
+    - flat gouache cartoon
+    alt_pt: Homem de bigode e regata num banquinho segura uma garrafa, com um gato e um peixe na mesa.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/172.png
+    caption: null
+- id: handraw-173
+  source_style_id: '173'
+  source_style_name: 173 · Primitive Marker Cartoon
+  display_name: Primitive Marker Cartoon
+  family: comics-graphic-novel
+  tags:
+  - doodle
+  - children
+  summary_pt: 'Cartum de marcador grosso: traço preto pesado, formas primárias e cor mínima. Bom para mascote, adesivo e alegria.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Marcador preto grosso com formas quase infantis, cores primárias chapadas em pouca área e riscos de energia em volta. Direto e sem detalhe.
+    prompt: '[seu tema], primitive thick marker cartoon, heavy black marker outlines, simple childlike shapes, small areas of flat primary color, radiating energy marks, white background'
+    avoid:
+    - thin lines
+    - shading
+    - realistic proportions
+    avoid_why_pt: Linha fina e sombreado tiram a força bruta do marcador.
+    descriptors:
+    - marker cartoon
+    - thick outline doodle
+    - primitive cartoon
+    alt_pt: Menino de cabelo espetado e camiseta com carinha sorridente, de braços abertos.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/173.png
+    caption: null
+- id: handraw-174
+  source_style_id: '174'
+  source_style_name: 174 · Dry-Brush Editorial
+  display_name: Dry-Brush Editorial
+  family: editorial-poster
+  tags:
+  - editorial
+  - painterly
+  - ink-drawing
+  summary_pt: 'Editorial em pincel seco: textura áspera, tons de sépia e um acento ocre. Bom para retrato sóbrio e matéria séria.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Pincel quase sem tinta arrastado sobre papel texturizado, deixando falhas e grão. Paleta de sépia e carvão com um único acento ocre.
+    prompt: '[seu tema], dry brush editorial illustration, rough textured brush strokes with broken edges, visible paper grain, sepia and charcoal palette with a single ochre accent, somber editorial mood'
+    avoid:
+    - clean lines
+    - bright colors
+    - smooth digital painting
+    avoid_why_pt: Linha limpa e cor viva apagam a aspereza, que dá peso ao estilo.
+    descriptors:
+    - dry brush illustration
+    - textured editorial portrait
+    - sepia brush drawing
+    alt_pt: Homem de paletó pensativo à mesa com uma xícara, em pincel seco e tons de sépia.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/174.png
+    caption: null
+- id: handraw-175
+  source_style_id: '175'
+  source_style_name: 175 · Ink with Flat Spot Color
+  display_name: Ink with Flat Spot Color
+  family: editorial-poster
+  tags:
+  - ink-drawing
+  - editorial
+  summary_pt: 'Nanquim com uma só cor chapada: traço preto expressivo e um objeto colorido. Bom para ilustração de texto e destaque.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Desenho em nanquim preto com hachuras e uma única área de cor chapada, geralmente vermelha, num objeto. A cor funciona como ponto de atenção.
+    prompt: '[seu tema], black ink illustration with flat spot color, expressive ink linework and hatching, one element filled with a single flat red color, everything else black and white, white background'
+    avoid:
+    - multiple colors
+    - gradients
+    - 3D render
+    avoid_why_pt: Mais cores diluem o destaque único, que é o recurso do estilo.
+    descriptors:
+    - spot color ink illustration
+    - ink and flat color
+    - single accent color
+    alt_pt: Moça de cabelo curto apoia o rosto na mão diante de uma caneca vermelha.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/175.png
+    caption: null
+- id: handraw-176
+  source_style_id: '176'
+  source_style_name: 176 · Notebook Margin Cartoon
+  display_name: Notebook Margin Cartoon
+  family: comics-graphic-novel
+  tags:
+  - doodle
+  - ink-drawing
+  summary_pt: 'Rabisco de margem de caderno: caneta azul sobre papel pautado. Bom para escola, estudo e humor de sala de aula.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Caneta esferográfica azul sobre papel pautado, com a margem vermelha à vista; o desenho é rápido, com setas e marcas soltas. Parece feito durante a aula.
+    prompt: '[seu tema], notebook margin doodle, blue ballpoint pen drawing on lined notebook paper, red margin line visible, quick sketchy lines, doodled arrows and small marks, playful school vibe'
+    avoid:
+    - clean white background
+    - full color
+    - polished rendering
+    avoid_why_pt: Sem o papel pautado e a caneta azul, some a sensação de rabisco de aula.
+    descriptors:
+    - notebook doodle
+    - ballpoint doodle
+    - lined paper drawing
+    alt_pt: Menino de boné e fones caminha com um gato, em caneta azul num caderno pautado.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/176.png
+    caption: null
+- id: handraw-177
+  source_style_id: '177'
+  source_style_name: 177 · Deadpan Doodle
+  display_name: Deadpan Doodle
+  family: comics-graphic-novel
+  tags:
+  - comedy
+  - ink-drawing
+  summary_pt: 'Rabisco de cara fechada: linha preta limpa, expressão séria e humor seco. Bom para meme, tirinha e ironia.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: 'Linha preta simples, sem cor, e um clima sério diante de algo exagerado. O humor é seco: ninguém ri na imagem.'
+    prompt: '[seu tema], deadpan doodle, clean simple black ink lines, no color, blank understated expressions, dry humor from exaggerated scale, lots of white space'
+    avoid:
+    - big smiles
+    - colorful palette
+    - detailed shading
+    avoid_why_pt: Sorriso e cor desfazem a seriedade, que é a piada.
+    descriptors:
+    - deadpan doodle
+    - dry humor illustration
+    - black line doodle
+    alt_pt: Menina de franja, séria, com garfo na mão ao lado de uma pilha altíssima de panquecas.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/177.png
+    caption: null
+- id: handraw-178
+  source_style_id: '178'
+  source_style_name: 178 · Awkward Cute
+  display_name: Awkward Cute
+  family: storybook-illustration
+  tags:
+  - pencil-crayon
+  - comedy
+  summary_pt: 'Fofo e sem jeito: lápis de cor suave, bochechas coradas e olhar de lado. Bom para humor tímido e sentimentos.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Personagens fofos com cara de desconforto, olhar de lado e bochechas coradas, em lápis de cor suave. A graça está no constrangimento, não no sorriso.
+    prompt: '[seu tema], awkward cute illustration, soft colored pencil texture, blushing cheeks, shy sideways glance, gentle muted palette, slightly uneasy charming mood, white background'
+    avoid:
+    - big happy smile
+    - bold outlines
+    - 3D render
+    avoid_why_pt: Um sorriso aberto troca o constrangimento pelo fofo comum.
+    descriptors:
+    - awkward cute
+    - shy character illustration
+    - soft pencil cute
+    alt_pt: Menina de cabelo ondulado abraça os joelhos e olha de lado, com um gatinho ao lado.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/178.png
+    caption: null
+- id: handraw-179
+  source_style_id: '179'
+  source_style_name: 179 · Heta-Uma
+  display_name: Heta-Uma
+  family: comics-graphic-novel
+  tags:
+  - doodle
+  - comedy
+  summary_pt: 'Heta-uma, o "mal desenhado bom" japonês: traço tosco de propósito e cor de giz. Bom para humor e personalidade.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Desenho desajeitado de propósito, com proporções erradas e linha trêmula, colorido com giz de forma irregular. É feio de propósito, e a graça vem disso.
+    prompt: '[seu tema], heta-uma style, deliberately clumsy naive drawing, wobbly uneven lines, wrong proportions on purpose, rough crayon coloring outside the lines, humorous lo-fi charm'
+    avoid:
+    - polished linework
+    - anatomical accuracy
+    - 3D render
+    avoid_why_pt: Técnica correta anula a falta de jeito proposital, que é o estilo.
+    descriptors:
+    - heta-uma
+    - bad-good drawing
+    - naive lo-fi illustration
+    alt_pt: Homem de camiseta escrita BEER levanta uma caneca de chope, com um cachorrinho ao lado.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/179.png
+    caption: null
+- id: handraw-180
+  source_style_id: '180'
+  source_style_name: 180 · Showa Retro Girl Illustration
+  display_name: Showa Retro Girl Illustration
+  family: storybook-illustration
+  tags:
+  - retro
+  - editorial
+  summary_pt: 'Ilustração retrô da era Showa: estilo de revista japonesa dos anos 60 e cor de impressão antiga. Bom para nostalgia e cartaz vintage.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: 'Estética de revista japonesa dos anos 50 e 60: contorno preto, cores chapadas e fundo creme com grão de impressão. A paleta é quente e levemente desbotada.'
+    prompt: '[seu tema], Showa-era retro illustration, 1960s Japanese magazine style, clean black outlines, flat vintage colors, warm faded palette, cream paper with print grain, nostalgic charm'
+    avoid:
+    - modern anime shading
+    - neon colors
+    - 3D render
+    avoid_why_pt: Sombreado moderno e cor neon apagam o ar de impressão antiga.
+    descriptors:
+    - Showa retro
+    - vintage Japanese illustration
+    - 1960s magazine art
+    alt_pt: Moça de cabelo cacheado e tiara vermelha olha por cima do ombro, sobre fundo creme.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/180.png
+    caption: null
+- id: handraw-181
+  source_style_id: '181'
+  source_style_name: 181 · Heisei Girls Diary Illustration
+  display_name: Heisei Girls Diary Illustration
+  family: storybook-illustration
+  tags:
+  - pencil-crayon
+  - anime-manga
+  summary_pt: 'Diário de garota da era Heisei: traço de mangá shoujo, adesivos e cores pastel. Bom para fofura, álbum e recordação.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Traço de mangá shoujo dos anos 90 e 2000, com cor de lápis pastel e adesivos em volta, como página de diário. Tudo é doce e decorado.
+    prompt: '[seu tema], Heisei-era girls diary illustration, 1990s–2000s shoujo manga linework, soft pastel colored pencil, scattered sticker decorations like hearts and stamps, sweet scrapbook page mood'
+    avoid:
+    - dark palette
+    - realistic rendering
+    - bold graphic shapes
+    avoid_why_pt: Cor escura e realismo tiram a doçura de diário.
+    descriptors:
+    - Heisei girls illustration
+    - shoujo diary style
+    - scrapbook doodle
+    alt_pt: Moça de cabelo longo pisca e apoia o rosto nas mãos, cercada de adesivos de coração, coelho e flores.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/181.png
+    caption: null
+- id: handraw-182
+  source_style_id: '182'
+  source_style_name: 182 · Airy Transparent Watercolor
+  display_name: Airy Transparent Watercolor
+  family: storybook-illustration
+  tags:
+  - watercolor
+  summary_pt: 'Aquarela transparente e leve: manchas claras, bordas que se dissolvem e muito branco. Bom para delicadeza, flores e afeto.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Camadas finas de aquarela, com as bordas se dissolvendo no branco do papel e quase nenhum contorno. As cores são claras e frescas.
+    prompt: '[seu tema], airy transparent watercolor illustration, pale thin washes, soft edges dissolving into white paper, minimal outlines, fresh light palette, delicate gentle mood'
+    avoid:
+    - bold outlines
+    - saturated colors
+    - opaque painting
+    avoid_why_pt: Contorno e cor opaca pesam a imagem e tiram a transparência.
+    descriptors:
+    - transparent watercolor
+    - light wash illustration
+    - soft watercolor
+    alt_pt: Moça de olhos fechados segura um buquê de flores, em aquarela clara.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/182.png
+    caption: null
+- id: handraw-183
+  source_style_id: '183'
+  source_style_name: 183 · Copic Pastel
+  display_name: Copic Pastel
+  family: storybook-illustration
+  tags:
+  - anime-manga
+  - children
+  summary_pt: 'Marcador Copic em tons pastel: cor alcoólica suave, traço de mangá fofo e corações. Bom para fofura e personagem kawaii.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Cor de marcador à base de álcool, com degradês suaves em pastel, sobre traço de mangá fofo. Decoração leve de corações e brilhos.
+    prompt: '[seu tema], Copic marker illustration, soft pastel alcohol-marker blending, cute kawaii manga linework, gentle color gradients, small hearts and sparkles, white background'
+    avoid:
+    - dark palette
+    - gritty texture
+    - 3D render
+    avoid_why_pt: Cor escura e textura suja quebram o pastel limpo do marcador.
+    descriptors:
+    - Copic marker art
+    - kawaii pastel illustration
+    - marker manga
+    alt_pt: Menina de cabelo rosa com um coelhinho e um copo de bebida, cercada de corações.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/183.png
+    caption: null
+- id: handraw-184
+  source_style_id: '184'
+  source_style_name: 184 · Kissaten Retro Sketch
+  display_name: Kissaten Retro Sketch
+  family: editorial-poster
+  tags:
+  - retro
+  - pencil-crayon
+  summary_pt: 'Croqui retrô de café japonês: lápis de cor em marrom e âmbar, luz quente e ar gasto. Bom para nostalgia e cenas de interior.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: 'Lápis de cor em marrom e âmbar com textura visível, como um desenho antigo de caderno. O clima é dos anos 70: quente, calmo e um pouco gasto.'
+    prompt: '[seu tema], kissaten retro sketch style, warm colored pencil in browns and amber, visible pencil texture, nostalgic 1970s retro mood, soft warm lamp-like light, slightly worn vintage feel'
+    avoid:
+    - cool blue palette
+    - clean vector
+    - 3D render
+    avoid_why_pt: Cor fria e linha limpa tiram o calor gasto que define o estilo.
+    descriptors:
+    - kissaten sketch
+    - retro colored pencil
+    - 1970s Japanese illustration
+    alt_pt: Homem de óculos e paletó xadrez toma café sob um abajur.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/184.png
+    caption: null
+- id: handraw-185
+  source_style_id: '185'
+  source_style_name: 185 · Creamy Social-Media Doodle
+  display_name: Creamy Social-Media Doodle
+  family: storybook-illustration
+  tags:
+  - social-media
+  - pencil-crayon
+  summary_pt: 'Rabisco cremoso de rede social: cores leitosas, contorno marrom e clima de conforto. Bom para post de bem-estar.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Tons cremosos e leitosos, amarelo-manteiga e verde-claro, com contorno marrom suave e textura de lápis. Tudo parece macio e quentinho.
+    prompt: '[seu tema], creamy social media doodle, milky butter-yellow and soft green palette, gentle brown outlines, soft pencil texture, cozy comforting mood, small decorative hearts and flowers, white background'
+    avoid:
+    - high contrast
+    - neon colors
+    - sharp vector
+    avoid_why_pt: Contraste e neon quebram o tom leitoso e macio.
+    descriptors:
+    - creamy doodle
+    - cozy social media illustration
+    - soft pastel doodle
+    alt_pt: Moça de olhos fechados abraça um gato, enrolada num cobertor amarelo.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/185.png
+    caption: null
+- id: handraw-186
+  source_style_id: '186'
+  source_style_name: 186 · High-Saturation Social Doodle
+  display_name: High-Saturation Social Doodle
+  family: storybook-illustration
+  tags:
+  - social-media
+  - doodle
+  summary_pt: 'Rabisco saturado de rede social: contorno colorido grosso, cores vibrantes e estrelas. Bom para post alegre e chamada de atenção.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Contorno colorido grosso, geralmente azul, cores muito saturadas e estrelas e raios espalhados em volta. A energia é alta e o fundo continua branco.
+    prompt: '[seu tema], high-saturation social media doodle, thick colored outlines, vivid rainbow colors, scattered stars and sparkles, playful sticker style, energetic cheerful mood, white background'
+    avoid:
+    - muted palette
+    - realistic shading
+    - dark background
+    avoid_why_pt: Cores apagadas tiram a energia, que é o motivo de usar o estilo.
+    descriptors:
+    - high saturation doodle
+    - sticker style illustration
+    - colorful doodle
+    alt_pt: Menina faz sinal de paz ao lado de um cachorro corgi, cercada de estrelas coloridas.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/186.png
+    caption: null
+- id: handraw-187
+  source_style_id: '187'
+  source_style_name: 187 · Korean High-Saturation Pop Doodle
+  display_name: Korean High-Saturation Pop Doodle
+  family: editorial-poster
+  tags:
+  - social-media
+  - doodle
+  summary_pt: 'Pop coreano saturado: contorno preto, rosa e azul intensos e colagem de adesivos. Bom para público jovem, moda e cartaz divertido.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Contorno preto firme, cores pop intensas, sobretudo rosa e azul, e muitos adesivos e letras em volta. Mistura rabisco com colagem.
+    prompt: '[seu tema], Korean high-saturation pop doodle, bold black outlines, intense pink and blue pop colors, collage of stickers, hearts, stars and hand lettering, trendy youthful vibe'
+    avoid:
+    - muted pastels
+    - realistic rendering
+    - minimalism
+    avoid_why_pt: Pastel e minimalismo tiram o excesso alegre, que é o estilo.
+    descriptors:
+    - Korean pop doodle
+    - sticker collage illustration
+    - pop art doodle
+    alt_pt: Moça de cabelo preto piscando, cercada de corações, estrelas e a frase GOOD DAY.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/187.png
+    caption: null
+- id: handraw-188
+  source_style_id: '188'
+  source_style_name: 188 · Chinese Retro Lianhuanhua
+  display_name: Chinese Retro Lianhuanhua
+  family: comics-graphic-novel
+  tags:
+  - comics
+  - cultural-tradition
+  - ink-drawing
+  - retro
+  summary_pt: 'Lianhuanhua, o livrinho ilustrado chinês: nanquim detalhado, hachura fina e papel envelhecido. Bom para história tradicional e ar de época.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Nanquim preto com hachuras finas e texturas de gravura sobre papel amarelado, como os livrinhos ilustrados chineses de meados do século XX. Cenário detalhado e composição em quadro.
+    prompt: '[seu tema], Chinese retro lianhuanhua comic art, detailed black ink linework, fine hatching and engraving-like textures, aged yellowed paper, framed panel composition, mid-20th-century print feel'
+    avoid:
+    - color fill
+    - manga style
+    - clean vector
+    avoid_why_pt: Cor e traço de mangá tiram o ar de gravura impressa.
+    descriptors:
+    - lianhuanhua
+    - Chinese picture-story book
+    - vintage ink comic
+    alt_pt: Jovem de roupa tradicional lê um pergaminho sob um pinheiro, com um pavilhão ao fundo.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/188.png
+    caption: null
+- id: handraw-189
+  source_style_id: '189'
+  source_style_name: 189 · New-Guochao Flat Gongbi
+  display_name: New-Guochao Flat Gongbi
+  family: folk-traditional
+  tags:
+  - cultural-tradition
+  - folk-art
+  summary_pt: 'Guochao com gongbi plano: contorno fino de pintura chinesa, cores chapadas modernas e ornamento. Bom para cartaz cultural e marca.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Contorno fino e preciso da pintura gongbi, preenchido com cores chapadas modernas em verde-azulado, vermelho e dourado. Nuvens e ondas estilizadas emolduram a cena.
+    prompt: '[seu tema], New Guochao flat gongbi illustration, fine precise traditional Chinese outlines, flat modern color fills, teal red and gold palette, stylized auspicious clouds and waves, decorative poster composition'
+    avoid:
+    - 3D render
+    - photorealistic
+    - loose sketch
+    avoid_why_pt: Volume e traço solto quebram a precisão plana do gongbi.
+    descriptors:
+    - guochao illustration
+    - flat gongbi
+    - modern Chinese traditional art
+    alt_pt: Mulher de penteado ornamentado segura uma flor de lótus, entre nuvens estilizadas.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/189.png
+    caption: null
+- id: handraw-190
+  source_style_id: '190'
+  source_style_name: 190 · Modern Dunhuang Illustration
+  display_name: Modern Dunhuang Illustration
+  family: folk-traditional
+  tags:
+  - cultural-tradition
+  - mythology
+  summary_pt: 'Dunhuang moderno: cores de mural antigo, tecidos esvoaçantes e textura envelhecida. Bom para lenda e cena celestial; nasce de arte religiosa budista, use com respeito.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Paleta de pigmento mineral, ocre, terracota e verde-azulado, com textura de parede envelhecida e tecidos longos flutuando em curvas. A composição é leve e ascendente, como nos murais de Dunhuang.
+    prompt: '[seu tema], modern Dunhuang mural-inspired illustration, mineral pigment palette of ochre terracotta and teal, aged fresco wall texture, flowing ribbon-like drapery curves, weightless floating composition, stylized cloud and lotus motifs'
+    avoid:
+    - neon colors
+    - glossy 3D
+    - clean flat vector
+    avoid_why_pt: Brilho e cor neon apagam a textura de mural antigo.
+    descriptors:
+    - Dunhuang style
+    - Chinese mural illustration
+    - flying apsara art
+    alt_pt: Figura celeste flutua entre faixas esvoaçantes e nuvens, segurando uma flor de lótus.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/190.png
+    caption: null
+- id: handraw-191
+  source_style_id: '191'
+  source_style_name: 191 · Modernized Song-Dynasty Light Color
+  display_name: Modernized Song-Dynasty Light Color
+  family: folk-traditional
+  tags:
+  - cultural-tradition
+  - painterly
+  - watercolor
+  summary_pt: 'Pintura Song modernizada: cor clara e aguada, traço fino e muito ar. Bom para cena contemplativa e natureza.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Cores leves e transparentes, azul-acinzentado e bege, com traço fino e elegante e muito espaço vazio, como na pintura da dinastia Song. Os elementos naturais ganham textura de tinta.
+    prompt: '[seu tema], modernized Song dynasty painting style, light transparent color washes, pale blue-gray and beige palette, fine elegant ink lines, ink-textured natural elements, generous empty space, serene contemplative mood'
+    avoid:
+    - saturated colors
+    - heavy outlines
+    - 3D render
+    avoid_why_pt: Cor forte e contorno pesado tiram a leveza da pintura Song.
+    descriptors:
+    - Song dynasty style
+    - Chinese light color painting
+    - light wash gongbi
+    alt_pt: Moça de roupa tradicional clara sentada entre pedras e galhos floridos, com um pássaro.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/191.png
+    caption: null
+- id: handraw-192
+  source_style_id: '192'
+  source_style_name: 192 · New-Chinese Tiny Ink Figures
+  display_name: New-Chinese Tiny Ink Figures
+  family: folk-traditional
+  tags:
+  - cultural-tradition
+  - ink-drawing
+  summary_pt: 'Nanquim chinês com o tema bem pequeno: aguada, névoa e muito vazio. Bom para contemplação, solidão e caminho.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Aguada de nanquim com névoa em camadas e o assunto bem pequeno, que dá a escala. O vazio ocupa quase tudo, e um único ponto de cor, como um sol vermelho, marca o quadro.
+    prompt: '[seu tema], new Chinese ink wash style, subject shown very small within vast misty space, layered gray ink washes, soft gradients, generous emptiness, a single small red accent, serene poetic mood'
+    avoid:
+    - bright colors
+    - crowded composition
+    - 3D render
+    avoid_why_pt: Cor e excesso de elementos apagam o vazio, que é o centro do estilo.
+    descriptors:
+    - Chinese ink wash
+    - minimal shanshui
+    - tiny figure landscape
+    alt_pt: Pequena figura de chapéu no alto de uma rocha, diante de montanhas em névoa e um sol vermelho.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/192.png
+    caption: null
+- id: handraw-193
+  source_style_id: '193'
+  source_style_name: 193 · Cantonese Dim-Sum Guochao
+  display_name: Cantonese Dim-Sum Guochao
+  family: folk-traditional
+  tags:
+  - cultural-tradition
+  - poster
+  summary_pt: 'Guochao cantonês: cores quentes, padrão de janela chinesa e contorno marcado. Bom para comida, marca e festa.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Contorno marrom marcado, cores quentes e saturadas, laranja, verde e vermelho, com padrões geométricos de janela chinesa e letreiros ao fundo. Tudo é farto e festivo.
+    prompt: '[seu tema], Cantonese guochao illustration, bold warm outlines, saturated orange green and red palette, traditional Chinese lattice window patterns, vintage signboard accents, abundant festive composition'
+    avoid:
+    - muted palette
+    - minimalism
+    - photorealistic
+    avoid_why_pt: Minimalismo e cor apagada tiram a fartura festiva.
+    descriptors:
+    - guochao food illustration
+    - Cantonese retro illustration
+    - Chinese lattice pattern art
+    alt_pt: Menina de coque come um bolinho diante de cestos de dim sum, com um letreiro em caracteres chineses.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/193.png
+    caption: null
+- id: handraw-194
+  source_style_id: '194'
+  source_style_name: 194 · Shanghai Calendar-Poster Retro
+  display_name: Shanghai Calendar-Poster Retro
+  family: editorial-poster
+  tags:
+  - poster
+  - retro
+  - cultural-tradition
+  summary_pt: 'Cartaz-calendário de Xangai dos anos 30: pintura suave, cores desbotadas e glamour de época. Bom para cartaz vintage e moda retrô.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Pintura suave, com sombreado de aerógrafo, cores quentes desbotadas e detalhes decorativos de época. O clima é de glamour e anúncio antigo.
+    prompt: '[seu tema], 1930s Shanghai calendar poster style, soft airbrushed painting, delicate glamorous rendering, warm faded vintage colors, period decorative details, nostalgic advertising poster composition'
+    avoid:
+    - modern flat vector
+    - neon colors
+    - anime style
+    avoid_why_pt: Cor neon e traço moderno apagam o ar de anúncio antigo.
+    descriptors:
+    - Shanghai calendar poster
+    - yuefenpai
+    - 1930s Chinese advertising art
+    alt_pt: Mulher de qipao florido apoia o rosto na mão, com prédios antigos e um carro de época ao fundo.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/194.png
+    caption: null
+- id: handraw-195
+  source_style_id: '195'
+  source_style_name: 195 · Republic-Era Advertising Redesign
+  display_name: Republic-Era Advertising Redesign
+  family: editorial-poster
+  tags:
+  - poster
+  - retro
+  summary_pt: 'Anúncio chinês de época redesenhado: formas chapadas, letreiro grande e sorriso de propaganda. Bom para cartaz, marca e humor vintage.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Estética de anúncio chinês dos anos 30 e 40 redesenhada com formas chapadas, paleta de vermelho, creme e verde-azulado, e letreiro grande em destaque. Tudo tem o otimismo de propaganda antiga.
+    prompt: '[seu tema], Republic-era Chinese advertising poster redesign, flat retro shapes, red cream and teal palette, large bold headline lettering, decorative wave pattern background, cheerful vintage commercial style'
+    avoid:
+    - photorealistic
+    - dark mood
+    - minimal typography
+    avoid_why_pt: Realismo e tipografia discreta tiram a cara de propaganda antiga.
+    descriptors:
+    - vintage Chinese ad
+    - retro advertising poster
+    - Republic-era poster
+    alt_pt: Moça de tiara vermelha sorri segurando uma garrafa, com letreiro em chinês e a frase GOOD THINGS AHEAD.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/195.png
+    caption: null
+  notes: A imagem da fonte traz o cabeçalho do estilo seguinte vazando na borda inferior.
+- id: handraw-196
+  source_style_id: '196'
+  source_style_name: 196 · Oil-Pastel Healing Illustration
+  display_name: Oil-Pastel Healing Illustration
+  family: storybook-illustration
+  tags:
+  - pencil-crayon
+  - children
+  summary_pt: 'Pastel oleoso acolhedor: textura grossa, cores fortes sobrepostas e clima de conforto. Bom para bem-estar, infância e afeto.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Pastel oleoso com traço grosso e cores vivas sobrepostas, deixando a textura do papel à vista. As formas são simples e a sensação é de calor e aconchego.
+    prompt: '[seu tema], oil pastel healing illustration, thick waxy oil pastel strokes, layered vivid colors, visible paper texture, simple soft shapes, warm comforting mood'
+    avoid:
+    - smooth digital shading
+    - thin lines
+    - dark palette
+    avoid_why_pt: Acabamento liso tira a textura grossa do pastel, que é o que acolhe.
+    descriptors:
+    - oil pastel illustration
+    - healing illustration
+    - textured pastel drawing
+    alt_pt: Menina de olhos fechados abraça um gato branco sobre um cobertor colorido.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/196.png
+    caption: null
+  notes: A imagem da fonte traz o cabeçalho do estilo seguinte vazando na borda inferior.
+- id: handraw-197
+  source_style_id: '197'
+  source_style_name: 197 · Childlike Crayon Naive Style
+  display_name: Childlike Crayon Naive Style
+  family: storybook-illustration
+  tags:
+  - pencil-crayon
+  - children
+  summary_pt: 'Desenho de criança em giz de cera: riscos à vista, formas tortas e cores primárias. Bom para infância e convite infantil.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Giz de cera com riscos visíveis preenchendo o fundo, formas tortas e cores primárias fortes. Parece mesmo feito por uma criança.
+    prompt: '[seu tema], childlike crayon drawing, visible scribbled crayon strokes filling the background, wobbly naive shapes, bright primary colors, simple symbolic forms, innocent kid art feel'
+    avoid:
+    - clean lines
+    - realistic proportions
+    - digital polish
+    avoid_why_pt: Linha limpa e proporção correta tiram a autenticidade de desenho infantil.
+    descriptors:
+    - child crayon drawing
+    - kid art style
+    - naive crayon
+    alt_pt: Menina de maria-chiquinha num jardim com sol sorridente, casa e gato, em giz de cera.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/197.png
+    caption: null
+- id: handraw-198
+  source_style_id: '198'
+  source_style_name: 198 · Black-White Pen Deadpan Humor
+  display_name: Black-White Pen Deadpan Humor
+  family: comics-graphic-novel
+  tags:
+  - comedy
+  - ink-drawing
+  summary_pt: 'Humor seco em caneta preta: traço limpo, cara de tédio e balão de reticências. Bom para meme de rotina e ironia; parecido com Deadpan Doodle, com mais hachura.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Caneta preta com linha limpa e alguma hachura, sem cor, e um clima de tédio. Balões curtos e frases em objetos completam a piada.
+    prompt: '[seu tema], black-and-white pen deadpan humor illustration, clean ink lines with light hatching, no color, bored understated expressions, small speech bubble with ellipsis, dry ironic mood, white background'
+    avoid:
+    - colors
+    - big smiles
+    - dramatic action
+    avoid_why_pt: Cor e euforia desfazem o tédio irônico que faz a graça.
+    descriptors:
+    - deadpan pen comic
+    - ironic doodle
+    - black and white humor
+    alt_pt: Moça entediada com uma caneca escrita NOT TODAY e um gato deitado na cabeça.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/198.png
+    caption: null
+- id: handraw-199
+  source_style_id: '199'
+  source_style_name: 199 · Red-Blue Riso Guochao
+  display_name: Red-Blue Riso Guochao
+  family: editorial-poster
+  tags:
+  - risograph
+  - cultural-tradition
+  - poster
+  summary_pt: 'Guochao em risografia vermelha e azul: grão de impressão, motivos chineses e letras grandes. Bom para cartaz cultural e festa.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Duas tintas, vermelho e azul, com o grão e a sobreposição da risografia, aplicadas a motivos chineses tradicionais e letreiros grandes. É cartaz festivo com textura de impressão artesanal.
+    prompt: '[seu tema], red and blue risograph guochao poster, two-ink print, grainy texture and overlapping layers, traditional Chinese motifs like auspicious clouds, bold calligraphic headline, festive energetic composition'
+    avoid:
+    - full color
+    - smooth gradients
+    - photorealistic
+    avoid_why_pt: Mais cores e degradê apagam a textura de duas tintas.
+    descriptors:
+    - riso guochao
+    - two-color Chinese poster
+    - risograph poster
+    alt_pt: Moça de roupa tradicional com um dragão, nuvens, os caracteres 少年 e a frase KEEP GOING.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/199.png
+    caption: null
+- id: handraw-200
+  source_style_id: '200'
+  source_style_name: 200 · Mid-century Deadpan Ink Mascot
+  display_name: Mid-century Deadpan Ink Mascot
+  family: editorial-poster
+  tags:
+  - retro
+  - ink-drawing
+  summary_pt: 'Nanquim de meados do século: preto chapado elegante, pose relaxada e tédio chique. Bom para marca, capa e lifestyle.'
+  summary_review: poster_checked
+  reading:
+    defines_pt: Nanquim preto com grandes áreas chapadas e linhas finas, na estética da ilustração de moda dos anos 50 e 60. O clima é neutro, elegante e despreocupado.
+    prompt: '[seu tema], mid-century deadpan ink illustration, elegant fine black linework with solid black fills, 1950s–1960s fashion illustration feel, cool nonchalant attitude, minimal composition, small hand-lettered caption, white background'
+    avoid:
+    - color
+    - cute kawaii style
+    - heavy shading
+    avoid_why_pt: Cor e fofura tiram a elegância seca do nanquim.
+    descriptors:
+    - mid-century ink illustration
+    - retro fashion ink
+    - deadpan mascot
+    alt_pt: Mulher de óculos escuros sentada com uma xícara, ao lado de um gato preto sobre livros e da frase A QUIETER LIFE.
+    tested: false
+    status: draft
+  example:
+    source_url: https://github.com/yang0/handraw-style/blob/70bf51d6b4c301805dd6c083355a2ad18db1023b/images/individual/001-200/200.png
+    caption: null

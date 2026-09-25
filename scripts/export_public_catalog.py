@@ -187,6 +187,14 @@ def build_public_library(
                 style_by_canonical[str(entry.get("id") or slug)] = target
 
             example = entry.get("example") or {}
+            link_only = collection.get("copy_policy") == "link_only"
+            if link_only and example:
+                # Fonte sem licença: a imagem fica na fonte, a ficha só aponta para ela.
+                example = {**example, "poster_url": None}
+                target["image_link"] = {
+                    "url": example.get("source_url") or source_meta.get("url"),
+                    "label": f"nº {entry.get('source_style_id')} · {source_label}",
+                }
             if example:
                 target["examples"].append(
                     {
@@ -204,7 +212,7 @@ def build_public_library(
                 )
                 target["poster_url"] = target.get("poster_url") or example.get("poster_url")
 
-            recipe = entry.get("recipe") or {}
+            recipe = {} if link_only else (entry.get("recipe") or {})
             if recipe.get("template") or recipe.get("availability"):
                 public_recipe = {
                     "source_id": collection_source_id,

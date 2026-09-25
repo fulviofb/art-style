@@ -84,6 +84,33 @@ def validate_reading(reading) -> list[str]:
     return found
 
 
+def validate_collection(collection: dict, families: set[str], tags: set[str]) -> list[str]:
+    """Coleção externa: respeita a política de cópia e cria estilos com a mesma curadoria dos dias."""
+    found: list[str] = []
+    link_only = collection.get("copy_policy") == "link_only"
+    for entry in collection.get("entries") or []:
+        label = entry.get("id") or "?"
+        if link_only:
+            if (entry.get("example") or {}).get("poster_url"):
+                found.append(f"{label}: link_only collections must not embed source images")
+            if (entry.get("recipe") or {}).get("template"):
+                found.append(f"{label}: link_only collections must not copy source prompts")
+        if entry.get("canonical_style_id"):
+            continue
+        if not str(entry.get("display_name") or "").strip():
+            found.append(f"{label}: display_name is required")
+        if entry.get("family") not in families:
+            found.append(f"{label}: family is missing or unregistered")
+        entry_tags = entry.get("tags") or []
+        if not entry_tags or any(tag not in tags for tag in entry_tags):
+            found.append(f"{label}: tags must be registered and not empty")
+        if str(entry.get("summary_pt") or "").strip() and entry.get("summary_review") not in ALLOWED_SUMMARY_REVIEW:
+            found.append(f"{label}: summary_review must record that the summary was checked against the image")
+        if entry.get("reading") is not None:
+            found.extend(f"{label}: {message}" for message in validate_reading(entry.get("reading")))
+    return found
+
+
 def validate_style_curation(data: dict, families: set[str], tags: set[str]) -> list[str]:
     found: list[str] = []
     style = data.get("style") or {}
@@ -168,6 +195,10 @@ def main() -> int:
         for part in data.get("thread") or []:
             if part.get("post_url") == "":
                 err(f"{path.name}: empty post_url string; use null")
+    for path in sorted((DAYS.parent / "collections").glob("*.yml")):
+        collection = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for message in validate_collection(collection, families, tags):
+            err(f"{path.name}: {message}")
     if errors:
         print("INVALID")
         for e in errors:
