@@ -2183,7 +2183,7 @@
       "id": "flat-vector-picture-book",
       "slug": "flat-vector-picture-book",
       "display_name": "Flat Vector Picture Book",
-      "summary_pt": "Ilustração infantil em vetor chapado: formas geométricas arredondadas, cor cheia sem contorno e camadas sobrepostas no lugar de sombra. Boa para histórias para crianças pequenas, cartazes e material didático.",
+      "summary_pt": "Ilustração infantil em vetor chapado: formas geométricas arredondadas, cor cheia sem contorno e personagens de olhos enormes, com espirais e marquinhas de movimento. Boa para histórias para crianças pequenas, cartazes e material didático.",
       "palette": [
         {
           "hex": "#F4F5EF",
@@ -2236,7 +2236,7 @@
           "role_pt": "manchas, olhos e texto"
         }
       ],
-      "palette_note_pt": "Cores medidas nas fotos do material impresso, com o branco do papel corrigido. São valores de referência para montar a sua paleta, não a especificação gráfica do original.",
+      "palette_note_pt": "Cores medidas nas fotos do material impresso, com o branco do papel corrigido: são referência para montar a sua paleta, não a especificação gráfica do original. Mais do que os códigos exatos, vale a relação entre eles — base alegre de azul, verde-limão e caramelo; dois ou três acentos de rosa, roxo e amarelo; ameixa quase preto no lugar do preto; branco de respiro. Uma geração digital neste estilo costuma sair mais saturada do que a página impressa.",
       "observed_in_pt": "Livro infantil impresso, fotografado pela curadoria para estudo. As ilustrações originais são de seus autores e não são reproduzidas aqui.",
       "reading": null,
       "family": "storybook-illustration",
