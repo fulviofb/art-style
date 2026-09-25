@@ -41,6 +41,7 @@ tags:
   - { id: watercolor, label_pt: Aquarela }
   - { id: ink-drawing, label_pt: Tinta e desenho }
   - { id: painterly, label_pt: Pictórico }
+  - { id: textured, label_pt: Texturizado }
   - { id: storybook, label_pt: Livro ilustrado }
   - { id: comics, label_pt: Quadrinhos }
   - { id: editorial, label_pt: Editorial }
