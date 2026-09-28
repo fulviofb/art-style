@@ -211,3 +211,72 @@ entries:
         - "tiny character photography"
       tested: false
       status: approved
+  - id: whimsical-watercolor-picture-book
+    display_name: Whimsical Watercolor Picture Book
+    naming_basis: curator_inference
+    family: storybook-illustration
+    tags:
+      - storybook
+      - children
+      - watercolor
+      - ink-drawing
+    observed_in_pt: "Estilo descrito a partir de uma imagem gerada pela própria curadoria. Nenhuma obra de terceiro é reproduzida nesta ficha."
+    summary_pt: "Livro infantil aquarelado: contorno de tinta fino e trêmulo sobre manchas diluídas, com granulação, muito espaço de papel e humor no gesto dos personagens. Boa para histórias delicadas e bem-humoradas."
+    summary_review: poster_checked
+    example:
+      own_work: true
+      poster_url: assets/img/whimsical-watercolor-picture-book.webp
+      caption: "Imagem gerada pela própria curadoria, no estilo descrito nesta ficha."
+      date_utc: "2026-09-28"
+    palette:
+      - hex: "#F2E9DC"
+        name_pt: Papel-creme
+        role_pt: fundo predominante
+      - hex: "#7599B0"
+        name_pt: Azul-acinzentado
+        role_pt: massa de cor principal
+      - hex: "#456781"
+        name_pt: Azul-petróleo
+        role_pt: sombras e padrões dentro da cor
+      - hex: "#E18D85"
+        name_pt: Rosa-blush
+        role_pt: bochechas e áreas rosadas
+      - hex: "#BE552C"
+        name_pt: Vermelho-queimado
+        role_pt: acento quente
+      - hex: "#B48254"
+        name_pt: Caramelo
+        role_pt: pelo e elementos naturais
+      - hex: "#7F8351"
+        name_pt: Verde-oliva
+        role_pt: folhagem
+      - hex: "#E0CFAD"
+        name_pt: Bege-areia
+        role_pt: chão e manchas de apoio
+      - hex: "#5E6260"
+        name_pt: Cinza-esverdeado
+        role_pt: neutros e pelagem escura
+      - hex: "#322B25"
+        name_pt: Grafite quase preto
+        role_pt: traço, olhos e focinhos
+    palette_note_pt: "Cores medidas na imagem desta ficha. A lógica: base de azul acinzentado, caramelo e rosa envelhecido sobre creme de papel, com acentos em vermelho queimado e blush, e traço em grafite quase preto em vez de preto puro. Nenhuma cor preenche de forma uniforme — há granulação e transparência dentro de cada mancha, e é isso que separa este estilo de um vetor bem pintado."
+    reading:
+      defines_pt: "O essencial é a convivência de um contorno de tinta fino e trêmulo com manchas de aquarela ou guache muito diluídas. A linha não acompanha a mancha com exatidão, e é essa folga que dá o ar de desenho manual. Dentro de cada massa de cor há granulação, transparência e padrões discretos — pontinhos, riscos, manchas —, de modo que nada fica chapado: é exatamente aqui que a IA escorrega para o vetor se o prompt não insistir. O papel aparece e ocupa boa parte da página; o cenário se reduz a poucas manchas e a uma sombra simples no chão. Os personagens são corpos muito arredondados com membros pequenos, olhos minúsculos feito pontos, focinho marcado e bochechas avermelhadas, que funcionam como recurso de emoção mais do que de anatomia. A paleta é terrosa e dessaturada, com um ou dois acentos quentes. Se o seu tema não é personagem, tire do prompt \"tiny dot eyes, rosy cheeks\"."
+      prompt: "[seu tema], whimsical hand-drawn children's picture book illustration, loose delicate ink linework that does not follow the color edges exactly, soft watercolor and gouache washes, visible granulation and transparency inside every color, discreet dotted and speckled patterns within the color masses, subtle paper grain, rounded simplified shapes with small limbs, tiny dot eyes, rosy cheeks, muted earthy palette, cream paper background, sparse scenery and simple ground shadow, generous negative space, understated visual humor, traditional editorial storybook aesthetic"
+      avoid:
+        - "uniform flat color fills"
+        - "glossy vector"
+        - "hard cel shading"
+        - "hyper-detailed backgrounds"
+        - "3D render"
+        - "photorealistic"
+      avoid_why_pt: "Preenchimento uniforme e acabamento vetorial eliminam a fragilidade do traço manual e a transparência das manchas, que são o estilo inteiro. Fundo cheio de detalhe tira o espaço de papel que dá respiro à página."
+      descriptors:
+        - "watercolor picture book illustration"
+        - "hand-drawn children's book"
+        - "ink and watercolor storybook"
+        - "loose gouache picture book"
+        - "granulated watercolor illustration"
+        - "editorial kids illustration"
+      tested: false
+      status: approved
