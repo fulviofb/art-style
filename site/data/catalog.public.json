@@ -171,6 +171,10 @@
         "label_pt": "Híbrido"
       },
       {
+        "id": "mixed-media",
+        "label_pt": "Mídia mista"
+      },
+      {
         "id": "caricature",
         "label_pt": "Caricatura"
       },
@@ -274,7 +278,7 @@
     }
   ],
   "counts": {
-    "styles": 128,
+    "styles": 129,
     "references": 134,
     "recipes": 12
   },
@@ -3428,6 +3432,105 @@
           ]
         }
       ],
+      "recipes": []
+    },
+    {
+      "id": "live-action-miniature-illustration",
+      "slug": "live-action-miniature-illustration",
+      "display_name": "Live-Action Miniature Illustration",
+      "summary_pt": "Animação híbrida em miniatura: personagem desenhado à mão convive com objetos reais fotografados de muito perto, com foco raso e escala exagerada. Boa para histórias de imaginação, vídeos criativos e peças educativas.",
+      "palette": [
+        {
+          "hex": "#D96230",
+          "name_pt": "Laranja-queimado",
+          "role_pt": "o único acento forte, no personagem"
+        },
+        {
+          "hex": "#2C4E54",
+          "name_pt": "Azul-petróleo",
+          "role_pt": "contraponto frio da roupa"
+        },
+        {
+          "hex": "#DCC8B6",
+          "name_pt": "Creme de papel",
+          "role_pt": "superfície iluminada onde o desenho vive"
+        },
+        {
+          "hex": "#BEB1A1",
+          "name_pt": "Bege de papel",
+          "role_pt": "meio-tom da folha"
+        },
+        {
+          "hex": "#917558",
+          "name_pt": "Bege-madeira",
+          "role_pt": "mesa e objetos reais"
+        },
+        {
+          "hex": "#7D7266",
+          "name_pt": "Grafite claro",
+          "role_pt": "traço a lápis dos objetos desenhados"
+        },
+        {
+          "hex": "#3A332B",
+          "name_pt": "Grafite escuro",
+          "role_pt": "cabelo, contornos e linhas fortes"
+        },
+        {
+          "hex": "#292419",
+          "name_pt": "Marrom-sombra",
+          "role_pt": "fundo fora de foco e profundidade"
+        },
+        {
+          "hex": "#C76F68",
+          "name_pt": "Rosa-apagado",
+          "role_pt": "borracha e pequenos acentos"
+        }
+      ],
+      "palette_note_pt": "Cores medidas nos quadros do vídeo observado. A lógica vale mais que os códigos: ambiente neutro e quente, um único acento saturado no personagem e um contraponto frio ao lado dele. É isso que mantém uma figura minúscula legível dentro de uma fotografia real; se o cenário ganhar cor saturada, o personagem some.",
+      "observed_in_pt": "Estilo observado em um vídeo de terceiros, do qual a curadoria extraiu quadros apenas para estudo. Os quadros não são reproduzidos aqui: a ficha descreve a linguagem visual e a paleta medida neles.",
+      "reading": {
+        "source_label": "Curadoria",
+        "defines_pt": "O essencial é a convivência de duas linguagens que continuam distintas: um personagem desenhado à mão, de traço fino e cor de lápis, dentro de um ambiente real fotografado de muito perto. Nada tenta parecer 3D nem se integrar por completo. O que costura os dois mundos é a luz — a sombra de contato que o desenho projeta sobre a superfície real — e o foco raso, que isola a miniatura e transforma mesa, lápis e borracha em paisagem. No material observado, a nitidez no centro do quadro é de três a seis vezes a das bordas: o desfoque é estrutura, não enfeite. Os objetos que o personagem desenha continuam sendo linha de grafite sobre o papel mesmo quando ganham volume. Se o seu tema não é personagem, troque no prompt \"tiny hand-drawn character\" por \"tiny hand-drawn elements\".",
+        "prompt": "[seu tema], hybrid live-action and illustrated miniature animation, tiny hand-drawn character integrated into real-world macro photography, clean thin expressive linework, colored-pencil shading, graphite line-drawn props on paper, soft contact shadows grounding the drawing on the real surface, extreme scale contrast, very shallow depth of field, warm cinematic practical lighting, tactile paper and wood textures, neutral warm environment with a single saturated accent on the character, whimsical handcrafted storytelling, seamless mixed-media compositing",
+        "avoid": [
+          "full CGI",
+          "photorealistic characters",
+          "flat vector background",
+          "deep depth of field",
+          "oversized cartoon scenery"
+        ],
+        "avoid_why_pt": "O estilo vive do contraste entre o desenho e o ambiente físico real, e da miniatura criada pelo foco seletivo. Personagem fotorrealista, fundo vetorial ou foco profundo desfazem exatamente essa tensão.",
+        "descriptors": [
+          "mixed media miniature animation",
+          "live action illustration composite",
+          "macro miniature storytelling",
+          "hand drawn character live action",
+          "2D character composited into live action",
+          "tiny character photography"
+        ],
+        "alt_pt": null,
+        "tested": false
+      },
+      "family": "hybrid-experimental",
+      "family_label": "Híbridos e experimental",
+      "tags": [
+        "hybrid",
+        "mixed-media",
+        "cinematic",
+        "ink-drawing"
+      ],
+      "tag_labels": [
+        "Híbrido",
+        "Mídia mista",
+        "Cinematográfico",
+        "Tinta e desenho"
+      ],
+      "naming_basis": "curator_inference",
+      "confidence": "high",
+      "poster_url": null,
+      "example_count": 0,
+      "recipe_count": 0,
+      "examples": [],
       "recipes": []
     },
     {
