@@ -151,9 +151,18 @@ entries:
       - mixed-media
       - cinematic
       - ink-drawing
-    observed_in_pt: "Estilo observado em um vídeo de terceiros, do qual a curadoria extraiu quadros apenas para estudo. Os quadros não são reproduzidos aqui: a ficha descreve a linguagem visual e a paleta medida neles."
+    observed_in_pt: "Estilo observado em um vídeo de OscarAI (@Artedeingenio). O quadro desta ficha é dele, publicado com autorização do criador; o vídeo permanece na fonte."
     summary_pt: "Animação híbrida em miniatura: personagem desenhado à mão convive com objetos reais fotografados de muito perto, com foco raso e escala exagerada. Boa para histórias de imaginação, vídeos criativos e peças educativas."
     summary_review: poster_checked
+    example:
+      poster_url: assets/img/live-action-miniature-illustration.webp
+      caption: "Quadro do vídeo observado, cedido pelo criador para esta curadoria."
+      date_utc: "2026-09-28"
+      credit:
+        name: OscarAI
+        handle: Artedeingenio
+        url: https://x.com/Artedeingenio
+        permission_pt: "Quadro publicado com autorização de OscarAI (@Artedeingenio), criador do vídeo."
     palette:
       - hex: "#D96230"
         name_pt: Laranja-queimado

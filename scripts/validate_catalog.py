@@ -115,10 +115,12 @@ def validate_collection(collection: dict, families: set[str], tags: set[str]) ->
             if (entry.get("recipe") or {}).get("template"):
                 found.append(f"{label}: link_only collections must not copy source prompts")
         if own_notes:
-            # A referência observada fica de fora; o exemplo, quando existe, é imagem do próprio curador.
+            # Imagem do próprio curador, ou de terceiro com a autorização registrada aqui — nunca sem nenhuma das duas.
             example = entry.get("example") or {}
+            credit = example.get("credit") or {}
             if example and not example.get("own_work"):
-                found.append(f"{label}: curator collections only carry the curator's own image")
+                if not all(str(credit.get(field) or "").strip() for field in ("name", "url", "permission_pt")):
+                    found.append(f"{label}: third-party image needs credit.name, credit.url and credit.permission_pt")
             if entry.get("recipe"):
                 found.append(f"{label}: curator collections do not copy third-party recipes")
         if entry.get("canonical_style_id"):
