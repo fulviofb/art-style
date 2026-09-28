@@ -268,8 +268,50 @@ def test_curator_collection_never_carries_third_party_media_or_prompts():
     assert data["copy_policy"] == "own_notes_only"
     for entry in data["entries"]:
         example = entry.get("example") or {}
-        assert example.get("own_work") if example else True, f"{entry['id']}: só imagem da própria curadoria entra aqui"
+        credit = example.get("credit") or {}
+        autorizado = all(str(credit.get(field) or "").strip() for field in ("name", "url", "permission_pt"))
+        assert example.get("own_work") or autorizado if example else True, \
+            f"{entry['id']}: imagem aqui é da curadoria ou de terceiro com autorização registrada"
         assert "//" not in str(example.get("poster_url") or ""), f"{entry['id']}: a imagem é servida pelo próprio site"
         assert not entry.get("recipe"), f"{entry['id']}: a curadoria não copia receita de terceiro"
         assert entry["palette"], f"{entry['id']}: estilo da curadoria precisa da paleta medida"
         assert entry["reading"]["prompt"].startswith("[seu tema]")
+
+
+def test_authorized_third_party_image_carries_the_creator_credit():
+    from scripts.export_public_catalog import build_public_library
+
+    taxonomy = {"families": [{"id": "hybrid-experimental", "label_pt": "Híbridos"}], "tags": [{"id": "hybrid", "label_pt": "Híbrido"}]}
+    sources = {"sources": [{"id": "curadoria", "label": "Curadoria", "url": "https://example.com/repo"}]}
+    collections = [{
+        "source_id": "curadoria",
+        "copy_policy": "own_notes_only",
+        "entries": [{
+            "id": "estilo-cedido", "display_name": "Estilo Cedido",
+            "family": "hybrid-experimental", "tags": ["hybrid"],
+            "palette": [{"hex": "#D96230", "name_pt": "Laranja"}],
+            "example": {
+                "poster_url": "assets/img/estilo-cedido.webp",
+                "credit": {"name": "Autor", "handle": "autor", "url": "https://example.com/autor",
+                           "permission_pt": "Publicado com autorização."},
+            },
+        }],
+    }]
+    style = next(s for s in build_public_library([], taxonomy, sources, collections)["styles"] if s["id"] == "estilo-cedido")
+    example = style["examples"][0]
+    assert example["source_label"] == "Autor"
+    assert example["source_url"] == "https://example.com/autor"
+    assert example["permission_pt"] == "Publicado com autorização."
+    assert example["own_work"] is False
+
+
+def test_third_party_image_without_permission_is_refused():
+    from scripts.validate_catalog import validate_collection
+
+    collection = {
+        "copy_policy": "own_notes_only",
+        "entries": [{"id": "sem-credito", "display_name": "X", "family": "f", "tags": ["t"],
+                     "example": {"poster_url": "assets/img/x.webp"}}],
+    }
+    messages = validate_collection(collection, {"f"}, {"t"})
+    assert any("credit.name" in m for m in messages)

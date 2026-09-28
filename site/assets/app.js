@@ -198,9 +198,13 @@ async function copyImage(url) {
 function imageActions(url, source) {
   if (!url) return "";
   const own = Boolean(source?.own_work);
+  const autorizado = Boolean(source?.permission_pt);
+  const handle = source?.credit_handle ? ` (@${escapeHtml(source.credit_handle)})` : "";
   const credit = own
     ? "Imagem gerada pela própria curadoria"
-    : source?.source_label ? `Imagem de ${escapeHtml(source.source_label)}` : "Imagem da fonte";
+    : autorizado
+      ? `Quadro de ${escapeHtml(source.source_label)}${handle}, publicado com autorização`
+      : source?.source_label ? `Imagem de ${escapeHtml(source.source_label)}` : "Imagem da fonte";
   const link = !own && source?.source_url ? ` · <a href="${escapeHtml(source.source_url)}" rel="noopener noreferrer">ver na fonte ↗</a>` : "";
   const note = own ? "Use à vontade como referência de estilo." : "Use como referência de estilo no seu editor; não publique como sua.";
   return `<div class="image-actions">
@@ -278,7 +282,7 @@ function renderStyleDetail(catalog) {
     <div class="example-card__media">${example.poster_url || !style.image_link ? still(example.poster_url, `${style.display_name} — exemplo ${index + 1}`) : sourceTile(style.image_link, true)}</div>
     ${imageActions(example.poster_url, example)}
     <div class="example-card__body">
-      <p class="eyebrow">${example.own_work ? "Imagem da curadoria" : `Referência selecionada · ${escapeHtml(example.source_label)}`}</p>
+      <p class="eyebrow">${example.own_work ? "Imagem da curadoria" : example.permission_pt ? `Quadro de ${escapeHtml(example.source_label)} · com autorização` : `Referência selecionada · ${escapeHtml(example.source_label)}`}</p>
       ${example.caption ? `<p>${escapeHtml(example.caption)}</p>` : ""}
       ${(example.tools || []).length ? `<p class="example-tools">${example.tools.map(escapeHtml).join(" · ")}</p>` : ""}
       ${!example.own_work && example.source_url ? `<a href="${escapeHtml(example.source_url)}" rel="noopener noreferrer">Abrir fonte original ↗</a>` : ""}

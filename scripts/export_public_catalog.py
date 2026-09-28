@@ -192,6 +192,7 @@ def build_public_library(
                 style_by_canonical[str(entry.get("id") or slug)] = target
 
             example = entry.get("example") or {}
+            credit = example.get("credit") or {}
             link_only = collection.get("copy_policy") == "link_only"
             if link_only and example:
                 # Fonte sem licença: a imagem fica na fonte, a ficha só aponta para ela.
@@ -204,8 +205,10 @@ def build_public_library(
                 target["examples"].append(
                     {
                         "source_id": collection_source_id,
-                        "source_label": source_label,
-                        "source_url": example.get("source_url") or source_meta.get("url"),
+                        "source_label": credit.get("name") or source_label,
+                        "source_url": credit.get("url") or example.get("source_url") or source_meta.get("url"),
+                        "credit_handle": credit.get("handle"),
+                        "permission_pt": credit.get("permission_pt"),
                         "date_utc": example.get("date_utc"),
                         "poster_url": example.get("poster_url"),
                         "caption": example.get("caption"),

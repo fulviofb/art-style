@@ -56,7 +56,9 @@ O site não rehospeda mídia. Imagens apontam para as fontes originais.
 A coleção `catalog/collections/curadoria.yml` (fonte `curadoria`, `copy_policy: own_notes_only`) guarda os
 estilos que a curadoria descreve a partir de referências vistas fora da série — um livro impresso, um cartaz,
 uma embalagem. A descrição, a leitura e a paleta são autorais e podem ser publicadas; **a imagem observada não
-entra no repositório nem no site**, porque a ilustração é de quem a fez. `observed_in_pt` diz de onde veio a
+entra no repositório nem no site**, porque a ilustração é de quem a fez. A exceção é o material cedido: uma
+imagem de terceiro só entra com `example.credit` completo — `name`, `url` e `permission_pt` —, de modo que quem
+autorizou fique registrado no catálogo e não apenas na conversa. O validador recusa imagem de terceiro sem isso. `observed_in_pt` diz de onde veio a
 observação sem reproduzir a obra. Se depois existir uma imagem própria, gerada com o prompt da ficha, ela pode
 virar exemplo. Os testes recusam `example` e `recipe` nessa coleção.
 
