@@ -60,6 +60,7 @@ tags:
   - { id: children, label_pt: Infantil }
   - { id: mythology, label_pt: Mitologia }
   - { id: hybrid, label_pt: Híbrido }
+  - { id: mixed-media, label_pt: Mídia mista }
   - { id: caricature, label_pt: Caricatura }
   - { id: concept-art, label_pt: Concept art }
   - { id: architecture, label_pt: Arquitetura }
